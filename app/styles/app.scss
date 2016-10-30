@@ -1,0 +1,13 @@
+@mixin font-face($name) {
+  @font-face {
+    font-family: $name;
+    src:  url("fonts/#{$name}.eot?") format("eot"),
+	  url("fonts/#{$name}.woff2") format("woff2"),
+	  url("fonts/#{$name}.woff") format("woff");
+  }
+}
+@include font-face('FjordOne-Regular');
+
+@import 'foundation';
+@import 'home-page';
+@import 'top-bar';
