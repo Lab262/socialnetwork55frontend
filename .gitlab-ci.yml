@@ -1,11 +1,7 @@
-image: node:5.10.0
+image: node:6.5.0
 cache:
   paths:
-  - node_modules/
-all_tests:
-  script:
-   - npm install
-   - npm test
+  # - node_modules/
 
 production:
   type: deploy
@@ -19,7 +15,7 @@ production:
   only:
   - master
 
-staging:
+stagging:
   type: deploy
   script:
   - apt-get update -qy
