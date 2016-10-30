@@ -1,5 +1,5 @@
 .navbar {
-  --nav-bar-height: 100px;
+  --nav-bar-height: 70px;
   --items-container-padding-height: 1%;
   --items-padding-width: 15px;
   --items-border-size: 1px;
@@ -17,8 +17,8 @@
   z-index: 9999;
 
   .app-logo {
-    height: 42px;
-    width: 137px;
+    height: 30px;
+    width: 98px;
     background-image: url("/assets/images/logo.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -52,7 +52,7 @@
       padding: 1.2em;
       margin: -1.2em;
       font-family: 'FjordOne-Regular';
-      font-size: 25px;
+      font-size: 22px;
 
       &:visited, &:link {
         color: black;
