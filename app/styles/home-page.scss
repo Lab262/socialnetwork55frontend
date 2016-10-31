@@ -24,31 +24,47 @@
   }
 
   .presentation-container {
-
-
-
-    h1 {
-      font-family: 'BebasNeue-Bold';
-      font-size: 6vw;
-      color: white;
-      //  margin-bottom: -10px;
-    }
-    h2 {
-      font-family: 'FjordOne-Regular';
-      font-size: 2.05vw;
-      color: white;
-    }
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    //look at the responsive constraints
   }
 
   .actions-container {
     position: relative;
-    // bottom: 0;
-    // background: rgba(76,76,76,1.0);
-    background : blue;
-    // height: 10vh;
-    height: 80px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background : rgba(75,75,75,0.9);
+    width: 100vw;
+
+    .action-left{
+      border-top: 15px solid rgba(93,93,93,1);
+    }
+
+    .action-center0 {
+      border-top: 15px solid rgba(121,121,121,1);
+    }
+
+    .action-center1 {
+      border-top: 15px solid rgba(155,155,155,1);
+    }
+
+    .action-right {
+      border-top: 15px solid rgba(200,200,200,1);
+    }
+
+    .action-left, .action-center0, .action-center1, .action-right {
+      font-family: 'BebasNeue-Regular';
+      text-align: center;
+      color: white;
+      padding-top: 15px;
+      &:hover {
+
+      }
+    }
   }
 
 }
@@ -64,12 +80,29 @@
       width: 65%;
       height: 88vh;
       top: 70px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
       margin-left: 2.0em;
+
+          h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 6vw;
+            color: white;
+            //  margin-bottom: -10px;
+          }
+          h2 {
+            font-family: 'FjordOne-Regular';
+            font-size: 2.05vw;
+            color: white;
+          }
     }
     .actions-container {
+      height: 85px;
+
+      .action-left, .action-center0, .action-center1, .action-right {
+        width: 25%;
+        font-size: 3vw;
+        border-right: 1px solid black;
+      }
     }
   }
 }
@@ -83,14 +116,29 @@
     .presentation-container {
       position: relative;
       width: 85%;
-      height: 88vh;
+      height: 55vh;
       top: 0px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+
       margin-left: 1.0em;
+          h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 9vw;
+            color: white;
+            //  margin-bottom: -10px;
+          }
+          h2 {
+            font-family: 'FjordOne-Regular';
+            font-size: 3.5vw;
+            color: white;
+          }
     }
     .actions-container {
+
+      height: 320px;
+      .action-left, .action-center0, .action-center1, .action-right {
+        width: 100%;
+        font-size: 6vw;
+      }
     }
   }
 }
