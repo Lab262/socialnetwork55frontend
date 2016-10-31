@@ -30,7 +30,6 @@ $actioncontainer-height: 85px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    //look at the responsive constraints
   }
 
   .actions-container {
@@ -61,14 +60,31 @@ $actioncontainer-height: 85px;
     }
 
     .action-left, .action-center0, .action-center1, .action-right {
-      font-family: 'BebasNeue-Regular';
-      text-align: center;
-      color: white;
-      padding-top: 15px;
+      button{
+        font-family: 'BebasNeue-Regular';
+        padding: -1.2em;
+        color: white;
+        width: 100%;
+        margin: 0;
+        background: rgba(0,0,0,0);
+        &:active  &:hover {
+          background: rgba(255,255,255,0.75);
+          color: black;
+        }
+
+         &:hover {
+           background: rgba(255,255,255,1);
+           color: black;
+         }
+      }
     }
 
   }
 }
+
+
+
+
 
 @media screen and (min-width: 600px) {
   .home-page-container {
@@ -101,15 +117,17 @@ $actioncontainer-height: 85px;
       bottom: 0;
 
       .action-left, .action-center0, .action-center1, .action-right {
+        button {
+          font-size: 3vw;
+        }
         width: 25%;
-        font-size: 3vw;
         border-right: 1px solid black;
       }
 
-      .action-left:hover + .hover-content-left,
-      .action-center0:hover + .hover-content-center0,
-      .action-center1:hover + .hover-content-center1,
-      .action-right:hover + .hover-content-right {
+      .action-left:active + .hover-content-left,
+      .action-center0:active + .hover-content-center0,
+      .action-center1:active + .hover-content-center1,
+      .action-right:active + .hover-content-right {
            visibility: visible;
            opacity: 1;
            transition: visibility 0s linear 0ms, opacity 300ms;
@@ -132,8 +150,6 @@ $actioncontainer-height: 85px;
         visibility: visible;
       }
     }
-
-
     .hover-content-left {
       @extend %extended-action-hover-content-base;
       left: 0;
@@ -156,6 +172,9 @@ $actioncontainer-height: 85px;
 
   }
 }
+
+
+
 
 @media screen and (max-width: 600px) {
   .home-page-container {
@@ -183,11 +202,12 @@ $actioncontainer-height: 85px;
           }
     }
     .actions-container {
-
       height: 320px;
       .action-left, .action-center0, .action-center1, .action-right {
         width: 100%;
-        font-size: 6vw;
+        button {
+          font-size: 6vw;
+        }
       }
     }
   }
