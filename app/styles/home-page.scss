@@ -42,6 +42,7 @@ $actioncontainer-height: 85px;
     align-items: flex-start;
     background : rgba(75,75,75,0.9);
     width: 100%;
+    height: $actioncontainer-height;
 
     .action-left{
       border-top: 15px solid rgba(93,93,93,1);
@@ -97,7 +98,6 @@ $actioncontainer-height: 85px;
     }
     .actions-container {
       position: absolute;
-      height: $actioncontainer-height;
       bottom: 0;
 
       .action-left, .action-center0, .action-center1, .action-right {
@@ -166,8 +166,8 @@ $actioncontainer-height: 85px;
     .presentation-container {
       position: relative;
       width: 85%;
-      height: 60vw;
-      top: 0px;
+      height: 100vw;
+      top: 20px;
 
       margin-left: 1.0em;
           h1 {
@@ -184,7 +184,7 @@ $actioncontainer-height: 85px;
     }
     .actions-container {
 
-      height: 360px;
+      height: 320px;
       .action-left, .action-center0, .action-center1, .action-right {
         width: 100%;
         font-size: 6vw;

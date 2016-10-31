@@ -20,7 +20,6 @@
     width: 98px;
     background-image: url("/assets/images/logo.png");
     background-repeat: no-repeat;
-    background-size: contain;
     background-position: center;
     text-indent: -9999px;
     -webkit-transition: all 0.2s ease-in-out;
@@ -72,7 +71,9 @@
   }
   .app-logo {
     margin-left: 1.0em;
+    background-size: 75%;
   }
+  
   .navbar .app-menu {
     display: flex;
     height: var(--nav-bar-height);
@@ -101,8 +102,12 @@
 
     .app-logo {
       width: 100%;
-      margin-top: 25px;
-      margin-bottom: 25px;
+      top: 0px;
+      background-size: 15%;
+      height: 50px;
+      background-color: white;
+      position: fixed;
+
     }
     .app-menu {
       flex-direction: column;
