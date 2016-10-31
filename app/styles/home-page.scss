@@ -38,7 +38,7 @@
     flex-wrap: wrap;
     align-items: flex-start;
     background : rgba(75,75,75,0.9);
-    width: 100vw;
+    width: 100%;
 
     .action-left{
       border-top: 15px solid rgba(93,93,93,1);
@@ -69,7 +69,7 @@
 
 }
 
-@media screen and (min-width: 680px) {
+@media screen and (min-width: 600px) {
   .home-page-container {
     .background-image {
       .background-filter {
@@ -78,7 +78,7 @@
     .presentation-container {
       position: relative;
       width: 65%;
-      height: 88vh;
+      height: 49.75vw;
       top: 70px;
 
       margin-left: 2.0em;
@@ -107,7 +107,7 @@
   }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 600px) {
   .home-page-container {
     .background-image {
       .background-filter {
@@ -116,7 +116,7 @@
     .presentation-container {
       position: relative;
       width: 85%;
-      height: 55vh;
+      height: 60vw;
       top: 0px;
 
       margin-left: 1.0em;
@@ -134,7 +134,7 @@
     }
     .actions-container {
 
-      height: 320px;
+      height: 360px;
       .action-left, .action-center0, .action-center1, .action-right {
         width: 100%;
         font-size: 6vw;
