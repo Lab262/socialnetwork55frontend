@@ -1,3 +1,6 @@
+$topbar-height: 70px;
+$actioncontainer-height: 85px;
+
 .home-page-container {
   width: 100%;
   height: 100%;
@@ -61,12 +64,9 @@
       text-align: center;
       color: white;
       padding-top: 15px;
-      &:hover {
-
-      }
     }
-  }
 
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -79,7 +79,7 @@
       position: relative;
       width: 65%;
       height: 49.75vw;
-      top: 70px;
+      top: $topbar-height;
 
       margin-left: 2.0em;
 
@@ -96,14 +96,64 @@
           }
     }
     .actions-container {
-      height: 85px;
+      position: absolute;
+      height: $actioncontainer-height;
+      bottom: 0;
 
       .action-left, .action-center0, .action-center1, .action-right {
         width: 25%;
         font-size: 3vw;
         border-right: 1px solid black;
       }
+
+      .action-left:hover + .hover-content-left,
+      .action-center0:hover + .hover-content-center0,
+      .action-center1:hover + .hover-content-center1,
+      .action-right:hover + .hover-content-right {
+           visibility: visible;
+           opacity: 1;
+           transition: visibility 0s linear 0ms, opacity 300ms;
+          }
+
+
     }
+
+    %extended-action-hover-content-base {
+      display: block;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s linear 300ms, opacity 300ms;
+      top: $topbar-height;
+      bottom: $actioncontainer-height - 2px;
+      position: fixed;
+      width: 25%;
+      background: rgba(244,244,244,1);
+      &:hover {
+        visibility: visible;
+      }
+    }
+
+
+    .hover-content-left {
+      @extend %extended-action-hover-content-base;
+      left: 0;
+    }
+
+    .hover-content-center0 {
+      @extend %extended-action-hover-content-base;
+      left: 25%;
+    }
+
+    .hover-content-center1 {
+      @extend %extended-action-hover-content-base;
+      left: 50%;
+    }
+
+    .hover-content-right {
+      @extend %extended-action-hover-content-base;
+      left: 75%;
+    }
+
   }
 }
 
