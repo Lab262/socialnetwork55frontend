@@ -1,24 +1,43 @@
 <div class="home-page-item-detail-box">
 
   <div class="item-main" >
-    <div class="item-title"> UM MUNDO NO QUAL AS PESSOAS SÃO LIVRES </div>
-    <div class="item-description"> Comunidade construída a partir da força do ecossistema empreendedor local, no poder da execução e na transformação pela coopetição. Venha fazer parte desse mundo. </div>
+    <div class="item-title"> {{contentObject.title}} </div>
+    <div class="item-description"> {{contentObject.description}} </div>
    </div>
 
 <div class="item-sub">
-  <div class="item-subtitle"> MEMBERSHIP </div>
-  <div class="item-subdescription"> Fique sabendo dos melhores eventos da região, encontre parceiros de negócios e clientes, explore todos os benefícios da nossa rede. Se você também quiser fazer parte da nossa equipe, temos as possibilidades: </div>
+  <div class="item-subtitle"> {{contentObject.subTitle}} </div>
+  <div class="item-subdescription"> {{contentObject.subDescription}} </div>
  </div>
 
 
   <div class="item-options">
-    <div class="option"> Parceiro </div>
-    <div class="option"> Franquiado </div>
-    <div class="option"> Mentor </div>
+    {{#each contentObject.options as |option| }}
+    <div class="option"> {{option}} </div>
+    {{/each}}
   </div>
 
   <div class="item-actions">
-    <div class="action-option"> <a> FAÇA PARTE </a> </div>
+    {{#each contentObject.itemActions as |itemAction| }}
+    <div class="action-option" href="{{itemAction.url}}"> <a> {{itemAction.title}} </a> </div>
+    {{/each}}
   </div>
+
+  {{#if (object-have-property 'email' object=contentObject)  }}
+    <a class="email-title"> Email </a>
+    <a class="email-content"> {{contentObject.email}} </a>
+
+    <a class="phone-title"> Telefone </a>
+    <a class="phone-content"> {{contentObject.phone}} </a>
+
+      <div class= "social-media-container">
+        <a class="twitter-button" href="{{contentObject.socialMedia.twitter.url}}">  </a>
+        <a class="facebook-button" href="{{contentObject.socialMedia.facebook.url}}">  </a>
+        <a class="instagram-button" href="{{contentObject.socialMedia.instagram.url}}">  </a>
+    </div>
+
+    <a class="copyright-footer"> {{contentObject.copyright}} </a>
+
+  {{/if}}
 
 </div>

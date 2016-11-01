@@ -58,7 +58,7 @@
       }
       &:hover, &:active {
         color: rgba(0,0,0,0.5);
-        font-size: 1.58em;
+        transform: scale(1.1,1.1);
       }
     }
   }
@@ -73,7 +73,7 @@
     margin-left: 1.0em;
     background-size: 75%;
   }
-  
+
   .navbar .app-menu {
     display: flex;
     height: var(--nav-bar-height);

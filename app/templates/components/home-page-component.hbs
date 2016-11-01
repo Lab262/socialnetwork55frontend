@@ -1,33 +1,40 @@
-    <div class="background-image">
-      <div class="background-filter"> </div>
-    </div>
+<div class="background-image">
+  <div class="background-filter"> </div>
+</div>
 
-  <div class="presentation-container">
-      <h1> {{contentObject.mainPhraseTitle}} </h1>
-      <h2> {{contentObject.mainPhraseDescription}} </h2>
+<div class="presentation-container">
+  <h1> {{contentObject.mainPhraseTitle}} </h1>
+  <h2> {{contentObject.mainPhraseDescription}} </h2>
+</div>
+
+<div class="actions-container {{if haveActionBarComponentActive 'show-details' '' }} ">
+
+  <div class="action-left {{if actionBarComponentsActive.[0] 'active' '' }}">
+    <a class="{{if actionBarComponentsActive.[0] 'active' '' }}" {{action 'selectItem' 0}} >{{contentObject.actionLeftTitle}}</a>
+  </div>
+  <div class="hover-content-left">
+    {{home-page-item-detail-box contentObject=leftDetailContentObject}}
   </div>
 
-  <div class="actions-container {{if haveActionBarComponentActive 'show-details' '' }} ">
-
-    <div class="action-left {{if actionBarComponentsActive.[0] 'active' '' }}">
-      <a class="{{if actionBarComponentsActive.[0] 'active' '' }}" {{action 'selectItem' 0}} >{{contentObject.actionLeftTitle}}</a>
-    </div>
-    <div class="hover-content-left"> {{home-page-item-detail-box}} </div>
-
-
-    <div class="action-center0 {{if actionBarComponentsActive.[1] 'active' '' }}">
-      <a id="center0-action"  class="{{if actionBarComponentsActive.[1] 'active' '' }}"  {{action 'selectItem' 1}}> {{contentObject.actionCenter0Title}} </a>
-    </div>
-    <div class="hover-content-center0">  </div>
-
-    <div class="action-center1 {{if actionBarComponentsActive.[2] 'active' '' }}">
-      <a id="center1-action" class="{{if actionBarComponentsActive.[2] 'active' '' }}" {{action 'selectItem' 2}}> {{contentObject.actionCenter1Title}} </a>
-    </div>
-    <div class="hover-content-center1">  </div>
-
-    <div class="action-right {{if actionBarComponentsActive.[3] 'active' '' }}">
-      <a id="right-action" class="{{if actionBarComponentsActive.[3] 'active' '' }}" {{action 'selectItem' 3}}>  {{contentObject.actionRightTitle}} </a>
-    </div>
-    <div class="hover-content-right">  </div>
-
+  <div class="action-center0 {{if actionBarComponentsActive.[1] 'active' '' }}">
+    <a id="center0-action"  class="{{if actionBarComponentsActive.[1] 'active' '' }}"  {{action 'selectItem' 1}}> {{contentObject.actionCenter0Title}} </a>
   </div>
+  <div class="hover-content-center0">
+    {{home-page-item-detail-box contentObject=center0DetailContentObject}}
+  </div>
+
+  <div class="action-center1 {{if actionBarComponentsActive.[2] 'active' '' }}">
+    <a id="center1-action" class="{{if actionBarComponentsActive.[2] 'active' '' }}" {{action 'selectItem' 2}}> {{contentObject.actionCenter1Title}} </a>
+  </div>
+  <div class="hover-content-center1">
+    {{home-page-item-detail-box contentObject=center1DetailContentObject}}
+  </div>
+
+  <div class="action-right {{if actionBarComponentsActive.[3] 'active' '' }}">
+    <a id="right-action" class="{{if actionBarComponentsActive.[3] 'active' '' }}" {{action 'selectItem' 3}}>  {{contentObject.actionRightTitle}} </a>
+  </div>
+  <div class="hover-content-right">
+    {{home-page-item-detail-box contentObject=rightDetailContentObject}}
+  </div>
+
+</div>
