@@ -1,0 +1,23 @@
+.home-page-item-detail-box {
+  height: $content-detail-height;
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  // margin: 0px;
+  // padding: 0px;
+  background: black;
+}
+
+@media screen and (min-width: 600px) {
+  .home-page-item-detail-box {
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .home-page-item-detail-box {
+
+  }
+}

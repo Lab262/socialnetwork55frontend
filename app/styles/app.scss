@@ -13,3 +13,8 @@
 @import 'foundation';
 @import 'home-page';
 @import 'top-bar';
+@import 'home-page-item-detail-box';
+
+html, body{
+  height: 100%; margin: 0px; padding: 0px;
+}

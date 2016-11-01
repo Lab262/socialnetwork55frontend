@@ -1,5 +1,7 @@
 $topbar-height: 70px;
 $actioncontainer-height: 85px;
+$actions-height: $actioncontainer-height * 4;
+$content-detail-height: 96vh;
 
 .home-page-container {
   width: 100%;
@@ -145,7 +147,7 @@ $actioncontainer-height: 85px;
       opacity: 0;
       transition: visibility 0s linear 300ms, opacity 300ms;
       top: $topbar-height;
-      bottom: $actioncontainer-height - 2px;
+      bottom: $actioncontainer-height;
       position: fixed;
       width: 25%;
       background: rgba(244,244,244,1);
@@ -231,7 +233,7 @@ $actioncontainer-height: 85px;
            visibility: visible;
            opacity: 1;
            transition: visibility 0s linear 0ms, opacity 300ms;
-           display: block;
+           display: inline-block;
 
           }
 
@@ -241,7 +243,7 @@ $actioncontainer-height: 85px;
             opacity: 0;
             left: 0;
             transition: visibility 0s linear 300ms, opacity 300ms;
-            height: 100vh;
+            height:  $content-detail-height;
             position: relative;
             width: 100%;
             background: rgba(244,244,244,1);
