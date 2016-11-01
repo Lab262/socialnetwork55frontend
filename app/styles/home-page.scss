@@ -63,15 +63,14 @@ $actioncontainer-height: 85px;
         height: $actioncontainer-height;
 
       a {
+        display: block;
         font-family: 'BebasNeue-Regular';
         height: $actioncontainer-height - 15px;
         color: white;
         width: 100%;
         text-align: center;
-        display: block;
         background: rgba(0,0,0,0);
-        vertical-align: middle;
-        padding-top: 10px;
+        line-height: $actioncontainer-height - 5px;
 
         &:hover {
           background: rgba(255,255,255,0.75);
@@ -124,6 +123,7 @@ $actioncontainer-height: 85px;
       .action-left, .action-center0, .action-center1, .action-right {
         a {
           font-size: 3vw;
+          // padding-top: 1vw;
         }
         width: 25%;
         border-right: 1px solid black;
@@ -137,8 +137,6 @@ $actioncontainer-height: 85px;
            opacity: 1;
            transition: visibility 0s linear 0ms, opacity 300ms;
           }
-
-
     }
 
     %extended-action-hover-content-base {
@@ -206,14 +204,66 @@ $actioncontainer-height: 85px;
             color: white;
           }
     }
+
+
+    .actions-container.show-details {
+      $actions-height: $actioncontainer-height * 4;
+      $content-detail-height: 100vh;
+      height: -webkit-calc(#{$actions-height} + #{$content-detail-height});
+      height:    -moz-calc(#{$actions-height} + #{$content-detail-height});
+      height:         calc(#{$actions-height} + #{$content-detail-height});
+    }
+
     .actions-container {
-      height: $actioncontainer-height * 4;
+      height: $actioncontainer-height * 4 ;
+
       .action-left, .action-center0, .action-center1, .action-right {
         width: 100%;
         a {
           font-size: 6vw;
         }
       }
+
+      .action-left.active + .hover-content-left,
+      .action-center0.active + .hover-content-center0,
+      .action-center1.active + .hover-content-center1,
+      .action-right.active + .hover-content-right {
+           visibility: visible;
+           opacity: 1;
+           transition: visibility 0s linear 0ms, opacity 300ms;
+           display: block;
+
+          }
+
+          %extended-action-hover-content-base-mobile {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            left: 0;
+            transition: visibility 0s linear 300ms, opacity 300ms;
+            height: 100vh;
+            position: relative;
+            width: 100%;
+            background: rgba(244,244,244,1);
+            &:hover {
+              visibility: visible;
+            }
+          }
+
+          .hover-content-left {
+            @extend %extended-action-hover-content-base-mobile;
+          }
+          .hover-content-center0 {
+            @extend %extended-action-hover-content-base-mobile;
+          }
+          .hover-content-center1 {
+            @extend %extended-action-hover-content-base-mobile;
+          }
+          .hover-content-right {
+            @extend %extended-action-hover-content-base-mobile;
+          }
     }
+
+
   }
 }

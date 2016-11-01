@@ -7,7 +7,7 @@
       <h2> Somos uma Co-lab que oferece comunidade, espaço e conhecimento que atendem às necessidades de uma nova geração de trabalhadores: mais criativos, colaborativos e inquietos. </h2>
   </div>
 
-  <div class="actions-container">
+  <div class="actions-container {{if haveActionBarComponentActive 'show-details' '' }} ">
 
     <div class="action-left {{if actionBarComponentsActive.[0] 'active' '' }}">
       <a class="{{if actionBarComponentsActive.[0] 'active' '' }}" {{action 'selectItem' 0}} >COMUNIDADE</a>
