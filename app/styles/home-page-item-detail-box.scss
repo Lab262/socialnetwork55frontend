@@ -4,12 +4,15 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  margin: 5%;
-  margin-top: 0;
+  top: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size-adjust: 0.5;
 
   .item-title {
+    padding-top: 5%;
     font-family: 'BebasNeue-Bold';
-    padding-bottom: 20px;
+    // padding-bottom: 1%;
   }
 
   .item-description {
@@ -47,7 +50,6 @@
     color: rgba(74,74,74,1);
     margin-bottom: 25px;
 
-
     .action-option {
       a {
         color: rgba(74,74,74,1);
@@ -73,12 +75,10 @@
 
     %extended-contact-title {
       font-family: 'BebasNeue-Bold';
-      font-size: 1.75vw;
       color: rgba(125,125,125,1);
     }
     %extended-contact-content {
       font-family: 'FjordOne-Regular';
-      font-size: 1.3vw;
       color: rgba(0,0,0,1);
     }
 
@@ -104,6 +104,7 @@
       padding: 25px;
       padding-left: 0px;
       padding-bottom: 100px;
+      -webkit-text-size-adjust: auto;
 
       %extended-social-media-button {
         display: block;
@@ -145,28 +146,31 @@
 
 @media screen and (min-width: 600px) {
   .home-page-item-detail-box {
-    height: $content-detail-height;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
 
     .item-title {
-      font-size: 3vw;
+      font-size: 2.7vw;
+      // font-size-adjust: 0.5;
     }
 
     .item-description {
-      font-size: 1.5vw;
+     font-size: 1.3vw;
 
     }
 
     .item-subtitle {
-      font-size: 2.2vw;
+      font-size: 1.9vw;
     }
 
     .item-subdescription{
-      font-size: 1.3vw;
+     font-size: 1.1vw;
 
     }
 
     .item-options {
-      font-size: 1.75vw;
+      font-size: 1.5vw;
       .option {
 
       }
@@ -181,20 +185,20 @@
     }
 
     .email-title {
-      font-size: 1.75vw;
+      font-size: 1.5vw;
     }
     .email-content {
-      font-size: 1.3vw;
+      font-size: 1.1vw;
     }
     .phone-title {
-      font-size: 1.75vw;
+      font-size: 1.5vw;
     }
     .phone-content {
-      font-size: 1.3vw;
+      font-size: 1.1vw;
     }
 
     .copyright-footer{
-      font-size: 1.2vw;
+      font-size: 1vw;
     }
   }
 }

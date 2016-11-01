@@ -147,7 +147,7 @@ $content-detail-height-mobile: 220vw;
       visibility: hidden;
       opacity: 0;
       transition: visibility 0s linear 300ms, opacity 300ms;
-      top: $topbar-height;
+      top: 0;
       bottom: $actioncontainer-height;
       position: fixed;
       width: 25%;
