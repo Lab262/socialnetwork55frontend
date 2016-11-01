@@ -98,6 +98,7 @@
 
 @media screen and (max-width: 680px) {
   .navbar {
+
     justify-content: center;
     flex-direction: column;
     position: relative;
@@ -118,8 +119,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      bottom: 0;
-      position: absolute;
+
 
       .nav-button {
         border-top: calc(var(--items-border-size)/2) solid white;
