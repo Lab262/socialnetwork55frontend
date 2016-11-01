@@ -4,9 +4,9 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  top: 0;
-  margin-left: 5%;
-  margin-right: 5%;
+  top: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
   font-size-adjust: 0.5;
 
   .item-title {
@@ -82,26 +82,31 @@
     }
 
     .email-title {
+      margin-top: -100px;
       @extend %extended-contact-title ;
     }
     .email-content {
       @extend %extended-contact-content ;
-      margin-bottom: 25px;
+      margin-top: -20px;
+
+      // margin-bottom: 25px;
     }
     .phone-title {
       @extend %extended-contact-title ;
     }
     .phone-content {
       @extend %extended-contact-content ;
+      margin-top: -20px;
+
     }
 
     .social-media-container {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      justify-content: start;
-      padding: 25px;
-      padding-left: 0px;
+      justify-content: flex-start;
+      padding: 20px;
+      padding-left: 10px;
       padding-bottom: 100px;
       -webkit-text-size-adjust: auto;
 
@@ -150,8 +155,8 @@
     overflow: hidden;
 
     .item-title {
-      font-size: 2.5vw;
-      line-height: 3vw;
+      font-size: 3vw;
+      line-height: 3.6vw;
       // font-size-adjust: 0.5;
     }
 
