@@ -1,23 +1,122 @@
 .home-page-item-detail-box {
-  height: $content-detail-height;
 
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  // margin: 0px;
-  // padding: 0px;
-  background: black;
+  margin: 5%;
+
+
+  .item-title {
+    font-family: 'BebasNeue-Bold';
+    padding-bottom: 20px;
+  }
+
+  .item-description {
+    font-family: 'FjordOne-Regular';
+    color: rgba(74,74,74,1);
+  }
+
+  .item-subtitle {
+    font-family: 'BebasNeue-Bold';
+  }
+
+  .item-subdescription{
+    font-family: 'FjordOne-Regular';
+    color: rgba(74,74,74,1);
+  }
+
+  .item-options {
+    font-family: 'BebasNeue-Bold';
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .option {
+
+    }
+  }
+
+  .item-actions {
+    .action-option {
+
+    }
+  }
+
 }
 
 @media screen and (min-width: 600px) {
   .home-page-item-detail-box {
+    height: $content-detail-height;
 
+    .item-title {
+      font-size: 3vw;
+    }
+
+    .item-description {
+      font-size: 1.5vw;
+
+    }
+
+    .item-subtitle {
+      font-size: 2.2vw;
+    }
+
+    .item-subdescription{
+      font-size: 1.3vw;
+
+    }
+
+    .item-options {
+      font-size: 1.75vw;
+      .option {
+
+      }
+    }
+
+    .item-actions {
+      .action-option {
+
+      }
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .home-page-item-detail-box {
+    height: $content-detail-height-mobile;
+
+    .item-title {
+      font-size: 10vw;
+    }
+
+    .item-description {
+      font-size: 5.5vw;
+    }
+
+    .item-subtitle {
+      font-size: 8vw;
+    }
+
+    .item-subdescription{
+      font-size: 5.2vw;
+
+    }
+
+    .item-options {
+      font-size: 6.5vw;
+
+      .option {
+
+      }
+    }
+
+    .item-actions {
+      .action-option {
+
+      }
+    }
 
   }
 }

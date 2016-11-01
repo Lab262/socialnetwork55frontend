@@ -2,6 +2,7 @@ $topbar-height: 70px;
 $actioncontainer-height: 85px;
 $actions-height: $actioncontainer-height * 4;
 $content-detail-height: 96vh;
+$content-detail-height-mobile: 220vw;
 
 .home-page-container {
   width: 100%;
@@ -210,10 +211,9 @@ $content-detail-height: 96vh;
 
     .actions-container.show-details {
       $actions-height: $actioncontainer-height * 4;
-      $content-detail-height: 100vh;
-      height: -webkit-calc(#{$actions-height} + #{$content-detail-height});
-      height:    -moz-calc(#{$actions-height} + #{$content-detail-height});
-      height:         calc(#{$actions-height} + #{$content-detail-height});
+      height: -webkit-calc(#{$actions-height} + #{$content-detail-height-mobile});
+      height:    -moz-calc(#{$actions-height} + #{$content-detail-height-mobile});
+      height:         calc(#{$actions-height} + #{$content-detail-height-mobile});
     }
 
     .actions-container {
@@ -243,7 +243,7 @@ $content-detail-height: 96vh;
             opacity: 0;
             left: 0;
             transition: visibility 0s linear 300ms, opacity 300ms;
-            height:  $content-detail-height;
+            height:  $content-detail-height-mobile;
             position: relative;
             width: 100%;
             background: rgba(244,244,244,1);
