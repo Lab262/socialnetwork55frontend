@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: space-around;
   margin: 5%;
-
+  margin-top: 0;
 
   .item-title {
     font-family: 'BebasNeue-Bold';
@@ -39,8 +39,28 @@
   }
 
   .item-actions {
-    .action-option {
+    font-family: 'BebasNeue-Bold';
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    color: rgba(74,74,74,1);
+    margin-bottom: 25px;
 
+
+    .action-option {
+      a {
+        color: rgba(74,74,74,1);
+        background-color: rgba(216,216,216,1);
+        padding: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        &:hover {
+          color: rgba(74,74,74,0.5);
+
+        }
+      }
     }
   }
 
@@ -76,6 +96,8 @@
     }
 
     .item-actions {
+      font-size: 1.3vw;
+
       .action-option {
 
       }
@@ -113,6 +135,8 @@
     }
 
     .item-actions {
+      font-size: 5.2vw;
+
       .action-option {
 
       }
