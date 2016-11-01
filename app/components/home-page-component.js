@@ -10,7 +10,7 @@ export default Ember.Component.extend({
     actionLeftTitle: "COMUNIDADE",
     actionCenter0Title: "ESPAÇO DE TRABALHO",
     actionCenter1Title: "CONHECIMENTO",
-    actionRightTitle: "CONTATO"
+    actionRightTitle: "CONTATOS"
   },
 
   leftDetailContentObject: {

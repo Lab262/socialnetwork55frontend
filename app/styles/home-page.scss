@@ -1,5 +1,5 @@
 $topbar-height: 70px;
-$actioncontainer-height: 85px;
+$actioncontainer-height: 75px;
 $actions-height: $actioncontainer-height * 4;
 $content-detail-height: 96vh;
 $content-detail-height-mobile: 220vw;
@@ -101,22 +101,23 @@ $content-detail-height-mobile: 220vw;
     }
     .presentation-container {
       position: relative;
-      width: 65%;
+      width: 55%;
       height: 49.75vw;
       top: $topbar-height;
 
-      margin-left: 2.0em;
+      margin-left: 8.0em;
+      padding-bottom: 4.9em;
 
           h1 {
             font-family: 'BebasNeue-Bold';
-            font-size: 6vw;
+            font-size: 5.5vw;
             color: white;
-            //  margin-bottom: -10px;
           }
           h2 {
             font-family: 'FjordOne-Regular';
-            font-size: 2.05vw;
+            font-size: 1.6vw;
             color: white;
+            margin-top: -0.5em;
           }
     }
     .actions-container {
@@ -125,7 +126,7 @@ $content-detail-height-mobile: 220vw;
 
       .action-left, .action-center0, .action-center1, .action-right {
         a {
-          font-size: 3vw;
+          font-size: 2vw;
           // padding-top: 1vw;
         }
         width: 25%;

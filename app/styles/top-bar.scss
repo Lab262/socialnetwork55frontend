@@ -16,8 +16,8 @@
   // z-index: 9999;
 
   .app-logo {
-    height: 30px;
-    width: 98px;
+    height: 37.5px;
+    width: 125px;
     background-image: url("/assets/images/logo.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -39,6 +39,7 @@
   .app-menu {
     font-color: black;
     color: black;
+
     a {
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
@@ -50,7 +51,7 @@
       padding: 1.2em;
       margin: -1.2em;
       font-family: 'FjordOne-Regular';
-      font-size: 22px;
+      font-size: 16px;
 
       &:visited, &:link {
         color: black;
@@ -70,7 +71,7 @@
     top: 0;
   }
   .app-logo {
-    margin-left: 1.0em;
+    margin-left: 5.0em;
     background-size: 75%;
   }
 
@@ -78,9 +79,11 @@
     display: flex;
     height: var(--nav-bar-height);
     align-items: center;
-    padding-right: 1.0em;
+    padding-right: 5.0em;
 
     a {
+      padding-left: 0;
+      margin-left: -25px;
       line-height: calc(var(--nav-bar-height)/2);
     }
 
@@ -115,6 +118,9 @@
       align-items: center;
       justify-content: center;
       text-align: center;
+      bottom: 0;
+      position: absolute;
+
       .nav-button {
         border-top: calc(var(--items-border-size)/2) solid white;
         padding: calc(var(--items-padding-height) * 5) var(--items-padding-width);

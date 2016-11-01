@@ -12,7 +12,6 @@
   .item-title {
     padding-top: 5%;
     font-family: 'BebasNeue-Bold';
-    // padding-bottom: 1%;
   }
 
   .item-description {
@@ -151,11 +150,13 @@
     overflow: hidden;
 
     .item-title {
-      font-size: 2.7vw;
+      font-size: 2.5vw;
+      line-height: 3vw;
       // font-size-adjust: 0.5;
     }
 
     .item-description {
+      padding-top: 1.5vw;
      font-size: 1.3vw;
 
     }
