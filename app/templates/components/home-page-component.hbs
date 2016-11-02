@@ -38,3 +38,6 @@
   </div>
 
 </div>
+  {{#if (array-have-true-value array=actionBarComponentsActive) }}
+      <div class="action-detail-cover-background" {{action 'unselectItems'}}>  </div>
+  {{/if}}

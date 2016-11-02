@@ -47,7 +47,7 @@ $content-detail-height-mobile: 220vw;
     background : rgba(75,75,75,0.9);
     width: 100%;
     height: $actioncontainer-height;
-
+    z-index: 1;
     .action-left{
       border-top: 15px solid rgba(93,93,93,1);
     }
@@ -87,7 +87,6 @@ $content-detail-height-mobile: 220vw;
         color: black;
       }
     }
-
   }
 }
 
@@ -178,7 +177,15 @@ $content-detail-height-mobile: 220vw;
       @extend %extended-action-hover-content-base;
       left: 75%;
     }
+  }
 
+  .action-detail-cover-background {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom:0;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
   }
 }
 
@@ -293,7 +300,5 @@ $content-detail-height-mobile: 220vw;
             @extend %extended-action-hover-content-base-mobile;
           }
     }
-
-
   }
 }
