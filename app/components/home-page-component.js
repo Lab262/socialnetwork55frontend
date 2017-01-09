@@ -19,7 +19,7 @@ export default Ember.Component.extend({
     subTitle: "MEMBERSHIP",
     subDescription: "Fique sabendo dos melhores eventos da região, encontre parceiros de negócios e clientes, explore todos os benefícios da nossa rede. Se você também quiser fazer parte da nossa equipe, temos as possibilidades:",
     options: ["Parceiro", "Franquiado", "Mentor"],
-    itemActions: [{url: "", title: "Faça Parte"}]
+    itemActions: [{url: "/community", title: "Faça Parte"}]
   },
 
   center0DetailContentObject: {

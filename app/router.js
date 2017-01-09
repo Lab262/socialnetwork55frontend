@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('home-page', {
     path: '/'
   });
+  this.route('community');
 });
 
 export default Router;

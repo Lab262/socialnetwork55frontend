@@ -13,13 +13,13 @@
 
   <div class="item-options">
     {{#each contentObject.options as |option| }}
-    <div class="option"> {{option}} </div>
+     <div class="option"> {{option}} </div>
     {{/each}}
   </div>
 
   <div class="item-actions">
     {{#each contentObject.itemActions as |itemAction| }}
-    <div class="action-option" href="{{itemAction.url}}"> <a> {{itemAction.title}} </a> </div>
+    <a class="action-option" href="{{itemAction.url}}"> <a> {{itemAction.title}} </a> </a>
     {{/each}}
   </div>
 
