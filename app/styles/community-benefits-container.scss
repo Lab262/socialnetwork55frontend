@@ -1,0 +1,40 @@
+.community-benefits-container {
+    background: pink;
+    height: 75vw;
+
+    .divider {
+        background: blue;
+        width: 100%;
+        height: 15%;
+        display: block;
+        .divider-rect{
+            position:relative;
+            top: 75%;
+            background: black;
+            height: 5px;
+            width: 10vw;
+            left: 7.5vw;
+        }
+    }
+
+    .title {
+        background: red;
+        width: 100%; 
+                height: 15%;
+    }
+
+    .benefits-content-container {
+
+        background: yellow;
+        width: 100%;
+        height: 65%;
+
+    }
+
+    .actions-container {
+        background: red;
+        width: 100%;
+        height: 10%;
+
+    }
+}
