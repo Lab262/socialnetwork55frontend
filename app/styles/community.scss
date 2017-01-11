@@ -3,83 +3,146 @@ $actioncontainer-height: 75px;
 $actions-height: $actioncontainer-height * 4;
 $content-detail-height: 96vh;
 $content-detail-height-mobile: 220vw;
-
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
 .community-container {
   width: 100%;
   height: 100%;
-  display:  flex;
-  flex-direction: column;
-
+  position: absolute;
+  // display:  flex;
+  // flex-direction: column;
+  
   .community-fixed-background {
-
-     .background-image {
-
     position: fixed;
     left: 0;
     right: 0;
     z-index: -999;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
-    background-image: url('/assets/images/background-image.png');
     width: 100%;
-    height: 100%;
+    height: 40vw;
 
-    .background-filter {
-      background: rgba(0,0,0,0.7);
-      width: 100%;
-      height: 100%;
-    }
+     .background-image {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        background-image: url('/assets/images/background-image.png');
+        width: 100%;
+        height: 100%;
+
+      .background-filter {
+        background: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 100%;
+      }
 
   }
 
   .presentation-container {
-    display: flex;
+    position: absolute;
+    top: 20vw;
+    z-index: -999;
+  }
+
+  }
+
+  .community-detail-content {
     flex-direction: column;
     justify-content: center;
-  }
+    position: relative;
+    display: block;
+    width: 100%;
+               z-index: 1;
 
-  }
- 
+    .background-over-container {
+      height: 60vh;
+    }
 
+     .community-advantages-intro-container {       
+       display: flex;
+       height: 54vw;
+       background: white;  
+
+     .community-advantages-intro {
+       
+       background: white;
+        height: 100%;
+        width: 100%;
+        margin-top: 5vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+
+         .membership-main-description {
+           height: 34vw;
+           width: 55vw;
+           bottom: -1%;
+           right: 6.5%;
+           z-index:1;
+           overflow: visible;
+           position: absolute;
+           background: green;
+
+         }
+
+       .membership-main-picture {
+           background: blue;
+         height: 48vw;
+           width: 48vw;
+          overflow: visible;
+          margin-right: 40%;
+                     z-index:2;
+
+       }
+       
+         .membership-main-title {
+           background: yellow;
+           height: 11vw;
+           width: 32.5vw;
+           right: 31%;
+           top: 13%;
+           overflow: visible;
+           position: absolute;
+           z-index:3;
+
+         }
+    }
+     }
+  }
 }
-
-
-
 
 
 @media screen and (min-width: 600px) {
   .community-container {
-   
    .community-fixed-background {
-   
-    .background-image {
-      .background-filter {
-      }
-    }
     .presentation-container {
-      position: relative;
-      width: 55%;
-      height: 49.75vw;
+
       top: $topbar-height;
-
+      height: 82.5%;
+      display: flex;
+      align-items: center;
       margin-left: 8.0em;
-      padding-bottom: 4.9em;
-
           h1 {
             font-family: 'BebasNeue-Bold';
-            font-size: 5.5vw;
+            font-size: 8.0vw;
             color: white;
-          }
-          h2 {
-            font-family: 'FjordOne-Regular';
-            font-size: 1.6vw;
-            color: white;
-            margin-top: -0.5em;
           }
     }
    }
 }
+
+.community-detail-content { 
+    margin-top: $topbar-height;
+  }
 
 }
 
@@ -120,24 +183,27 @@ $content-detail-height-mobile: 220vw;
     .presentation-container {
       position: relative;
       width: 85%;
-      height: 100vw;
-      top: 20px;
+      top: 15vw;
 
       margin-left: 1.0em;
           h1 {
             font-family: 'BebasNeue-Bold';
-            font-size: 9vw;
+            font-size: 10vw;
             color: white;
             //  margin-bottom: -10px;
           }
-          h2 {
-            font-family: 'FjordOne-Regular';
-            font-size: 3.5vw;
-            color: white;
-          }
+
     }
 
   }
+
+   .community-detail-content {
+     .community-advantages-intro-container {       
+     .community-advantages-intro {
+        margin-top: 5vw;
+     }
+      }
+   }
     
 }
 }
