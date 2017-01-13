@@ -1,0 +1,54 @@
+
+.community-relationship-intro-container {       
+       display: flex;
+       height: 54vw;
+       background: white;  
+
+     .community-relationship-intro {
+       
+       background: white;
+        height: 100%;
+        width: 100%;
+        margin-top: 5vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+
+         .relationship-main-description {
+           height: 22.5vw;
+           width: 55vw;
+           bottom: 15%;
+           left: 6.5%;
+           z-index:1;
+           overflow: visible;
+           position: absolute;
+           background: green;
+
+         }
+
+       .relationship-main-picture {
+           background: blue;
+        height: 48vw;
+           width: 48vw;
+          overflow: visible;
+          margin-left: 40%;
+                     z-index:2;
+
+       }
+       
+         .relationship-main-title {
+           background: yellow;
+           height: 11vw;
+           width: 40vw;
+           left: 15%;
+           top: 13%;
+           overflow: visible;
+           position: absolute;
+           z-index:3;
+
+         }
+    }
+     }
