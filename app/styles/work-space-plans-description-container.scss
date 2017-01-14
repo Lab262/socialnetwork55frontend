@@ -2,68 +2,6 @@
     background: white;
     height: auto;
 
-    .image {
-        content: url('/assets/images/iconPlan.png');
-        width: 38.4px;
-        height: 32px;
-        margin-left: 40%;
-    }
-
-    .title {
-        margin-top:-60%;
-        margin-left: 10%;
-        width: 100%; 
-        height: 15%;
-       h1 {
-           height: 100%;
-            font-family: 'BebasNeue-Bold';
-            font-size: 2vw;
-            color: black;
-       }
-    }
-
-    .second-title {
-        margin-top:-20%;
-        margin-left: 10%;
-        width: 100%; 
-        height: 15%;
-       h1 {
-           height: 100%;
-            font-family: 'BebasNeue-Bold';
-            font-size: 2vw;
-            color: black;
-       }
-    }
-
-
-    .description {
-        margin-top:-60%;
-        margin-left: 10%;
-        margin-right: 8%;
-        width: 100%; 
-        height: 15%;
-       h1 {
-           height: 100%;
-            font-family: 'Aleo';
-            font-size: 1.2vw;
-            color: #262626;
-       }
-    }
-
-    .second-description {
-        margin-top:-85%;
-        margin-left: 10%;
-        margin-right: 8%;
-        width: 100%; 
-        height: 15%;
-       h1 {
-           height: 100%;
-            font-family: 'Aleo';
-            font-size: 1.2vw;
-            color: #262626;
-       }
-    }
-
     .work-space-plans-description-container {
         padding-right: 6vw;
         padding-left: 6vw;
@@ -86,9 +24,42 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-        }
 
-         .work-space-plans-description-content-button{
+            .image {
+                content: url('/assets/images/iconPlan.png');
+                width: 38.4px;
+                height: 32px;
+                margin-left: 40%;
+            }
+
+             .title {
+                 margin-top:-60%;
+                 margin-left: 10%;
+                 width: 100%; 
+                 height: 15%;
+                 h1 {
+                     height: 100%;
+                     font-family: 'BebasNeue-Bold';
+                     font-size: 2vw;
+                     color: black;
+                 }
+             }
+
+          .description {
+            margin-top:-60%;
+            margin-left: 10%;
+            margin-right: 8%;
+            width: 100%; 
+            height: 15%;
+            h1 {
+                height: 100%;
+                font-family: 'Aleo';
+                font-size: 1.2vw;
+                color: #262626;
+                }
+            }
+
+            .work-space-plans-description-content-button{
             position: relative;
             margin-left: -9vw;
             top: 70%;
@@ -103,5 +74,8 @@
             justify-content: center;
             font-family: 'BebasNeue-Bold';
         }
+    }
+
+         
     }
 }

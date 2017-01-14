@@ -1,21 +1,8 @@
-$topbar-height: 70px;
-$actioncontainer-height: 75px;
-$actions-height: $actioncontainer-height * 4;
-$content-detail-height: 96vh;
-$content-detail-height-mobile: 220vw;
-html{
-  height: 100%;
-}
-body{
-  height: 100%;
-}
-
 .work-space-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
   
   .work-space-fixed-background {
     position: fixed;
