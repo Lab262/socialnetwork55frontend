@@ -1,0 +1,56 @@
+.knowledge-advantages-intro-container {       
+       display: flex;
+       height: auto;
+       width: auto;
+       align-content: center;
+       background: white;  
+       display: block;
+
+     .knowledge-advantages-intro {
+       
+       background: white;
+        height: 100%;
+        width: 100%;
+        margin-top: 5vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+
+         .membership-main-description {
+           height: 34vw;
+           width: 55vw;
+           bottom: -1%;
+           right: 6.5%;
+           z-index:1;
+           overflow: visible;
+           position: absolute;
+           background: green;
+
+         }
+
+       .membership-main-picture {
+           background: blue;
+         height: 48vw;
+           width: 48vw;
+          overflow: visible;
+          margin-right: 40%;
+                     z-index:2;
+
+       }
+       
+         .membership-main-title {
+           background: yellow;
+           height: 11vw;
+           width: 32.5vw;
+           right: 31%;
+           top: 13%;
+           overflow: visible;
+           position: absolute;
+           z-index:3;
+
+         }
+    }
+}

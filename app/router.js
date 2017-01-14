@@ -11,6 +11,7 @@ Router.map(function() {
     path: '/'
   });
   this.route('community');
+  this.route('knowledge');
 });
 
 export default Router;
