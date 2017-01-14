@@ -75,6 +75,7 @@
            z-index:3;
            background:url(/assets/images/background_button_membership.png);
            background-size:100%; 
+           background-repeat: no-repeat;
            
            h1 {
             font-family: 'BebasNeue-Bold';
@@ -82,8 +83,6 @@
             color: white;
             margin-top: 5%;
             margin-right: 10%;
-
-            //  margin-bottom: -10px;
           }
 
          }
