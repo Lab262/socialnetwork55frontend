@@ -1,0 +1,170 @@
+$topbar-height: 70px;
+$actioncontainer-height: 75px;
+$actions-height: $actioncontainer-height * 4;
+$content-detail-height: 96vh;
+$content-detail-height-mobile: 220vw;
+html{
+  height: 100%;
+}
+body{
+  height: 100%;
+}
+
+.knowledge-container {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+
+  .divider {  
+        width: 100%;
+        height: 20vw;
+        display: block;     
+       
+        .divider-rect{
+            position:absolute;
+            background:#d6005b;
+            height: 13px;
+            width: 100%;
+            bottom:0;
+        }
+    }
+  
+  .knowledge-fixed-background {
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -999;
+    width: 100%;
+    height: 40vw;
+    
+    
+
+
+     .background-image {
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: -999;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        background-image: url('/assets/images/background-image.png');
+        width: 100%;
+        height: 100%;
+
+      .background-filter {
+        background: rgba(0,0,0,0.7);
+        width: 100%;
+        height: 100%;
+      }
+
+     }
+
+  .presentation-container {
+    position: absolute;
+    top: 20vw;
+    z-index: -999;
+  }
+
+  }
+
+  .knowledge-detail-content {
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    display: block;
+    width: 100%;
+               z-index: 1;
+
+    .background-over-container {
+      height: 60vh;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .knowledge-container {
+   .knowledge-fixed-background {
+    .presentation-container {
+
+      top: $topbar-height;
+      height: 82.5%;
+      display: flex;
+      align-items: center;
+      margin-left: 8.0em;
+          h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 8.0vw;
+            color: white;
+          }
+    }
+   }
+}
+
+.knowledge-detail-content { 
+    margin-top: $topbar-height;
+  }
+
+}
+
+
+@media screen and (max-width: 600px) {
+  
+  .knowledge-container {
+  .knowledge-fixed-background {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+
+    .navbar {
+      -webkit-box-ordinal-group: 2;
+      -moz-box-ordinal-group: 2;
+      -ms-flex-order: 2;
+      -webkit-order: 2;
+      order: 2;
+
+    }
+    .background-image {
+      -webkit-box-ordinal-group: 1;
+      -moz-box-ordinal-group: 1;
+      -ms-flex-order: 1;
+      -webkit-order: 1;
+      order: 1;
+
+      .background-filter {
+      }
+    }
+    .presentation-container {
+      position: relative;
+      width: 85%;
+      top: 15vw;
+
+      margin-left: 1.0em;
+          h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 10vw;
+            color: white;
+          }
+
+    }
+
+  }
+
+   .knowledge-detail-content {
+     .knowledge-advantages-intro-container {       
+     .knowledge-advantages-intro {
+        margin-top: 5vw;
+     }
+      }
+   }
+  }
+}

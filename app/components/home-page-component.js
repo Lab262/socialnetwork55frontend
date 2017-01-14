@@ -37,7 +37,7 @@ export default Ember.Component.extend({
     subTitle: "Acelere.me",
     subDescription: "Nossa parceira em promoção de Eventos e Cursos para você compartilhar ou adquirir novas ideias empreendedoras.",
     options: [],
-    itemActions: [{url: "", title: "Saiba o que está rolando"}]
+    itemActions: [{url:"/knowledge", title: "Saiba o que está rolando"}]
   },
 
   rightDetailContentObject: {

@@ -12,6 +12,7 @@ Router.map(function() {
   });
   this.route('community');
   this.route('work-space');
+  this.route('knowledge');
 });
 
 export default Router;

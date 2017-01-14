@@ -1,0 +1,89 @@
+.knowledge-advantages-intro-container {       
+       display: flex;
+       height: auto;
+       width: auto;
+       align-content: center;
+       background: #f7f7f7;  
+       display: block;
+       margin-top: 4%;
+       padding-top: 1%;
+
+     .knowledge-advantages-intro {
+       
+       background: #f7f7f7;
+        height: 100%;
+        width: 100%;
+        margin-top: 5vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+
+         .membership-main-description {
+           height: 35vw;
+           width: 45vw;
+           bottom: -50%;
+           left: 40%;
+           z-index:1;
+           overflow: visible;
+           position: absolute;
+           background-image:url(/assets/images/knowledge_description_container.png);
+           background-size:100%; 
+           
+           h1 {
+            font-family: 'aleo-regular-webfont';
+            font-size: 1.2vw;
+            color: black;
+            text-align: justify;
+            margin-top: 15%;
+            margin-left: 17%;
+            margin-right: 17%;
+            line-height: 1.5em;
+          }
+         }
+
+       .membership-main-picture {
+           height: 30vw;
+           width: 30vw;
+           overflow: visible;
+           margin-right: 45%;
+           z-index:2;
+           content:url(/assets/images/knowledge-picture.png);
+       }
+
+       .membership-detail-main-picture {
+           height: 10vw;
+           width: 10vw;
+           overflow: visible;
+           z-index:99;
+           margin-right: -25%;
+           margin-top: -3%;
+           content:url(/assets/images/retangleLogo.png);
+       }
+       
+         .membership-main-title {
+           height: 22%;
+           width: 22%;
+           right: 39%;
+           top: 13%;
+           overflow: auto;
+           position: absolute;
+           z-index:3;
+           background:url(/assets/images/background_button_knowledge.png);
+           background-size:100%; 
+           
+           h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 3.5vw;
+            color: white;
+            margin-top: 5%;
+            margin-right: 10%;
+
+            //  margin-bottom: -10px;
+          }
+
+         }
+    }
+}
