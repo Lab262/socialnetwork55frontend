@@ -1,0 +1,107 @@
+ .work-space-plans-description-container {
+    background: white;
+    height: auto;
+
+    .image {
+        content: url('/assets/images/iconPlan.png');
+        width: 38.4px;
+        height: 32px;
+        margin-left: 40%;
+    }
+
+    .title {
+        margin-top:-60%;
+        margin-left: 10%;
+        width: 100%; 
+        height: 15%;
+       h1 {
+           height: 100%;
+            font-family: 'BebasNeue-Bold';
+            font-size: 2vw;
+            color: black;
+       }
+    }
+
+    .second-title {
+        margin-top:-20%;
+        margin-left: 10%;
+        width: 100%; 
+        height: 15%;
+       h1 {
+           height: 100%;
+            font-family: 'BebasNeue-Bold';
+            font-size: 2vw;
+            color: black;
+       }
+    }
+
+
+    .description {
+        margin-top:-60%;
+        margin-left: 10%;
+        margin-right: 8%;
+        width: 100%; 
+        height: 15%;
+       h1 {
+           height: 100%;
+            font-family: 'Aleo';
+            font-size: 1.2vw;
+            color: #262626;
+       }
+    }
+
+    .second-description {
+        margin-top:-85%;
+        margin-left: 10%;
+        margin-right: 8%;
+        width: 100%; 
+        height: 15%;
+       h1 {
+           height: 100%;
+            font-family: 'Aleo';
+            font-size: 1.2vw;
+            color: #262626;
+       }
+    }
+
+    .work-space-plans-description-container {
+        padding-right: 6vw;
+        padding-left: 6vw;
+        background: white;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        .work-space-plans-description-content-item {
+            background: #e8f0ff;
+            margin: 3px;
+            height: 21.5vw;
+            width: 21.5vw;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+         .work-space-plans-description-content-button{
+            position: relative;
+            margin-left: -9vw;
+            top: 70%;
+            background:#083054;
+            color:bla;
+            height: 3vw;
+            width: 10vw;
+            font-size: 130%;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            font-family: 'BebasNeue-Bold';
+        }
+    }
+}

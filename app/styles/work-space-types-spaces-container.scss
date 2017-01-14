@@ -2,22 +2,6 @@
     background: white;
     height: auto;
 
-    .divider {
-
-        width: 100%;
-        height: 20vw;
-        display: block;
-        .divider-rect{
-
-            position:relative;
-            top: 75%;
-            background: black;
-            height: 5px;
-            width: 10vw;
-            left: 7.5vw;
-        }
-    }
-
     .description {
         // margin-top:2%;
         margin-bottom: -100%;
@@ -35,7 +19,7 @@
 
         padding: 5%;
         padding-bottom: 15%;
-        background: yellow;
+        background: white;
         width: 100%;
         height: auto;
         display: flex;
