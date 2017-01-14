@@ -8,6 +8,7 @@
 @include font-face('FjordOne-Regular');
 @include font-face('BebasNeue-Bold');
 @include font-face('BebasNeue-Regular');
+@include font-face('aleo-regular-webfont');
 
 @import 'foundation';
 @import 'home-page';
@@ -22,6 +23,7 @@
 @import 'knowledge';
 @import 'knowledge-advantage-container';
 @import 'knowledge-events-container';
+@import 'knowledge-opnion-container';
 html, body{
   height: 100%; margin: 0px; padding: 0px;
 }

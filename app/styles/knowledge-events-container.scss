@@ -1,5 +1,5 @@
 .knowledge-events-container {
-    background: white;
+    background: #f7f7f7;
     height: auto;
     // margin-top: 200px;
 
@@ -12,7 +12,7 @@
         .divider-rect{
             position:relative;
             top: 75%;
-            background: yellow;
+            background: #f5c442;
             height: 5px;
             width: 10vw;
             left: 7.5vw;
@@ -47,8 +47,10 @@
         .knowledge-content-item {
             width: 100%;
             height: 100%;
-            content: url("/assets/images/Artboard.png");
+            content: url("/assets/images/knowledge_table_events.png");
             position: relative;
+            margin-right: 7.5vw;
+           
         }
 
     }

@@ -16,6 +16,20 @@ body{
   position: absolute;
   display: flex;
   flex-wrap: wrap;
+
+  .divider {  
+        width: 100%;
+        height: 20vw;
+        display: block;     
+       
+        .divider-rect{
+            position:absolute;
+            background:#d6005b;
+            height: 13px;
+            width: 100%;
+            bottom:0;
+        }
+    }
   
   .knowledge-fixed-background {
     position: fixed;
@@ -24,6 +38,9 @@ body{
     z-index: -999;
     width: 100%;
     height: 40vw;
+    
+    
+
 
      .background-image {
         position: absolute;

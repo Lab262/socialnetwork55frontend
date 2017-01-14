@@ -1,0 +1,72 @@
+.knowledge-opnion-container {       
+       display: block;
+       height: auto;
+      
+    //    direction: rtl;   
+
+       
+     %knowledge-opnion-intro-container {
+        background: white;
+        height: 100%;
+        width: 100%;
+        // margin-bottom: 5vw;
+        overflow: visible;
+        position: relative;
+        z-index: 1;
+      
+      
+      }
+
+     .knowledge-opnion-intro-container-first {
+         @extend %knowledge-opnion-intro-container;
+                          float: right;
+                          
+    }
+
+     .opnion-main-description-first {
+           height: 15vw;
+           width: 32vw;
+           bottom: 5vw;
+           left: 40vw;
+           z-index:1;
+           overflow: visible;
+           position: absolute;
+            content:url(/assets/images/knowledge_comentary_left.png);
+            margin-top: 30vw;
+         }
+
+       .opnion-main-picture-first {
+           height: 30vw;
+           width: 30vw;
+          overflow: visible;
+          margin-top: 5vw;
+          margin-left: 10%;
+                     z-index:2;
+          content:url(/assets/images/knowledge_image_comentary.png);
+       }
+
+         .knowledge-opnion-intro-container-second {
+             @extend %knowledge-opnion-intro-container;
+              float: left;
+
+         .opnion-main-description-second {
+                 height: 15vw;
+                 width: 32vw;
+                 bottom:4vw;
+                 left: 33%;
+                 z-index:1;
+                 overflow: visible;
+                 position: absolute;
+                content:url(/assets/images/knowledge_comentary_right.png); 
+         }
+
+       .opnion-main-picture-second {
+          height: 30vw;
+           width: 30vw;
+           overflow: visible;
+           margin-left: 65%;
+           z-index:2;
+          content:url(/assets/images/knowledge_image_comentary.png);
+       }
+         }
+  }
