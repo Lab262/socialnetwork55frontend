@@ -11,6 +11,7 @@ Router.map(function() {
     path: '/'
   });
   this.route('community');
+  this.route('work-space');
 });
 
 export default Router;

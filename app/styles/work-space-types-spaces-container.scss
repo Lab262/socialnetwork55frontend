@@ -1,0 +1,74 @@
+.work-space-types-spaces-container {
+    background: white;
+    height: auto;
+
+    .divider {
+
+        width: 100%;
+        height: 20vw;
+        display: block;
+        .divider-rect{
+
+            position:relative;
+            top: 75%;
+            background: black;
+            height: 5px;
+            width: 10vw;
+            left: 7.5vw;
+        }
+    }
+
+    .description {
+        // margin-top:2%;
+        margin-bottom: -100%;
+        width: 100%; 
+        height: 15%;
+       h1 {
+           height: 100%;
+            font-family: 'Aleo';
+            font-size: 1.2vw;
+            color: black;
+       }
+    }
+
+    .work-space-types-spaces-container {
+
+        padding: 5%;
+        padding-bottom: 15%;
+        background: yellow;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+
+        .work-space-types-spaces-content-item {
+            background: red;
+            margin: 20px;
+            height: 225px;
+            width: 225px;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+         .work-space-types-spaces-content-button{
+            position: relative;
+            top: 70%;
+            background:#083054;
+            color: yellow;
+            height: 62.5px;
+            width: 203.5px;
+            align-items: left;
+            justify-content: center;
+            vertical-align: bottom;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+}

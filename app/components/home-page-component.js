@@ -28,7 +28,7 @@ export default Ember.Component.extend({
     subTitle: "Planos",
     subDescription: "Temos diversos espaço para o tamanho certo do seu negócio. Nossa estrura é separa em três segmentos para atender a suas necessidades. Para conhecer melhor, Nos Visite.",
     options: [".House", ".Store", ".Work"],
-    itemActions: [{url: "", title: "Saiba Mais"}]
+    itemActions: [{url: "/work-space", title: "Saiba Mais"}]
   },
 
   center1DetailContentObject: {

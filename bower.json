@@ -4,5 +4,19 @@
     "ember": "~2.8.0",
     "ember-cli-shims": "0.1.1",
     "foundation": "^5.5.3"
-  }
+  },
+  "authors": [
+    "Huallyd <huallyd@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
 }
