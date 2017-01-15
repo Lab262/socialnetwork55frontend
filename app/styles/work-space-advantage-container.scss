@@ -1,0 +1,275 @@
+
+.work-space-advantage-container {
+   height:auto;
+   background: #f7f7f7;
+    .divider {
+        width: 100%;
+        height: 20vw;
+        display: block;
+        .divider-rect{
+            position:relative;
+            top: 40%;
+            margin-top: -40%;
+            background: #1260A6;
+            height: 5px;
+            width: 10vw;
+            left: 7.5vw;
+        }
+    }
+
+    .title {
+        margin-top:-10%;
+        width: 100%; 
+        height: 15%;
+        margin-left: 7.5vw;
+       h1 {
+           height: 100%;
+            font-family: 'BebasNeue-Bold';
+            font-size: 4vw;
+            color: black;
+       }
+        h2 {
+           height: 100%;
+            font-family: 'aleo';
+            font-size: 2vw;
+            color: #4A4A4A;
+            
+       }
+    }
+
+    .advantage-container {
+        background: yellow;
+        margin-top:5%;
+        width: 100%; 
+        height: 13vw;
+        margin-left: 7.5vw;
+        
+
+        .image{
+            width: 115px;
+            height: 115px;
+        }
+
+        .title{
+           //margin-top:-11%;
+           width: 100%; 
+           height: 15%;
+           margin-left: 12.5%;
+       
+         h1 {
+            height: 100%;
+            font-family: 'BebasNeue-Bold';
+            font-size: 3vw;
+            margin-left: 2vw;
+            color: black;
+         }
+         h2 {
+            height: 100%;
+            font-family: 'aleo';
+            font-size: 1.5vw;
+            max-width: 60%;
+            margin-left: 2vw;
+            margin-top: 2%;
+            color: #4A4A4A;
+        }
+      }
+    }
+
+     .advantage-options-container {
+       // background: red;
+        margin-top:5%;
+        width: 75%; 
+        height: 18vw;
+        margin-left: 7.5%;
+
+       .advantage-options-title {
+         margin-top:-7%;
+         width: 100%; 
+         height: 40%;
+         margin-left: 7vw;
+         background:url(/assets/images/icon-title-options.png);
+         background-size:100%; 
+         background-repeat: no-repeat;
+            
+        h1 {
+          font-family: 'BebasNeue-Bold';
+          font-size: 2.5vw;
+          color: white;
+          align-content: center;
+          text-align: center;
+          margin-top: 20%;
+          margin-right: 10%;
+            //  margin-bottom: -10px;
+        }
+      }
+
+      .advantage-options-background {
+        margin-top:-1%;
+        width: 100%; 
+        display: flex;
+        flex-direction: row;
+        background: blue;
+        height: 20vw;
+        margin-left: 7vw;
+
+        .advantage-options-information-title {
+           margin-top: 2%;
+           width: 100%; 
+           height: 40%;
+           display: flex;
+           flex-direction: row;
+           min-width: 50%;
+           //text-align: center;
+           margin-bottom: 10vw;
+           //align-content: center;
+           margin-left: 1.5vw;
+            
+         h1 {
+           font-family: 'BebasNeue-Bold';
+           font-size: 2vw;
+           min-width: 50%;
+           color: white;
+           
+            //  margin-bottom: -10px;
+         }
+
+          h2 {
+           margin-top: 7%;
+           margin-left: -18.8vw;
+           min-width: 50%;
+           font-family: 'BebasNeue-Regular';
+           font-size: 1.7vw;
+           color: white;
+            //  margin-bottom: -10px;
+         }
+          h3 {
+           margin-top: 14%;
+           margin-left: -18.9vw;
+           font-family: 'aleo';
+           font-size: 1.3vw;
+           width: 90%;
+           color: white;
+           text-align: justify;
+           
+            //  margin-bottom: -10px;
+         }
+       }
+      }
+   }
+       .advantage-container-two {
+        background: green;
+        margin-top:30%;
+        width: 100%; 
+        height: 20vw;
+        margin-left: 7.5vw;
+        flex: display;
+        flex-direction: row;
+
+        .image{
+            width: 115px;
+            height: 115px;
+        }
+
+        .title{
+           margin-top:-9.5%;
+           width: 100%; 
+           height: 15%;
+           margin-left: 12vw;
+       
+           h1 {
+             height: 100%;
+             font-family: 'BebasNeue-Bold';
+             font-size: 2.8vw;
+             margin-left: 2vw;
+             color: black;
+          }
+
+           h2 {
+             height: 100%;
+             font-family: 'BebasNeue-Regular';
+             font-size: 1.8vw;
+             margin-top: 1%;
+             margin-left: 2vw;
+             color: black;
+          }
+
+           h3 {
+             height: 100%;
+             font-family: 'aleo';
+             font-size: 1.4vw;
+             max-width: 25%;
+             margin-left: 2vw;
+             margin-top: 0.6%;
+             color: #4A4A4A;
+             text-align: justify;
+          }
+       }
+
+      .advantage-support-container {
+       // background: red;
+        margin-top:-12.2%;
+        width: 60%; 
+        height: 90vw;
+        margin-left: 6.0%;
+        flex: display;
+        flex-direction: row;
+
+       .advantage-support-title {
+         margin-top:-7%;
+         width: 70%; 
+         height: 110%;
+         margin-left: 41vw;
+         background:url(/assets/images/icon-title-space.png);
+         background-size:100%; 
+         background-repeat: no-repeat;
+            
+        h1 {
+          font-family: 'BebasNeue-Bold';
+          font-size: 1.9vw;
+          color: white;
+          margin-top: 23%;
+          margin-right: 20%;
+            //  margin-bottom: -10px;
+        }
+      }
+    }
+
+    .advantage-spaces-background {
+        margin-top:-154%;
+        width: 70%; 
+        display: flex;
+        flex-direction: row;
+        background: gray;
+        height: 20vw;
+        margin-left:41vw;
+
+         .image-icon{
+            margin-top:-154%;
+            content: url('/assets/images/iconPlan.png');
+            width: 5px;
+            height: 5px;
+         }
+
+        .advantage-spaces-information-title {
+           margin-top: 2%;
+           width: 100%; 
+           height: 40%;
+           display: flex;
+           flex-direction: row;
+           min-width: 50%;
+           //text-align: center;
+           margin-bottom: 10vw;
+           //align-content: center;
+           margin-left: 1.5vw;
+            
+         h1 {
+           font-family: 'BebasNeue-Bold';
+           font-size: 1.8vw;
+           min-width: 50%;
+           color: white;
+        
+         }
+      }
+    }
+  }
+}
