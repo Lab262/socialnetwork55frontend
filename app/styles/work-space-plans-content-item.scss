@@ -1,0 +1,198 @@
+.work-space-plans-content-item {
+            width: 300px;
+            display: inline-block;
+            margin-top: 75px;
+
+                .work-space-plans-content-item-header-background-image {
+                    position: relative;              
+                    // z-index: -999;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    // display: block;
+                                            height: 334px;
+                                            width: 100%;
+
+                        .work-space-plans-content-item-header-background-filter {
+                                                // background: rgba(0,0,0,0.5);
+                            width: 100%;
+                            height: 100%;
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-image: url('/assets/images/workspace-header-item-background-filter.png');
+
+    
+                                .work-space-plans-content-item-header {
+                                    height: 100%;
+                                    width: 100%;
+                                    align-items: left;
+                                    vertical-align: bottom;
+                                    flex-direction: column;
+                                    display: flex;
+                                    justify-content: flex-end;
+                                    align-items: flex-start;
+
+                                    .title {
+                                        margin-left: 10%;
+                                        width: 100%; 
+                                        margin-bottom: -2.5%;
+                                        h1 {
+                                            font-family: 'BebasNeue-Bold';
+                                            font-size: 250%;
+                                            color: white;
+                                        }
+                                    }
+                        
+                                    .subtitle {
+                                        margin-left: 10%;
+                                        width: 100%; 
+                                        h1 {
+                                            height: 100%;
+                                                font-family: 'BebasNeue-Regular';
+                                                font-size: 170%;
+                                                color: white;
+                                        }
+                                    }
+                                    
+                                    .work-space-plans-content-button{
+                                            // position: relative;
+                                            margin-left: 10%;
+                                            background:#D6005B;
+                                            color:white;
+                                            height: 15%;
+                                            width: 50%;
+                                            font-size: 150%;
+                                            text-align: center;                
+                                            font-family: 'BebasNeue-Bold';                    
+                                    }
+
+                                     .button-plans-border-image-right {
+                                        content: url('/assets/images/workspace-button-border-corner-image.png');
+                                            margin-left: 9%;
+                                        margin-top: -8%;        
+                                            position: absolute;
+                                                     height: 4.8%;
+                                            width: 4%;
+                                        }
+
+                                     .button-plans-border-image-left {
+                                        content: url('/assets/images/workspace-button-border-corner-image.png');
+                                            margin-left: 57%;
+                                        margin-top: -18.5%;       
+                                            -webkit-transform: rotate(180deg); /* Safari */
+                                        transform: rotate(180deg);
+ 
+                                            position: absolute;
+                                                     height: 4.8%;
+                                            width: 4%;
+                                        }
+                                                    
+                        }
+                
+                    }
+            }
+
+        
+
+    .work-space-plans-content-item-sub-description {
+            width: 100%; 
+            height: auto;
+            background: #D6005B;
+            border-radius: 2%;
+            text-align: justify;
+
+            .left-border {
+                position: absolute;
+                background: #F7C60B;
+                width: 9px;
+                height: 126px;
+                margin-top: 2.5%;
+                margin-bottom: 2.5%;
+            }
+            .description {
+                margin-top: 25px;
+                // width: 75%;
+                border-width: 50px 35px 50px 35px;
+                border-style: solid;
+                border-color: rgba(0,0,0,0);
+                h1 {
+                 font-family: 'aleo-regular-webfont';
+                 font-size: 100%;
+                 color: white;
+                }
+            }
+
+        }
+
+    .work-space-plans-description-content-item {
+           
+            background: white;
+            height: auto;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            margin-top: -1%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            border-bottom: 1px;
+            border-color:rgba(0,0,0,0.2);
+            border-bottom-style: solid;
+            border-bottom-right-radius: 1%;
+            border-bottom-left-radius: 1%;
+             .title {
+                 margin-top: 10%;
+                 margin-left: 10%;
+                 width: 100%; 
+                 height: auto;
+                 h1 {
+                     font-family: 'BebasNeue-Bold';
+                     font-size: 2vw;
+                     color: black;
+                 }
+             }
+
+          .description {
+            margin-left: 10%;
+            margin-right: 10%;
+            width: 100%; 
+            height: auto;
+            text-align: justify;
+            h1 {
+                font-family: 'aleo-regular-webfont';
+                font-size: 100%;
+                color: #262626;
+                }
+            }
+        
+        .work-space-plans-description-content-button {
+            
+            position: relative;
+            background: rgba(28,28,28,1);
+            border-radius: 5px;
+            margin-left: 2.5%;
+            margin-right: 15%;
+            height: 40px;
+            margin-top: 10%;
+            margin-bottom: 15%;
+
+            line-height: 75%;
+            width:62.5%;
+            font-size: 130%;
+            text-align: center;
+            font-family: 'BebasNeue-Bold';
+            z-index:1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);           
+        }
+
+         .image {
+                content: url('/assets/images/workspace-anuity-button-image.png');
+                width: 10%;
+                height: 20%;
+                margin-left: 55%;
+                margin-top: -28.5%;
+                position: relative;
+                z-index: 0;
+         }
+    }
+
+  }
