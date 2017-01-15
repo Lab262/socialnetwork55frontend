@@ -1,15 +1,15 @@
 
 .community-relationship-intro-container {       
        display: flex;
-       height: 54vw;
-       background: white;  
+       height: 45vw;
+       background: #f7f7f7;  
 
      .community-relationship-intro {
        
-       background: white;
-        height: 100%;
+       background: #f7f7f7;
+        height: auto;
         width: 100%;
-        margin-top: 5vw;
+        margin-top: 10vw;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -18,37 +18,73 @@
         z-index: 1;
 
          .relationship-main-description {
-           height: 22.5vw;
-           width: 55vw;
-           bottom: 15%;
-           left: 6.5%;
+           height: 28vw;
+           width: 42vw;
+           top: 22%;
+           left: 10%;
            z-index:1;
            overflow: visible;
            position: absolute;
-           background: green;
+           background-image:url(/assets/images/background_community_relatoinship.png);
+           background-size: 100%;
+           background-repeat: no-repeat;
+
+           h1 {
+            font-family: 'aleo-regular-webfont';
+            font-size: 1.2vw;
+            color: black;
+            text-align: justify;
+            margin-top: 15%;
+            margin-left: 17%;
+            margin-right: 17%;
+            line-height: 1.2em;
+          }
 
          }
 
        .relationship-main-picture {
-           background: blue;
-        height: 48vw;
-           width: 48vw;
-          overflow: visible;
-          margin-left: 40%;
-                     z-index:2;
-
+           height: 32vw;
+           width: 32vw;
+           overflow: visible;
+           margin-left: 32%;
+           z-index:-1;
+           margin-top: -2%;
+           content:url(/assets/images/knowledge-picture.png);
        }
+
+       .relationship-detail-main-picture {
+           height: 10vw;
+           width: 10vw;
+           overflow: visible;
+           z-index:99;
+           margin-left: -38%;
+           margin-top: -6%;
+           content:url(/assets/images/rectangle_community_main_picture.png);
+        }
+
+       
        
          .relationship-main-title {
            background: yellow;
-           height: 12vw;
-           width: 50vw;
-           left: 15%;
+           height: 7vw;
+           width: 35vw;
+           left: 20%;
            top: 5%;
-           overflow: visible;
+           overflow: auto;
            position: absolute;
            z-index:3;
+           background:url(/assets/images/button_community_relationship.png);
+           background-size:100%; 
+           background-repeat: no-repeat;
+           
+           h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 2.4vw;
+            color: white;
+            margin-top: 6%;
+            margin-left: 16%;
+          }
 
          }
     }
-     }
+}
