@@ -31,6 +31,7 @@
            position: absolute;
            background-image:url(/assets/images/knowledge_description_container.png);
            background-size:100%; 
+           background-repeat: no-repeat;
            
            h1 {
             font-family: 'aleo-regular-webfont';
@@ -73,6 +74,7 @@
            z-index:3;
            background:url(/assets/images/background_button_knowledge.png);
            background-size:100%; 
+           background-repeat: no-repeat;
            
            h1 {
             font-family: 'BebasNeue-Bold';
