@@ -3,13 +3,14 @@
   height: auto;
   position: absolute;
   display: inline-block;
-  
+      overflow: hidden;
+
   .work-space-fixed-background {
     position: fixed;
     left: 0;
     right: 0;
     z-index: -999;
-    width: 100vw;
+    width: 100%;
     height: 40vw;
     overflow: hidden;
 
@@ -36,7 +37,6 @@
   .presentation-container {
     position: absolute;
     top: 20vw;
-    z-index: -999;
   }
 
   }
@@ -45,12 +45,12 @@
     flex-direction: column;
     justify-content: center;
     position: relative;
-    display: block;
+    display: inline-block;
     width: 100%;
-    z-index: 1;
+    overflow: hidden;
 
     .background-over-container {
-      height: 60vh;
+      height: 40vw;
     }
   }
 }

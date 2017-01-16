@@ -8,5 +8,18 @@
         justify-content: space-around;
         align-items: center;
         position: relative;
+
+        .border-background {
+                                        content: url('/assets/images/workspace-table-plans-border-background.png');
+                                            margin-left: -90.5%;
+                                        // margin-top: -35%;    
+                                        // background: green;   
+                                        margin-top: -3%; 
+                                            position: absolute;
+                                            height: 95%;
+                                            width: 95%;
+        }
+              
+
 }
 

@@ -13,7 +13,7 @@
   align-items: center;
   background: white;
   justify-content: space-between;
-  z-index: -9999;
+  z-index: 9999;
 
   .app-logo {
     height: 37.5px;
@@ -21,7 +21,6 @@
     background-image: url("/assets/images/logo.png");
     background-repeat: no-repeat;
     background-position: center;
-    text-indent: -9999px;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
