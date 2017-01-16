@@ -2,6 +2,15 @@
 .work-space-advantage-container {
    height:auto;
    background: #f7f7f7;
+   width: 100%;
+
+
+        .image{
+            width: 9vw;
+            height: 9vw;
+        }
+
+
     .divider {
         width: 100%;
         height: 20vw;
@@ -9,7 +18,7 @@
         .divider-rect{
             position:relative;
             top: 40%;
-            margin-top: -35%;
+            margin-top: -20%;
             background: #1260A6;
             height: 5px;
             width: 10vw;
@@ -30,7 +39,7 @@
        }
         h2 {
            height: 100%;
-            font-family: 'aleo';
+            font-family: 'aleo-regular-webfont';
             font-size: 2vw;
             color: #4A4A4A;
             
@@ -43,14 +52,8 @@
         height: 13vw;
         margin-left: 7.5vw;
         
-
-        .image{
-            width: 115px;
-            height: 115px;
-        }
-
         .title{
-           margin-top:-9.2%;
+           margin-top:-7.8%;
            width: 100%; 
            height: 15%;
            margin-left: 12.5%;
@@ -64,7 +67,7 @@
          }
          h2 {
             height: 100%;
-            font-family: 'aleo';
+            font-family: 'aleo-regular-webfont';
             font-size: 1.4vw;
             max-width: 60%;
             margin-left: 2vw;
@@ -90,28 +93,31 @@
             
         }
        .advantage-options-title {
-         margin-top:-57.5%;
+         margin-top:-52.5%;
          width: 100%; 
          height: 40%;
          margin-left: 7vw;
          background:url(/assets/images/icon-title-options.png);
          background-size:100%; 
          background-repeat: no-repeat;
-            
+        vertical-align: middle;
+        
         h1 {
+          height: 100%;
           font-family: 'BebasNeue-Bold';
           font-size: 2.5vw;
           color: white;
           align-content: center;
           text-align: center;
           margin-top: 20%;
-          margin-right: 10%;
-            //  margin-bottom: -10px;
+          margin-right: 20%;
+          padding-top: 2.5%;
+
         }
       }
 
       .advantage-options-background {
-        margin-top:-1vw;
+        // margin-top: vw;
         width: 100%; 
         display: flex;
         flex-direction: row;
@@ -124,55 +130,44 @@
            margin-top: 2%;
            width: 100%; 
            height: 40%;
-           display: flex;
-           flex-direction: row;
+           display: inline-block;
            min-width: 50%;
-           //text-align: center;
            margin-bottom: 10vw;
-           //align-content: center;
            margin-left: 1.5vw;
             
          h1 {
            font-family: 'BebasNeue-Bold';
            font-size: 1.6vw;
            min-width: 50%;
-           max-width: 50%;
+           max-width: 75%;
            color: black;
-           width: 100%;
-           
-            //  margin-bottom: -10px;
+           width: 100%;           
          }
 
           h2 {
-           margin-top: 7%;
-           margin-left: -18.8vw;
+    
            min-width: 50%;
            max-width: 100%;
            font-family: 'BebasNeue-Regular';
            font-size: 1.7vw;
            color:#262626;
-            //  margin-bottom: -10px;
          }
           h3 {
-           margin-top: 14%;
-           margin-left: -18.9vw;
-           font-family: 'aleo';
-           font-size: 1.3vw;
+
+           font-family: 'aleo-regular-webfont';
+           font-size: 1.2vw;
            width: 90%;
            color: #262626;
-           text-align: justify;
-           
-            //  margin-bottom: -10px;
+           text-align: justify;           
          }
 
             .advantage-options-center-line {
-            margin-top:2%;
+            margin-top:-15.75vw;
+            position: absolute;
             width: 1px; 
-            display: flex;
-            align-content: center;
             background: #D8D8D8;
-            height: 200%;
-            margin-left: 2.5vw;
+            height: 15vw;
+            margin-left: 42.5vw;
         }
        }
       }
@@ -186,10 +181,6 @@
      //   flex: display;
      //   flex-direction: column;
 
-        .image{
-            width: 115px;
-            height: 115px;
-        }
 
         .title{
            margin-top:-9.5%;
@@ -216,7 +207,7 @@
 
            h3 {
              height: 100%;
-             font-family: 'aleo';
+             font-family: 'aleo-regular-webfont';
              font-size: 1.4vw;
              max-width: 25%;
              margin-left: 2vw;
@@ -231,19 +222,19 @@
 
       .advantage-support-container {
        // background: red;
-        margin-top:-14.0%;
-        width: 50%; 
-        height: 20vw;
+        margin-top:-11.0%;
+        width: 45vw; 
+        height: 22vw;
         margin-left: 42.0%;
         
     
        .advantage-support-title {
-         margin-top:-5%;
-         width: 93%; 
-         height: 40%;
+        //  margin-top:-5%;
+         width: 100%; 
          //margin-left: 41vw;
          background:url(/assets/images/icon-title-space.png);
          background-size:100%; 
+         height: 30%;
          background-repeat: no-repeat;
             
         h1 {
@@ -251,78 +242,82 @@
           font-size: 1.9vw;
           color: white;
           margin-top: 22%;
+          margin-left: 10%;
           margin-right: 20%;
-            //  margin-bottom: -10px;
+          padding-top: 5%;
         }
       }
 
       .advantage-spaces-background {
-        margin-top:-2.5%;
-        width: 93%; 
+        margin-top:-1.1%;
+        width: 100%; 
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         background: white;
-        //background: red;
-        height: 18.5vw;
+        height: 90%;
+        border-bottom-right-radius: 2px;
+        border-bottom-left-radius: 2px;
         //margin-left:41vw;
 
-         .image-icon{
-            margin-top:6%;
-            margin-left: 5vw;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            content: url('/assets/images/iconPlan.png');
-            width: 20px;
-            height: 20px;
-         }
+        
 
         .advantage-spaces-information-title {
-           margin-top: 5%;
-           width: 100%; 
-           height: 100%;
+          //  margin: 1vw;
+           width: 25vw; 
+          //  margin: 4vw;
+          margin-top: 2vw;
+          margin-bottom: 2vw;
+          margin-left: 5vw;
+          margin-right: 5vw;
            display: flex;
            flex-wrap: wrap;
            flex-direction: column;
-           min-width: 50%;
-           //text-align: center;
-           //margin-bottom: 10vw;
-           //align-content: center;
-           margin-left: 1vw;
+           justify-content: space-between;
+          //  background: blue;
             
-         h1 {
-           font-family: 'BebasNeue-Bold';
-           font-size: 1.60vw;
-           min-width: 50%;
-           color: black;
-           
-         }
+           .advantage-spaces-information-title-item {
+
+                display: flex;
+                justify-content: flex-start;
+                width: 20.5vw;
+                height: 3vw;
+
+              .image-icon{
+                    content: url('/assets/images/iconPlan.png');
+                    width: 1.6vw;
+                    height: 1.6vw;
+                    margin-right: 0.4vw;
+                  }
+                  h1 {
+                    font-family: 'BebasNeue-Bold';
+                    font-size: 2vw;
+                    color: black;
+                    margin-top: -0.35vw;
+                  }
+                
+         
+           }
+        
       }
 
         .advantage-background-support-image {
         
             content: url('/assets/images/background-workspace-spaces.png');
-            margin-top: -8.8vw;
-            margin-left: -8vw;
+            margin-top: -7.5vw;
+            margin-left: 10vw;
             width: 6%;
             height: 29vw;
-
-            /*content: url('/assets/images/background-workspace-options.png');
-            margin-top: 9%;
-            margin-left: 6%;
-            width: 4%;
-            height: 30vw;*/
             
         }
        .advantage-space-center-line {
-            margin-top:6%;
+            margin-top:4%;
             width: 1px; 
             display: block;
             align-content: center;
             background: #D8D8D8;
             height: 80%;
-            margin-left: -31.5vw;
+            margin-left: -27.5vw;
         }
     }
   }
@@ -335,11 +330,6 @@
         margin-left: 7.5vw;
      //   flex: display;
      //   flex-direction: column;
-
-        .image{
-            width: 115px;
-            height: 115px;
-        }
 
         .title{
            margin-top:-9.5%;
@@ -366,7 +356,7 @@
 
            h3 {
              height: 100%;
-             font-family: 'aleo';
+             font-family: 'aleo-regular-webfont';
              font-size: 1.4vw;
              max-width: 25%;
              margin-left: 2vw;
@@ -458,12 +448,7 @@
         height: 22vw;
         margin-left: 7.5vw;
      //   flex: display;
-     //   flex-direction: column;
-
-        .image{
-            width: 115px;
-            height: 115px;
-        }
+     //   flex-direction: columnm
 
         .title{
            margin-top:-9.5%;
@@ -490,7 +475,7 @@
 
            h3 {
              height: 100%;
-             font-family: 'aleo';
+             font-family: 'aleo-regular-webfont';
              font-size: 1.4vw;
              max-width: 25%;
              margin-left: 2vw;
