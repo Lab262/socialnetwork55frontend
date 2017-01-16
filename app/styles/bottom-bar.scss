@@ -1,31 +1,88 @@
-.knowledge-container {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-
-.knowledge-fixed-background {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: -999;
-    width: 100%;
-    height: 40vw;
+.bottom-opnion-container {       
+       display: block;
+       
+      
     
-    .background-image {
-        position: absolute;
-        left: 0;
-        right: 0;
-        z-index: -999;
-        background-repeat: no-repeat;
-        background-size: cover;
-        display: block;
-        background-image: url('/assets/images/background-image.png');
+    
+    %bottom-opnion-intro-container {
+      
+        height: 100vw;
         width: 100%;
-        height: 100%;
-    }
+        overflow: visible;
+        position: absolute;
+        z-index: 1;
+      
+      }
 
- 
+
+     .opnion-main-description-first {
+           height: 25vw;
+           width: 100%;
+           z-index:2;
+           overflow: visible;
+           position: absolute;
+          content:url("/assets/images/backgroundFooter.png");
+      }
+
+       .box-comunity {
+            height: 319px;
+            width: 900px;
+            overflow: visible;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index:3; 
+                
+        
+        }
+          h1 {
+                    
+                   font-family: 'BebasNeue-Bold';
+                    font-size: 2.2vw;
+                     color: white;
+                      padding-left: 80px;
+                      padding-top: 60px;
+                  }
+                  h2 {
+                   
+                   font-family: 'BebasNeue-Book';
+                    font-size: 1.2vw;
+                     color: white;
+                       padding-left: 80px;
+                         padding-top: 10px;
+                  }
+                  text-work {
+                     
+                     font-family:'BebasNeue-Bold';
+                      font-size: 2.2vw;
+                      color: white;
+                       padding-left: 40px;
+                        padding-top: 180px;
+                         
+                  }
+                  text-work-subtitle {
+                 
+                   font-family: 'BebasNeue-Book';
+                    font-size: 1.2vw;
+                     color: white;
+                       padding-left: 50px;
+                         padding-top: 180px;
+                  }
+                  
+                  text-work-subtitle2 {
+                 
+                   font-family: 'BebasNeue-Book';
+                    font-size: 1.2vw;
+                     color: white;
+                       padding-left: 230px;
+                         margin-top: 40px;
+                  }
+                    text-work-subtitle3 {
+                 
+                   font-family: 'BebasNeue-Book';
+                    font-size: 1.2vw;
+                     color: white;
+                       padding-left: 230px;
+                         margin-top: -70px;
+                  }
   }
-}
