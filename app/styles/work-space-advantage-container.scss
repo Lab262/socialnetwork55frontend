@@ -322,14 +322,13 @@
     }
   }
 
-   .advantage-container-three {
+   .advantage-container-do-it {
       //  background: orange;
         margin-top:7%;
         width: 100%; 
         height: 22vw;
         margin-left: 7.5vw;
-     //   flex: display;
-     //   flex-direction: column;
+
 
         .title{
            margin-top:-9.5%;
@@ -370,49 +369,39 @@
         margin-top:-3%;
         width: 50%; 
         display: flex;
-       // background: purple;
         height: 22vw;
         margin-left:42vw;
-
-         /*.image-icon{
-            margin-top:3%;
-            margin-left: 5vw;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            content: url('/assets/images/iconPlan.png');
-            width: 20px;
-            height: 20px;
-         }*/
-
 
 
         .advantage-meeting-information-title {
            margin-top: 7%;
-           width: 100%; 
+           width: 75%; 
            height: 100%;
-           min-width: 50%;
-           //text-align: center;
-           //margin-bottom: 10vw;
-           //align-content: center;
-           margin-left: 4vw;
-            
+           min-width: 75%;
+           margin-left: 7.5vw;
+           text-align: center;
+
          h1 {
            font-family: 'BebasNeue-Bold';
            font-size: 2vw;
-           min-width: 50%;
+           min-width: 100%;
            color: black;
          }
       }
 
       .advantage-do-it-button {
         margin-top:20%;
-        width: 30%;
-        height: 20%; 
-        //display: flex;
-        background: black;
-        align-content: center;
-        margin-left:-48vw;
+        width: 150px;
+        height: 22.5%; 
+
+            background: rgba(28,28,28,1);
+            border-radius: 5px;
+
+            text-align: center;
+            font-family: 'BebasNeue-Bold';
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
+             margin-left:-30vw;
+             font-size: 2vw;
 
        .background-button-image{
            content: url('/assets/images/background-work-button.png');
@@ -425,115 +414,6 @@
 
         .title-button {
            margin-top: -25%;
-           width: 100%; 
-           height: 100%;
-           min-width: 50%;
-
-           h1 {
-           font-family: 'BebasNeue-Bold';
-           font-size: 2vw;
-           min-width: 50%;
-           text-align: center;
-           color: white;
-          }
-        }
-      }
-    }
-   }
-
-    .advantage-container-four {
-        //background: pink;
-        margin-top:7%;
-        width: 100%; 
-        height: 22vw;
-        margin-left: 7.5vw;
-     //   flex: display;
-     //   flex-direction: columnm
-
-        .title{
-           margin-top:-9.5%;
-           width: 100%; 
-           height: 15%;
-           margin-left: 12vw;
-       
-           h1 {
-             height: 100%;
-             font-family: 'BebasNeue-Bold';
-             font-size: 2.8vw;
-             margin-left: 2vw;
-             color: black;
-          }
-
-           h2 {
-             height: 100%;
-             font-family: 'BebasNeue-Regular';
-             font-size: 1.8vw;
-             margin-top: 1%;
-             margin-left: 2vw;
-             color: black;
-          }
-
-           h3 {
-             height: 100%;
-             font-family: 'aleo-regular-webfont';
-             font-size: 1.4vw;
-             max-width: 25%;
-             margin-left: 2vw;
-             margin-top: 0.6%;
-             color: #4A4A4A;
-             text-align: justify;
-          }
-       }
-
-      .advantage-conference-room-background {
-        margin-top:-3%;
-        width: 50%; 
-        display: flex;
-        //background: purple;
-        height: 22vw;
-        margin-left:42vw;
-
-
-         .advantage-conference-information-title {
-           margin-top: 7%;
-           width: 100%; 
-           height: 100%;
-           min-width: 50%;
-           //text-align: center;
-           //margin-bottom: 10vw;
-           //align-content: center;
-           margin-left: 4vw;
-            
-         h1 {
-           font-family: 'BebasNeue-Bold';
-           font-size: 2vw;
-           min-width: 50%;
-           color: black;
-         }
-      }
-
-      .advantage-do-it-button {
-        margin-top:20%;
-        width: 30%;
-        height: 20%; 
-        //display: flex;
-        background: black;
-        align-content: center;
-        margin-left:-48vw;
-
-    
-
-       .background-button-image{
-           content: url('/assets/images/background-work-button.png');
-           margin-top: -1.5vw;
-           margin-left: -10%;
-           width: 120%;
-           height: 175%;
-            
-        }
-
-        .title-button {
-           margin-top: -10%;
            width: 100%; 
            height: 100%;
            min-width: 50%;
