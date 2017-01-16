@@ -1,72 +1,162 @@
 .knowledge-opnion-container {       
-       display: block;
+       display: flex;
        height: auto;
-      
-    //    direction: rtl;   
+       width: auto;
+       align-content: center;
+       background: #f7f7f7;  
+       display: block;
+       margin-top: -5%;
+       padding-top: 1%;
 
+     .knowledge-opnion-intro {
        
-     %knowledge-opnion-intro-container {
-        background: white;
-        height: 100%;
+       //background: #f7f7f7;
+        height: 25vw;
         width: 100%;
-        // margin-bottom: 5vw;
+        margin-top: -5vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        overflow: visible;
+        position: relative;
+        z-index: 0;
+
+         .knowledge-main-description {
+           height: 25vw;
+           width: 30vw;
+           margin-top: 9%;
+           left: 38%;
+           z-index:5;
+           overflow: visible;
+           position: absolute;
+           background-image:url(/assets/images/knowledge_background_opinion_left.png);
+           background-size: 100%;
+           background-repeat: no-repeat;
+           
+           h1 {
+            font-family: 'aleo-regular-webfont';
+            font-size: 0.8vw;
+            color: black;
+            text-align: justify;
+            margin-top: 2%;
+            margin-left: 14%;
+            margin-right: 22%;
+          }
+          h2 {
+            font-family: 'BebasNeue-Thin';
+            font-size: 1.2vw;
+            color: black;
+            text-align: justify;
+            margin-top: -2%;
+            margin-left: 14%;
+            margin-right: 22%;
+          }
+
+          h3 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 1.3vw;
+            color: black;
+            text-align: justify;
+            margin-top: 15%;
+            margin-left: 14%;
+            margin-right: 22%;
+          }
+         }
+
+       .knowledge-main-picture {
+           height: 26vw;
+           width: 26vw;
+           overflow: visible;
+           margin-right: 45%;
+           z-index:2;
+           content:url(/assets/images/knowledge-picture.png);
+       }
+
+       .knowledge-detail-main-picture {
+           height: 8vw;
+           width: 8vw;
+           overflow: visible;
+           z-index:99;
+           margin-right: -29%;
+           margin-top: -3.6%;
+           content:url(/assets/images/rectangle_knowledge_left.png);
+       }
+     }
+
+       .knowledge-opinion-second-intro {
+       
+       background: #f7f7f7;
+        height: auto;
+        width: 100%;
+        margin-top: 10vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
         overflow: visible;
         position: relative;
         z-index: 1;
-      
-      
-      }
 
-     .knowledge-opnion-intro-container-first {
-         @extend %knowledge-opnion-intro-container;
-                          float: right;
-                          
-    }
-
-     .opnion-main-description-first {
-           height: 15vw;
-           width: 32vw;
-           bottom: 5vw;
-           left: 40vw;
-           z-index:1;
+         .knowledge-opinion-second-main-description {
+           height: 25vw;
+           width: 30vw;
+           top: 22%;
+           left: 34%;
+           z-index:-1;
            overflow: visible;
            position: absolute;
-            content:url(/assets/images/knowledge_comentary_left.png);
-            margin-top: 30vw;
+           background-image:url(/assets/images/knowledge_background_opinion_right.png);
+           background-size: 100%;
+           background-repeat: no-repeat;
+
+           h1 {
+            font-family: 'aleo-regular-webfont';
+            font-size: 0.8vw;
+            color: black;
+            text-align: justify;
+            margin-top: 2%;
+            margin-left: 24%;
+            margin-right: 18%;
+          }
+          h2 {
+            font-family: 'BebasNeue-Thin';
+            font-size: 1.2vw;
+            color: black;
+            text-align: justify;
+            margin-top: -2%;
+            margin-left: 24%;
+            margin-right: 18%;
+          }
+
+          h3 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 1.3vw;
+            color: black;
+            text-align: justify;
+            margin-top: 10%;
+            margin-left: 24%;
+            margin-right: 18%;
+          }
+
          }
 
-       .opnion-main-picture-first {
-           height: 30vw;
-           width: 30vw;
-          overflow: visible;
-          margin-top: 5vw;
-          margin-left: 10%;
-                     z-index:2;
-          content:url(/assets/images/knowledge_image_comentary.png);
-       }
-
-         .knowledge-opnion-intro-container-second {
-             @extend %knowledge-opnion-intro-container;
-              float: left;
-
-         .opnion-main-description-second {
-                 height: 15vw;
-                 width: 32vw;
-                 bottom:4vw;
-                 left: 33%;
-                 z-index:1;
-                 overflow: visible;
-                 position: absolute;
-                content:url(/assets/images/knowledge_comentary_right.png); 
-         }
-
-       .opnion-main-picture-second {
-          height: 30vw;
-           width: 30vw;
+       .knowledge-opinion-second-main-picture {
+           height: 26vw;
+           width: 26vw;
            overflow: visible;
-           margin-left: 65%;
-           z-index:2;
-          content:url(/assets/images/knowledge_image_comentary.png);
+           margin-left: 50%;
+           z-index:-1;
+           margin-top: -8%;
+           content:url(/assets/images/knowledge-picture.png);
        }
-         }
-  }
+
+       .knowledge-opinion-second-detail-main-picture {
+           height: 8vw;
+           width: 8vw;
+           overflow: visible;
+           z-index:99;
+           margin-left: -24.9%;
+           margin-top: -11.5%;
+           content:url(/assets/images/rectangle_knowledge_right.png);
+        } 
+      }
+}
