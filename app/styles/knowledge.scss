@@ -35,18 +35,15 @@ body{
     position: fixed;
     left: 0;
     right: 0;
-    z-index: -999;
+    // z-index: -999;
     width: 100%;
     height: 40vw;
     
-    
-
-
      .background-image {
         position: absolute;
         left: 0;
         right: 0;
-        z-index: -999;
+        // z-index: -999;
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
@@ -65,7 +62,7 @@ body{
   .presentation-container {
     position: absolute;
     top: 20vw;
-    z-index: -999;
+    // z-index: -999;
   }
 
   }

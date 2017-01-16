@@ -9,7 +9,7 @@ $content-detail-height-mobile: 220vw;
   height: 100%;
   display:  flex;
   flex-direction: column;
-
+  overflow: hidden;
   .background-image {
     position: fixed;
     left: 0;
