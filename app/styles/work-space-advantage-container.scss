@@ -3,7 +3,7 @@
    height:auto;
    background: #f7f7f7;
    width: 100%;
-
+   margin-top: -2%;
         .image{
             width: 9vw;
             height: 9vw;
@@ -392,7 +392,6 @@
                 // background-repeat: no-repeat;
                 // background-size: cover;
             margin-top: 8vw;
-            margin-left: -17vw;
             width: 18.63vw;
             height: 9vw;
             position: absolute;
@@ -429,3 +428,20 @@
     }
    }
 }
+
+
+/* Chrome 29+ */
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+     .advantage-do-it-buttom-background-borders { 
+            margin-left: 13.5vw;
+
+     }
+}
+
+//safari
+_:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-borders {		
+               margin-left: -17vw;
+
+}
+
