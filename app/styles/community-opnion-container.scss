@@ -11,7 +11,7 @@
      .community-opnion-intro {
        
        //background: #f7f7f7;
-        height: 100%;
+        height: 25vw;
         width: 100%;
         margin-top: -5vw;
         display: flex;
@@ -38,10 +38,9 @@
             font-size: 0.8vw;
             color: black;
             text-align: justify;
-            margin-top: 5%;
+            margin-top: 2%;
             margin-left: 14%;
             margin-right: 22%;
-            line-height: 1.2em;
           }
           h2 {
             font-family: 'BebasNeue-Thin';
@@ -51,7 +50,6 @@
             margin-top: -2%;
             margin-left: 14%;
             margin-right: 22%;
-            line-height: 1.2em;
           }
 
           h3 {
@@ -62,7 +60,6 @@
             margin-top: 15%;
             margin-left: 14%;
             margin-right: 22%;
-            line-height: 1.2em;
           }
          }
 
@@ -116,10 +113,9 @@
             font-size: 0.8vw;
             color: black;
             text-align: justify;
-            margin-top: 5%;
+            margin-top: 2%;
             margin-left: 24%;
             margin-right: 18%;
-            line-height: 1.2em;
           }
           h2 {
             font-family: 'BebasNeue-Thin';
@@ -129,7 +125,6 @@
             margin-top: -2%;
             margin-left: 24%;
             margin-right: 18%;
-            line-height: 1.2em;
           }
 
           h3 {
@@ -140,7 +135,6 @@
             margin-top: 10%;
             margin-left: 24%;
             margin-right: 18%;
-            line-height: 1.2em;
           }
 
          }
@@ -166,77 +160,3 @@
         } 
       }
 }
-
-/*.community-opnion-container {       
-       display: block;
-       height: auto;
-       background: gold;  
-    //    direction: rtl;   
-       
-     %community-opnion-intro-container {
-        background: pink;
-        height: 100%;
-        width: 100%;
-        // margin-bottom: 5vw;
-        overflow: visible;
-        position: relative;
-        z-index: 1;
-        //background: pink;
-        display: inline;
-      }
-
-     .community-opnion-intro-container-first {
-         @extend %community-opnion-intro-container;
-                          float: right;
-
-    }
-
-     .opnion-main-description-first {
-           height: 25vw;
-           width: 50vw;
-        //    bottom: 0;
-           left: 40vw;
-           z-index:1;
-           overflow: visible;
-           position: absolute;
-           background: green;
-
-         }
-
-       .opnion-main-picture-first {
-           background: blue;
-         height: 48vw;
-           width: 32vw;
-          overflow: visible;
-          margin-left: 15%;
-                     z-index:2;
-
-       }
-
-         .community-opnion-intro-container-second {
-             @extend %community-opnion-intro-container;
-             background: deeppink;
-                 float: left;
-
-         .opnion-main-description-second {
-                 height: 34vw;
-                 width: 55vw;
-                 bottom: 0;
-                 left: 25%;
-                 z-index:1;
-                 overflow: visible;
-                 position: absolute;
-                 background: green;
-         }
-
-       .opnion-main-picture-second {
-           background: blue;
-           height: 48vw;
-           width: 32vw;
-           overflow: visible;
-           margin-left: 65%;
-           z-index:2;
-
-           }
-      }
-  }*/
