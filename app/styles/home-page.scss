@@ -83,34 +83,54 @@ $content-detail-height-mobile: 220vw;
           }
         }
       image{
-        background-size: cover;
-
+        width: 1.5vw;
+        height: 2.25vw;
+        position: absolute;
+        top: 15%;
+        bottom: 0;
+        margin: auto;
+        
       }
-      
+      image.active{
+          content: url("/assets/images/home-page-image-active.png");
+        }
     }
     .action-left{
       a.active {
         background: #E7B90B;
         color: white;
         }
+      image{
+        left:22%;
+      }  
+      
     }
     .action-center0{
       a.active {
         background: #1175D0;
         color: white;
         }
+      image{
+        left:47%;
+      }  
     }
     .action-center1{
       a.active {
         background: #C40053;
         color: white;
         }
+      image{
+        left:72%;
+      } 
     }
     .action-right{
       a.active {
         background: #42AF00;
         color: white;
         }
+      image{
+        left:97%;
+      } 
     }
   }
 }
@@ -213,9 +233,6 @@ $content-detail-height-mobile: 220vw;
     z-index: 0;
   }
 }
-
-
-
 
 @media screen and (max-width: 600px) {
   .home-page-container {

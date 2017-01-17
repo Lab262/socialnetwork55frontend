@@ -1,88 +1,107 @@
 .bottom-opnion-container {       
        display: block;
+       z-index: 99;
 
-      
-    
-    
-    %bottom-opnion-intro-container {
-      
-        height: 100vw;
-        width: 100%;
-        overflow: visible;
-        position: absolute;
-        z-index: 1;
-      
-      }
+       .background-footer-left{
+
+              margin-top: 7vw;
+              margin-left: 3vw;
+
+              width: 35vw;
+              height: 11.5vw;
+          }
 
 
-     .opnion-main-description-first {
+         .background-footer-right{
+              width: 10vw;
+              height: 20.5vw;
+              margin-left: 85vw;
+              position: absolute;
+              right: 5%;
+              top: 10%;
+         }
+
+     .container-information-footer {
            height: 25vw;
            width: 100%;
-           z-index:2;
            overflow: visible;
            position: absolute;
-          content:url("/assets/images/backgroundFooter.png");
-      }
+           bottom:0;
+            
 
-       .box-comunity {
-            height: 319px;
-            width: 900px;
-            overflow: visible;
-            position: absolute;
-            left: 0;
-            right: 0;
-            z-index:3; 
-                
         
+          .container-background-information {
+             height: 15vw;
+             width: 80vw;
+             display: flex;
+             flex-wrap: wrap;
+             flex-direction: row;
+             position: absolute;
+             margin-left: 10vw;
+             //bottom:0;
+             top: 25%;
+             //background-color: blue;
+             
+             .container-title-information {
+
+               margin-top: -1%;
+               width: 21%; 
+               height: 40%;
+               display: inline-block;
+               max-width: 50%;
+               margin-bottom: 10vw;
+               margin-left: 1.5vw;
+
+               h1 {
+                 font-family: 'BebasNeue-Bold';
+                 font-size: 2.3vw;
+                 color: white; 
+               }
+
+              h2 {
+                 font-family: 'BebasNeue-Regular';
+                 font-size: 1.5vw;
+                 color: white;
+                 //padding-left: 80px;
+                // padding-top: 10px;
+                }
+             }
+
+        .social-media-container {
+          display: flex;
+
+          -webkit-text-size-adjust: auto;
+
+          %extended-social-media-button {
+          display: block;
+          background-repeat: no-repeat;
+          height:3vw;
+          width:3vw;
+          background-size: cover;
+          align-items: center;
+          margin-left: 10px;
+          margin-right: 10px;
+          transition: transform 0.1s ease-out;
+
+
+          &:hover {
+            transform:scale(1.1,1.1);
+            transition: transform 0.1s, width 0.1s ease-in;
+          }
         }
-          h1 {
-                    
-                   font-family: 'BebasNeue-Bold';
-                    font-size: 2.2vw;
-                     color: white;
-                      padding-left: 80px;
-                      padding-top: 60px;
-                  }
-                  h2 {
-                   
-                   font-family: 'BebasNeue-Book';
-                    font-size: 1.2vw;
-                     color: white;
-                       padding-left: 80px;
-                         padding-top: 10px;
-                  }
-                  text-work {
-                     
-                     font-family:'BebasNeue-Bold';
-                      font-size: 2.2vw;
-                      color: white;
-                       padding-left: 40px;
-                        padding-top: 180px;
-                         
-                  }
-                  text-work-subtitle {
-                 
-                   font-family: 'BebasNeue-Book';
-                    font-size: 1.2vw;
-                     color: white;
-                       padding-left: 50px;
-                         padding-top: 180px;
-                  }
-                  
-                  text-work-subtitle2 {
-                 
-                   font-family: 'BebasNeue-Book';
-                    font-size: 1.2vw;
-                     color: white;
-                       padding-left: 230px;
-                         margin-top: 40px;
-                  }
-                    text-work-subtitle3 {
-                 
-                   font-family: 'BebasNeue-Book';
-                    font-size: 1.2vw;
-                     color: white;
-                       padding-left: 230px;
-                         margin-top: -70px;
-                  }
-  }
+
+      .facebook-button {
+        background-image: url("/assets/images/icon-facebook-footer.png");
+        @extend %extended-social-media-button ;
+      }
+      
+      .instagram-button {
+        background-image: url("/assets/images/icon-instagram-footer.png");
+        @extend %extended-social-media-button ;
+      }
+    }
+          }       
+   }
+
+      
+}

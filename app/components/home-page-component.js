@@ -10,7 +10,11 @@ export default Ember.Component.extend({
     actionLeftTitle: "COMUNIDADE",
     actionCenter0Title: "ESPAÇO DE TRABALHO",
     actionCenter1Title: "CONHECIMENTO",
-    actionRightTitle: "CONTATOS"
+    actionRightTitle: "CONTATOS",
+    imageLeft: "/assets/images/home-page-image-community.png",
+    imageCenter0: "/assets/images/home-page-image-work-station.png",
+    imageCenter1: "/assets/images/home-page-image-knowledge.png",
+    imageRight: "/assets/images/home-page-image-contact.png"
   },
 
   leftDetailContentObject: {

@@ -11,6 +11,7 @@
 
   <div class="action-left {{if actionBarComponentsActive.[0] 'active' '' }}">
     <a class="{{if actionBarComponentsActive.[0] 'active' '' }}" {{action 'selectItem' 0}} >{{contentObject.actionLeftTitle}}</a>
+    <image class="{{if actionBarComponentsActive.[0] 'active' '' }}"> <img src="{{contentObject.imageLeft}}"> </image>
   </div>
   <div class="hover-content-left">
     {{home-page-item-detail-box contentObject=leftDetailContentObject}}
@@ -18,6 +19,7 @@
 
   <div class="action-center0 {{if actionBarComponentsActive.[1] 'active' '' }}">
     <a id="center0-action"  class="{{if actionBarComponentsActive.[1] 'active' '' }}"  {{action 'selectItem' 1}}> {{contentObject.actionCenter0Title}} </a>
+    <image class="{{if actionBarComponentsActive.[1] 'active' '' }}"> <img src="{{contentObject.imageCenter0}}"> </image>
   </div>
   <div class="hover-content-center0">
     {{home-page-item-detail-box contentObject=center0DetailContentObject}}
@@ -25,6 +27,7 @@
 
   <div class="action-center1 {{if actionBarComponentsActive.[2] 'active' '' }}">
     <a id="center1-action" class="{{if actionBarComponentsActive.[2] 'active' '' }}" {{action 'selectItem' 2}}> {{contentObject.actionCenter1Title}} </a>
+    <image class="{{if actionBarComponentsActive.[2] 'active' '' }}"> <img src="{{contentObject.imageCenter1}}"> </image>
   </div>
   <div class="hover-content-center1">
     {{home-page-item-detail-box contentObject=center1DetailContentObject}}
@@ -32,6 +35,7 @@
 
   <div class="action-right {{if actionBarComponentsActive.[3] 'active' '' }}">
     <a id="right-action" class="{{if actionBarComponentsActive.[3] 'active' '' }}" {{action 'selectItem' 3}}>  {{contentObject.actionRightTitle}} </a>
+    <image class="{{if actionBarComponentsActive.[3] 'active' '' }}"> <img src="{{contentObject.imageRight}}"> </image>
   </div>
   <div class="hover-content-right">
     {{home-page-item-detail-box contentObject=rightDetailContentObject}}
