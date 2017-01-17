@@ -187,6 +187,9 @@
       font-size: 1.3vw;
 
       .action-option {
+        a{
+          font-size: 1.5vw;
+        }
 
       }
     }
@@ -242,6 +245,11 @@
     .item-actions {
       font-size: 5.2vw;
       .action-option {
+        a{
+          font-size: 5.5vw;
+          height: 1.5%;
+          width: 90%;
+        }
       }
     }
 
