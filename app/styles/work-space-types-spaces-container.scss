@@ -1,36 +1,52 @@
 
+    $item-width: 25vw;
+
+
+    @keyframes fadeIt {
+  0%   { opacity: 0 }
+  100% { opacity: 1 }
+}
+
     .work-space-types-spaces-container {
 
         padding-left: 5%;
         padding-right: 5%;
-        padding-bottom: 15%;
+        padding-bottom: 5%;
+        padding-top: 5%;
         background: #f7f7f7;
         width: 100%;
         height: auto;
         display: flex;
-        flex-wrap: wrap;
         justify-content: space-around;
         align-items: center;
         position: relative;
 
         .work-space-types-spaces-content-item {
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-image: url(/assets/images/workspace-header-item-background-filter.png);
-            margin-top: 20px;
-            margin-bottom:20px; 
-            height: 25vw;
-            width: 25vw;
-            align-items: center;
-            justify-content: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            
+            // background-repeat: no-repeat;
+            width: $item-width;
+            display: inline-block;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 40px 0 rgba(0, 0, 0, 0.4);
+            border-radius: 2px;
+
+            .work-space-types-spaces-content-background-image {
+                
+                height: calc(25vw/1.2174940898);
+                
+                .work-space-types-spaces-content-background-filter {
+                      width: $item-width;
+                     height: $item-width;
+                       background-size: contain;
+                       background-repeat: no-repeat;
+                       position: absolute;
+                        transition: visibility 400ms linear 0ms, opacity 400ms;
+                        -webkit-transition: visibility 400ms linear 0ms, opacity 400ms;
+
+                }
+            }
 
             .work-space-types-spaces-content-title{
                 position: relative;
-                margin-top: 24.9vw;
+                // margin-top: -1vw;
                 height: auto;
                 width: auto;
                 align-items: center;
@@ -39,22 +55,24 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
+                
             }
 
             .description {
                 width: 100%; 
                 height: auto;
-                background: white;
                 
                 h1 {
                     padding-left: 7%;
                     padding-right: 7%;
                     padding-top: 5%;
                     height: 100%;
-                    font-family: 'Aleo';
+                 font-family: 'aleo-regular-webfont';
                     font-size: 1vw;
                     color: black;
-                    text-align: justify
+                    text-align: justify;
+
+                    
                 }
 
                 .work-space-types-spaces-content-button{
@@ -81,7 +99,7 @@
                     
                 }
             }
-
+ 
             
         }
 
