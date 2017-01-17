@@ -1,5 +1,6 @@
 .bottom-opnion-container {       
        display: block;
+       z-index: 99;
 
        .background-footer-left{
 
@@ -25,7 +26,6 @@
            width: 100%;
            overflow: visible;
            position: absolute;
-           background-color: #D6005B;
            bottom:0;
             
 
