@@ -1,36 +1,14 @@
-$topbar-height: 70px;
-$actioncontainer-height: 75px;
-$actions-height: $actioncontainer-height * 4;
-$content-detail-height: 96vh;
-$content-detail-height-mobile: 220vw;
-html{
-  height: 100%;
-}
-body{
-  height: 100%;
-}
-
 .knowledge-container {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
+      overflow: hidden;
+-webkit-backface-visibility: hidden;
+-moz-backface-visibility:    hidden;
+-ms-backface-visibility:     hidden;
 
-  .divider {  
-        width: 100%;
-        height: 20vw;
-        display: block;     
-       
-        .divider-rect{
-            position:absolute;
-            background:#d6005b;
-            height: 13px;
-            width: 100%;
-            bottom:0;
-        }
-    }
-  
+ 
   .knowledge-fixed-background {
     position: fixed;
     left: 0;
@@ -38,26 +16,39 @@ body{
     z-index: -999;
     width: 100%;
     height: 40vw;
+    overflow: hidden;
     
-    
-
+ .divider {  
+        width: 100%;
+        height: 20vw;
+        display: block;     
+       
+        .divider-rect{
+            position:absolute;
+            background:#d6005b;
+            height: 1vw;
+            width: 100%;
+            bottom:0;
+        }
+    }
+  
 
      .background-image {
         position: absolute;
         left: 0;
         right: 0;
-        z-index: -999;
+        // z-index: -999;
         background-repeat: no-repeat;
         background-size: cover;
         display: block;
         background-image: url('/assets/images/background-image.png');
         width: 100%;
-        height: 100%;
+        height: 100vw;
 
       .background-filter {
         background: rgba(0,0,0,0.7);
         width: 100%;
-        height: 100%;
+        height: 40vw;
       }
 
      }
@@ -65,7 +56,7 @@ body{
   .presentation-container {
     position: absolute;
     top: 20vw;
-    z-index: -999;
+    // z-index: -999;
   }
 
   }
@@ -74,12 +65,12 @@ body{
     flex-direction: column;
     justify-content: center;
     position: relative;
-    display: block;
+    display: inline-block;
     width: 100%;
-               z-index: 1;
+    overflow: hidden;
 
     .background-over-container {
-      height: 60vh;
+      height: 40vw;
     }
   }
 }
@@ -89,7 +80,7 @@ body{
    .knowledge-fixed-background {
     .presentation-container {
 
-      top: $topbar-height;
+     top: $topbar-height;
       height: 82.5%;
       display: flex;
       align-items: center;

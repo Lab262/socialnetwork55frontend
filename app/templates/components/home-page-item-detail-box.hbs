@@ -17,10 +17,11 @@
     {{/each}}
   </div>
 
-  <div class="item-actions">
+  <div class="item-actions" >
     {{#each contentObject.itemActions as |itemAction| }}
-    <a class="action-option" href="{{itemAction.url}}"> <a> {{itemAction.title}} </a> </a>
+    <a class="action-option" href="{{itemAction.url}}"> <img src="{{itemAction.image}}"> <a> {{itemAction.title}} </a> </a>
     {{/each}}
+    
   </div>
 
   {{#if (object-have-property 'email' object=contentObject)  }}
@@ -31,7 +32,6 @@
     <a class="phone-content"> {{contentObject.phone}} </a>
 
       <div class= "social-media-container">
-        <a class="twitter-button" href="{{contentObject.socialMedia.twitter.url}}">  </a>
         <a class="facebook-button" href="{{contentObject.socialMedia.facebook.url}}">  </a>
         <a class="instagram-button" href="{{contentObject.socialMedia.instagram.url}}">  </a>
     </div>

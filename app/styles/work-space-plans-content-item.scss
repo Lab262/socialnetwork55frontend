@@ -1,43 +1,33 @@
 .work-space-plans-content-item {
-            width: 325px;
+            width: 21.5vw;
             display: inline-block;
-            margin-top: 75px;
 
                 .work-space-plans-content-item-header-background-image {
                     position: relative;              
-                    // z-index: -999;
                     background-repeat: no-repeat;
                     background-size: cover;
-                    // display: block;
-                                            height: 325px;
+                                            height: 21.5vw;
                                             width: 100%;
 
                         .work-space-plans-content-item-header-background-filter {
-                                                // background: rgba(0,0,0,0.5);
                             width: 100%;
-                            height: 100%;
                             background-repeat: no-repeat;
                             background-size: cover;
                             background-image: url('/assets/images/workspace-header-item-background-filter.png');
 
     
                                 .work-space-plans-content-item-header {
-                                    height: 100%;
+                                    height: 21.5vw;
                                     width: 100%;
-                                    align-items: left;
-                                    vertical-align: bottom;
-                                    flex-direction: column;
-                                    display: flex;
-                                    justify-content: flex-end;
-                                    align-items: flex-start;
-
+                                    display: inline-block;
+                                    
                                     .title {
                                         margin-left: 10%;
                                         width: 100%; 
-                                        margin-bottom: -2.5%;
+                                        margin-top: 42.5%;
                                         h1 {
                                             font-family: 'BebasNeue-Bold';
-                                            font-size: 250%;
+                                            font-size: 2.5vw;
                                             color: white;
                                         }
                                     }
@@ -46,45 +36,37 @@
                                         margin-left: 10%;
                                         width: 100%; 
                                         h1 {
-                                            height: 100%;
                                                 font-family: 'BebasNeue-Regular';
-                                                font-size: 170%;
+                                                font-size: 1.8vw;
                                                 color: white;
                                         }
                                     }
                                     
                                     .work-space-plans-content-button{
                                             // position: relative;
-                                            margin-left: 10%;
+                                            margin-left: 1.8vw;
                                             background:#D6005B;
                                             color:white;
-                                            height: 15%;
-                                            width: 50%;
-                                            font-size: 150%;
-                                            text-align: center;                
-                                            font-family: 'BebasNeue-Bold';                    
+                                            height: 3.5vw;
+                                            line-height: 3.5vw;
+                                            width: 11.2vw;
+                                            font-size: 2vw;
+                                            text-align: center;  
+                                            vertical-align: center;
+                                            padding: 0px;              
+                                            font-family: 'BebasNeue-Bold';   
+
+                                            .button-plans-border-image {
+                                        content: url('/assets/images/be_part_background.png');
+                                            margin-left: -2%;
+                                        margin-top: -35%;        
+                                            position: absolute;
+                                            height: 4.4vw;
+                                            width: 11.9vw;
+                                        }                 
                                     }
 
-                                     .button-plans-border-image-right {
-                                        content: url('/assets/images/workspace-button-border-corner-image.png');
-                                            margin-left: 9%;
-                                        margin-top: -10%;        
-                                            position: absolute;
-                                                     height: 4.8%;
-                                            width: 4%;
-                                        }
-
-                                     .button-plans-border-image-left {
-                                        content: url('/assets/images/workspace-button-border-corner-image.png');
-                                            margin-left: 57%;
-                                        margin-top: -22.5%;       
-                                            -webkit-transform: rotate(180deg); /* Safari */
-                                        transform: rotate(180deg);
- 
-                                            position: absolute;
-                                                     height: 4.8%;
-                                            width: 4%;
-                                        }
+                                     
                                                     
                         }
                 
@@ -103,20 +85,20 @@
             .left-border {
                 position: absolute;
                 background: #F7C60B;
-                width: 9px;
-                height: 126px;
+                width: 0.75vw;
+                height: 9.5vw;
                 margin-top: 2.5%;
                 margin-bottom: 2.5%;
             }
             .description {
-                margin-top: 25px;
+                margin-top: 1.75vw;
                 // width: 75%;
-                border-width: 50px 35px 50px 35px;
+                border-width: 3vw 2vw 3vw 2vw;
                 border-style: solid;
                 border-color: rgba(0,0,0,0);
                 h1 {
                  font-family: 'aleo-regular-webfont';
-                 font-size: 100%;
+                 font-size: 1.3vw;
                  color: white;
                 }
             }
@@ -130,11 +112,11 @@
             width: 100%;
             align-items: center;
             justify-content: center;
-            margin-top: -1%;
+            // margin-top: -1%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            border-bottom: 1px;
+            border-bottom: 0.1vw;
             border-color:rgba(0,0,0,0.2);
             border-bottom-style: solid;
             border-bottom-right-radius: 1%;
@@ -154,12 +136,13 @@
           .description {
             margin-left: 10%;
             margin-right: 10%;
+            margin-bottom: 10%;
             width: 100%; 
             height: auto;
             text-align: justify;
             h1 {
                 font-family: 'aleo-regular-webfont';
-                font-size: 100%;
+                font-size: 1.4vw;
                 color: #262626;
                 }
             }
@@ -171,13 +154,12 @@
             border-radius: 5px;
             margin-left: 2.5%;
             margin-right: 15%;
-            height: 40px;
+            height: 3vw;
             margin-top: 10%;
             margin-bottom: 15%;
-
             line-height: 75%;
             width:62.5%;
-            font-size: 130%;
+            font-size: 1.6vw;
             text-align: center;
             font-family: 'BebasNeue-Bold';
             z-index:1;

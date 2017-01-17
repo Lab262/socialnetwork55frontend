@@ -9,7 +9,7 @@ $content-detail-height-mobile: 220vw;
   height: 100%;
   display:  flex;
   flex-direction: column;
-
+  overflow: hidden;
   .background-image {
     position: fixed;
     left: 0;
@@ -43,24 +43,24 @@ $content-detail-height-mobile: 220vw;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    background : rgba(75,75,75,0.9);
+    background : white;
     width: 100%;
     height: $actioncontainer-height;
     z-index: 1;
     .action-left{
-      border-top: 15px solid rgba(93,93,93,1);
+      border-top: 15px solid #F7C60B;
     }
 
     .action-center0 {
-      border-top: 15px solid rgba(121,121,121,1);
+      border-top: 15px solid #127EDF;
     }
 
     .action-center1 {
-      border-top: 15px solid rgba(155,155,155,1);
+      border-top: 15px solid #D6005B;
     }
 
     .action-right {
-      border-top: 15px solid rgba(200,200,200,1);
+      border-top: 15px solid #4CCA00;
     }
 
     .action-left, .action-center0, .action-center1, .action-right {
@@ -68,23 +68,49 @@ $content-detail-height-mobile: 220vw;
 
       a {
         display: block;
-        font-family: 'BebasNeue-Regular';
+        font-family: 'BebasNeue-Bold';
+        font-size: 2vw;
         height: $actioncontainer-height - 15px;
-        color: white;
+        color: black;
         width: 100%;
         text-align: center;
         background: rgba(0,0,0,0);
         line-height: $actioncontainer-height - 5px;
 
-        &:hover {
-          background: rgba(255,255,255,0.75);
-          color: black;
+          &:hover {
+            background: rgba(255,255,255,0.75);
+            color:dodgerblue;
+          }
         }
+      image{
+        background-size: cover;
+
       }
+      
+    }
+    .action-left{
       a.active {
-        background: rgba(255,255,255,0.75);
-        color: black;
-      }
+        background: #E7B90B;
+        color: white;
+        }
+    }
+    .action-center0{
+      a.active {
+        background: #1175D0;
+        color: white;
+        }
+    }
+    .action-center1{
+      a.active {
+        background: #C40053;
+        color: white;
+        }
+    }
+    .action-right{
+      a.active {
+        background: #42AF00;
+        color: white;
+        }
     }
   }
 }
@@ -130,7 +156,7 @@ $content-detail-height-mobile: 220vw;
           // padding-top: 1vw;
         }
         width: 25%;
-        border-right: 1px solid black;
+        border-right: 1px solid #E3E3E3;
       }
 
       .action-left.active + .hover-content-left,

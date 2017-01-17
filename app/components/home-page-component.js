@@ -19,7 +19,7 @@ export default Ember.Component.extend({
     subTitle: "MEMBERSHIP",
     subDescription: "Fique sabendo dos melhores eventos da região, encontre parceiros de negócios e clientes, explore todos os benefícios da nossa rede. Se você também quiser fazer parte da nossa equipe, temos as possibilidades:",
     options: ["Parceiro", "Franquiado", "Mentor"],
-    itemActions: [{url: "/community", title: "Faça Parte"}]
+    itemActions: [{url: "/community", title: "Faça Parte", image: "/assets/images/work_space_button_store.png"}]
   },
 
   center0DetailContentObject: {
@@ -28,7 +28,7 @@ export default Ember.Component.extend({
     subTitle: "Planos",
     subDescription: "Temos diversos espaço para o tamanho certo do seu negócio. Nossa estrura é separa em três segmentos para atender a suas necessidades. Para conhecer melhor, Nos Visite.",
     options: [".House", ".Store", ".Work"],
-    itemActions: [{url: "/work-space", title: "Saiba Mais"}]
+    itemActions: [{url: "/work-space", title: "Saiba Mais", image: "/assets/images/home_page_button_work_space.png"}]
   },
 
   center1DetailContentObject: {
@@ -37,7 +37,7 @@ export default Ember.Component.extend({
     subTitle: "Acelere.me",
     subDescription: "Nossa parceira em promoção de Eventos e Cursos para você compartilhar ou adquirir novas ideias empreendedoras.",
     options: [],
-    itemActions: [{url:"/knowledge", title: "Saiba o que está rolando"}]
+    itemActions: [{url:"/knowledge", title: "Saiba o que está rolando", image: "/assets/images/work_space_button_work.png"}]
   },
 
   rightDetailContentObject: {

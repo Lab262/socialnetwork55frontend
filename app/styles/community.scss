@@ -12,10 +12,9 @@ body{
 
 .community-container {
   width: 100%;
-  height: 100%;
+  height: 100vw;
   position: absolute;
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-block;
 
   .divider {  
         width: 100%;
@@ -25,7 +24,7 @@ body{
         .divider-rect{
             position:absolute;
             background:#F6AB0A;
-            height: 13px;
+            height: 1vw;
             width: 100%;
             bottom:0;
         }
@@ -38,6 +37,7 @@ body{
     z-index: -999;
     width: 100%;
     height: 40vw;
+    overflow: hidden;
 
      .background-image {
         position: absolute;
@@ -49,12 +49,12 @@ body{
         display: block;
         background-image: url('/assets/images/background-image.png');
         width: 100%;
-        height: 100%;
+        height: 50vw;
 
       .background-filter {
         background: rgba(0,0,0,0.7);
         width: 100%;
-        height: 100%;
+        height: 50vw;
       }
 
      }
@@ -74,9 +74,11 @@ body{
     display: block;
     width: 100%;
                z-index: 1;
+            overflow: hidden;
+
 
     .background-over-container {
-      height: 60vh;
+      height: 34vw;
     }
   }
 }
@@ -87,7 +89,7 @@ body{
     .presentation-container {
 
       top: $topbar-height;
-      height: 82.5%;
+      height: 40vw;
       display: flex;
       align-items: center;
       margin-left: 8.0em;
