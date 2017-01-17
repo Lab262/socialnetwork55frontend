@@ -2,8 +2,6 @@
        display: block;
        
       
-    
-    
     %bottom-opnion-intro-container {
       
         height: 100vw;
@@ -14,17 +12,105 @@
       
       }
 
+           .background-footer-left{
 
-     .opnion-main-description-first {
+              margin-top: 12vh;
+              margin-left: 3vw;
+              width: 35vw;
+              height: 23vh;
+          }
+
+
+         .background-footer-right{
+              margin-top: -33vh;
+              width: 12%;
+              height: 95%;
+              margin-left: 85%;
+         }
+
+     .container-information-footer {
            height: 25vw;
            width: 100%;
-           z-index:2;
            overflow: visible;
            position: absolute;
-          content:url("/assets/images/backgroundFooter.png");
-      }
+           background-color: #D6005B;
 
-       .box-comunity {
+        
+          .container-background-information {
+             height: 30vh;
+             width: 80vw;
+             display: flex;
+             flex-wrap: wrap;
+             flex-direction: row;
+             margin-left: 10vw;
+             margin-top: -40vh;
+             //background-color: blue;
+             
+             .container-title-information {
+
+               margin-top: -1%;
+               width: 21%; 
+               height: 40%;
+               display: inline-block;
+               max-width: 50%;
+               margin-bottom: 10vw;
+               margin-left: 1.5vw;
+
+               h1 {
+                 font-family: 'BebasNeue-Bold';
+                 font-size: 2.3vw;
+                 color: white; 
+               }
+
+              h2 {
+                 font-family: 'BebasNeue-Regular';
+                 font-size: 1.5vw;
+                 color: white;
+                 //padding-left: 80px;
+                // padding-top: 10px;
+                }
+             }
+
+        .social-media-container {
+          display: flex;
+
+          -webkit-text-size-adjust: auto;
+
+          %extended-social-media-button {
+          display: block;
+          background-repeat: no-repeat;
+          height:3vw;
+          width:3vw;
+          background-size: cover;
+          align-items: center;
+          margin-left: 10px;
+          margin-right: 10px;
+          transition: transform 0.1s ease-out;
+
+
+          &:hover {
+            transform:scale(1.1,1.1);
+            transition: transform 0.1s, width 0.1s ease-in;
+          }
+        }
+
+      .facebook-button {
+        background-image: url("/assets/images/icon-facebook-footer.png");
+        @extend %extended-social-media-button ;
+      }
+      
+      .instagram-button {
+        background-image: url("/assets/images/icon-instagram-footer.png");
+        @extend %extended-social-media-button ;
+      }
+    }
+          }       
+   }
+
+      
+}
+
+       /*.box-comunity {
             height: 319px;
             width: 900px;
             overflow: visible;
@@ -85,4 +171,4 @@
                        padding-left: 230px;
                          margin-top: -70px;
                   }
-  }
+  }*/
