@@ -5,8 +5,8 @@
   flex-direction: column;
   justify-content: space-around;
   top: 10%;
-  margin-left: 8%;
-  margin-right: 8%;
+  margin-left: 7%;
+  margin-right: 7%;
   font-size-adjust: 0.5;
 
   .item-title {
@@ -47,7 +47,7 @@
     flex-direction: row;
     justify-content: flex-start;
     color: rgba(74,74,74,1);
-    margin-bottom: 25px;
+    margin-bottom: 1vw;
     
 
     .action-option {
@@ -55,10 +55,10 @@
         color: white;
         font-size:1.5vw;
         position: absolute;
-        bottom: 10.5%;
+        bottom: 9%;
         width: 15vw;
         height: 4%;
-        left: 0;
+        left: -5%;
         right: 5%;
         text-align: center;
         margin: auto;
