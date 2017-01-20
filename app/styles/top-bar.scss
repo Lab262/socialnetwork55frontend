@@ -79,7 +79,7 @@
       padding: 1.2em;
       margin: -1.2em;
       font-family: 'FjordOne-Regular';
-      font-size: 16px;
+      font-size: 15px;
 
       &:visited, &:link {
         color: black;
@@ -109,7 +109,7 @@
     display: flex;
     height: var(--nav-bar-height);
     align-items: center;
-    padding-right: 5.0em;
+    padding-right: 2.0em;
     margin-right: 19.0em;
 
      a {
@@ -129,11 +129,12 @@
     display: flex;
     height: var(--nav-bar-height);
     align-items: center;
+    
     padding-right: 5.0em;
 
     a {
-      padding-left: 0;
-      margin-left: -25px;
+      padding-left: 20;
+      margin-left: -50px;
       line-height: calc(var(--nav-bar-height)/2);
     }
 
