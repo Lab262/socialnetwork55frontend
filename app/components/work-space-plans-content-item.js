@@ -2,6 +2,8 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
+
+  workSpacePlantItemContent: {
     headerContent: {
         headerContentTitle: "MEMBERSHIP",
         headerContentPrice: "R$ 49,00/MÊS",
@@ -25,6 +27,7 @@ export default Ember.Component.extend({
         subInfoContentTitle: "ANUIDADE",
         subInfoContentDescription: "para 1 pessoa fica R$ 1800,00 / mês, de acordo com a quantidade de pessoas aumenta o preço. Para 2 pessoas ou mais:",
         subInfoContentActionName: "VEJA AQUI"
-    },
+    }
+  }
 
 });

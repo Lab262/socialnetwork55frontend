@@ -20,6 +20,15 @@ export default Ember.Component.extend({
     onHover: function() {
          this.set('opacityHoverProperty','opacity: 1;')
          this.set('opacityOutHoverProperty','opacity: 0;')
+  },
+
+  onClick: function() {
+        //  this.set('opacityHoverProperty','opacity: 1;')
+        //  this.set('opacityOutHoverProperty','opacity: 0;')
+        console.log("foi");
   }
+
+
+
 }
 });
