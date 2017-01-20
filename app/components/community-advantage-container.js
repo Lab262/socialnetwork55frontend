@@ -4,7 +4,7 @@ export default Ember.Component.extend({
 
    contentObject: {
     title: "MEMBERSHIP",
-    descriptionFirst: "Acesso a nossa plataforma digital com mais de 400 empreendedores, benefícios exclusivos para membros, programas de conteúdo e eventos para networking. Também inclui 1 crédito de “meeting room”ou 1 crédito de “Open Desk” por mês e a possibilidade de comprar mais quando necessário.",
-    descriptionSecond: "Esse é um plano perfeito para quem quer começar uma conexão com a comunidade empreendedora, mas só precisa do espaço de trabalho poucos dias no mês."
+    descriptionFirst: "Nossa comunidade se conecta por meio de uma plataforma digital que possibilita a troca e o desenvolvimento de ideias entre empreendedores locais. Quem é membro tem benefícios exclusivos: descontos em produtos e serviços selecionados, acesso a programas e cursos com conteúdos relevantes e eventos para networking. Ser membro de nossa comunidade também garante, por mês, sem custo adicional, 1 hora para ser usada em sala de reunião - meeting room - ou na estações de trabalho - open desk e, se precisar de mais tempo o desconto é garantido.",
+    descriptionSecond: "Esse é um plano perfeito para quem quer começar uma conexão com a comunidade empreendedora, mas só precisa do espaço de trabalho poucos dias no mês. "
   }
 });

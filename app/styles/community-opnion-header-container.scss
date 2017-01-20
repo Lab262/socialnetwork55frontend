@@ -1,5 +1,5 @@
 .community-opnion-header-container {       
-       display: block;
+       display: flex;
        height: 10vw;
        background: #f7f7f7;  
 
@@ -11,19 +11,21 @@
         
         .divider-rect{
             position:relative;
-            background: #083054;
+            background: #D8AD09;
             height: 0.4vw;
             width: 10vw;
-            left: 75vw;
+            left: 80vw;
             z-index: 99;
+            margin-top: 25%;
         }
     }
 
     .title {
-        margin-top:5%;
+        margin-top:15%;
         width: 100%; 
         height: 1.5vw;
-        margin-left: 50vw;
+        margin-left: 10vw;
+        z-index: 100;
        h1 {
            height: 1.5vw;
             font-family: 'BebasNeue-Bold';
@@ -35,10 +37,10 @@
             position:relative;
             height: 200vw;
             width: 10%;
-            margin-left: 40%;
-            margin-top: -1.5%;
+            margin-left: 39vw;
+            margin-top: -2%;
             background:url(/assets/images/image-title-opinion.png);
-            background-size:20%; 
+            background-size:40%; 
             background-repeat: no-repeat;
             z-index: 99;
         }
