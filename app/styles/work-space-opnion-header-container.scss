@@ -1,0 +1,48 @@
+.work-space-opnion-header-container {       
+       display: flex;
+       height: 10vw;
+       background: #f7f7f7;
+
+    .divider {
+
+        width: 100%;
+        height: auto;
+        display: block;
+        
+        .divider-rect{
+            position:relative;
+            background: #5A7DBB;
+            height: 0.4vw;
+            width: 10vw;
+            left: 80vw;
+            z-index: 99;
+            margin-top: 25%;
+        }
+    }
+
+    .title {
+        margin-top:15%;
+        width: 100%; 
+        height: 1.5vw;
+        margin-left: 10vw;
+        z-index: 100;
+       h1 {
+           height: 1.5vw;
+            font-family: 'BebasNeue-Bold';
+            font-size: 2.5vw;
+            color: black;
+       }
+
+       .title-image{
+            position:relative;
+            height: 200vw;
+            width: 10%;
+            margin-left: 39vw;
+            margin-top: -2%;
+            background:url(/assets/images/image-title-opinion.png);
+            background-size:40%; 
+            background-repeat: no-repeat;
+            z-index: 99;
+        }
+    }
+}
