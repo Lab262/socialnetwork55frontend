@@ -35,9 +35,9 @@
     .benefits-content-container {
         background-image: url(/assets/images/background_benefits.png);
         background-repeat: no-repeat;
-        background-size: 45%;
-        background-position-x: 82%;
-        background-position-y: 60%;
+        background-size: 47%;
+        background-position-x: 85%;
+        background-position-y: 100%;
         padding-left: 5%;
         padding-right: 5%;
         width: 100%;
@@ -104,10 +104,11 @@
         position: relative;
         display: flex;
         flex-wrap: wrap;
+        //background: red;
 
         .action-button-first {
             width: 18vw;
-            height: 90px;
+            height: 7.5vw;
             margin-left: 8%;
             background:url(/assets/images/button-benefits-make-part.png);
             background-size:100%; 
@@ -121,8 +122,8 @@
           }
         }
          .action-button-second {
-            width: auto;
-            height: auto;
+            width: 19vw;
+            height: 6.14vw;
             margin-left: 4%;
             background:url(/assets/images/button-benefits-know-plans.png);
             background-size:100%; 
@@ -130,8 +131,10 @@
            
            h1 {
             font-family: 'BebasNeue-Bold';
-            font-size: 2vw;
+            font-size: 1.4vw;
+            padding-top: 5%;
             color: white;
+            
             
           }
         }

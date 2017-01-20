@@ -23,4 +23,10 @@ export default Ember.Component.extend({
         description:"Você se interessou por nossa comunidade e sabe que tem muita coisa para compartilhar e nos ensinar? Aqui também é o seu lugar. ",
         image:"/assets/images/icon_mentor.png"
     },
+
+    contentFourthObject:{
+        title:"INVESTIDOR",
+        description:"Quer conhecer as empresas aceleradas, coworkers ativos e encontrar oportunidades de investimento em diversas áreas de atuação? Fique antenado no dia a dia do nosso ecossistema.",
+        image:"/assets/images/icon_investor.png"
+    }
 });

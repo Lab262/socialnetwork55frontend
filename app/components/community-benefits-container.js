@@ -16,7 +16,8 @@ export default Ember.Component.extend({
     contentObjectRightUp: {
         title: "ACESSO AO ESPAÇO",
         //Falta colocar links onde ta (link)
-        description: "Acesso flexível ao espaço: como membro, você terá 01 hora em meeting room (link) ou open desk (link) por mês e ficará por dentro de tudo que rola nos espaços de trabalho com exclusividade.",
+        //description: "Acesso flexível ao espaço: como membro, você terá 01 hora em meeting room (link) ou open desk (link) por mês e ficará por dentro de tudo que rola nos espaços de trabalho com exclusividade.",
+        description: "Acesso flexível ao espaço: como membro, você terá 01 hora em meeting room ou open desk por mês e ficará por dentro de tudo que rola nos espaços de trabalho com exclusividade.",
         image:"/assets/images/icon_space.png"
     },
 
@@ -29,7 +30,8 @@ export default Ember.Component.extend({
     contentObjectRightDown: {
         title: "DESCONTOS ESPECIAIS",
         //Falta colocar links onde ta (link)
-        description: "Quem é membro tem a sua disposição uma rede de descontos em serviços que ajudam o empreendedor a cuidar melhor de si, da sua empresa e de seus colaboradores. Serviços jurídicos e de comunicação a um preço mais em conta e descontos em planos de saúde, seguros e ferramentas são alguns benefícios que estão disponíveis. Acompanhe no blog (link) as novidades.",
+        //description: "Quem é membro tem a sua disposição uma rede de descontos em serviços que ajudam o empreendedor a cuidar melhor de si, da sua empresa e de seus colaboradores. Serviços jurídicos e de comunicação a um preço mais em conta e descontos em planos de saúde, seguros e ferramentas são alguns benefícios que estão disponíveis. Acompanhe no blog (link) as novidades.",
+        description: "Quem é membro tem a sua disposição uma rede de descontos em serviços que ajudam o empreendedor a cuidar melhor de si, da sua empresa e de seus colaboradores. Serviços jurídicos e de comunicação a um preço mais em conta e descontos em planos de saúde, seguros e ferramentas são alguns benefícios que estão disponíveis. Acompanhe no blog as novidades.",
         image:"/assets/images/icon_discounts.png"
     }
 
