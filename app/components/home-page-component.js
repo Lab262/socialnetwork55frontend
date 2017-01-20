@@ -18,19 +18,19 @@ export default Ember.Component.extend({
   },
 
   leftDetailContentObject: {
-    title: "UM MUNDO NO QUAL AS PESSOAS SÃO LIVRES",
+    title: "+55Lab.Community: sonhar, fazer",
     description: "Comunidade construída a partir da força do ecossistema empreendedor local, no poder da execução e na transformação pela coopetição. Venha fazer parte desse mundo.",
     subTitle: "MEMBERSHIP",
     subDescription: "Fique sabendo dos melhores eventos da região, encontre parceiros de negócios e clientes, explore todos os benefícios da nossa rede. Se você também quiser fazer parte da nossa equipe, temos as possibilidades:",
-    options: ["Parceiro", "Franquiado", "Mentor"],
+    options: ["Parceiro", "Franquiado", "Mentor", "INVESTIDOR"],
     itemActions: [{url: "/community", title: "Faça Parte", image: "/assets/images/work_space_button_store.png"}]
   },
 
   center0DetailContentObject: {
     title: "UM LUGAR PARA CHAMAR DE SEU",
-    description: "Nossos espaços de trabalho foram planejados com foco em produtividade, estilo, flexibilidade e na sua vontade de compartilhar experiências. Se você tem apenas a ideia ou já tem o empreendimento, mas ainda precisa de um local, acabou de encontrá-lo.",
+    description: "Áreas de trabalho desenhados focando em produtividade, estilo, flexibilidade e vontade de partilhar experiências e serviços. Se você tem uma ideai ou empreendimento, mas só precisa de um lugar começar, aqui é esse lugar.",
     subTitle: "Planos",
-    subDescription: "Nem todos os negócios são iguais e do mesmo tamanho. Por isso, nossa estrutura é dividida em três segmentos que, com certeza, atendem às suas necessidades. Compare e agende sua visita:",
+    subDescription: "Temos diversos espaço para o tamanho certo do seu negócio. Nossa estrura é separa em três segmentos para atender a suas necessidades. Para conhecer melhor, Nos Visite.",
     options: [".House", ".Store", ".Work"],
     itemActions: [{url: "/work-space", title: "Saiba Mais", image: "/assets/images/home_page_button_work_space.png"}]
   },
