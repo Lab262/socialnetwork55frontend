@@ -1,28 +1,23 @@
 <div class="work-space-plans-content-item">
 
-        <div class="work-space-plans-content-item-header-background-image" style="background-image: url('/assets/images/background-image.png');">
+        <div class="work-space-plans-content-item-header-background-image" style="background-image: url('{{headerContent.headerContentTitle}}');">
             <div class="work-space-plans-content-item-header-background-filter" >
                 <div class="work-space-plans-content-item-header">
                     <div class="title">
                         <h1>
-                            MEMBERSHIP
+                            {{headerContent.headerContentTitle}}
                         </h1>
                     </div>
                     <div class="subtitle">
                         <h1>
-                            R$ 49,00/MÊS
+                            {{headerContent.headerContentPrice}}
                         </h1>
                     </div>
-
                     <button class="work-space-plans-content-button">
-                         FAÇA PARTE
-
-                                             <div class="button-plans-border-image"> </div>
+                            {{headerContent.headerContentWorkspacePlanButton}}
+                    <div class="button-plans-border-image"> </div>
 
                     </button>
-
-
-
                 </div>
             </div>
         </div>
@@ -33,8 +28,7 @@
             </div>
             <div class="description">
                 <h1>
-                    Acesso a qualquer espaço de trabalho dispomível na área comum do +55lab. O plano inclui o +55 Membership e 1 crédito na “meeting
-                    room”.
+                    {{descriptionContent}}
                 </h1>
             </div>
         </div>
@@ -43,12 +37,12 @@
 
             <div class="title">
                 <h1>
-                    ANUIDADE
+                    {{subInfoContentObject.subInfoContentTitle}}
                 </h1>
             </div>
             <div class="description">
                 <h1>
-                    para 1 pessoa fica R$ 1800,00 / mês, de acordo com a quantidade de pessoas aumenta o preço. Para 2 pessoas ou mais: </h1>
+                  {{subInfoContentObject.subInfoContentDescription}} </h1>
             </div>
 
         </div>
@@ -57,29 +51,31 @@
 
             <div class="title">
                 <h1>
-                    ANUIDADE
+                    {{subInfoContentObject2.subInfoContentTitle}}
                 </h1>
             </div>
             <div class="description">
                 <h1>
-                    para 1 pessoa fica R$ 1800,00 / mês, de acordo com a quantidade de pessoas aumenta o preço. Para 2 pessoas ou mais: </h1>
+                  {{subInfoContentObject2.subInfoContentDescription}} </h1>
             </div>
+
         </div>
 
         <div class="work-space-plans-description-content-item">
 
             <div class="title">
                 <h1>
-                    ANUIDADE
+                    {{subInfoContentObject3.subInfoContentTitle}}
                 </h1>
             </div>
             <div class="description">
                 <h1>
-                    para 1 pessoa fica R$ 1800,00 / mês, de acordo com a quantidade de pessoas aumenta o preço. Para 2 pessoas ou mais: </h1>
+                  {{subInfoContentObject3.subInfoContentDescription}} 
+                  </h1>
             </div>
 
             <button class="work-space-plans-description-content-button">
-                 VEJA AQUI
+                  {{subInfoContentObject3.subInfoContentActionName}}
               </button>
 
             <div class="image">
