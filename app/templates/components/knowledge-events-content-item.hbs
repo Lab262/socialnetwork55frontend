@@ -4,24 +4,17 @@
             <div class="knowledge-events-content-item-header-background-filter" >
                 <div class="knowledge-events-content-item-header">
                     <div class="title">
-                        <h1>
-                            MEMBERSHIP
-                        </h1>
+                        <h1>{{eventObject.title}}</h1>
                     </div>
                     <div class="subtitle">
-                        <h1>
-                            R$ 49,00/MÊS
-                        </h1>
+                        <h1>{{eventObject.local}}</h1>
                     </div>
 
                     <button class="knowledge-events-content-button">
-                         FAÇA PARTE
-
-                                             <div class="button-plans-border-image"> </div>
+                         {{mainObject.titleButton}}
+                    <div class="button-plans-border-image"> </div>
 
                     </button>
-
-
 
                 </div>
             </div>
@@ -32,23 +25,17 @@
 
             </div>
             <div class="description">
-                <h1>
-                    Acesso a qualquer espaço de trabalho dispomível na área comum do +55lab. O plano inclui o +55 Membership e 1 crédito na “meeting
-                    room”.
-                </h1>
+                <h1>{{eventObject.description}}</h1>
             </div>
         </div>
 
         <div class="knowledge-events-description-content-item">
 
             <div class="title">
-                <h1>
-                    ANUIDADE
-                </h1>
+                <h1>{{mainObject.nameOrganizer}}</h1>
             </div>
             <div class="description">
-                <h1>
-                    para 1 pessoa fica R$ 1800,00 / mês, de acordo com a quantidade de pessoas aumenta o preço. Para 2 pessoas ou mais: </h1>
+                <h1>{{eventObject.descriptionOrganizer}}</h1>
             </div>
 
         </div>
@@ -56,30 +43,47 @@
         <div class="knowledge-events-description-content-item">
 
             <div class="title">
-                <h1>
-                    ANUIDADE
-                </h1>
+                <h1>{{mainObject.nameSupporter}}</h1>
             </div>
             <div class="description">
-                <h1>
-                    para 1 pessoa fica R$ 1800,00 / mês, de acordo com a quantidade de pessoas aumenta o preço. Para 2 pessoas ou mais: </h1>
+                <h1>{{eventObject.descriptionSupporter}}</h1>
             </div>
+
         </div>
 
         <div class="knowledge-events-description-content-item">
 
             <div class="title">
-                <h1>
-                    ANUIDADE
-                </h1>
+                <h1>{{mainObject.nameDate}}</h1>
             </div>
             <div class="description">
-                <h1>
-                    para 1 pessoa fica R$ 1800,00 / mês, de acordo com a quantidade de pessoas aumenta o preço. Para 2 pessoas ou mais: </h1>
+                <h1>{{eventObject.descriptionDate}}</h1>
+            </div>
+
+        </div>
+
+        <div class="knowledge-events-description-content-item">
+
+            <div class="title">
+                <h1>{{mainObject.nameAmount}}</h1>
+            </div>
+            <div class="description">
+                <h1>{{eventObject.descriptionAmount}}</h1>
+            </div>
+
+        </div>
+
+        <div class="knowledge-events-description-content-item">
+
+            <div class="title">
+                <h1>{{mainObject.nameMoreInformation}}</h1>
+            </div>
+            <div class="description">
+                <h1>{{eventObject.descriptionMoreInformation}}</h1>
             </div>
 
             <button class="knowledge-events-description-content-button">
-                 VEJA AQUI
+                 {{mainObject.titleButtonMembership}}
               </button>
 
             <div class="image">
