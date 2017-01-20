@@ -48,19 +48,19 @@ $content-detail-height-mobile: 220vw;
     height: $actioncontainer-height;
     z-index: 1;
     .action-left{
-      border-top: 15px solid #F7C60B;
+      border-top: 15px solid #D8AD09;
     }
 
     .action-center0 {
-      border-top: 15px solid #127EDF;
+      border-top: 15px solid #5A7DBB;
     }
 
     .action-center1 {
-      border-top: 15px solid #D6005B;
+      border-top: 15px solid #AC0049;
     }
 
     .action-right {
-      border-top: 15px solid #4CCA00;
+      border-top: 15px solid #85BF47;
     }
 
     .action-left, .action-center0, .action-center1, .action-right {
@@ -97,7 +97,7 @@ $content-detail-height-mobile: 220vw;
     }
     .action-left{
       a.active {
-        background: #E7B90B;
+        background: #BD9600;
         color: white;
         }
       image{
@@ -107,7 +107,7 @@ $content-detail-height-mobile: 220vw;
     }
     .action-center0{
       a.active {
-        background: #1175D0;
+        background: #41639F;
         color: white;
         }
       image{
@@ -116,7 +116,7 @@ $content-detail-height-mobile: 220vw;
     }
     .action-center1{
       a.active {
-        background: #C40053;
+        background: #870039;
         color: white;
         }
       image{

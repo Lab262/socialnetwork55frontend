@@ -12,7 +12,7 @@
         .divider-rect{
             position:relative;
             top: 40%;
-            background: #1C1C1C;
+            background: #083054;
             height: 0.4vw;
             width: 10vw;
             left: 7.5vw;
@@ -106,8 +106,8 @@
         flex-wrap: wrap;
 
         .action-button-first {
-            width: auto;
-            height: auto;
+            width: 18vw;
+            height: 90px;
             margin-left: 8%;
             background:url(/assets/images/button-benefits-make-part.png);
             background-size:100%; 
@@ -115,9 +115,8 @@
            
            h1 {
             font-family: 'BebasNeue-Bold';
-            font-size: 2vw;
+            font-size: 2.5vw;
             color: white;
-            margin-top: -5%;
             margin-left: 0%;
           }
         }
@@ -133,7 +132,6 @@
             font-family: 'BebasNeue-Bold';
             font-size: 2vw;
             color: white;
-            margin-top: 8%;
             
           }
         }
