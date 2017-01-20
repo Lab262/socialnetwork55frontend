@@ -18,7 +18,7 @@
     }
 
     .title {
-        margin-top:5%;
+        margin-top:3%;
         width: 100%; 
         height: 8vw;
         margin-left: 7.5vw;
@@ -34,7 +34,7 @@
             height: 10vw;
             width: 10%;
             margin-left: 28%;
-            margin-top: -8%;
+            margin-top: -7.25vw;
             background:url(/assets/images/image-title-our-team.png);
             background-size:35%; 
             background-repeat: no-repeat;
@@ -42,8 +42,8 @@
     }
 
     .our-team-content-container {
-        padding-left: 15%;
-        padding-right: 15%;
+        padding-left: 8%;
+        padding-right: 8%;
         width: 100%;
         height: auto;
         display: flex;
@@ -69,7 +69,7 @@
              }
 
             .our-team-content-title {
-                margin-top:10%;
+                margin-top:8%;
                 width: 100%; 
                 height: 4vw;
                 margin-left: 30%;
@@ -96,7 +96,7 @@
             .our-team-content-first-button {
                 width: 100%;
                 height: 7vw;
-                margin-top: 25%;
+                margin-top: 28%;
                 background:url(/assets/images/third-button-make-part.png);
                 background-size:100%; 
                 background-repeat: no-repeat;
@@ -105,7 +105,7 @@
             
                  h1 {
                     font-family: 'BebasNeue-Bold';
-                    font-size: 2vw;
+                    font-size: 1.8vw;
                     color: white;
                     margin-top: 10%;
                     //margin-left: -40%;
@@ -115,7 +115,7 @@
             .our-team-content-second-button {
                 width: 100%;
                 height: 7vw;
-                margin-top: 25%;
+                margin-top: 28%;
                 background:url(/assets/images/second-button-make-part.png);
                 background-size:100%; 
                 background-repeat: no-repeat;
@@ -124,31 +124,11 @@
             
                  h1 {
                     font-family: 'BebasNeue-Bold';
-                    font-size: 2vw;
+                    font-size: 1.8vw;
                     color: white;
                     margin-top: 12%;
                     //margin-left: -40%;
                 }
-            }
-            
-            .our-team-content-third-button {
-                width: 100%;
-                height: 7vw;
-                margin-top: 25%;
-                background:url(/assets/images/third-button-make-part.png);
-                background-size:100%; 
-                background-repeat: no-repeat;
-                overflow: auto;
-                position: relative;
-            
-                 h1 {
-                    font-family: 'BebasNeue-Bold';
-                    font-size: 2vw;
-                    color: white;
-                    margin-top: 12%;
-                    //margin-left: -40%;
-                }
-
             }
         }
     }
