@@ -1,4 +1,4 @@
-.community-opnion-container {       
+.work-space-opnion-container {       
        display: flex;
        height: auto;
        width: auto;
@@ -8,9 +8,9 @@
        margin-top: -5%;
        padding-top: 1%;
        padding-bottom: 8%;
-       margin-bottom: -9%;
+       margin-bottom: -10%;
 
-     .community-opnion-intro {
+     .work-space-opnion-intro {
        
 
         height: 25vw;
@@ -23,7 +23,7 @@
         position: relative;
         z-index: 0;
 
-         .membership-main-description {
+         .work-space-opinion-main-description {
            height: 25vw;
            width: 30vw;
            margin-top: 9%;
@@ -31,7 +31,7 @@
            z-index:5;
            overflow: visible;
            position: absolute;
-           background-image:url(/assets/images/community_description_opinion_container.png);
+           background-image:url(/assets/images/work-space-opinion-background-left.png);
            background-size: 100%;
            background-repeat: no-repeat;
            
@@ -65,7 +65,7 @@
           }
          }
 
-       .membership-main-picture {
+       .work-space-opinion-main-picture {
            height: 26vw;
            width: 26vw;
            overflow: visible;
@@ -74,18 +74,18 @@
            content:url(/assets/images/knowledge-picture.png);
        }
 
-       .membership-detail-main-picture {
+       .work-space-opinion-detail-main-picture {
            height: 8vw;
            width: 8vw;
            overflow: visible;
            z-index:99;
            margin-right: -29%;
            margin-top: -3.6%;
-           content:url(/assets/images/rectangle-opinion-left.png);
+           content:url(/assets/images/work-space-opinion-detail-left.png);
        }
      }
 
-       .community-opinion-second-intro {
+       .work-space-opinion-second-intro {
        
        background: #f7f7f7;
         height: auto;
@@ -98,7 +98,7 @@
         position: relative;
         z-index: 1;
 
-         .community-opinion-second-main-description {
+         .work-space-opinion-second-main-description {
            height: 25vw;
            width: 30vw;
            top: 22%;
@@ -106,7 +106,7 @@
            z-index:-1;
            overflow: visible;
            position: absolute;
-           background-image:url(/assets/images/community_description_second_opinion_container.png);
+           background-image:url(/assets/images/work-space-opinion-background-right.png);
            background-size: 100%;
            background-repeat: no-repeat;
 
@@ -141,7 +141,7 @@
 
          }
 
-       .community-opinion-second-main-picture {
+       .work-space-opinion-second-main-picture {
            height: 26vw;
            width: 26vw;
            overflow: visible;
@@ -151,14 +151,14 @@
            content:url(/assets/images/knowledge-picture.png);
        }
 
-       .community-opinion-second-detail-main-picture {
+       .work-space-opinion-second-detail-main-picture {
            height: 8vw;
            width: 8vw;
            overflow: visible;
            z-index:99;
            margin-left: -24.9%;
            margin-top: -11.5%;
-           content:url(/assets/images/rectangle-opinion-right.png);
+           content:url(/assets/images/work-space-opinion-detail-right.png);
         } 
       }
 }
