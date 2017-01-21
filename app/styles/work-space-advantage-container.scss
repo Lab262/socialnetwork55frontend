@@ -101,7 +101,7 @@
          background:url(/assets/images/icon-title-options.png);
          background-size:100%; 
          background-repeat: no-repeat;
-        vertical-align: middle;
+         vertical-align: middle;
         
         h1 {
           height: 100%;
@@ -223,7 +223,7 @@
        }
       }
    }
-       .advantage-container-two {
+       /*.advantage-container-two {
         //background: green;
         margin-top:30%;
         width: 100%; 
@@ -269,62 +269,70 @@
           }
        }
 
-       }
+       }*/
 
       .advantage-support-container {
       //  background: red;
-        margin-top:-13.0%;
-        width: 41.5vw; 
-        height: 24vw;
-        margin-left: 46%;
+        margin-top: -12vw;
+        width: 75%; 
+        height: 18vw;
+        margin-left: 14vw;
+        
         
     
        .advantage-support-title {
-        //  margin-top:-5%;
+         margin-top: 2%;
          width: 100%; 
-         //margin-left: 41vw;
-         background:url(/assets/images/icon-title-space.png);
+         height: 40%;
+         margin-left:5vw;
+         background:url(/assets/images/icon-title-options.png);
          background-size:100%; 
-         height: 30%;
          background-repeat: no-repeat;
             
         h1 {
+   
+          height: 100%;
           font-family: 'BebasNeue-Bold';
-          font-size: 2vw;
+          font-size: 2.2vw;
           color: white;
-          margin-top: 22%;
-          margin-left: 5%;
-          margin-right: 10%;
-          padding-top: 5%;
+          align-content: center;
+          text-align: left;
+          margin-top: 20%;
+          margin-left: 5vw;
+          padding-top: 2.5%;
+          
         }
       }
 
       .advantage-spaces-background {
-        margin-top:-1.5%;
+      //  margin-top:-1.5%;
         width: 100%; 
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         background: white;
-        height: 90%;
+       // height: 90%;
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px;
+        height: 18vw;
+        margin-left: 5vw;
+        margin-top: -1%;
         //margin-left:41vw;
 
         
 
         .advantage-spaces-information-title {
           //  margin: 1vw;
-           width: 25vw; 
+          width: 80vw; 
           //  margin: 4vw;
           margin-top: 2vw;
           margin-bottom: 2vw;
-          margin-left: 2vw;
+          margin-left: 4vw;
           margin-right: 2vw;
-           display: flex;
-           flex-wrap: wrap;
-           flex-direction: column;
-           justify-content: space-between;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+          justify-content: space-between;
           //  background: blue;
             
            .advantage-spaces-information-title-item {
@@ -356,20 +364,25 @@
         .advantage-background-support-image {
         
             content: url('/assets/images/background-workspace-spaces.png');
-            margin-top: -9.5vw;
-            margin-left: 12vw;
-            width: 8%;
-            height: 34vw;
+            margin-top: -8vw;
+            margin-left: -12vw;
+            width: 2.8vw;
+            height: 28vw;
             
+            /*content: url('/assets/images/background-workspace-options.png');
+            margin-top: 10%;
+            margin-left: 4%;
+            width: 3vw;
+            height: 36vw;*/
         }
        .advantage-space-center-line {
-            margin-top:4%;
+            margin-top:1.5vw;
             width: 1px; 
             display: block;
             align-content: center;
             background: #D8D8D8;
             height: 80%;
-            margin-left: -25.5vw;
+            margin-left: -60.5vw;
         }
     }
   }
@@ -379,6 +392,7 @@
         margin-top:35%;
         width: 100%; 
         height: 22vw;
+       
         margin-left: 7.5vw;
 
       .advantage-meeting-room-background-borders {
