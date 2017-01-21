@@ -18,28 +18,28 @@ export default Ember.Component.extend({
   },
 
   leftDetailContentObject: {
-    title: "+55Lab.Community: sonhar, fazer",
-    description: "Comunidade construída a partir da força do ecossistema empreendedor local, no poder da execução e na transformação pela coopetição. Venha fazer parte desse mundo.",
+    title: "+55Lab.Community: fazer e compartilhar juntos",
+    description: "Somos uma comunidade virtual e real, construída a partir da força do ecossistema empreendedor brasileiro. A Lab.Community permite + torcas de ideias entre pessoas que juntas formam uma poderosa rede de negócios.",
     subTitle: "MEMBERSHIP",
-    subDescription: "Fique sabendo dos melhores eventos da região, encontre parceiros de negócios e clientes, explore todos os benefícios da nossa rede. Se você também quiser fazer parte da nossa equipe, temos as possibilidades:",
+    subDescription: "Encontre parceiros de negócios, clientes, explore todos os benefícios oferecidos, fique por dentro dos assuntos do seu interesse e se conecte a empresas, mentores e entusiastas do empreendedorismo.",
     options: ["Parceiro", "Franquiado", "Mentor", "INVESTIDOR"],
     itemActions: [{url: "/community", title: "Faça Parte", image: "/assets/images/work_space_button_store.png"}]
   },
 
   center0DetailContentObject: {
     title: "UM LUGAR PARA CHAMAR DE SEU",
-    description: "Áreas de trabalho desenhados focando em produtividade, estilo, flexibilidade e vontade de partilhar experiências e serviços. Se você tem uma ideai ou empreendimento, mas só precisa de um lugar começar, aqui é esse lugar.",
+    description: "Nossos espaços de trabalho foram planejados com foco em produtividade, estilo e na sua vontade de compartilhar experiências. Se você só tem a ideia ou já tem o empreendimento, mas ainda precisa de um local, acabou de achá-lo.",
     subTitle: "Planos",
-    subDescription: "Temos diversos espaço para o tamanho certo do seu negócio. Nossa estrura é separa em três segmentos para atender a suas necessidades. Para conhecer melhor, Nos Visite.",
+    subDescription: "Nem todos os negócios são iguais e do mesmo tamanho. Por isso, nossa estrutura é dividida em três segmentos que, com certeza, atendem às suas necessidades. Compare e agende sua visita:",
     options: [".House", ".Store", ".Work"],
     itemActions: [{url: "/work-space", title: "Saiba Mais", image: "/assets/images/home_page_button_work_space.png"}]
   },
 
   center1DetailContentObject: {
-    title: "Compartilhamos o que temos de melhor",
-    description: "Através de experiências empreendedoras em áreas-chave na implementação de negócios. Promovemos Eventos e Cursos para que cada vez mais a nossa comunidade expanda seus horizontes e conheça novos caminhos. Venha e participe desse compartilhamento de ideias.",
+    title: "COMPARTILHAR PARA FAZER VOCÊ CHEGAR MAIS LONGE",
+    description: "Acreditamos que por meio da troca de diferentes experiências empreendedoras podemos fazer com que, cada vez mais, nossa comunidade expanda e conheça novos horizontes. Por isso, sempre promovemos Eventos e Cursos em áreas-chave na implementação de negócios.",
     subTitle: "Acelere.me",
-    subDescription: "Nossa parceira em promoção de Eventos e Cursos para você compartilhar ou adquirir novas ideias empreendedoras.",
+    subDescription: "Conheça os eventos e cursos da nossa parceira em geração de conhecimento para você compartilhar, trocar, ou adquirir novas ideias empreendedoras.",
     options: [],
     itemActions: [{url:"/knowledge", title: "Saiba o que está rolando", image: "/assets/images/work_space_button_work.png"}]
   },
