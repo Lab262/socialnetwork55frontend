@@ -31,7 +31,8 @@ export default Ember.Component.extend({
     description: "Nossos espaços de trabalho foram planejados com foco em produtividade, estilo e na sua vontade de compartilhar experiências. Se você só tem a ideia ou já tem o empreendimento, mas ainda precisa de um local, acabou de achá-lo.",
     subTitle: "Planos",
     subDescription: "Nem todos os negócios são iguais e do mesmo tamanho. Por isso, nossa estrutura é dividida em três segmentos que, com certeza, atendem às suas necessidades. Compare e agende sua visita:",
-    options: [".House", ".Store", ".Work"],
+    options: [],
+    image:"/assets/images/names-spaces.png",
     itemActions: [{url: "/work-space", title: "Saiba Mais", image: "/assets/images/home_page_button_work_space.png"}]
   },
 
