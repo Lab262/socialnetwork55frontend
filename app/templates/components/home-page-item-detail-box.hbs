@@ -10,6 +10,9 @@
   <div class="item-subdescription"> {{contentObject.subDescription}} </div>
  </div>
 
+  {{#if (object-have-property 'image' object=contentObject)  }}
+    <img src="{{contentObject.image}}" class="image-box">
+  {{/if}}
 
   <div class="item-options">
     {{#each contentObject.options as |option| }}

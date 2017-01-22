@@ -71,12 +71,11 @@
     }
   }
 
-  // .footer-items {
-  //
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   flex-direction: column;
-  //   justify-content: space-around;
+  .image-box {
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
 
     %extended-contact-title {
       font-family: 'BebasNeue-Bold';
