@@ -2,7 +2,7 @@
         padding: 6vw;
         background: rgba(239,239,239,1);
         width: 100%;
-        height: auto;
+        height: 0px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -10,10 +10,15 @@
         position: relative;
 
         .border-background {
-                                        content: url('/assets/images/workspace-table-plans-border-background.png');                                        // background: green;                             
-                                            position: absolute;
-                                            height: 103vw;
-                                            width: 94vw;
+            content: url('/assets/images/workspace-table-plans-border-background.png');                                        // background: green;                             
+            position: absolute;
+            height: 103vw;
+            width: 94vw;
+
+            // padding-left: 1.5vw;
+            // padding-right: 1.5vw;
+            // left: 4vw;
+            // right: 4vw;
         }
 }
 
@@ -22,7 +27,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0)
   and (min-resolution:.001dpcm) {
      .border-background { 
-                                           margin-top: 0vw;    
+         margin-top: 0vw;    
          margin-left: 0vw;
      }
 }

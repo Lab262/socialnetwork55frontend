@@ -2,10 +2,10 @@
 
     <div class="border-background">
     </div>
-    {{work-space-plans-content-item}}
-    {{work-space-plans-content-item}}
-    {{work-space-plans-content-item}}
-    {{work-space-plans-content-item}}
 
+    {{#each selectedPlan as |plan|}}
+        {{work-space-plans-content-item }}
+    {{/each}}
+  
 
 </div>

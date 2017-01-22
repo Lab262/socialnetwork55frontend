@@ -9,6 +9,7 @@ export default Ember.Component.extend({
     backgroundFilterHoverSrc: "/assets/images/workspace-option-background-image-filter-selected-green.png",
     opacityHoverProperty: "opacity: 0;",
     opacityOutHoverProperty: "opacity: 1;",
+    planIdentification: "house",
 
   actions: {  
     outHover: function() {  
@@ -23,9 +24,7 @@ export default Ember.Component.extend({
   },
 
   onClick: function() {
-        //  this.set('opacityHoverProperty','opacity: 1;')
-        //  this.set('opacityOutHoverProperty','opacity: 0;')
-        console.log("foi");
+        this.selectPlanAction(this.planIdentification)
   }
 
 
