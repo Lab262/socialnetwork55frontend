@@ -5,8 +5,8 @@ export default Ember.Component.extend({
   actionBarComponentsActive: [false,false,false,false],
 
   contentObject: {
-    mainPhraseTitle: "SONHE. FAÇA. COMPARTILHE.",
-    mainPhraseDescription: "Somos uma Co-lab que oferece comunidade, espaço e conhecimento que atendem às necessidades de uma nova geração de trabalhadores: mais criativos, colaborativos e inquietos.",
+    mainPhraseTitle: "+CONEXÃO +COMPARTILHAMENTO +NETWORKING",
+    mainPhraseDescription: "Ser uma lab community é escrever histórias dentro de uma comunidade plural feita da soma de pessoas e suas ideias que, por meio do contato constante e da troca de experiências, sonham, fazem e compartilham mais.",
     actionLeftTitle: "COMUNIDADE",
     actionCenter0Title: "ESPAÇO DE TRABALHO",
     actionCenter1Title: "CONHECIMENTO",
