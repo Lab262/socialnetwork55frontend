@@ -269,6 +269,8 @@ export default Ember.Component.extend({
 
     selectedPlan: [],
 
+    displayType: "none",
+
     didInsertElement() {
         this._super(...arguments)
         this.get('changeInfoDelegate').send('setWorkspacePlansChild', this)
@@ -283,6 +285,8 @@ export default Ember.Component.extend({
             } else if (currentSelectedPlan == "work") {
                 this.set('selectedPlan', this.workspacePlans)
             }
+
+            this.set('displayType', "flex")
         }
     }
 

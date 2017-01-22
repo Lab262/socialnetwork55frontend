@@ -1,13 +1,16 @@
 .work-space-plans-content-item {
             width: 21.5vw;
             display: inline-block;
+            margin-left: 0.25vw;
+            margin-right: 0.25vw;
+            margin-top: -2vw;
 
                 .work-space-plans-content-item-header-background-image {
                     position: relative;              
                     background-repeat: no-repeat;
                     background-size: cover;
-                    height: 21.5vw;
-                    width: 100%;
+                                            height: 21.5vw;
+                                            width: 100%;
 
                         .work-space-plans-content-item-header-background-filter {
                             width: 100%;
