@@ -7,6 +7,8 @@
         backgroundFilterHoverSrc="/assets/images/workspace-option-background-image-filter-selected-green.png"
         selectPlanAction=selectPlanAction
         planIdentification="house"
+        isSelected=planSelected.[0]
+        didSelectPlanCallback=(action "didSelectPlanCallback")
     }}
 
     {{work-space-type-spaces-content-item 
@@ -15,7 +17,10 @@
         buttonImageSrc="/assets/images/work_space_button_store.png"
         backgroundFilterHoverSrc="/assets/images/workspace-option-background-image-filter-selected-yellow.png"
         selectPlanAction=selectPlanAction  
-        planIdentification="store"       
+        planIdentification="store"     
+                isSelected=planSelected.[1]  
+                        didSelectPlanCallback=(action "didSelectPlanCallback")
+
     }}
 
     {{work-space-type-spaces-content-item 
@@ -24,7 +29,9 @@
         buttonImageSrc="/assets/images/work_space_button_work.png"
         backgroundFilterHoverSrc="/assets/images/workspace-option-background-image-filter-selected-pink.png"
         selectPlanAction=selectPlanAction
-        planIdentification="work"                           
+        planIdentification="work"       
+                isSelected=planSelected.[2]    
+                        didSelectPlanCallback=(action "didSelectPlanCallback")                
     }}
         
 </div>
