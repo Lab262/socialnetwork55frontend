@@ -88,7 +88,7 @@
     }
 
     .email-title {
-      margin-top: -15%;
+      margin-top: -6%;
       @extend %extended-contact-title ;
     }
     .email-content {
@@ -157,12 +157,11 @@
 
     .item-title {
       font-size: 3vw;
-      line-height: 3.6vw;
-      // font-size-adjust: 0.5;
+      line-height: 3vw;
     }
 
     .item-description {
-      padding-top: 1.5vw;
+     padding-top: 0.5vw;
      font-size: 1.2vw;
 
     }
