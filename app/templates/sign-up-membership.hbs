@@ -12,43 +12,47 @@
 
         <div class="page-detail">
             <div class="left-content">
+                
                 <div class="form-field-big">
-                    {{input value="" required=true placeholder="Email" }}
+                    {{paper-input label="Name" value=name onChange=(action (mut name))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{paper-input label="CPF" value=cpf onChange=(action (mut cpf))}}
+                    {{!--{{input-mask mask="999.999.999-99" placeholder="CPF"}}--}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{!--{{input-mask mask="99999999999" placeholder="RG"}}--}}
+                  {{paper-input label="RG" value=rg onChange=(action (mut rg))}}
+
                 </div>
 
                 <div class="form-field-big">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{paper-input label="Endereço" value=address onChange=(action (mut address))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{paper-input label="Número'" value=number onChange=(action (mut number))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{paper-input label="Complemento" value=complement onChange=(action (mut complement))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{paper-input label="Bairro" value=neighbor onChange=(action (mut neighbor))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{paper-input label="Estado" value=state onChange=(action (mut state))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{input value="" required=true placeholder="CPF" }}
+                    {{paper-input label="País'" value=country onChange=(action (mut country))}}
                 </div>
-
-                <button class="subscribe-button"> CADASTRAR </button>
+                
+                <button class="subscribe-button"  {{action 'registerUser'}}> CADASTRAR </button>
                 <div class="subscribe-button-background-borders">
                 </div>
 
