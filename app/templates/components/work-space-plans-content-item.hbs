@@ -1,21 +1,21 @@
 <div class="work-space-plans-content-item">
 
-        <div class="work-space-plans-content-item-header-background-image" style="background-image: url('{{headerContent.headerContentTitle}}');">
+        <div class="work-space-plans-content-item-header-background-image" style="background-image: url('{{contentObject.headerContent.headerContentTitle}}');">
             <div class="work-space-plans-content-item-header-background-filter" >
                 <div class="work-space-plans-content-item-header">
                     <div class="title">
                         <h1>
-                            {{headerContent.headerContentTitle}}
+                            {{contentObject.headerContent.headerContentTitle}}
                         </h1>
                     </div>
                     <div class="subtitle">
                         <h1>
-                            {{headerContent.headerContentPrice}}
+                            {{contentObject.headerContent.headerContentPrice}}
                         </h1>
                     </div>
 
                     <button class="work-space-plans-content-button">
-                            {{headerContent.headerContentWorkspacePlanButton}}
+                            {{contentObject.headerContent.headerContentWorkspacePlanButton}}
                     <div class="button-plans-border-image"> </div>
 
                     </button>
@@ -32,35 +32,21 @@
             </div>
             <div class="description">
                 <h1>
-                    {{descriptionContent}}
+                    {{contentObject.descriptionContent}}
                 </h1>
             </div>
         </div>
 
-        <div class="work-space-plans-description-content-item">
+        <div style="height:32vw" class="work-space-plans-description-content-item">
 
             <div class="title">
                 <h1>
-                    {{subInfoContentObject.subInfoContentTitle}}
+                    {{contentObject.subInfoContentObject.subInfoContentTitle}}
                 </h1>
             </div>
             <div class="description">
                 <h1>
-                  {{subInfoContentObject.subInfoContentDescription}} </h1>
-            </div>
-
-        </div>
-
-        <div class="work-space-plans-description-content-item">
-
-            <div class="title">
-                <h1>
-                    {{subInfoContentObject2.subInfoContentTitle}}
-                </h1>
-            </div>
-            <div class="description">
-                <h1>
-                  {{subInfoContentObject2.subInfoContentDescription}} </h1>
+                  {{contentObject.subInfoContentObject.subInfoContentDescription}} </h1>
             </div>
 
         </div>
@@ -69,20 +55,63 @@
 
             <div class="title">
                 <h1>
-                    {{subInfoContentObject3.subInfoContentTitle}}
+                    {{contentObject.subInfoContentObject2.subInfoContentTitle}}
                 </h1>
             </div>
             <div class="description">
                 <h1>
-                  {{subInfoContentObject3.subInfoContentDescription}} 
+                  {{contentObject.subInfoContentObject2.subInfoContentDescription}} </h1>
+            </div>
+
+        </div>
+
+        <div class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject3.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject3.subInfoContentDescription}} </h1>
+            </div>
+
+        </div>
+
+        <div style="height:30vw" class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject4.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject4.subInfoContentDescription}} </h1>
+            </div>
+
+        </div>
+
+        <div style="height:80vw" class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject5.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject5.subInfoContentDescription}} 
                   </h1>
             </div>
 
             <button class="work-space-plans-description-content-button">
-                  {{subInfoContentObject3.subInfoContentActionName}}
+                  {{contentObject.subInfoContentObject5.subInfoContentActionName}}
+                  <div class="image">
+                  </div>
               </button>
 
-            <div class="image">
-            </div>
+            
         </div>
     </div>
