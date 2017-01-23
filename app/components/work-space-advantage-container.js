@@ -37,32 +37,47 @@ export default Ember.Component.extend({
         firstPriceThirdSubsubtitle:" R$200,00 hora",
         secondPriceThirdSubsubtitle:" R$240,00 hora",
         description:"Um bom endereço profissional é essencial para  qualquer negócio. Por isso, oferecemos pacotes para a contratação de endereço fiscal.",
-        descriptionActionButton:"Se quiser alugar uma de nossas sala",
+        descriptionActionButton:"Se quiser alugar uma de nossas salas",
         titleActionButton:"Faça aqui",
         titleTable:"ACOMODAÇÕES E SUPORTES DISPONÍVEIS NO WORK(30 pessoas):",
         itensTable:["Ar Condicionado","30 mesas e cadeiras","TV","Projetor + Tela","Cabos HDMI VGA","Água e café","Local para coffee break","Serviço de limpeza", "Visa cooler"]
     },
 
     contentObjectSecondTable: {
-        image: "/assets/images/icon-space.png",
-        title:"Espaço de Eventos",
-        firstSubtitle:".WORK:",
-        firstSubsubtitle: "Segunda a sexta - 09h às 18h",
+        image: "/assets/images/icon-topspace.png",
+        title:"Espaço de Eventos - Andar Superior",
+        firstSubtitle:".STORE:",
+        firstSubsubtitle: "Segunda a Sexta - 19h às 22h",
         firstTitlePriceSubsubtitle:"Membros:",
-        firstPriceFirstSubsubtitle: " R$150,00 hora",
+        firstPriceFirstSubsubtitle: " R$240,00 periodo",
         secondTitlePriceSubsubtitle:"Não-Membros:",
-        secondPriceFirstSubsubtitle:" R$180,00 hora",
-        secondSubsubtitle: "Segunda a sexta - 18h às 22h",
-        firstPriceSecondSubsubtitle:" R$200,00 hora",
-        secondPriceSecondSubsubtitle:" R$240,00 hora",
-        thirdSubsubtitle: "Finais de semana",
-        firstPriceThirdSubsubtitle:" R$200,00 hora",
-        secondPriceThirdSubsubtitle:" R$240,00 hora",
-        description:"Um bom endereço profissional é essencial para  qualquer negócio. Por isso, oferecemos pacotes para a contratação de endereço fiscal.",
-        descriptionActionButton:"Se quiser alugar uma de nossas sala",
+        secondPriceFirstSubsubtitle:" R$290,00 periodo",
+        secondSubsubtitle: "Sábado e Domingo - 09h às 18h(diária)",
+        firstPriceSecondSubsubtitle:" R$495,00 periodo",
+        secondPriceSecondSubsubtitle:" R$595,00 periodo",
+        descriptionActionButton:"Se quiser alugar uma de nossas salas",
+        titleActionButton:"Faça aqui"
+    },
+
+        contentObjectThirdTable: {
+        image: "/assets/images/icon-kitchen.png",
+        title:"Espaço de Eventos - Andar Inferior (Co-Kitchen)",
+        firstSubtitle:".STORE:",
+        firstSubsubtitle: "Segunda a Sexta - 09h às 18h(diária)",
+        firstTitlePriceSubsubtitle:"Membros:",
+        firstPriceFirstSubsubtitle: " R$390,00 periodo",
+        secondTitlePriceSubsubtitle:"Não-Membros:",
+        secondPriceFirstSubsubtitle:" R$465,00 periodo",
+        secondSubsubtitle: "Segunda a Sexta - 09h às 22h",
+        firstPriceSecondSubsubtitle:" R$550,00 periodo",
+        secondPriceSecondSubsubtitle:" R$660,00 periodo",
+        thirdSubsubtitle: "Sábado e Domingo - 09h às 18h",
+        firstPriceThirdSubsubtitle:" R$550,00 periodo",
+        secondPriceThirdSubsubtitle:" R$660,00 periodo",
+        descriptionActionButton:"Se quiser alugar uma de nossas salas",
         titleActionButton:"Faça aqui",
-        titleTable:"ACOMODAÇÕES E SUPORTES DISPONÍVEIS NO WORK(30 pessoas):",
-        itensTable:["Ar Condicionado","30 mesas e cadeiras","TV","Projetor + Tela","Cabos HDMI VGA","Água e café","Local para coffee break","Serviço de limpeza", "Visa cooler"]
+        titleTable:"ACOMODAÇÕES E SUPORTES DISPONÍVEIS NA STORE(15 pessoas):",
+        itensTable:["TV","Co-kitchen(geladeira, forno e microondas)","Mesas e cadeiras","Recepção","Internet","Projetor + tela ","Cabos HDMI/VGA","Água e café", "Serviços de limpeza"]
     },
 
     contentObjectWithoutTable: {
@@ -86,7 +101,7 @@ export default Ember.Component.extend({
         secondTitlePriceSubsubtitle:"Não-Membros:",
 
         description:"Uma reunião precisa ser produtiva, mesmo. E nossas salas de reuniões, que acomodam até 5 pessoas, são preparadas para isso. Elas são completamente equipadas com tudo o que você precisa em um local de  reunião: água, café, equipamentos audiovisuais e internet dedicada. Temos salas de reunião em dois espaços diferentes: .work e .house, com diferenças nos recursos disponíveis e nos preços.",
-        descriptionActionButton:"Se quiser alugar uma de nossas sala",
+        descriptionActionButton:"Se quiser alugar uma de nossas salas",
         titleActionButton:"Faça aqui"
         
     },
@@ -107,7 +122,7 @@ export default Ember.Component.extend({
         secondTitlePriceSubtitle:"Não-Membros:",
 
         description:"Entendemos as dificuldades que podem surgir quando precisamos reunir todo mundo. Por isso, também temos salas preparadas para a realização de videoconferências que acomodam até 10 pessoas disponíveis para locação em nossos espaços.",
-        descriptionActionButton:"Se quiser alugar uma de nossas sala",
+        descriptionActionButton:"Se quiser alugar uma de nossas salas",
         titleActionButton:"Faça aqui"
     },
 
