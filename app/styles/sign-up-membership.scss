@@ -2,9 +2,15 @@
 .sign-up-membership {
    background: rgba(247,247,247,1);
    width: 100%;
-   display: block;
-   padding-top: 100px;
+     width: 100%;
+   display: inline-block;
+   height: auto;
+  position: absolute;
 
+
+  .sign-up-membership-container {
+   margin-top: 100px;
+   padding-bottom: 30vw;
     .page-header {
         width: 100%;
         height: 12vw;
@@ -98,9 +104,23 @@
         width: 50%;
         height: 100%;
          background: red;
+         display: flex;
+         flex-wrap: wrap;
+        //  justify-content: flex-start;
+         align-items: flex-start;
+
+         .form-field-big {
+           margin: 0.5vw;
+           width: 90%;
+         }
+
+         .form-field-medium {
+           margin: 0.5vw;
+           width: 45%;
+         }
       }
     }
-    
+  }
 }
 
 
