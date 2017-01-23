@@ -382,20 +382,20 @@ export default Ember.Component.extend({
     displayType: "none",
 
     didInsertElement() {
-        this._super(...arguments)
-        this.get('changeInfoDelegate').send('setWorkspacePlansChild', this)
+        this._super(...arguments);
+        this.get('changeInfoDelegate').send('setWorkspacePlansChild', this);
     },
 
     actions: {
         selectPlan(currentSelectedPlan) {
-            if (currentSelectedPlan == "house") {
-                this.set('selectedPlan', this.housePlans)
-            } else if (currentSelectedPlan == "store") {
-                this.set('selectedPlan', this.storePlans)
-            } else if (currentSelectedPlan == "work") {
-                this.set('selectedPlan', this.workspacePlans)
+            if (currentSelectedPlan === "house") {
+                this.set('selectedPlan', this.housePlans);
+            } else if (currentSelectedPlan === "store") {
+                this.set('selectedPlan', this.storePlans);
+            } else if (currentSelectedPlan === "work") {
+                this.set('selectedPlan', this.workspacePlans);
             }
-            this.set('displayType', "flex")
+            this.set('displayType', "flex");
         }
     }
 
