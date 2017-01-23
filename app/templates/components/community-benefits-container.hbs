@@ -62,10 +62,10 @@
 
     <div class="actions-container">
            <button class="action-button-first">
-               <h1>{{contentMainObject.firstButton}}</h1>
+               {{#link-to "sign-up-membership" target="_blank"}}{{contentMainObject.firstButton}}{{/link-to}}
             </button>
                 <button class="action-button-second">
-                <h1>{{contentMainObject.secondButton}}</h1>
+                {{#link-to "work-space"}}{{contentMainObject.secondButton}}{{/link-to}}
             </button>
     </div>
 

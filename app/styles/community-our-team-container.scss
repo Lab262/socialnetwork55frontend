@@ -102,13 +102,22 @@
                 background-repeat: no-repeat;
                 overflow: auto;
                 position: relative;
+
+                &:hover {
+                    transform:scale(1.1,1.1);
+                    transition: transform 0.1s, width 0.1s ease-in;
+                }
             
-                 h1 {
+                 a {
                     font-family: 'BebasNeue-Bold';
                     font-size: 1.8vw;
                     color: white;
                     margin-top: 10%;
                     //margin-left: -40%;
+                    &:visited, &:link {
+                        color: white;
+                        text-decoration: none;
+                    }
                 }
             }
 
@@ -121,14 +130,27 @@
                 background-repeat: no-repeat;
                 overflow: auto;
                 position: relative;
+
+                &:hover {
+                    transform:scale(1.1,1.1);
+                    transition: transform 0.1s, width 0.1s ease-in;
+                }
             
-                 h1 {
+                a {
                     font-family: 'BebasNeue-Bold';
                     font-size: 1.8vw;
                     color: white;
                     margin-top: 12%;
                     //margin-left: -40%;
+                    width: 100%;
+                    right: 100%;
+
+                    &:visited, &:link {
+                        color: white;
+                        text-decoration: none;
+                    }
                 }
+
             }
         }
     }
