@@ -144,7 +144,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de 5200 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço. Contrato mensal: Sala para até 5 pessoas – R$5.980/mês, Sala para até 6 pessoas – R$7.055/mês, Sala para mais pessoas? Falei com nossa equipe comercial – joinus@55lab.co. Contrato anual: Sala para até 5 pessoas – R$5.200/mês, Sala para até 6 pessoas – R$6.135/mês, Sala para mais pessoas? Falei com nossa equipe comercial – joinus@55lab.co",
+            subInfoContentDescription: "A partir de 5200 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
             subInfoContentActionName: "VEJA AQUI"
         }
     }
@@ -370,7 +370,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de 1800 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço. Contrato mensal: Sala para 1 pessoa – R$2.070/mês (lista de espera), Sala para 2 pessoas – R$3.335/mês (lista de espera), Sala para 3 pessoas – R$3.680/mês, Sala para 4 pessoas –  R$4.140 /mês, Sala para 5 pessoas – R$5.405/mês (lista de espera), Sala para 6 pessoas –R$5.980/mês (lista de espera), Mais gente? Fale direto com nossa equipe comercial – joinus@55lab.co, Contrato anual: Sala para 1 pessoa – R$1.800/mês (lista de espera), Sala para 2 pessoas – R$2.900/mês (lista de espera), Sala para 3 pessoas – R$3.200/mês, Sala para 4 pessoas – R$3.600/mês, Sala para 5 pessoas – R$4.700/mês (lista de espera), Sala para 6 pessoas – R$5.200/mês (lista de espera)",
+            subInfoContentDescription: "A partir de 1800 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
             subInfoContentActionName: "VEJA AQUI"
         }
     }

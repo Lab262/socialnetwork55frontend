@@ -1,6 +1,7 @@
+$background-color: rgba(247,247,247,1);
 
 .sign-up-membership {
-   background: rgba(247,247,247,1);
+   background: $background-color;
    width: 100%;
      width: 100%;
    display: inline-block;
@@ -9,8 +10,8 @@
 
 
   .sign-up-membership-container {
-   margin-top: 100px;
-   padding-bottom: 20vw;
+   margin-top: 4vw;
+   padding-bottom: 22vw;
    
     .page-header {
         width: 100%;
@@ -108,23 +109,44 @@
          display: flex;
          flex-wrap: wrap;
          align-items: flex-start;
+         margin-top: -2vw;
 
          .form-field-big {
            margin: 0.5vw;
            width: 90%;
+           height: 52.5px;
+
+           input {
+             width: 285%;
+                border: 0px solid $background-color;
+              -webkit-text-fill-color: clear;;
+                -webkit-box-shadow: 0 0 0px 0px $background-color inset;
+              transition: background-color 5000s ease-in-out 0s;
+            border-bottom: 0.5px solid #979797;
+           }
          }
 
          .form-field-medium {
            margin: 0.5vw;
            width: 44%;
+           height: 52.5px;
+
+                  input {
+                    width: 125%;
+                      border: 0px solid $background-color;
+                  -webkit-text-fill-color: clear;
+                      -webkit-box-shadow: 0 0 0px 0px $background-color inset;
+                    transition: background-color 5000s ease-in-out 0s;
+                  border-bottom: 0.5px solid #979797;
+           }
          }
 
           .subscribe-button-background-borders {
             content: url('/assets/images/background-boarder-do-here.png');
-            left: 29.25vw;
-            bottom: 26.75vw; 
+            left: 27.5vw;
+            bottom: 29vw; 
             width: 17vw;
-            height: 8.21vw;
+            height: 8vw;
             position: absolute;
           }
 
@@ -136,8 +158,8 @@
             text-align: center;
             font-family: 'BebasNeue-Bold';
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
-            margin-left: 4vw;
-            margin-top: 1vw;
+            margin-left: 2.2vw;
+            margin-top: 3.3vw;
             font-size: 2vw;  
             padding-top: 10px;
             padding-bottom: 2px;
@@ -159,4 +181,3 @@
 _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-borders {		
 
 }
-

@@ -1,3 +1,4 @@
+
 @mixin font-face($name) {
   @font-face {
     font-family: $name;
@@ -11,6 +12,7 @@
 @include font-face('aleo-regular-webfont');
 
 @import 'foundation';
+@import 'ember-paper';
 @import 'home-page';
 @import 'top-bar';
 @import 'home-page-item-detail-box';
