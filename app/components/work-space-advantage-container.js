@@ -77,7 +77,7 @@ export default Ember.Component.extend({
         descriptionActionButton:"Se quiser alugar uma de nossas salas",
         titleActionButton:"Faça aqui",
         titleTable:"ACOMODAÇÕES E SUPORTES DISPONÍVEIS NA STORE(15 pessoas):",
-        itensTable:["TV","Co-kitchen(geladeira, forno e microondas)","Mesas e cadeiras","Recepção","Internet","Projetor + tela ","Cabos HDMI/VGA","Água e café", "Serviços de limpeza"]
+        itensTable:["TV","Co-kitchen","Mesas e cadeiras","Recepção","Internet","Projetor + tela ","Cabos HDMI/VGA","Água e café", "Serviços de limpeza"]
     },
 
     contentObjectWithoutTable: {
