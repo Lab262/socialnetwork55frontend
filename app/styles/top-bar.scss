@@ -129,20 +129,19 @@
     display: flex;
     height: var(--nav-bar-height);
     align-items: center;
-    
     padding-right: 5.0em;
-
-    a {
-      padding-left: 20;
-      margin-left: -50px;
-      line-height: calc(var(--nav-bar-height)/2);
-    }
 
     .nav-button{
       padding: 0px var(--items-padding-width);
-      margin-left: 25px;
+      margin-left: 2vw;
       // border-right: var(--items-border-size) solid white;
       height: 50%;
+
+      a{
+        padding-left: 20;
+        margin-left: -4vw;
+        line-height: calc(var(--nav-bar-height)/2);
+      }
     }
   }
 }
