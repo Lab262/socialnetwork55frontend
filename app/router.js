@@ -13,6 +13,7 @@ Router.map(function() {
   this.route('community');
   this.route('work-space');
   this.route('knowledge');
+  this.route('sign-up-membership');
 });
 
 export default Router;
