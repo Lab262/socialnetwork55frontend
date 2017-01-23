@@ -5,11 +5,11 @@ export default Ember.Component.extend({
 
     actions: {
         selectPlanAction(selectedPlan) {
-            this.get('workspacePlansChild').send("selectPlan", selectedPlan)
+            this.get('workspacePlansChild').send("selectPlan", selectedPlan);
         },
 
         setWorkspacePlansChild(workspacePlansChild) {
-            this.set("workspacePlansChild",workspacePlansChild)
+            this.set("workspacePlansChild",workspacePlansChild);
         }
     }
 

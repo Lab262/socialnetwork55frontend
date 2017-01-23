@@ -3,10 +3,11 @@
   height: auto;
   position: absolute;
   display: inline-block;
-      overflow: hidden;
--webkit-backface-visibility: hidden;
--moz-backface-visibility:    hidden;
--ms-backface-visibility:     hidden;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  z-index: 0;
 
  
   .knowledge-fixed-background {

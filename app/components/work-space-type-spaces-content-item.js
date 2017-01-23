@@ -14,35 +14,35 @@ export default Ember.Component.extend({
 
     isSelectedChanged: Ember.observer('isSelected', function() {
     // deal with the change
-      this.selectBackgroundHoverFunction()
+      this.selectBackgroundHoverFunction();
   }),
   
    selectBackgroundHoverFunction: function() {
-      if (this.isSelected == false) {
-         this.set('opacityHoverProperty','opacity: 0;')
-         this.set('opacityOutHoverProperty','opacity: 1;')
+      if (this.isSelected === false) {
+         this.set('opacityHoverProperty','opacity: 0;');
+         this.set('opacityOutHoverProperty','opacity: 1;');
       } else {
-         this.set('opacityHoverProperty','opacity: 1;')
-         this.set('opacityOutHoverProperty','opacity: 0;')
+         this.set('opacityHoverProperty','opacity: 1;');
+         this.set('opacityOutHoverProperty','opacity: 0;');
       }    
     },
 
   actions: {  
     outHover: function() {  
 
-      this.selectBackgroundHoverFunction()
+      this.selectBackgroundHoverFunction();
     
     },
 
     onHover: function() {
-         this.set('opacityHoverProperty','opacity: 1;')
-         this.set('opacityOutHoverProperty','opacity: 0;')
+         this.set('opacityHoverProperty','opacity: 1;');
+         this.set('opacityOutHoverProperty','opacity: 0;');
   },
   
 
   onClick: function() {
-        this.selectPlanAction(this.planIdentification)
-        this.didSelectPlanCallback(this.planIdentification)
+        this.selectPlanAction(this.planIdentification);
+        this.didSelectPlanCallback(this.planIdentification);
     }
    
 }

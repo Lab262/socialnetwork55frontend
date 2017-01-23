@@ -14,7 +14,7 @@ $content-detail-height-mobile: 220vw;
     position: fixed;
     left: 0;
     right: 0;
-    z-index: -999;
+    z-index: 0;
     background-repeat: no-repeat;
     background-size: cover;
     display: block;
@@ -46,7 +46,7 @@ $content-detail-height-mobile: 220vw;
     background : white;
     width: 100%;
     height: $actioncontainer-height;
-    z-index: 1;
+    z-index: 2;
     .action-left{
       border-top: 15px solid #D8AD09;
     }
@@ -149,11 +149,10 @@ $content-detail-height-mobile: 220vw;
       position: relative;
       width: 81%;
       height: 49.75vw;
-      
       top: $topbar-height;
-
       margin-left: 5em;
       padding-bottom: 4.9em;
+      top: 0;
 
           h1 {
             font-family: 'BebasNeue-Bold';
