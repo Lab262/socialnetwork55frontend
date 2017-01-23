@@ -10,7 +10,8 @@
 
   .sign-up-membership-container {
    margin-top: 100px;
-   padding-bottom: 30vw;
+   padding-bottom: 20vw;
+   
     .page-header {
         width: 100%;
         height: 12vw;
@@ -101,8 +102,9 @@
       } 
 
       .left-content {
-        width: 50%;
-        height: 100%;
+        width: 43vw;
+        height: 80%;
+        margin-left: 7vw;
          background: red;
          display: flex;
          flex-wrap: wrap;
@@ -116,7 +118,7 @@
 
          .form-field-medium {
            margin: 0.5vw;
-           width: 45%;
+           width: 44%;
          }
       }
     }
