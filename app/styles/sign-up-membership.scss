@@ -105,10 +105,8 @@
         width: 43vw;
         height: 80%;
         margin-left: 7vw;
-         background: red;
          display: flex;
          flex-wrap: wrap;
-        //  justify-content: flex-start;
          align-items: flex-start;
 
          .form-field-big {
@@ -120,6 +118,31 @@
            margin: 0.5vw;
            width: 44%;
          }
+
+          .subscribe-button-background-borders {
+            content: url('/assets/images/background-boarder-do-here.png');
+            left: 29.25vw;
+            bottom: 26.75vw; 
+            width: 17vw;
+            height: 8.21vw;
+            position: absolute;
+          }
+
+          .subscribe-button {
+            width: 14vw;
+            height: 4.5vw; 
+            background: rgba(28,28,28,1);
+            border-radius: 0.4vw;
+            text-align: center;
+            font-family: 'BebasNeue-Bold';
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
+            margin-left: 4vw;
+            margin-top: 1vw;
+            font-size: 2vw;  
+            padding-top: 10px;
+            padding-bottom: 2px;
+        }
+
       }
     }
   }
