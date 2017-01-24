@@ -15,11 +15,10 @@ contentSecondDescription:"Não perca a oportunidade de expandir seu negócio",
     state: "",
     country: "",
     email: "",
-    telefphone: "",
+    telephone: "",
 
     actions: {
         registerUser() {
-
             var data =  { 
                         name: this.name, 
                         cpf: this.cpf,
@@ -33,12 +32,25 @@ contentSecondDescription:"Não perca a oportunidade de expandir seu negócio",
                         email: this.email,
                         telephone: this.telephone
                     }
+
                     console.log(data)
              $.ajax({
                     type: "POST",
                     url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
                     data: data
                 })
+                
+                    this.set('name', '');
+                    this.set('cpf', '');
+                    this.set('rg', '');
+                    this.set('address', '');
+                    this.set('number', '');
+                    this.set('complement', '');
+                    this.set('neighbor', '');
+                    this.set('state', '');
+                    this.set('country', '');
+                    this.set('email', '');
+                    this.set('telephone', '');
         }
     }
 
