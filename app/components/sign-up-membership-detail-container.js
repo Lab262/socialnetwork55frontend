@@ -2,7 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
-contentTitle: "Memebership",
+contentTitle: "Membership",
     name: "",
     cpf: "",
     rg: "",
