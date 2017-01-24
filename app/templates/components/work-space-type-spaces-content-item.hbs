@@ -9,12 +9,19 @@
     <h1>
         {{description}}
     </h1>
+
     <button class="work-space-types-spaces-content-button" {{action "onClick"}}>
-                <img src="{{buttonImageSrc}}">
+                
+                {{#if isSelected}}
+                    <img src="{{buttonActiveImageSrc}}">
+                {{else}}
+                    <img src="{{buttonImageSrc}}">
+                {{/if}}
+                
                 <h1>
                  SAIBA MAIS                 
                 </h1>
-            </button>
+    </button>
 </div>
 
 </div>

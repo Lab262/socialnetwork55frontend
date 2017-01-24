@@ -5,6 +5,8 @@ export default Ember.Component.extend({
     titleImageSrc: "",
     description: "",
     buttonImageSrc: "",
+    buttonActiveImageSrc: "",
+    actualButtonImageSrc: "",
     headerImageSrc: "/assets/images/knowledge_image_comentary.png",
     backgroundFilterHoverSrc: "/assets/images/workspace-option-background-image-filter-selected-green.png",
     opacityHoverProperty: "opacity: 0;",
@@ -23,7 +25,7 @@ export default Ember.Component.extend({
          this.set('opacityOutHoverProperty','opacity: 1;');
       } else {
          this.set('opacityHoverProperty','opacity: 1;');
-         this.set('opacityOutHoverProperty','opacity: 0;');
+         this.set('opacityOutHoverProperty','opacity: 0;');   
       }    
     },
 
