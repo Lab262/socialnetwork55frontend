@@ -36,7 +36,7 @@ export default Ember.Component.extend({
         thirdSubsubtitle: "Finais de semana",
         firstPriceThirdSubsubtitle:" R$200,00 hora",
         secondPriceThirdSubsubtitle:" R$240,00 hora",
-        description:"Um bom endereço profissional é essencial para  qualquer negócio. Por isso, oferecemos pacotes para a contratação de endereço fiscal.",
+        description:"Seja happy hour, workshop ou desfile de moda, nossos espaços e equipe são + que preparados para receber você e seus convidados para uma experiência com a identidade +55Lab. Estamos acostumados pois também promovemos nossos próprios eventos, que são uma parte muito importante da nossa cultura de promover encontro entre pessoas, aprendizado, e conexões com o novo. Veja aqui nossa agenda.",
         descriptionActionButton:"Se quiser alugar uma de nossas salas",
         titleActionButton:"Faça aqui",
         titleTable:"ACOMODAÇÕES E SUPORTES DISPONÍVEIS NO WORK(30 pessoas):",

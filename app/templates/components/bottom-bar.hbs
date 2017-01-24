@@ -4,65 +4,42 @@
                         <img src="/assets/images/background-footer-right.png" class="background-footer-right">
                          <div class = "container-background-information">
                                  
-                                 <div class = "container-title-information">
-
-                                    <h1>
-                                      Comunidade
-                                   </h1>
-
-                                   <h2>
-                                        Membership
-                                   </h2>
-                                </div>
-
-                                <div class = "container-title-information">
-
-                                   <h1>
-                                     Espaço de Trabalho
-                                  </h1>
-
-                                   <h2>
-                                     House
-                                   </h2>
-
-                                   <h2>
-                                     Store
-                                   </h2>
-
-                                   <h2>
-                                     Work
-                                   </h2>
+                              <div class = "container-title-information">
+                                 <h1> {{footerContentObjectFirst.title}} </h1>
+                                 {{#each footerContentObjectFirst.options as |option| }}
+                                 <h2>{{option}}</h2>
+                                 {{/each}}
                               </div>
 
+                            <div class = "container-title-information">
+                                  <h1> {{footerContentObjectSecond.title}} </h1>
+                                  {{#each footerContentObjectSecond.options as |option| }}
+                                 <h2>{{option}}</h2>
+                                 {{/each}}
+                            </div>       
+
+                            <div class = "container-title-information">
+                                  <h1> {{footerContentObjectThird.title}} </h1>
+                                  {{#each footerContentObjectThird.options as |option| }}
+                                 <h2>{{option}}</h2>
+                                 {{/each}}
+                            </div>          
+
                               <div class = "container-title-information">
-
-                                   <h1>
-                                     Conhecimento
-                                  </h1>
-
-                                   <h2>
-                                     Acelere.me
-                                   </h2>
-                              </div>
-
-                              <div class = "container-title-information">
-
-                                   <h1>
-                                     Contato
-                                  </h1>
-                                  <h2>
-                                     55lab.co@email.br
-                                  </h2>
-                                   <h2>
-                                     (61) - 00000 - 00000
-                                   </h2>
+                                  <div class = "container-title-information">
+                                     <h1> {{footerContentObjectFourth.title}} </h1>
+                                     {{#each footerContentObjectFourth.options as |option| }}
+                                      <h3>{{option}}</h3>
+                                 {{/each}}
+                                    
+                                  </div>  
 
                                    <div class= "social-media-container">
-                                     <a class="facebook-button" href="{{contentObject.socialMedia.facebook.url}}">  </a>
-                                     <a class="instagram-button" href="{{contentObject.socialMedia.instagram.url}}">  </a>
-                              </div>
-                      </div>
-                </div>
+                                     <a class="facebook-button" href="https://www.facebook.com/4Legal/?fref=ts" target="_blank">  </a>
+                                     <a class="instagram-button" href="https://www.instagram.com/55lab.co/" target="_blank">  </a>
+                                  </div>
+                            </div>
+                    </div>
         </div>
 </div>
 
