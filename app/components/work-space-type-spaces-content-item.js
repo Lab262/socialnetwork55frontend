@@ -7,7 +7,7 @@ export default Ember.Component.extend({
     buttonImageSrc: "",
     buttonActiveImageSrc: "",
     actualButtonImageSrc: "",
-    headerImageSrc: "/assets/images/knowledge_image_comentary.png",
+    headerImageSrc: "/assets/images/work-space-work.jpg",
     backgroundFilterHoverSrc: "/assets/images/workspace-option-background-image-filter-selected-green.png",
     opacityHoverProperty: "opacity: 0;",
     opacityOutHoverProperty: "opacity: 1;",

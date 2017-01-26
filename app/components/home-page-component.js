@@ -11,7 +11,7 @@ export default Ember.Component.extend({
     actionCenter0Title: "ESPAÇO DE TRABALHO",
     actionCenter1Title: "CONHECIMENTO",
     actionRightTitle: "CONTATOS",
-    backgroundImage: "/assets/images/background-image.png",
+    backgroundImage: "/assets/images/home-background-image.jpg",
     imageLeft: "/assets/images/home-page-image-community.png",
     imageCenter0: "/assets/images/home-page-image-work-station.png",
     imageCenter1: "/assets/images/home-page-image-knowledge.png",
