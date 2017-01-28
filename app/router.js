@@ -14,6 +14,7 @@ Router.map(function() {
   this.route('work-space');
   this.route('knowledge');
   this.route('sign-up-membership');
+  this.route('blog');
 });
 
 export default Router;
