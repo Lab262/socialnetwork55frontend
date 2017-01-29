@@ -6,10 +6,12 @@
 
     <div class="title">
         <h1>{{contentObject.title}}</h1>
-
         <h2>{{contentObject.description}} </h2>
     </div>
 
+    {{#if contentObjectDoubleTable}}
+        
+   
     <div class="advantage-container">
 
         <img src="{{contentObjectDoubleTable.image}}" class="image">
@@ -63,13 +65,15 @@
             </div>
         </div>
     </div>
-    
-    <div style="margin-top:40vw" class="advantage-container-do-it">
+     {{/if}}
 
+
+     {{#if contentObjectOneTable}}
+         
+    <div class="advantage-container-do-it">
           <div class="advantage-meeting-room-background-borders">
          </div>
         <img src="{{contentObjectOneTable.image}}" class="image">
-        
         <div class="title">
             <h1>{{contentObjectOneTable.title}}</h1>
             <h3>{{contentObjectOneTable.firstSubtitle}}</h3>
@@ -84,20 +88,17 @@
             <h2><b>{{contentObjectOneTable.secondTitlePriceSubsubtitle}}</b>{{contentObjectOneTable.secondPriceThirdSubsubtitle}}</h2>
             <h3>{{contentObjectOneTable.description}}</h3>
         </div>
-
         <div class="advantage-meeting-room-background">
-
             <div class="advantage-meeting-information-title">
                 <h1>{{contentObjectOneTable.descriptionActionButton}}</h1>
             </div>
-
             <button class="advantage-do-it-button">{{contentObjectOneTable.titleActionButton}}</button>
               <div class="advantage-do-it-buttom-background-borders">
          </div>
         </div>
     </div>
-
-         <div style="margin-top:37vw" class="advantage-support-container">
+    
+         <div class="advantage-support-container">
 
             <div class="advantage-support-title">
                 <h1>{{contentObjectOneTable.titleTable}}</h1>
@@ -123,8 +124,12 @@
                 </div>
             </div>
         </div>
+    {{/if}}
 
-     <div style="margin-top:12vw" class="advantage-container-do-it">
+
+    {{#if contentObjectOneTable}}
+        
+     <div  class="advantage-container-do-it">
 
           <div class="advantage-meeting-room-background-borders">
          </div>
@@ -154,7 +159,11 @@
         </div>
     </div>
 
-      <div style="margin-top:12vw" class="advantage-container-do-it">
+        {{/if}}
+
+        {{#if contentObjectThirdTable}}
+            
+      <div class="advantage-container-do-it">
 
           <div class="advantage-meeting-room-background-borders">
          </div>
@@ -186,7 +195,11 @@
         </div>
     </div>
 
-      <div style="margin-top:20vw" class="advantage-support-container">
+        {{/if}}
+
+        {{#if contentObjectWithoutTable}}
+            
+      <div class="advantage-support-container">
 
         <div class="advantage-support-title">
                 <h1>{{contentObjectThirdTable.titleTable}}</h1>
@@ -212,7 +225,10 @@
                 </div>
             </div>
         </div>
+        {{/if}}
 
+        {{#if contentObjectWithoutTable}}
+            
     <div class="advantage-container-do-it">
 
           <div class="advantage-meeting-room-background-borders">
@@ -250,7 +266,12 @@
         </div>
     </div>
 
-    <div style="margin-top:40%" class="advantage-container-do-it">
+            {{/if}}
+
+
+            {{#if contentSecondObjectOneTable}}
+                
+    <div class="advantage-container-do-it">
 
         <img src="{{contentSecondObjectWithoutTable.image}}" class="image">
 
@@ -280,7 +301,7 @@
         </div>
     </div>
 
-        <div style="margin-top:20%" class="advantage-container-do-it">
+        <div class="advantage-container-do-it">
 
         <img src="{{contentSecondObjectOneTable.image}}" class="image">
 
@@ -295,8 +316,8 @@
                 <h1>{{contentSecondObjectOneTable.descriptionActionButton}}</h1>
             </div>
 
-            <button style="margin-top:13vw"class="advantage-do-it-button">{{contentSecondObjectOneTable.titleActionButton}}</button>
-              <div style="margin-top:11vw" class="advantage-do-it-buttom-background-borders">
+            <button class="advantage-do-it-button">{{contentSecondObjectOneTable.titleActionButton}}</button>
+              <div class="advantage-do-it-buttom-background-borders">
          </div>
         </div>
     </div>
@@ -333,5 +354,6 @@
                 </div>
             </div>
         </div>
+            {{/if}}
 
 </div>
