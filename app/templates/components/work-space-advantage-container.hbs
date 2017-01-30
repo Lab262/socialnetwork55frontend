@@ -127,7 +127,7 @@
     {{/if}}
 
 
-    {{#if contentObject.contentObjectOneTable}}
+    {{#if contentObject.contentObjectSecondTable}}
         
      <div  class="advantage-container-do-it">
 
@@ -150,10 +150,10 @@
         <div class="advantage-meeting-room-background">
 
             <div class="advantage-meeting-information-title">
-                <h1>{{contentObject.contentObjectOneTable.descriptionActionButton}}</h1>
+                <h1>{{contentObject.contentObjectSecondTable.descriptionActionButton}}</h1>
             </div>
 
-            <button class="advantage-do-it-button">{{contentObject.contentObjectOneTable.titleActionButton}}</button>
+            <button class="advantage-do-it-button">{{contentObject.contentObjectSecondTable.titleActionButton}}</button>
               <div class="advantage-do-it-buttom-background-borders">
          </div>
         </div>
@@ -197,7 +197,7 @@
 
         {{/if}}
 
-        {{#if contentObject.contentObjectWithoutTable}}
+        {{#if contentObject.contentObjectThirdTable.itensTable}}
             
       <div class="advantage-support-container">
 
@@ -244,13 +244,12 @@
              <h2><b>{{contentObject.contentObjectWithoutTable.secondTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.secondPriceFirstSubsubtitle}}</h2>
             
             <h3>{{contentObject.contentObjectWithoutTable.secondSubtitle}}</h3>
+             {{#if contentObject.contentObjectWithoutTable.secondSubsubtitle}}
             <h4>{{contentObject.contentObjectWithoutTable.secondSubsubtitle}}</h4>
             <h2><b>{{contentObject.contentObjectWithoutTable.firstTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.firstPriceSecondSubsubtitle}}</h2>
              <h2><b>{{contentObject.contentObjectWithoutTable.secondTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.secondPriceSecondSubsubtitle}}</h2>
              <h4>{{contentObject.contentObjectWithoutTable.thirdSubsubtitle}}</h4>
-            <h2><b>{{contentObject.contentObjectWithoutTable.firstTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.firstPriceThirdSubsubtitle}}</h2>
-             <h2><b>{{contentObject.contentObjectWithoutTable.secondTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.secondPriceThirdSubsubtitle}}</h2>
-
+             {{/if}}
             <h3>{{contentObject.contentObjectWithoutTable.description}}</h3>
         </div>
 
@@ -269,7 +268,7 @@
             {{/if}}
 
 
-            {{#if contentObject.contentSecondObjectOneTable}}
+            {{#if contentObject.contentSecondObjectWithoutTable}}
                 
     <div class="advantage-container-do-it">
 
@@ -282,10 +281,6 @@
             <h2><b>{{contentObject.contentSecondObjectWithoutTable.firstTitlePriceSubtitle}}</b>{{contentObject.contentSecondObjectWithoutTable.firstPriceFirstSubtitle}}</h2>
              <h2><b>{{contentObject.contentSecondObjectWithoutTable.secondTitlePriceSubtitle}}</b>{{contentObject.contentSecondObjectWithoutTable.secondPriceFirstSubtitle}}</h2>
 
-             <h3>{{contentObject.contentSecondObjectWithoutTable.secondSubtitle}}</h3>
-            <h2><b>{{contentObject.contentSecondObjectWithoutTable.firstTitlePriceSubtitle}}</b>{{contentObject.contentSecondObjectWithoutTable.firstPriceSecondSubtitle}}</h2>
-             <h2><b>{{contentObject.contentSecondObjectWithoutTable.secondTitlePriceSubtitle}}</b>{{contentObject.contentSecondObjectWithoutTable.secondPriceSecondSubtitle}}</h2>
-            
             <h3>{{contentObject.contentSecondObjectWithoutTable.description}}</h3>
         </div>
 
@@ -300,7 +295,9 @@
          </div>
         </div>
     </div>
+            {{/if}}
 
+                    {{#if contentObject.contentSecondObjectOneTable}}
         <div class="advantage-container-do-it">
 
         <img src="{{contentObject.contentSecondObjectOneTable.image}}" class="image">
