@@ -102,7 +102,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês."
+            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês, Serviços de impressão: R$ 25,00 + tarifário do mês."
         },
 
         subInfoContentObject5: {
@@ -115,7 +115,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
-            headerContentPrice: "R$ 5.200/MÊS",
+            headerContentPrice: "R$ 1.800/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg"
         },
@@ -328,7 +328,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês."
+            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês, Serviços de impressão: R$ 25,00 + tarifário do mês."
         },
 
         subInfoContentObject5: {
