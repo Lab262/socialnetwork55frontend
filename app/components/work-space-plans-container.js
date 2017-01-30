@@ -14,7 +14,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject: {
             subInfoContentTitle: "Espaço de trabalho",
-            subInfoContentDescription: "Acesso a plataforma digital e seus benefícios + um bônus mensal de 1 hora de reunião (meeting room) ou de 1 hora na estação de trabalho (Store ou Work). Caso não seja suficiente, existe a possibilidade de adquirir mais quando for necessário."
+            subInfoContentDescription: "Acesso a plataforma digital e seus benefícios + um bônus mensal de 1 hora de meeting room ou de 1 hora de open desk em qualquer espaço. Caso não seja suficiente, existe a possibilidade de adquirir mais quando for necessário."
         },
 
         subInfoContentObject2: {
@@ -164,7 +164,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject: {
             subInfoContentTitle: "Espaço de trabalho",
-            subInfoContentDescription: "Acesso a plataforma digital e seus benefícios + um bônus mensal de 1 hora de reunião (meeting room) ou de 1 hora na estação de trabalho (Store ou Work). Caso não seja suficiente, existe a possibilidade de adquirir mais quando for necessário."
+            subInfoContentDescription: "Acesso a plataforma digital e seus benefícios + um bônus mensal de 1 hora de meeting room ou de 1 hora de open desk em qualquer espaço. Caso não seja suficiente, existe a possibilidade de adquirir mais quando for necessário."
         },
 
         subInfoContentObject2: {
@@ -240,7 +240,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject: {
             subInfoContentTitle: "Espaço de trabalho",
-            subInfoContentDescription: "Acesso a plataforma digital e seus benefícios + um bônus mensal de 1 hora de reunião (meeting room) ou de 1 hora na estação de trabalho (Store ou Work). Caso não seja suficiente, existe a possibilidade de adquirir mais quando for necessário."
+            subInfoContentDescription: "Acesso a plataforma digital e seus benefícios + um bônus mensal de 1 hora de meeting room ou de 1 hora de open desk em qualquer espaço. Caso não seja suficiente, existe a possibilidade de adquirir mais quando for necessário."
         },
 
         subInfoContentObject2: {
