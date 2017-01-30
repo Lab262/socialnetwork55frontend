@@ -129,12 +129,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject2: {
             subInfoContentTitle: "Bônus",
-            subInfoContentDescription: "Por mês, você ganha 2h de meeting room."
+            subInfoContentDescription: "Por mês, você ganha 1h de meeting room."
         },
 
         subInfoContentObject3: {
             subInfoContentTitle: "Mais benefícios",
-            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado e endereço fiscal."
+            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado (você só paga o que consumir de telefonia) e endereço fiscal."
         },
 
         subInfoContentObject4: {
@@ -355,12 +355,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject2: {
             subInfoContentTitle: "Bônus",
-            subInfoContentDescription: "Por mês, você ganha 2h de meeting room."
+            subInfoContentDescription: "Por mês, você ganha 1h de meeting room."
         },
 
         subInfoContentObject3: {
             subInfoContentTitle: "Mais benefícios",
-            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado e endereço fiscal."
+            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado (você só paga o que consumir de telefonia) e endereço fiscal."
         },
 
         subInfoContentObject4: {
