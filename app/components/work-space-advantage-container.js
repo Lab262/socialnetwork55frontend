@@ -310,7 +310,7 @@ export default Ember.Component.extend({
             descriptionActionButton: "Se quiser alugar uma de nossas salas",
             titleActionButton: "Faça aqui",
             titleTable: "ACOMODAÇÕES E SUPORTES DISPONÍVEIS NO WORK(30 pessoas):",
-            itensTable: ["Ar Condicionado", "30 mesas e cadeiras", "TV", "Projetor + Tela", "Cabos HDMI VGA", "Água e café", "Local para coffee break", "Serviço de limpeza", "Visa cooler"]
+            itensTable: ["Ar Condicionado", "30 mesas e cadeiras", "TV", "Projetor + Tela", "Cabos HDMI, VGA e MAC", "Água e café", "Local para coffee break", "Serviço de limpeza", "Visa cooler"]
         },
 
         // contentObjectSecondTable: {
