@@ -145,9 +145,11 @@ export default Ember.Component.extend({
             titleActionButton: "Acesse aqui",
             firstRowTitle: "Endereço fiscal",
             firstRowSubtitle: "R$ 95,00 mês",
+            firstRowSubsubtitle: "*valor com desconto para pagamento na data de vencimento. Valor sem desconto: R$ 109,00",
             firstRowDescription: "Com este serviço, você pode registrar a sua empresa na junta comercial com um endereço privilegiado e, ainda, pode contar com o serviço de Caixa Postal para recebimento de correspondências. Ah, e não precisa ter pressa para fazer a retirada dos recebimentos, nossa equipe os gerencia e armazena por até 30 dias.",
             secondRowTitle: "Endereço fiscal e atendimento telefônico personalizado",
             secondRowSubtitle: "R$ 320,00 MÊS - serviço disponível apenas no .work",
+            secondRowSubsubtitle: "*valor com desconto para pagamento na data de vencimento. valor sem desconto R$340,00",
             secondRowDescription: "Agora ficou fácil ter uma equipe administrativa sem sair de casa. Com este pacote, você poderá registrar e divulgar o endereço privilegiado de sua empresa, ter o serviço de gerenciamento e armazenamento de caixa postal e, além disso, contar com um(a) profissional responsável por atender uma linha telefônica exclusiva e encaminhar seus recados por e-mail."
         },
 
@@ -281,9 +283,11 @@ export default Ember.Component.extend({
             titleActionButton: "Acesse aqui",
             firstRowTitle: "Endereço fiscal",
             firstRowSubtitle: "R$ 115 mês",
+            firstRowSubsubtitle: "*valor com desconto para pagamento na data de vencimento. Valor sem desconto: R$ 135,00",
             firstRowDescription: "Com este serviço, você pode registrar a sua empresa na junta comercial com um endereço privilegiado e, ainda, pode contar com o serviço de Caixa Postal para recebimento de correspondências. Ah, e não precisa ter pressa para fazer a retirada dos recebimentos, nossa equipe os gerencia e armazena por até 30 dias.",
             secondRowTitle: "Endereço fiscal e atendimento telefônico personalizado",
             secondRowSubtitle: "R$ 320,00 MÊS - serviço disponível apenas no .work (SAUS)",
+            secondRowSubsubtitle: "*valor com desconto para pagamento na data de vencimento. valor sem desconto R$340,00",
             secondRowDescription: "Agora ficou fácil ter uma equipe administrativa sem sair de casa. Com este pacote, você poderá registrar e divulgar o endereço privilegiado de sua empresa, ter o serviço de gerenciamento e armazenamento de caixa postal e, além disso, contar com um(a) profissional responsável por atender uma linha telefônica exclusiva e encaminhar seus recados por e-mail."
         },
 
