@@ -1,11 +1,11 @@
 import Ember from 'ember';
-import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers'
+import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers';
 
 export default Ember.Component.extend({
  
     memberType: Ember.computed(function () {                    
         let membershipType = ParseHelpers.urlParamWithName("memberType", window.location.href);
-        let isAValidatedType = (membershipType === "PARCEIRO" || membershipType === "MENTOR" || membershipType === "INVESTIDOR" ||  membershipType === "FRANQUEADO")
+        let isAValidatedType = (membershipType === "PARCEIRO" || membershipType === "MENTOR" || membershipType === "INVESTIDOR" ||  membershipType === "FRANQUEADO");
         if (membershipType !== undefined && isAValidatedType) {
             return membershipType;
         } else {
@@ -28,6 +28,7 @@ export default Ember.Component.extend({
     telephone: "",
 
     actions: {
+        
         registerUser() {
             var data = {
                 name: this.name,
@@ -42,15 +43,13 @@ export default Ember.Component.extend({
                 email: this.email,
                 telephone: this.telephone,
                 memberType: this.memberType
-            }
-
-            console.log(data)
+            };
             
             $.ajax({
                 type: "POST",
                 url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
                 data: data
-            })
+            });
 
             this.set('name', '');
             this.set('cpf', '');

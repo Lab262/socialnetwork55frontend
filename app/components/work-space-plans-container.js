@@ -124,7 +124,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
-            headerContentPrice: "R$ 1.800/MÊS",
+            headerContentPrice: "R$ 5.200/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
@@ -368,7 +368,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
-            headerContentPrice: "R$ 5.200/MÊS",
+            headerContentPrice: "R$ 1.800/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
