@@ -2,14 +2,14 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
     firstOpinionObject:{
-        name:"ALLAN SOUZA",
-        position:"CEO AGÊNCIA A PROPOSITO",
-        opinion:"“Na 55 lab pude conquistar meu espaço como empreendedor e estar no centro do mercado criativo em Brasília. Melhor que isso, não tem.”"
+        name:"Allan Alves",
+        position:"Sócio A.Propósito",
+        opinion:"“A diversidade e vontade de empreender com quem está perto é o que me encanta. Toda semana troco algo novo com alguém de outra empresa.”"
     },
 
     secondOpinionObject:{
-        name:"ALLAN SOUZA",
-        position:"CEO AGÊNCIA A PROPOSITO",
-        opinion:"“Na 55 lab pude conquistar meu espaço como empreendedor e estar no centro do mercado criativo em Brasília. Melhor que isso, não tem.”"
+        name:"Luiz Henrique",
+        position:"Sócio A.Propósito",
+        opinion:"“Mais do que compartilhar estrutura e reduzir custo, no 55 Lab compartilhamos idéias e oportunidades de negócio.”"
     }
 });
