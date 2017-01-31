@@ -81,15 +81,26 @@
    .knowledge-fixed-background {
     .presentation-container {
 
-     top: $topbar-height;
+      top: $topbar-height;
       height: 82.5%;
       display: flex;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
       margin-left: 8.0em;
+      position: relative;
+
           h1 {
             font-family: 'BebasNeue-Bold';
             font-size: 8.0vw;
             color: white;
+          }
+
+          h2 {
+            font-family: 'FjordOne-Regular';
+            font-size: 1.6vw;
+            color: white;
+            margin-top: -0.5em;
+            margin-right: 15vw;
           }
     }
    }
