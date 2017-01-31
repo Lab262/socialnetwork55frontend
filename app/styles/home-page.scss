@@ -30,7 +30,7 @@ $content-detail-height-mobile: 220vw;
   }
 
   .presentation-container {
-    margin-top: 10%;
+    padding-top: 10%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,7 +70,7 @@ $content-detail-height-mobile: 220vw;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    background : white;
+    background: white;
     width: 100%;
     height: $actioncontainer-height;
     z-index: 2;
