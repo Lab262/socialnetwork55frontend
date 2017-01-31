@@ -76,10 +76,12 @@ $content-width: 28vw;
 
     .knowledge-events-content-item-sub-description {
             width: 100%; 
-            height: auto;
+            height: 15vw;
             background: #AC0049;
             border-radius: 2%;
             text-align: justify;
+            align-items: center;
+            justify-content: center;
 
             .left-border {
                 position: absolute;
@@ -107,10 +109,9 @@ $content-width: 28vw;
     .knowledge-events-description-content-item {
            
             background: white;
-            height: auto;
+            height: 14vw;
             width: 100%;
-            align-items: center;
-            justify-content: center;
+            align-items: top;
             // margin-top: -1%;
             display: flex;
             flex-wrap: wrap;
@@ -120,6 +121,9 @@ $content-width: 28vw;
             border-bottom-style: solid;
             border-bottom-right-radius: 1%;
             border-bottom-left-radius: 1%;
+
+            
+
              .title {
                  margin-top:10%;
                  margin-left: 10%;
@@ -154,8 +158,7 @@ $content-width: 28vw;
             margin-left: 2.5%;
             margin-right: 15%;
             height: 3vw;
-            margin-top: 10%;
-            margin-bottom: 15%;
+            margin-bottom: 1.5vw;
             line-height: 75%;
             width:62.5%;
             font-size: 1.6vw;
@@ -175,18 +178,20 @@ $content-width: 28vw;
                     text-decoration: none;
                 }
             }
+ 
+            .image {
+                content: url('/assets/images/workspace-anuity-button-image-work.png');
+                width: 2.7vw;
+                height: 2.3vw;
+                margin-left: 113%;
+                margin-top: -4%;
+                position: relative;
+                z-index: -10;
+           } 
      
         }
 
-        .image {
-                content: url('/assets/images/workspace-anuity-button-image.png');
-                width: 10%;
-                height: 20%;
-                margin-left: 55%;
-                margin-top: -28.5%;
-                position: relative;
-                z-index: 0;
-            }
+        
 
     }
 
