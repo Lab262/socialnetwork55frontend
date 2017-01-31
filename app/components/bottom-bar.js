@@ -5,17 +5,20 @@ export default Ember.Component.extend({
 
      footerContentObjectFirst: {
        title: "Comunidade",
-       options: ["Membership"]
+       options: ["Membership"],
+       links: ["community"]
      },
 
      footerContentObjectSecond: {
        title: "Espaço de Trabalho",
-       options: ["House", "Store", "Work"]
+       options: [".House", ".Store", ".Work"],
+       links: ["work-space", "community", "knowledge"]
      },
 
      footerContentObjectThird: {
        title: "Conhecimento",
-       options: ["Acelere.me"]
+       options: ["Acelere.me"],
+       links: ["knowledge"]
      },
 
      footerContentObjectFourth: {

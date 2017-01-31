@@ -7,21 +7,21 @@
                               <div class = "container-title-information">
                                  <h1> {{footerContentObjectFirst.title}} </h1>
                                  {{#each footerContentObjectFirst.options as |option| }}
-                                 <h2>{{option}}</h2>
+                                 {{#link-to footerContentObjectFirst.links.[0]}}<h2>{{option}}</h2>{{/link-to}}
                                  {{/each}}
                               </div>
 
                             <div class = "container-title-information">
                                   <h1> {{footerContentObjectSecond.title}} </h1>
-                                  {{#each footerContentObjectSecond.options as |option| }}
-                                 <h2>{{option}}</h2>
-                                 {{/each}}
+                                  {{#link-to footerContentObjectSecond.links.[0]}}<h2>{{footerContentObjectSecond.options.[0]}}</h2>{{/link-to}}
+                                  {{#link-to footerContentObjectSecond.links.[1]}}<h2>{{footerContentObjectSecond.options.[1]}}</h2>{{/link-to}}
+                                  {{#link-to footerContentObjectSecond.links.[2]}}<h2>{{footerContentObjectSecond.options.[2]}}</h2>{{/link-to}}
                             </div>       
 
                             <div class = "container-title-information">
                                   <h1> {{footerContentObjectThird.title}} </h1>
                                   {{#each footerContentObjectThird.options as |option| }}
-                                 <h2>{{option}}</h2>
+                                  {{#link-to footerContentObjectThird.links.[0]}}<h2>{{option}}</h2>{{/link-to}}
                                  {{/each}}
                             </div>          
 
@@ -30,7 +30,7 @@
                                      <h1> {{footerContentObjectFourth.title}} </h1>
                                      {{#each footerContentObjectFourth.options as |option| }}
                                       <h3>{{option}}</h3>
-                                 {{/each}}
+                                    {{/each}}
                                     
                                   </div>  
 
