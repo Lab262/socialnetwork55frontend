@@ -24,7 +24,7 @@
                 <h1>{{contentFirstObject.description}}</h1>
             </div>
              <button class="our-team-content-first-button">
-                 {{#link-to "sign-up-membership" target="_blank"}}{{contentMainObject.titleButton}}{{/link-to}}
+                 {{#link-to "sign-up-membership" (query-params contentTitle="oi")   target="_blank" }}{{contentMainObject.titleButton}}{{/link-to}}
             </button>   
              
         </div>

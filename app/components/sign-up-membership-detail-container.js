@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
 
+queryParams: ['contentTitle'],
 contentTitle: "Membership",
 contentDescription:"Faça o seu cadastro inicial, com apenas algumas informações:",
 contentSecondDescription:"Não perca a oportunidade de expandir seu negócio",
