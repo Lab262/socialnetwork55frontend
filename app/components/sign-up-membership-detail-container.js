@@ -1,11 +1,22 @@
 import Ember from 'ember';
 
-export default Ember.Component.extend({
+import ParamUtils from './../mixins/url-parse'
+export default Ember.Component.extend(ParamUtils, {
 
-queryParams: ['contentTitle'],
-contentTitle: "Membership",
-contentDescription:"Faça o seu cadastro inicial, com apenas algumas informações:",
-contentSecondDescription:"Não perca a oportunidade de expandir seu negócio",
+    memberType: Ember.computed(function () {
+        
+        this.set('parameterNameToGet', "memberType");
+        let membershipType = this.get('paramWithName');
+        let isAValidatedType = (membershipType == "PARCEIRO" || membershipType == "MENTOR" || membershipType == "INVESTIDOR" ||  membershipType == "FRANQUEADO")
+        if (membershipType != undefined && isAValidatedType) {
+            return membershipType;
+        } else {
+             return "MEMBERSHIP";
+        }
+    }),
+
+    contentDescription: "Faça o seu cadastro inicial, com apenas algumas informações:",
+    contentSecondDescription: "Não perca a oportunidade de expandir seu negócio",
     name: "",
     cpf: "",
     rg: "",
@@ -20,38 +31,39 @@ contentSecondDescription:"Não perca a oportunidade de expandir seu negócio",
 
     actions: {
         registerUser() {
-            var data =  { 
-                        name: this.name, 
-                        cpf: this.cpf,
-                        rg: this.rg, 
-                        adress_label: this.address,
-                        adress_number: this.number, 
-                        adress_mpolement: this.complement,
-                        adress_neighbor: this.neighbor, 
-                        adress_state: this.state,
-                        adress_country: this.country,
-                        email: this.email,
-                        telephone: this.telephone
-                    }
+            var data = {
+                name: this.name,
+                cpf: this.cpf,
+                rg: this.rg,
+                adress_label: this.address,
+                adress_number: this.number,
+                adress_mpolement: this.complement,
+                adress_neighbor: this.neighbor,
+                adress_state: this.state,
+                adress_country: this.country,
+                email: this.email,
+                telephone: this.telephone,
+                memberType: this.memberType
+            }
 
-                    console.log(data)
-             $.ajax({
-                    type: "POST",
-                    url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
-                    data: data
-                })
-                
-                    this.set('name', '');
-                    this.set('cpf', '');
-                    this.set('rg', '');
-                    this.set('address', '');
-                    this.set('number', '');
-                    this.set('complement', '');
-                    this.set('neighbor', '');
-                    this.set('state', '');
-                    this.set('country', '');
-                    this.set('email', '');
-                    this.set('telephone', '');
+            console.log(data)
+            $.ajax({
+                type: "POST",
+                url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
+                data: data
+            })
+
+            this.set('name', '');
+            this.set('cpf', '');
+            this.set('rg', '');
+            this.set('address', '');
+            this.set('number', '');
+            this.set('complement', '');
+            this.set('neighbor', '');
+            this.set('state', '');
+            this.set('country', '');
+            this.set('email', '');
+            this.set('telephone', '');
         }
     }
 
