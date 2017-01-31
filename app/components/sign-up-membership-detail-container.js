@@ -5,8 +5,8 @@ export default Ember.Component.extend({
  
     memberType: Ember.computed(function () {                    
         let membershipType = ParseHelpers.urlParamWithName("memberType", window.location.href);
-        let isAValidatedType = (membershipType == "PARCEIRO" || membershipType == "MENTOR" || membershipType == "INVESTIDOR" ||  membershipType == "FRANQUEADO")
-        if (membershipType != undefined && isAValidatedType) {
+        let isAValidatedType = (membershipType === "PARCEIRO" || membershipType === "MENTOR" || membershipType === "INVESTIDOR" ||  membershipType === "FRANQUEADO")
+        if (membershipType !== undefined && isAValidatedType) {
             return membershipType;
         } else {
             return "MEMBERSHIP";
@@ -45,6 +45,7 @@ export default Ember.Component.extend({
             }
 
             console.log(data)
+            
             $.ajax({
                 type: "POST",
                 url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
