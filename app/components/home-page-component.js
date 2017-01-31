@@ -7,6 +7,7 @@ export default Ember.Component.extend({
   contentObject: {
     mainPhraseTitle: "+CONEXÃO +COMPARTILHAMENTO +NETWORKING",
     mainPhraseDescription: "Ser uma lab community é escrever histórias dentro de uma comunidade plural feita da soma de pessoas e suas ideias que, por meio do contato constante e da troca de experiências, sonham, fazem e compartilham mais.",
+    mainTitleButton:"SEJA MEMBRO",
     actionLeftTitle: "COMUNIDADE",
     actionCenter0Title: "ESPAÇO DE TRABALHO",
     actionCenter1Title: "CONHECIMENTO",
