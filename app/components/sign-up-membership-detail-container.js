@@ -1,17 +1,15 @@
 import Ember from 'ember';
+import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers'
 
-import ParamUtils from './../mixins/url-parse'
-export default Ember.Component.extend(ParamUtils, {
-
-    memberType: Ember.computed(function () {
-        
-        this.set('parameterNameToGet', "memberType");
-        let membershipType = this.get('paramWithName');
+export default Ember.Component.extend({
+ 
+    memberType: Ember.computed(function () {                    
+        let membershipType = ParseHelpers.urlParamWithName("memberType", window.location.href);
         let isAValidatedType = (membershipType == "PARCEIRO" || membershipType == "MENTOR" || membershipType == "INVESTIDOR" ||  membershipType == "FRANQUEADO")
         if (membershipType != undefined && isAValidatedType) {
             return membershipType;
         } else {
-             return "MEMBERSHIP";
+            return "MEMBERSHIP";
         }
     }),
 

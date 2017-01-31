@@ -1,12 +1,7 @@
 import Ember from 'ember';
 
-/**
-   * Returns true if models in the model array contains a true value for the given property name.
-   * @param flag {String} - The Ember Data Model Flag to check if anything is
-   * @returns {Ember.ComputedProperty}
-   */
-function urlParamWithName(name,url) {
-
+export function urlParamWithName(name,url) {
+    console.log(url)
     if (!url) {
         url = window.location.href;
     }
