@@ -5,21 +5,25 @@ export default Ember.Component.extend({
 
      footerContentObjectFirst: {
        title: "Comunidade",
-       options: ["Membership"]
+       options: ["Membership"],
+       links: ["community"]
      },
 
      footerContentObjectSecond: {
        title: "Espaço de Trabalho",
-       options: ["House", "Store", "Work"]
+       options: [".House", ".Store", ".Work"],
+       links: ["work-space", "community", "knowledge"]
      },
 
      footerContentObjectThird: {
        title: "Conhecimento",
-       options: ["Acelere.me"]
+       options: ["Acelere.me"],
+       links: ["knowledge"]
      },
 
      footerContentObjectFourth: {
        title: "Contato",
-       options: ["55lab.co@email.br", "(61) 00000 - 00000"]
+       options: ["hi@55lab.co", "(61) 3217-6800"]
      }
+
 });
