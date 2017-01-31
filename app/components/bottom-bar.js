@@ -20,6 +20,7 @@ export default Ember.Component.extend({
 
      footerContentObjectFourth: {
        title: "Contato",
-       options: ["55lab.co@email.br", "(61) 00000 - 00000"]
+       options: ["hi@55lab.co", "(61) 3217-6800"]
      }
+
 });
