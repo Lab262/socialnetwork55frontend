@@ -261,6 +261,7 @@ export default Ember.Component.extend({
         contentSecondObjectOneTable: {
             image: "/assets/images/showroom-icon.png",
             title: "Showroom",
+            subtitle: ".STORE:",
             description: "Nesse espaço seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você. Não vamos ficar com qualquer percentual de venda e nem fazer estoque… a ideia aqui é que os clientes comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!",
             descriptionActionButton: "Se quiser alugar uma de nossas acomodações",
             titleActionButton: "Faça aqui",
