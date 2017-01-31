@@ -48,7 +48,6 @@
                                     .work-space-plans-content-button{
                                             // position: relative;
                                             margin-left: 1.8vw;
-                                            background:#AC0049;
                                             color:white;
                                             height: 3.5vw;
                                             line-height: 3.5vw;
@@ -73,13 +72,11 @@
     .work-space-plans-content-item-sub-description {
             width: 100%; 
             height: 20vw;
-            background: #AC0049;
             border-radius: 2%;
             text-align: justify;
 
             .left-border {
                 position: absolute;
-                background: #D8AD09;
                 width: 0.75vw;
                 height: 9.5vw;
                 margin-top: 2.5%;
@@ -159,7 +156,6 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);       
 
             .image {
-                content: url('/assets/images/workspace-anuity-button-image.png');
                 width: 2.7vw;
                 height: 2.3vw;
                 margin-left: 120%;

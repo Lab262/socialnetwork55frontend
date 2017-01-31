@@ -20,7 +20,7 @@ export default Ember.Component.extend({
 
   leftDetailContentObject: {
     title: "+55Lab.Community: fazer e compartilhar juntos",
-    description: "Somos uma comunidade virtual e real, construída a partir da força do ecossistema empreendedor brasileiro. A Lab.Community permite + torcas de ideias entre pessoas que juntas formam uma poderosa rede de negócios.",
+    description: "Somos uma comunidade virtual e real, construída a partir da força do ecossistema empreendedor brasileiro. A Lab.Community permite + trocas de ideias entre pessoas que juntas formam uma poderosa rede de negócios.",
     subTitle: "MEMBERSHIP",
     subDescription: "Encontre parceiros de negócios, clientes, explore todos os benefícios oferecidos, fique por dentro dos assuntos do seu interesse e se conecte a empresas, mentores e entusiastas do empreendedorismo.",
     options: ["Parceiro", "Franquiado", "Mentor", "INVESTIDOR"],
@@ -49,8 +49,8 @@ export default Ember.Component.extend({
   rightDetailContentObject: {
     title: "PRECISA DE UM HELP OU QUER CONVERSAR COM A GENTE?",
     description: "Se tiver alguma dúvida, não precisa ter vergonha, pode falar com a gente. E, se quiser nos conhecer pessoalmente, é só marcar e vir nos visitar.",
-    email: "55lab.co@emai.br",
-    phone: "(61) - 00000 - 0000",
+    email: "hi@55lab.co",
+    phone: "(61) 3217-6800",
     socialMedia: {twitter: "url", facebook: "url", instagram: "url"},
     copyright: "© +55 Lab. Todos os direitos reservados. 2016"
   },
