@@ -119,7 +119,7 @@ export default Ember.Component.extend({
                 } else if (!this.phoneNumberValidation[0].validate(this.telephone)) {
                     alert('Campo *Telefone* não contém um número de telefone válido')
                 } else if (!this.emailValidation[0].validate(this.email)) {
-                    alert('Campo *Email* não contém um número de telefone válido')
+                    alert('Campo *Email* não contém um email válido')
                 }
 
             }
