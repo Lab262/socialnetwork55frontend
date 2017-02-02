@@ -13,9 +13,10 @@
 
                             <div class = "container-title-information">
                                   <h1> {{footerContentObjectSecond.title}} </h1>
+                                   {{#link-to "sign-up-membership" (query-params memberType=contentFirstObject.title)   target="_blank" }}{{contentMainObject.titleButton}}{{/link-to}}
                                   {{#link-to footerContentObjectSecond.links.[0] (query-params spaceType="house")}}<h2>{{footerContentObjectSecond.options.[0]}}</h2>{{/link-to}}
                                   {{#link-to footerContentObjectSecond.links.[1] (query-params spaceType="store")}}<h2>{{footerContentObjectSecond.options.[1]}}</h2>{{/link-to}}
-                                  {{#link-to footerContentObjectSecond.links.[2] (query-params spaceType="work")}}<h2>{{footerContentObjectSecond.options.[2]}}</h2>{{/link-to}}
+                                  {{#link-to footerContentObjectSecond.links.[2] (query-params spaceType="work") }}<h2>{{footerContentObjectSecond.options.[2]}}</h2>{{/link-to}}
                             </div>       
                      
                             <div class = "container-title-information">
