@@ -111,6 +111,14 @@ $background-color: rgba(247,247,247,1);
          align-items: flex-start;
          margin-top: -2vw;
 
+
+           md-input-container.md-default-theme.md-input-invalid .md-input, md-input-container.md-input-invalid .md-input{
+               border-color: red;
+               border-bottom-width: 1px;
+               margin-bottom: -3px;
+               }
+
+
          .form-field-big {
            margin: 0.5vw;
            width: 90%;

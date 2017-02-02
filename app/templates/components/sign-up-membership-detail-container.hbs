@@ -14,7 +14,7 @@
             <div class="left-content">
 
                 <div class="form-field-big">
-                    {{paper-input label="Name" value=name onChange=(action (mut name))}}
+                    {{paper-input label="Nome" value=name onChange=(action (mut name)) customValidations=clearFieldValidation }}
                 </div>
 
                 <div class="form-field-medium">
@@ -22,7 +22,7 @@
                 </div>
 
                 <div class="form-field-medium">
-                    {{!--{{input-mask mask="99999999999" placeholder="RG"}}--}} {{paper-input label="RG" value=rg onChange=(action (mut rg))}}
+                 {{paper-input label="RG" value=rg onChange=(action (mut rg))}}
 
                 </div>
 
@@ -31,7 +31,7 @@
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Número'" value=number onChange=(action (mut number))}}
+                    {{paper-input label="Número" value=number onChange=(action (mut number)) }}
                 </div>
 
                 <div class="form-field-medium">
@@ -47,15 +47,15 @@
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="País'" value=country onChange=(action (mut country))}}
+                    {{paper-input label="País" value=country onChange=(action (mut country))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Email'" value=email onChange=(action (mut email))}}
+                    {{paper-input label="Email" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Telefone'" value=telephone onChange=(action (mut telephone))}}
+                    {{paper-input label="Telefone +55 DDD " value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
                 </div>
 
      <div class="subscribe-button-background-borders">

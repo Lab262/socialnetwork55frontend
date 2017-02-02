@@ -2,10 +2,10 @@ import Ember from 'ember';
 import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers';
 
 export default Ember.Component.extend({
- 
-    memberType: Ember.computed(function () {                    
+
+    memberType: Ember.computed(function () {
         let membershipType = ParseHelpers.urlParamWithName("memberType", window.location.href);
-        let isAValidatedType = (membershipType === "PARCEIRO" || membershipType === "MENTOR" || membershipType === "INVESTIDOR" ||  membershipType === "FRANQUEADO");
+        let isAValidatedType = (membershipType === "PARCEIRO" || membershipType === "MENTOR" || membershipType === "INVESTIDOR" || membershipType === "FRANQUEADO");
         if (membershipType !== undefined && isAValidatedType) {
             return membershipType;
         } else {
@@ -27,8 +27,42 @@ export default Ember.Component.extend({
     email: "",
     telephone: "",
 
+    emailValidation: [{
+        message: 'Entre com um email válido',
+        validate: (inputValue) => {
+            let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+            return emailPattern.test(inputValue);
+        }
+    }],
+
+    phoneNumberValidation: [{
+        message: 'Entre com um telfone válido',
+        validate: (inputValue) => {
+            let emailPattern = /^\(?([0-9]{2})\)?[-. ]?([0-9]{5})[-. ]?([0-9]{4})$/;
+            return emailPattern.test(inputValue);
+        }
+    }],
+
+
+    clearFieldValidation: [{
+        message: 'Campo obrigatório',
+        validate: (inputValue) => {
+            let validFieldPattern = /^(?!\s*$)/g;
+            return validFieldPattern.test(inputValue);
+        }
+    }],
+
+     maskPhoneNumber(number) {
+        var v = number;
+        v = v.replace(/\D/g, "");             //Remove tudo o que não é dígito
+        v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
+        v = v.replace(/(\d)(\d{4})$/, "$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
+        this.set('telephone', v);
+    },
+
+
     actions: {
-        
+
         registerUser() {
             var data = {
                 name: this.name,
@@ -62,7 +96,11 @@ export default Ember.Component.extend({
             this.set('country', '');
             this.set('email', '');
             this.set('telephone', '');
-        }
+        },
+
+     
     }
+
+    
 
 });
