@@ -25,7 +25,7 @@ export default Ember.Component.extend({
     subTitle: "MEMBERSHIP",
     subDescription: "Encontre parceiros de negócios, clientes, explore todos os benefícios oferecidos, fique por dentro dos assuntos do seu interesse e se conecte a empresas, mentores e entusiastas do empreendedorismo.",
     options: ["Parceiro", "Franquiado", "Mentor", "INVESTIDOR"],
-    itemActions: [{url: "/community", title: "Faça Parte", image: "/assets/images/work_space_button_store.png"}]
+    itemActions: [{url: "/comunidade", title: "Faça Parte", image: "/assets/images/work_space_button_store.png"}]
   },
 
   center0DetailContentObject: {
@@ -35,7 +35,7 @@ export default Ember.Component.extend({
     subDescription: "Nem todos os negócios são iguais e do mesmo tamanho. Por isso, nossa estrutura é dividida em três segmentos que, com certeza, atendem às suas necessidades. Compare e agende sua visita:",
     options: [],
     image:"/assets/images/names-spaces.png",
-    itemActions: [{url: "/work-space", title: "Saiba Mais", image: "/assets/images/home_page_button_work_space.png"}]
+    itemActions: [{url: "/espaco-de-trabalho", title: "Saiba Mais", image: "/assets/images/home_page_button_work_space.png"}]
   },
 
   center1DetailContentObject: {
@@ -44,7 +44,7 @@ export default Ember.Component.extend({
     subTitle: "Acelere.me",
     subDescription: "Conheça os eventos e cursos da nossa parceira em geração de conhecimento para você compartilhar, trocar, ou adquirir novas ideias empreendedoras.",
     options: [],
-    itemActions: [{url:"/knowledge", title: "Saiba o que está rolando", image: "/assets/images/work_space_button_work.png"}]
+    itemActions: [{url:"/conhecimento", title: "Saiba o que está rolando", image: "/assets/images/work_space_button_work.png"}]
   },
 
   rightDetailContentObject: {
