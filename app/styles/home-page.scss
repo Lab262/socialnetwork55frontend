@@ -212,6 +212,7 @@ $content-detail-height-mobile: 220vw;
       .action-right.active + .hover-content-right {
            visibility: visible;
            opacity: 1;
+           z-index: 99999;
            transition: visibility 0s linear 0ms, opacity 300ms;
           }
     }
