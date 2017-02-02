@@ -37,7 +37,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "R$ 49,00 mês. Se quiser experimentar por apenas 1 mês, você paga R$ 60,00.",
+            subInfoContentDescription: "R$ 49,00/mês. Se quiser experimentar por apenas 1 mês, você paga R$ 60,00.",
             subInfoContentActionName: "VEJA AQUI"
         }
     },
@@ -71,12 +71,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Atendimento telefônico: R$60 + tarifário/mês, Serviços de caixa postal: R$50/mês, Serviços de impressão: R$25,00 + tarifário/mês."
+            subInfoContentDescription: "Sala de reunião: a partir de R$ 25,00/hora, Sala de conferência: a partir de R$ 55,00/hora, Atendimento telefônico: R$ 60,00 + tarifário/mês, Serviços de caixa postal: R$ 50,00/mês, Serviços de impressão: R$ 25,00 + tarifário/mês."
         },
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de R$ 865 mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 995,00.",
+            subInfoContentDescription: "A partir de R$ 865,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 995,00.",
             subInfoContentActionName: "VEJA AQUI"
         }
     },
@@ -111,12 +111,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês, Serviços de impressão: R$ 25,00 + tarifário do mês."
+            subInfoContentDescription: "Sala de reunião: a partir de R$ 25,00/hora, Sala de conferência: a partir de R$ 55/hora, Sala de eventos: a partir de R$ 150,00/hora, Endereço fiscal: a partir de R$ 115,00/mês, Serviços de impressão: R$ 25,00 + tarifário do mês."
         },
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de R$ 985 mês. Se você quiser experimentar por apenas um mês, você paga a partir de R$ 1.135,00.",
+            subInfoContentDescription: "A partir de R$ 985,00/mês. Se você quiser experimentar por apenas um mês, você paga a partir de R$ 1.135,00.",
             subInfoContentActionName: "VEJA AQUI"
         }
     },
@@ -124,7 +124,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
-            headerContentPrice: "R$ 5.200/MÊS",
+            headerContentPrice: "R$ 5.200,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
@@ -151,12 +151,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora"
+            subInfoContentDescription: "Sala de reunião: a partir de R$ 25,00/hora, Sala de conferência: a partir de R$ 55,00/hora"
         },
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de 5200 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
+            subInfoContentDescription: "A partir de R$ 5.200,00/mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
             subInfoContentActionName: "VEJA AQUI"
         }
     }
@@ -199,7 +199,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "R$ 49,00 mês. Se quiser experimentar por apenas 1 mês, você paga R$ 60,00.",
+            subInfoContentDescription: "R$ 49,00/mês. Se quiser experimentar por apenas 1 mês, você paga R$ 60,00.",
             subInfoContentActionName: "VEJA AQUI"
         }
     },
@@ -233,12 +233,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês, Serviços de caixa postal: R$50/mês."
+            subInfoContentDescription: "Sala de eventos: a partir de R$150,00/hora, Endereço fiscal: a partir de R$115,00/mês, Serviços de caixa postal: R$ 50,00/mês."
         },
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de R$ 320 mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 365,00.",
+            subInfoContentDescription: "A partir de R$ 320,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 365,00.",
             subInfoContentActionName: "VEJA AQUI"
         }
     }
@@ -315,12 +315,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês, Atendimento telefônico: R$60 + tarifário/mês, Serviços de caixa postal: R$50/mês, Serviços de impressão: R$25,00 + tarifário/mês"
+            subInfoContentDescription: "Sala de reunião: a partir de R$ 25,00/hora, Sala de conferência: a partir de R$ 55,00/hora, Sala de eventos: a partir de R$150,00/hora, Endereço fiscal: a partir de R$115,00/mês, Atendimento telefônico: R$ 60,00 + tarifário/mês, Serviços de caixa postal: R$ 50,00/mês, Serviços de impressão: R$ 25,00 + tarifário/mês"
         },
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de R$ 575 mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 685,00.",
+            subInfoContentDescription: "A partir de R$ 575,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 685,00.",
             subInfoContentActionName: "VEJA AQUI"
         }
     },
@@ -355,12 +355,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês, Serviços de impressão: R$ 25,00 + tarifário do mês."
+            subInfoContentDescription: "Sala de reunião: a partir de R$ 25,00/hora, Sala de conferência: a partir de R$ 55,00/hora, Sala de eventos: a partir de R$ 150,00/hora, Endereço fiscal: a partir de R$ 115,00/mês, Serviços de impressão: R$ 25,00 + tarifário do mês."
         },
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de R$ 820 mês. Se você quiser experimentar por apenas um mês, você paga a partir de R$ 945,00.",
+            subInfoContentDescription: "A partir de R$ 820,00/mês. Se você quiser experimentar por apenas um mês, você paga a partir de R$ 945,00.",
             subInfoContentActionName: "VEJA AQUI"
         }
     },
@@ -368,7 +368,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
-            headerContentPrice: "R$ 1.800/MÊS",
+            headerContentPrice: "R$ 1.800,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
@@ -395,12 +395,12 @@ export default Ember.Component.extend({
 
         subInfoContentObject4: {
             subInfoContentTitle: "Adicionais disponíveis",
-            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55/hora, Sala de eventos: a partir de R$150/hora, Endereço fiscal: a partir de R$115/mês."
+            subInfoContentDescription: "Sala de reunião: a partir de R$25,00/hora, Sala de conferência: a partir de R$55,00/hora, Sala de eventos: a partir de R$150,00/hora, Endereço fiscal: a partir de R$ 115,00/mês."
         },
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de 1800 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
+            subInfoContentDescription: "A partir de R$ 1800,00/mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
             subInfoContentActionName: "VEJA AQUI"
         }
     }
