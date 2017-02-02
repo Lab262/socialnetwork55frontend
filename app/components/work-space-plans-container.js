@@ -1,4 +1,5 @@
 import Ember from 'ember';
+import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers';
 
 export default Ember.Component.extend({
 
@@ -9,8 +10,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-membership-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
-            headerColorBackground:"#85BF47",
-            headerColorBorderBackground:"#0A365C"
+            headerColorBackground: "#85BF47",
+            headerColorBorderBackground: "#0A365C"
         },
 
         descriptionContent: "Faça parte de uma comunidade diversificada que vai te inspirar, facilitar o desenvolvimento de seus negócios e te conectar com novos parceiros.",
@@ -48,8 +49,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
-            headerColorBackground:"#85BF47",
-            headerColorBorderBackground:"#0A365C"
+            headerColorBackground: "#85BF47",
+            headerColorBorderBackground: "#0A365C"
         },
 
         descriptionContent: "Acesso a qualquer desk disponível na área comum do +55Lab em três locais diferentes: .work, .house e .store. Esse plano inclui o membership do +55.community e 1 hora de meeting room por mês.",
@@ -81,15 +82,15 @@ export default Ember.Component.extend({
         }
     },
 
-   {
+    {
         headerContent: {
             headerContentTitle: "FIXED DESK",
             headerContentPrice: "R$ 985,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
-            headerColorBackground:"#85BF47",
-            headerColorBorderBackground:"#0A365C"
+            headerColorBackground: "#85BF47",
+            headerColorBorderBackground: "#0A365C"
         },
 
         descriptionContent: "Uma mesa pra chamar de sua em um espaço compartilhado. O plano está disponível para os espaços .work e .house e também inclui o membership do +55.community e 1 hora de meeting room por mês.",
@@ -128,8 +129,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
-            headerColorBackground:"#85BF47",
-            headerColorBorderBackground:"#0A365C"
+            headerColorBackground: "#85BF47",
+            headerColorBorderBackground: "#0A365C"
         },
 
         descriptionContent: "Para você que deseja uma sala exclusiva e quer criar a sua própria cultura, mas também deseja fazer parte da comunidade e garantir todos os benefícios, este é o plano ideal para impulsionar o crescimento do seu negócio.",
@@ -160,7 +161,7 @@ export default Ember.Component.extend({
             subInfoContentActionName: "VEJA AQUI"
         }
     }
-    
+
     ],
 
 
@@ -171,8 +172,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-membership-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
-            headerColorBackground:"#D8AD09",
-            headerColorBorderBackground:"#AC0049"
+            headerColorBackground: "#D8AD09",
+            headerColorBorderBackground: "#AC0049"
         },
 
         descriptionContent: "Faça parte de uma comunidade diversificada que vai te inspirar, facilitar o desenvolvimento de seus negócios e te conectar com novos parceiros.",
@@ -210,8 +211,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
-            headerColorBackground:"#D8AD09",
-            headerColorBorderBackground:"#AC0049"
+            headerColorBackground: "#D8AD09",
+            headerColorBorderBackground: "#AC0049"
         },
 
         descriptionContent: "Acesso a qualquer desk disponível na área comum do +55Lab em três locais diferentes: .work, .house e .store. Esse plano inclui o membership do +55.community e 1 hora de meeting room por mês.",
@@ -253,8 +254,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-membership-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
-            headerColorBackground:"#AC0049",
-            headerColorBorderBackground:"#D8AD09"
+            headerColorBackground: "#AC0049",
+            headerColorBorderBackground: "#D8AD09"
         },
 
         descriptionContent: "Faça parte de uma comunidade diversificada que vai te inspirar, facilitar o desenvolvimento de seus negócios e te conectar com novos parceiros.",
@@ -292,8 +293,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
-            headerColorBackground:"#AC0049",
-            headerColorBorderBackground:"#D8AD09"
+            headerColorBackground: "#AC0049",
+            headerColorBorderBackground: "#D8AD09"
         },
 
         descriptionContent: "Acesso a qualquer desk disponível na área comum do +55Lab em três locais diferentes: .work, .house e .store. Esse plano inclui o membership do +55.community e 1 hora de meeting room por mês.",
@@ -325,15 +326,15 @@ export default Ember.Component.extend({
         }
     },
 
-   {
+    {
         headerContent: {
             headerContentTitle: "FIXED DESK",
             headerContentPrice: "R$ 820,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
-            headerColorBackground:"#AC0049",
-            headerColorBorderBackground:"#D8AD09"
+            headerColorBackground: "#AC0049",
+            headerColorBorderBackground: "#D8AD09"
         },
 
         descriptionContent: "Uma mesa pra chamar de sua em um espaço compartilhado. O plano está disponível para os espaços .work e .house e também inclui o membership do +55.community e 1 hora de meeting room por mês.",
@@ -372,8 +373,8 @@ export default Ember.Component.extend({
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
-            headerColorBackground:"#AC0049",
-            headerColorBorderBackground:"#D8AD09"
+            headerColorBackground: "#AC0049",
+            headerColorBorderBackground: "#D8AD09"
         },
 
         descriptionContent: "Para você que deseja uma sala exclusiva e quer criar a sua própria cultura, mas também deseja fazer parte da comunidade e garantir todos os benefícios, este é o plano ideal para impulsionar o crescimento do seu negócio.",
@@ -404,7 +405,7 @@ export default Ember.Component.extend({
             subInfoContentActionName: "VEJA AQUI"
         }
     }
-    
+
     ],
 
     selectedPlan: [],
@@ -414,6 +415,16 @@ export default Ember.Component.extend({
     didInsertElement() {
         this._super(...arguments);
         this.get('changeInfoDelegate').send('setWorkspacePlansChild', this);
+        this.selectPlanBasedOnUrl()
+    },
+
+    selectPlanBasedOnUrl() {
+
+        let spaceType = ParseHelpers.urlParamWithName("spaceType", window.location.href);
+        let isAValidatedType = (spaceType === "house" || spaceType === "store" || spaceType === "work");
+        if (spaceType !== undefined && isAValidatedType) {
+            this.send('selectPlan', spaceType)
+        }
     },
 
     actions: {

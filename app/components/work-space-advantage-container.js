@@ -1,10 +1,12 @@
 import Ember from 'ember';
+import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers';
 
 export default Ember.Component.extend({
 
 
+
     contentObject: {
-        
+
     },
 
     houseContentObject: {
@@ -388,7 +390,7 @@ export default Ember.Component.extend({
             firstSubtitle: ".WORK (para até 10 pessoas)",
             firstPriceFirstSubtitle: " R$55,00 hora",
             secondPriceFirstSubtitle: " R$65,00 hora",
-           
+
             firstTitlePriceSubtitle: "Membros:",
             secondTitlePriceSubtitle: "Não-Membros:",
 
@@ -399,20 +401,34 @@ export default Ember.Component.extend({
     },
 
     didInsertElement() {
-        this._super(...arguments);   
-
-        //window.location.href     
+        this._super(...arguments);
         this.get('changeInfoDelegate').send('setAdvantagePlansChild', this);
+        this.selectPlanBasedOnUrl()
+    },
+
+    selectPlanBasedOnUrl() {
+        let spaceType = ParseHelpers.urlParamWithName("spaceType", window.location.href);
+        let isAValidatedType = (spaceType === "house" || spaceType === "store" || spaceType === "work");
+
+        if (spaceType !== undefined && isAValidatedType) {
+            this.send('selectPlan', spaceType)
+        }
     },
 
     actions: {
         selectPlan(currentSelectedPlan) {
+            console.log(currentSelectedPlan)
+            console.log(this.get('contentObject'))
+
             if (currentSelectedPlan === "house") {
                 this.set('contentObject', this.houseContentObject);
             } else if (currentSelectedPlan === "store") {
                 this.set('contentObject', this.storeContentObject);
             } else if (currentSelectedPlan === "work") {
+                console.log("PAAASSSEEEI")
+
                 this.set('contentObject', this.workContentObject);
+                console.log(this.get('contentObject'))
             }
             this.set('displayType', "flex");
         }

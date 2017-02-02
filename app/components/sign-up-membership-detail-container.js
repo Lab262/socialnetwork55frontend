@@ -44,7 +44,7 @@ export default Ember.Component.extend({
                 telephone: this.telephone,
                 memberType: this.get('memberType')
             };
-            console.log(this.get('memberType'));
+
             $.ajax({
                 type: "POST",
                 url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
