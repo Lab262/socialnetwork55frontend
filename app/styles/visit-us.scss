@@ -1,6 +1,6 @@
 $background-color: rgba(247,247,247,1);
 
-.sign-up-membership {
+.visit-us {
    background: $background-color;
    width: 100%;
      width: 100%;
@@ -9,7 +9,7 @@ $background-color: rgba(247,247,247,1);
   position: absolute;
 
 
-  .sign-up-membership-container {
+  .visit-us-container {
    margin-top: 8vw;
    padding-bottom: 25vw;
    
@@ -23,7 +23,7 @@ $background-color: rgba(247,247,247,1);
         width: 40%; 
         height: 6vw;
         margin-left: 7.5vw;
-        background:url(/assets/images/background_button_membership.png);
+        background:url(/assets/images/background_button_visit_us.png);
         background-size:20.5vw; 
         background-repeat: no-repeat;
 
@@ -52,7 +52,7 @@ $background-color: rgba(247,247,247,1);
 
         .header-divider{
             position:relative;
-            background: #D8AD09;
+            background: #E65B05;
             height: 5px;
             width: 10vw;
             margin-top: -1%;
@@ -85,7 +85,7 @@ $background-color: rgba(247,247,247,1);
 
            .label-icon {
              margin-left: 1vw;
-             background: url(/assets/images/sign_up_membership_page_detail_picture.png);
+             background: url(/assets/images/visit_us_page_detail_picture.png);
              height: 2vw;
              width: 3vw;
              background-size: 100%;
@@ -162,7 +162,7 @@ $background-color: rgba(247,247,247,1);
             width: 17vw;
             height: 8vw;
             position: relative;
-            }
+          }
 
 
           &:hover {

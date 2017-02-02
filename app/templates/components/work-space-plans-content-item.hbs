@@ -15,7 +15,9 @@
                     </div>
 
                     <button class="work-space-plans-content-button" style="background:{{contentObject.headerContent.headerColorBackground}}">
-                            {{contentObject.headerContent.headerContentWorkspacePlanButton}}
+                    
+                    {{#link-to "visit-us" target="_blank"}}{{contentObject.headerContent.headerContentWorkspacePlanButton}}{{/link-to}}
+                    
                     <div class="button-plans-border-image"> </div>
 
                     </button>
@@ -107,7 +109,7 @@
             </div>
 
             <button class="work-space-plans-description-content-button">
-                  {{contentObject.subInfoContentObject5.subInfoContentActionName}}
+                {{#link-to "visit-us" target="_blank"}}{{contentObject.subInfoContentObject5.subInfoContentActionName}}{{/link-to}}
                   <div class="image" style="content: url('{{contentObject.headerContent.headerContentBacgroundButtonUrl}}')">
                   </div>
               </button>

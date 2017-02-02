@@ -208,13 +208,33 @@
           display: flex;
           background: rgba(28,28,28,1);
           border-radius: 0.4vw;
-          text-align: center;
-          font-family: 'BebasNeue-Bold';
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
           margin-left:20vw;
-         // padding-top: -4vw;
           padding-left: 3vw;
-          font-size: 1.7vw;  
+          z-index: 2;
+           
+
+          &:hover {
+             transform:scale(1.1,1.1);
+             transition: transform 0.1s, width 0.1s ease-in;
+           }
+
+           a{
+             
+              text-align: center;
+              font-family: 'BebasNeue-Bold';
+              font-size: 1.7vw; 
+
+              &:visited, &:link {
+                color: white;
+                text-decoration: none;
+              }
+
+           }
+
+           
+                                            
+
          }
 
         .advantage-access-here-button-background-borders {
@@ -505,11 +525,26 @@
         height: 5vw; 
         background: rgba(28,28,28,1);
         border-radius: 0.4vw;
-        text-align: center;
-        font-family: 'BebasNeue-Bold';
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
         margin-left:-29vw;
-        font-size: 2.4vw;  
+        z-index: 2;
+
+        &:hover {
+            transform:scale(1.1,1.1);
+             transition: transform 0.1s, width 0.1s ease-in;
+        }
+        a{
+          text-align: center;
+          font-family: 'BebasNeue-Bold';
+          font-size: 2.4vw;  
+
+          &:visited, &:link {
+              color: white;
+              text-decoration: none;
+          }   
+
+        }
+        
       }
     }
    }
