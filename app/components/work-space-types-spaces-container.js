@@ -18,14 +18,17 @@ export default Ember.Component.extend({
         }
     },
 
-    actions: {
-
+    
+    actions: {  
         didSelectPlanCallback: function (selectedPlan) {
-            if (selectedPlan === "house") {
+            if (selectedPlan === "house") {      
+                window.scrollTo(0, 1135);
                 this.set('planSelected', [true, false, false]);
             } else if (selectedPlan === "store") {
+                 window.scrollTo(0, 1135);
                 this.set('planSelected', [false, true, false]);
             } else if (selectedPlan === "work") {
+                 window.scrollTo(0, 1135);
                 this.set('planSelected', [false, false, true]);
             }
         }

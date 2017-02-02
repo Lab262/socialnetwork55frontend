@@ -107,17 +107,65 @@ export default Ember.Component.extend({
             itensTable: ["TV", "Co-kitchen", "Mesas e cadeiras", "Recepção", "Internet", "Projetor + tela ", "Cabos HDMI/VGA", "Água e café", "Serviços de limpeza"]
         },
 
-        contentSecondObjectOneTable: {
-            image: "/assets/images/showroom-icon.png",
-            title: "Showroom",
-            subtitle: ".STORE:",
-            description: "Nesse espaço seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você. Não vamos ficar com qualquer percentual de venda e nem fazer estoque… a ideia aqui é que os clientes comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!",
-            descriptionActionButton: "Se quiser alugar uma de nossas acomodações",
-            titleActionButton: "Faça aqui",
-            titleTable: "INCLUI E ACOMODAÇÕES PARA O SEU PRODUTO:",
-            itensWithIconTable: ["Nichos 0,40m x 0,40m", "Nichos 1,36m x 1,10m", "Nichos 0,60m x 0,60m", "Nichos 1,00m x 0,30m", "Nichos 0,90m x 0,30m", "Carrinho", "Prateleira 1,85m x 0,70m", "Prateleira 2,05m x 0,40m"],
-            itensTable: ["8 unidades", "2 unidades", "2 unidades", "2 unidades", "2 unidades", "1 unidade", "2 unidades", "1 unidade", "R$ 175,00", "R$ 350,00", "R$ 220,00", "R$ 280,00", "R$ 280,00", "R$ 535,00", "R$ 390,00", "R$ 430,00"]
-        }
+        // contentObjectWithoutTable: {
+        //     image: "/assets/images/meeting-icon.png",
+        //     title: "Sala de Reunião",
+
+        //     firstSubtitle: ".WORK",
+        //     firstSubsubtitle: "Sala de reunião para 5 pessoas",
+        //     firstPriceFirstSubsubtitle: " R$25,00 hora",
+        //     secondPriceFirstSubsubtitle: " R$35,00 hora",
+
+        //     secondSubtitle: ".HOUSE (ventilador, mesa e cadeira)",
+        //     secondSubsubtitle: "Sala de reunião para 2 pessoas",
+        //     firstPriceSecondSubsubtitle: " R$15,00 hora",
+        //     secondPriceSecondSubsubtitle: " R$25,00 hora",
+        //     thirdSubsubtitle: "Sala de reunião para 4 pessoas",
+        //     firstPriceThirdSubsubtitle: " R$25,00 hora",
+        //     secondPriceThirdSubsubtitle: " R$35,00 hora",
+
+        //     firstTitlePriceSubsubtitle: "Membros:",
+        //     secondTitlePriceSubsubtitle: "Não-Membros:",
+
+        //     description: "Uma reunião precisa ser produtiva, mesmo. E nossas salas de reuniões, que acomodam até 5 pessoas, são preparadas para isso. Elas são completamente equipadas com tudo o que você precisa em um local de  reunião: água, café, equipamentos audiovisuais e internet dedicada. Temos salas de reunião em dois espaços diferentes: .work e .house, com diferenças nos recursos disponíveis e nos preços.",
+        //     descriptionActionButton: "Se quiser alugar uma de nossas salas",
+        //     titleActionButton: "Faça aqui"
+
+        // },
+
+        // contentSecondObjectWithoutTable: {
+        //     image: "/assets/images/icon-conference.png",
+        //     title: "Sala de Conferência",
+
+        //     firstSubtitle: ".HOUSE (para até 6 pessoas)",
+        //     firstPriceFirstSubtitle: " R$55,00 hora",
+        //     secondPriceFirstSubtitle: " R$65,00 hora",
+
+        //     secondSubtitle: ".WORK (para até 10 pessoas)",
+        //     firstPriceSecondSubtitle: " R$55,00 hora",
+        //     secondPriceSecondSubtitle: " R$65,00 hora",
+
+        //     firstTitlePriceSubtitle: "Membros:",
+        //     secondTitlePriceSubtitle: "Não-Membros:",
+
+        //     description: "Entendemos as dificuldades que podem surgir quando precisamos reunir todo mundo. Por isso, também temos salas preparadas para a realização de videoconferências que acomodam até 10 pessoas disponíveis para locação em nossos espaços.",
+        //     descriptionActionButton: "Se quiser alugar uma de nossas salas",
+        //     titleActionButton: "Faça aqui"
+        // },
+
+        //NAO APAGUE ESSE COMENTARIO ABAIXO
+
+        // contentSecondObjectOneTable: {
+        //     image: "/assets/images/showroom-icon.png",
+        //     title: "Showroom",
+        //     subtitle: ".STORE:",
+        //     description: "Nesse espaço seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você. Não vamos ficar com qualquer percentual de venda e nem fazer estoque… a ideia aqui é que os clientes comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!",
+        //     descriptionActionButton: "Se quiser alugar uma de nossas acomodações",
+        //     titleActionButton: "Faça aqui",
+        //     titleTable: "INCLUI E ACOMODAÇÕES PARA O SEU PRODUTO:",
+        //     itensWithIconTable: ["Nichos 0,40m x 0,40m", "Nichos 1,36m x 1,10m", "Nichos 0,60m x 0,60m", "Nichos 1,00m x 0,30m", "Nichos 0,90m x 0,30m", "Carrinho", "Prateleira 1,85m x 0,70m", "Prateleira 2,05m x 0,40m"],
+        //     itensTable: ["8 unidades", "2 unidades", "2 unidades", "2 unidades", "2 unidades", "1 unidade", "2 unidades", "1 unidade", "R$ 175,00", "R$ 350,00", "R$ 220,00", "R$ 280,00", "R$ 280,00", "R$ 535,00", "R$ 390,00", "R$ 430,00"]
+        // }
     },
 
     workContentObject: {

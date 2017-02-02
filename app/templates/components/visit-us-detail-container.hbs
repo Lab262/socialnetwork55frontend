@@ -1,0 +1,67 @@
+<div class="visit-us-container">
+        <div class="page-header">
+            <div class="header-name">
+                <h1> {{this.spaceType}} </h1>
+            </div>
+
+            <div class="header-description">
+                <h1> {{contentDescription}} </h1>
+            </div>
+            <div class="header-divider"> </div>
+        </div>
+
+        <div class="page-detail">
+            <div class="left-content">
+
+                <div class="form-field-big">
+                    {{paper-input label="Nome Completo" value=name onChange=(action (mut name))}}
+                </div>
+
+                <div class="form-field-big">
+                    {{paper-input label="E-mail para contato" value=email onChange=(action (mut email))}}
+                </div>
+
+                <div class="form-field-medium">
+                    {{paper-input label="Telefone para contato" value=telephone onChange=(action (mut telephone))}} 
+                </div>
+
+                <div class="form-field-medium">
+                    {{paper-input label="Quantas pessoas virão?" value=number_people onChange=(action (mut number_people))}}
+
+                </div>         
+
+                <div class="form-field-medium">
+                    {{paper-input label="Dia da visita'" value=date onChange=(action (mut date))}}
+                </div>
+
+                <div class="form-field-medium">
+                    {{paper-input label="Horário" value=hour onChange=(action (mut hour))}}
+                </div>
+
+                <div class="form-field-medium">
+                    {{paper-input label="Quer visitar qual espaço?" value=name_space onChange=(action (mut name_space))}}
+                </div>
+
+
+                <button class="subscribe-button" {{action 'makeAppointmentUser'}}> QUERO VISITAR 
+                    <div class="subscribe-button-background-borders">
+                    </div>
+                </button>
+           
+
+            </div>
+
+            <div class="right-content">
+                <div class="description-title">
+                    <h1>
+                        {{contentSecondDescription}}
+                    </h1>
+
+                    <div class="label-icon"> </div>
+                </div>
+                <div class="description-picture"> </div>
+
+            </div>
+        </div>
+
+    </div>
