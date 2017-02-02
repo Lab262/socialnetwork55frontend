@@ -1,7 +1,6 @@
 import Ember from 'ember';
 
 export function urlParamWithName(name,url) {
-    console.log(url);
     if (!url) {
         url = window.location.href;
     }

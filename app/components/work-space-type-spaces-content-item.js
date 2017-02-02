@@ -18,7 +18,7 @@ export default Ember.Component.extend({
     // deal with the change
       this.selectBackgroundHoverFunction();
   }),
-  
+
    selectBackgroundHoverFunction: function() {
       if (this.isSelected === false) {
          this.set('opacityHoverProperty','opacity: 0;');
