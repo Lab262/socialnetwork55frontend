@@ -90,7 +90,7 @@ export default Ember.Component.extend({
                 var self = this
                 $.ajax({
                     type: "POST",
-                    url: "http://localhost:8080/api/v0/users",
+                    url: "http://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
                     data: data,
                     beforeSend: function (xhr) { xhr.setRequestHeader('main-token', 'ZRCNAamAQ$yTv6&2VQ4eR*f?437w[FkF/gktDTg6#GunNQuE8@#]MC9B3NBTxifH'); },
                     success: function () {
