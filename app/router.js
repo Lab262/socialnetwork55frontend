@@ -7,13 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('home-page', {
-    path: '/'
-  });
-  this.route('community');
-  this.route('work-space');
-  this.route('knowledge');
-  this.route('sign-up-membership');
+  this.route('home-page', { path: '/' });
+  this.route('community', { path: '/comunidade' });
+  this.route('work-space', { path: '/espaco-de-trabalho' });
+  this.route('knowledge', { path: '/conhecimento' });
+  this.route('sign-up-membership', { path: '/cadastro-membro' });
   this.route('blog');
 });
 
