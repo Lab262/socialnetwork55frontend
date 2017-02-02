@@ -156,7 +156,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de 5200 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
+            subInfoContentDescription: "A partir de R$ 5200 mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
             subInfoContentActionName: "VEJA AQUI"
         }
     }
@@ -239,6 +239,45 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 320 mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 365,00.",
+            subInfoContentActionName: "VEJA AQUI"
+        }
+    },
+    {
+        headerContent: {
+            headerContentTitle: "SHOWROOM",
+            headerContentPrice: "R$ 175,00/MÊS",
+            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
+            headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
+            headerColorBackground:"#D8AD09",
+            headerColorBorderBackground:"#AC0049"
+        },
+
+        descriptionContent: "Nesse espaço seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você.",
+
+        subInfoContentObject: {
+            subInfoContentTitle: "Espaço de trabalho",
+            subInfoContentDescription: "Não vamos ficar com qualquer percentual de venda e nem fazer estoque… a ideia aqui é que os clientes comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!"
+        },
+
+        subInfoContentObject2: {
+            subInfoContentTitle: "Bônus",
+            subInfoContentDescription: "Não está disponível"
+        },
+
+        subInfoContentObject3: {
+            subInfoContentTitle: "Mais benefícios",
+            subInfoContentDescription: "Não está disponível"
+        },
+
+        subInfoContentObject4: {
+            subInfoContentTitle: "Adicionais disponíveis",
+            subInfoContentDescription: "Não está disponível"
+        },
+
+        subInfoContentObject5: {
+            subInfoContentTitle: "Anuidade",
+            subInfoContentDescription: "Não está disponível",
             subInfoContentActionName: "VEJA AQUI"
         }
     }

@@ -258,17 +258,19 @@ export default Ember.Component.extend({
         //     titleActionButton: "Faça aqui"
         // },
 
-        contentSecondObjectOneTable: {
-            image: "/assets/images/showroom-icon.png",
-            title: "Showroom",
-            subtitle: ".STORE:",
-            description: "Nesse espaço seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você. Não vamos ficar com qualquer percentual de venda e nem fazer estoque… a ideia aqui é que os clientes comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!",
-            descriptionActionButton: "Se quiser alugar uma de nossas acomodações",
-            titleActionButton: "Faça aqui",
-            titleTable: "INCLUI E ACOMODAÇÕES PARA O SEU PRODUTO:",
-            itensWithIconTable: ["Nichos 0,40m x 0,40m", "Nichos 1,36m x 1,10m", "Nichos 0,60m x 0,60m", "Nichos 1,00m x 0,30m", "Nichos 0,90m x 0,30m", "Carrinho", "Prateleira 1,85m x 0,70m", "Prateleira 2,05m x 0,40m"],
-            itensTable: ["8 unidades", "2 unidades", "2 unidades", "2 unidades", "2 unidades", "1 unidade", "2 unidades", "1 unidade", "R$ 175,00", "R$ 350,00", "R$ 220,00", "R$ 280,00", "R$ 280,00", "R$ 535,00", "R$ 390,00", "R$ 430,00"]
-        }
+        //NAO APAGUE ESSE COMENTARIO ABAIXO
+
+        // contentSecondObjectOneTable: {
+        //     image: "/assets/images/showroom-icon.png",
+        //     title: "Showroom",
+        //     subtitle: ".STORE:",
+        //     description: "Nesse espaço seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você. Não vamos ficar com qualquer percentual de venda e nem fazer estoque… a ideia aqui é que os clientes comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!",
+        //     descriptionActionButton: "Se quiser alugar uma de nossas acomodações",
+        //     titleActionButton: "Faça aqui",
+        //     titleTable: "INCLUI E ACOMODAÇÕES PARA O SEU PRODUTO:",
+        //     itensWithIconTable: ["Nichos 0,40m x 0,40m", "Nichos 1,36m x 1,10m", "Nichos 0,60m x 0,60m", "Nichos 1,00m x 0,30m", "Nichos 0,90m x 0,30m", "Carrinho", "Prateleira 1,85m x 0,70m", "Prateleira 2,05m x 0,40m"],
+        //     itensTable: ["8 unidades", "2 unidades", "2 unidades", "2 unidades", "2 unidades", "1 unidade", "2 unidades", "1 unidade", "R$ 175,00", "R$ 350,00", "R$ 220,00", "R$ 280,00", "R$ 280,00", "R$ 535,00", "R$ 390,00", "R$ 430,00"]
+        // }
     },
 
     workContentObject: {
