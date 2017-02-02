@@ -38,7 +38,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "R$ 49,00/mês. Se quiser experimentar por apenas 1 mês, você paga R$ 60,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     },
     {
@@ -77,7 +77,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 865,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 995,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     },
 
@@ -117,7 +117,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 985,00/mês. Se você quiser experimentar por apenas um mês, você paga a partir de R$ 1.135,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     },
 
@@ -157,7 +157,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 5.200,00/mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     }
     
@@ -200,7 +200,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "R$ 49,00/mês. Se quiser experimentar por apenas 1 mês, você paga R$ 60,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     },
     {
@@ -239,7 +239,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 320,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 365,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     }
 
@@ -282,7 +282,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "R$ 49,00 mês. Se quiser experimentar por apenas 1 mês, você paga R$ 60,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     },
     {
@@ -321,7 +321,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 575,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 685,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     },
 
@@ -361,7 +361,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 820,00/mês. Se você quiser experimentar por apenas um mês, você paga a partir de R$ 945,00.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     },
 
@@ -401,7 +401,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "A partir de R$ 1800,00/mês, para uma pessoa. O valor é calculado de acordo com a quantidade de pessoas que utilizarão o espaço.",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     }
     
