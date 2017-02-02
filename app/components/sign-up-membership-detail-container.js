@@ -52,7 +52,7 @@ export default Ember.Component.extend({
         }
     }],
 
-     maskPhoneNumber(number) {
+    maskPhoneNumber(number) {
         var v = number;
         v = v.replace(/\D/g, "");             //Remove tudo o que não é dígito
         v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
@@ -64,43 +64,63 @@ export default Ember.Component.extend({
     actions: {
 
         registerUser() {
-            var data = {
-                name: this.name,
-                cpf: this.cpf,
-                rg: this.rg,
-                adress_label: this.address,
-                adress_number: this.number,
-                adress_complement: this.complement,
-                adress_neighbor: this.neighbor,
-                adress_state: this.state,
-                adress_country: this.country,
-                email: this.email,
-                telephone: this.telephone,
-                memberType: this.get('memberType')
-            };
 
-            $.ajax({
-                type: "POST",
-                url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
-                data: data
-            });
 
-            this.set('name', '');
-            this.set('cpf', '');
-            this.set('rg', '');
-            this.set('address', '');
-            this.set('number', '');
-            this.set('complement', '');
-            this.set('neighbor', '');
-            this.set('state', '');
-            this.set('country', '');
-            this.set('email', '');
-            this.set('telephone', '');
+            var formIsValid = this.clearFieldValidation[0].validate(this.name)
+                && this.phoneNumberValidation[0].validate(this.telephone)
+                && this.emailValidation[0].validate(this.email)
+
+            if (formIsValid == true) {
+
+                var data = {
+                    name: this.name,
+                    cpf: this.cpf,
+                    rg: this.rg,
+                    adress_label: this.address,
+                    adress_number: this.number,
+                    adress_complement: this.complement,
+                    adress_neighbor: this.neighbor,
+                    adress_state: this.state,
+                    adress_country: this.country,
+                    email: this.email,
+                    telephone: this.telephone,
+                    memberType: this.get('memberType')
+                };
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
+                    data: data
+                });
+
+                this.set('name', '');
+                this.set('cpf', '');
+                this.set('rg', '');
+                this.set('address', '');
+                this.set('number', '');
+                this.set('complement', '');
+                this.set('neighbor', '');
+                this.set('state', '');
+                this.set('country', '');
+                this.set('email', '');
+                this.set('telephone', '');
+
+            } else {
+                if (!this.clearFieldValidation[0].validate(this.name)) {
+                    alert('Campo *Nome* é obrigatório')
+                } else if (!this.phoneNumberValidation[0].validate(this.telephone)) {
+                    alert('Campo *Telefone* não contém um número de telefone válido')
+                } else if (!this.emailValidation[0].validate(this.email)) {
+                    alert('Campo *Email* não contém um número de telefone válido')
+                }
+                
+            }
+
         },
 
-     
+
     }
 
-    
+
 
 });
