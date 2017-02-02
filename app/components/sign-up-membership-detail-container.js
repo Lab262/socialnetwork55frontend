@@ -36,7 +36,7 @@ export default Ember.Component.extend({
                 rg: this.rg,
                 adress_label: this.address,
                 adress_number: this.number,
-                adress_mpolement: this.complement,
+                adress_complement: this.complement,
                 adress_neighbor: this.neighbor,
                 adress_state: this.state,
                 adress_country: this.country,

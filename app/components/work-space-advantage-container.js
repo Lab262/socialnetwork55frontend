@@ -186,7 +186,7 @@ export default Ember.Component.extend({
 
             firstSubtitle: ".WORK (para até 10 pessoas)",
             firstPriceFirstSubtitle: " A partir de R$55,00 hora",
-            secondPriceFirstSubtitle: " A partir de R$65,00 hora",           
+            secondPriceFirstSubtitle: " A partir de R$65,00 hora",
             firstTitlePriceSubtitle: "Membros:",
             secondTitlePriceSubtitle: "Não-Membros:",
             description: "Entendemos as dificuldades que podem surgir quando precisamos reunir todo mundo. Por isso, também temos salas preparadas para a realização de videoconferências que acomodam até 10 pessoas disponíveis para locação em nossos espaços.",
