@@ -87,23 +87,31 @@ export default Ember.Component.extend({
                     memberType: this.get('memberType')
                 };
 
+                var self = this
                 $.ajax({
                     type: "POST",
-                    url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
-                    data: data
+                    url: "http://localhost:8080/api/v0/users",
+                    data: data,
+                    beforeSend: function (xhr) { xhr.setRequestHeader('main-token', 'ZRCNAamAQ$yTv6&2VQ4eR*f?437w[FkF/gktDTg6#GunNQuE8@#]MC9B3NBTxifH'); },
+                    success: function () {
+
+                        alert('Registro enviado com sucesso!');
+
+                        self.set('name', '');
+                        self.set('cpf', '');
+                        self.set('rg', '');
+                        self.set('address', '');
+                        self.set('number', '');
+                        self.set('complement', '');
+                        self.set('neighbor', '');
+                        self.set('state', '');
+                        self.set('country', '');
+                        self.set('email', '');
+                        self.set('telephone', '');
+                    },
+                    error: function (jqXHR, exception) { alert("Erro:" + jqXHR.responseText); console.log(jqXHR); console.log(exception) }
                 });
 
-                this.set('name', '');
-                this.set('cpf', '');
-                this.set('rg', '');
-                this.set('address', '');
-                this.set('number', '');
-                this.set('complement', '');
-                this.set('neighbor', '');
-                this.set('state', '');
-                this.set('country', '');
-                this.set('email', '');
-                this.set('telephone', '');
 
             } else {
                 if (!this.clearFieldValidation[0].validate(this.name)) {
@@ -113,7 +121,7 @@ export default Ember.Component.extend({
                 } else if (!this.emailValidation[0].validate(this.email)) {
                     alert('Campo *Email* não contém um número de telefone válido')
                 }
-                
+
             }
 
         },
