@@ -11,17 +11,18 @@ export default Ember.Component.extend({
     },
 
     selectPlanBasedOnUrl() {
+        console.log("ENTROU NO SELECT PLAN BY URL");
         let spaceType = ParseHelpers.urlParamWithName("spaceType", window.location.href);
+        console.log("SPACE TYPE: "+spaceType);
         let isAValidatedType = (spaceType === "house" || spaceType === "store" || spaceType === "work");
         if (spaceType !== undefined && isAValidatedType) {
             this.send('didSelectPlanCallback', spaceType)
         }
     },
 
-    
     actions: {  
         didSelectPlanCallback: function (selectedPlan) {
-            if (selectedPlan === "house") {      
+            if (selectedPlan === "house") { 
                 window.scrollTo(0, 1135);
                 this.set('planSelected', [true, false, false]);
             } else if (selectedPlan === "store") {
