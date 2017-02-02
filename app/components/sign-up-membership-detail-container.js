@@ -42,9 +42,9 @@ export default Ember.Component.extend({
                 adress_country: this.country,
                 email: this.email,
                 telephone: this.telephone,
-                memberType: this.memberType
+                memberType: this.get('memberType')
             };
-            
+            console.log(this.get('memberType'));
             $.ajax({
                 type: "POST",
                 url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
