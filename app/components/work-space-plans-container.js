@@ -45,7 +45,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "OPEN DESK",
-            headerContentPrice: "R$ 865,00/MÊS",
+            headerContentPrice: "A partir de R$ 865,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
@@ -85,7 +85,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "FIXED DESK",
-            headerContentPrice: "R$ 985,00/MÊS",
+            headerContentPrice: "A partir de R$ 985,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
@@ -125,7 +125,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
-            headerContentPrice: "R$ 5.200,00/MÊS",
+            headerContentPrice: "A partir de R$ 5.200,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
@@ -207,7 +207,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "OPEN DESK",
-            headerContentPrice: "R$ 320,00/MÊS",
+            headerContentPrice: "A partir de R$ 320,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
@@ -246,7 +246,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "SHOWROOM",
-            headerContentPrice: "R$ 175,00/MÊS",
+            headerContentPrice: "A partir de R$ 175,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
@@ -328,7 +328,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "OPEN DESK",
-            headerContentPrice: "R$ 575,00/MÊS",
+            headerContentPrice: "A partir de R$ 575,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
@@ -368,7 +368,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "FIXED DESK",
-            headerContentPrice: "R$ 820,00/MÊS",
+            headerContentPrice: "A partir de R$ 820,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
@@ -408,7 +408,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
-            headerContentPrice: "R$ 1.800,00/MÊS",
+            headerContentPrice: "A partir de R$ 1.800,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",

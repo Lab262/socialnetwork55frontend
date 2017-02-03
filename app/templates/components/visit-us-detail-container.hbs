@@ -14,15 +14,15 @@
             <div class="left-content">
 
                 <div class="form-field-big">
-                    {{paper-input label="Nome Completo" value=name onChange=(action (mut name))}}
+                    {{paper-input label="Nome Completo" value=name onChange=(action (mut name)) customValidations=clearFieldValidation}}
                 </div>
 
                 <div class="form-field-big">
-                    {{paper-input label="E-mail para contato" value=email onChange=(action (mut email))}}
+                    {{paper-input label="Email para contato" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Telefone para contato" value=telephone onChange=(action (mut telephone))}} 
+                    {{paper-input label="Telefone para contato" value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
                 </div>
 
                 <div class="form-field-medium">
@@ -31,15 +31,15 @@
                 </div>         
 
                 <div class="form-field-medium">
-                    {{paper-input label="Dia da visita'" value=date onChange=(action (mut date))}}
+                    {{paper-input label="Dia" value=date onChange=(action (mut date)) customValidations=clearFieldValidation}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Horário" value=hour onChange=(action (mut hour))}}
+                    {{paper-input label="Horário" value=hour onChange=(action (mut hour)) customValidations=clearFieldValidation}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Quer visitar qual espaço?" value=name_space onChange=(action (mut name_space))}}
+                    {{paper-input label="Quer visitar qual espaço?" value=name_space onChange=(action (mut name_space)) customValidations=clearFieldValidation}}
                 </div>
 
 
