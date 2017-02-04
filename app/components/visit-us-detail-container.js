@@ -80,6 +80,7 @@ export default Ember.Component.extend({
                     date: this.date,
                     hour: this.hour,
                     name_space: this.name_space,
+                    memberType: "visita " + this.name_space,
                 };
 
                 var self = this
