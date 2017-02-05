@@ -49,6 +49,14 @@ export default Ember.Component.extend({
         }
     }],
 
+    hourValidation: [{
+        message: 'Entre com uma hora válida',
+        validate: (inputValue) => {
+            let hourPattern = /^\(?([0-2][0-9])\)?[:]?([0-5][0-9])$/;
+            return hourPattern.test(inputValue);
+        }
+    }],
+
 
     clearFieldValidation: [{
         message: 'Campo obrigatório',
@@ -73,6 +81,14 @@ export default Ember.Component.extend({
         v = v.replace(/(\d{2})(\d)/,"$1/$2"); 
         v = v.replace(/(\d{2})(\d)/,"$1/$2"); 
         this.set('date', v);
+    },
+
+    maskHour(hour) {
+        
+        var v = hour;
+        v = v.replace(/\D/g,""); 
+        v = v.replace(/(\d{2})(\d)/,"$1:$2"); 
+        this.set('hour', v);
     },
 
     actions: {
@@ -125,19 +141,46 @@ export default Ember.Component.extend({
 
 
             } else {
+                var error = "";
                 if (!this.clearFieldValidation[0].validate(this.name)) {
-                    alert('Campo *Nome* é obrigatório')
-                } else if (!this.emailValidation[0].validate(this.email)) {
-                    alert('Campo *Email* não contém um email válido')
-                } else if (!this.phoneNumberValidation[0].validate(this.telephone)) {
-                    alert('Campo *Telefone* não contém um número de telefone válido')
-                } else if (!this.clearFieldValidation[0].validate(this.date)) {
-                    alert('Campo *Dia da visita* é obrigatório')
-                } else if (!this.clearFieldValidation[0].validate(this.hour)) {
-                    alert('Campo *Horário* é obrigatório')
-                } else if (!this.clearFieldValidation[0].validate(this.spaceType)) {
-                    alert('Campo *Quer visitar qual espaço?* é obrigatório')
+                    error += 'Campo *Nome* é obrigatório\n';
                 } 
+                if (!this.clearFieldValidation[0].validate(this.email)) {
+                    error += 'Campo *Email* é obrigatório\n';
+                } 
+                if (!this.clearFieldValidation[0].validate(this.telephone)) {
+                    error += 'Campo *Telefone* é obrigatório\n';
+                } 
+                if (!this.clearFieldValidation[0].validate(this.date)) {
+                    error += 'Campo *Dia da visita* é obrigatório\n';
+                } 
+                if (!this.clearFieldValidation[0].validate(this.hour)) {
+                    error += 'Campo *Horário* é obrigatório\n';
+                } 
+                if (!this.clearFieldValidation[0].validate(this.spaceType)) {
+                        error += 'Campo *Quer visitar qual espaço?* é obrigatório\n';
+                }
+
+                if (error===""){
+                    
+                    if (!this.emailValidation[0].validate(this.email)) {
+                        error += 'Campo *Email* não contém um email válido\n';
+                    }
+                    if (!this.phoneNumberValidation[0].validate(this.telephone)) {
+                        error += 'Campo *Telefone* não contém um número de telefone válido\n';
+                    }
+                    if (!this.dateValidation[0].validate(this.date)) {
+                        error += 'Campo *Data* não contém uma data válida\n';
+                    }
+
+                     if (error!=""){
+                         alert(error);
+                     }
+
+                }else{
+                    alert(error);
+                }
+                
             }
 
         },

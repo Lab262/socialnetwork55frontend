@@ -35,7 +35,7 @@
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Horário" value=hour onChange=(action (mut hour)) customValidations=clearFieldValidation}}
+                    {{paper-input label="Horário" maxlength="5" value=hour onChange=(action maskHour) customValidations=hourValidation}}
                 </div>
 
                 <div class="form-field-medium">
