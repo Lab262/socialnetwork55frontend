@@ -34,10 +34,18 @@ export default Ember.Component.extend({
     }],
 
     phoneNumberValidation: [{
-        message: 'Entre com um telfone válido',
+        message: 'Entre com um telefone válido',
         validate: (inputValue) => {
             let emailPattern = /^\(?([0-9]{2})\)?[-. ]?([0-9]{5})[-. ]?([0-9]{4})$/;
             return emailPattern.test(inputValue);
+        }
+    }],
+
+    dateValidation: [{
+        message: 'Entre com uma data válida',
+        validate: (inputValue) => {
+            let datePattern = /^\(?([0-2][0-9])\)?[/]?([0-1][0-9])\)?[/]?([0-9]{4})$/;
+            return datePattern.test(inputValue);
         }
     }],
 
@@ -56,6 +64,15 @@ export default Ember.Component.extend({
         v = v.replace(/^(\d{2})(\d)/g, "($1) $2"); //Coloca parênteses em volta dos dois primeiros dígitos
         v = v.replace(/(\d)(\d{4})$/, "$1-$2");    //Coloca hífen entre o quarto e o quinto dígitos
         this.set('telephone', v);
+    },
+
+    maskDate(date) {
+        
+        var v = date;
+        v = v.replace(/\D/g,""); 
+        v = v.replace(/(\d{2})(\d)/,"$1/$2"); 
+        v = v.replace(/(\d{2})(\d)/,"$1/$2"); 
+        this.set('date', v);
     },
 
     actions: {

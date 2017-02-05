@@ -31,7 +31,7 @@
                 </div>         
 
                 <div class="form-field-medium">
-                    {{paper-input label="Dia" value=date onChange=(action (mut date)) customValidations=clearFieldValidation}}
+                    {{paper-input label="Dia" maxlength="10" value=date onChange=(action maskDate) customValidations=dateValidation}}
                 </div>
 
                 <div class="form-field-medium">
