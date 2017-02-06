@@ -4,17 +4,19 @@ export default Ember.Component.extend({
     event1Object:{
         title:"Peteleco",
         local:"55Lab.Store",
-        description:"O Peteleco é o evento de conteúdo e experiência do Acelere.me que estimula a percepção que empreender é muito mais do que ter uma empresa ou um CNPJ.",
+        image:"/assets/images/image-curse-peteleco.png",
+        description:"Sua vida empreendedora está precisando de um peteleco?",
         descriptionOrganizer:"Acelere.me",
         descriptionSupporter:"55Lab.Store",
         descriptionDate:"16 de fevereiro e 16 de março",
         descriptionAmount:"indefinida",
-        descriptionMoreInformation:"Empreender é um estilo de vida, um estado de espírito. Já em sua terceira edição, o evento impactou mais de 400 empreendedores ao longo de 2016."
+        descriptionMoreInformation:"O Peteleco é o evento de conteúdo e experiência do Acelere.me que estimula a percepção que empreender é muito mais do que ter uma empresa ou um CNPJ. Empreender é um estilo de vida, um estado de espírito. Já em sua terceira edição, o evento impactou mais de 400 empreendedores ao longo de 2016."
     },
 
     event2Object:{
         title:"A Nova Lei do Investidor Anjo",
         local:"55Lab.Work",
+        image:"/assets/images/background-image.png",
         description:"Quer saber como ficaram as regras para receber ou fazer investimento anjo no Brasil?",
         descriptionOrganizer:"Acelere.me",
         descriptionSupporter:"55Lab.Work",
@@ -26,6 +28,7 @@ export default Ember.Component.extend({
     event3Object:{
         title:"Noções Jurídicas para usuários",
         local:"55Lab.Store",
+        image:"/assets/images/background-image.png",
         description:"Está interessado em cultivar cannabis, mas tem medo de ser preso?",
         descriptionOrganizer:"4E20.CLUB",
         descriptionSupporter:"Acelere.me e 55Lab.Store",
@@ -37,6 +40,7 @@ export default Ember.Component.extend({
     event4Object:{
         title:"Acelereção de negócios de lifestyle",
         local:"55Lab.Store",
+        image:"/assets/images/background-image.png",
         description:"Sabia que é possível montar um negócio relacionado a cannabis de forma legal no Brasil?",
         descriptionOrganizer:"Acelere.me",
         descriptionSupporter:"55Lab.Store",
@@ -48,17 +52,19 @@ export default Ember.Component.extend({
     event5Object:{
         title:"Tapa na Cara",
         local:"55Lab.Work",
-        description:"O Tapa na Cara é um evento que tem 16 horas seguidas de capacitação por meio de experiência empreendedora com a metodologia de implementação de negócios do Acelere.me.",
+        image:"/assets/images/image-curse-tapa-cara.png",
+        description:"Um choque de realidade para entender que empreender com planejamento é possível e muito menos arriscado.",
         descriptionOrganizer:"Acelere.me",
         descriptionSupporter:"55Lab.Work",
         descriptionDate:"04 e 06 de abril",
         descriptionAmount:"15 pessoas",  
-        descriptionMoreInformation:"Este evento busca dar um “tapa na cara” dos participantes para que eles possam entender que, apesar de não ser fácil, empreender com planejamento, metas e objetivos claros é possível e muito menos arriscado."
+        descriptionMoreInformation:"O Tapa na Cara é um evento que tem 16 horas seguidas de capacitação por meio de experiência empreendedora com a metodologia de implementação de negócios do Acelere.me. Este evento busca dar um “tapa na cara” dos participantes para que eles possam entender que, apesar de não ser fácil, empreender com planejamento, metas e objetivos claros é possível e muito menos arriscado."
     },
 
     event6Object:{
         title:"Experience",
         local:"MODIFICAR",
+        image:"/assets/images/background-image.png",
         description:"MODIFICAR é o evento de conteúdo e experiência do Acelere.me que estimula a percepção que empreender é muito mais do que ter uma empresa ou um CNPJ.",
         descriptionOrganizer:"MODIFICAR",
         descriptionSupporter:"MODIFICAR",
@@ -70,11 +76,12 @@ export default Ember.Component.extend({
     event7Object:{
         title:"Maratona Ignition",
         local:"CTJ",
-        description:"Comprometido com o desenvolvimento econômico local e com o objetivo de estimular a criação de pequenas e médias empresas de vanguarda o Maratona Ignition é conhecido como o primeiro programa de pré-aceleração de negócios e empresas desenvolvido no Distrito Federal.",
+        image:"/assets/images/background-image.png",
+        description:"Pré-aceleração de negócios e empresas por meio de intensas capacitações e mentorias com profissionais do mercado.",
         descriptionOrganizer:"Acelere.me",
         descriptionSupporter:"55Lab",
         descriptionDate:"14,15 e 16 de julho",
         descriptionAmount:"50 pessoas",  
-        descriptionMoreInformation:"Todo ano, 10 ideias e projetos de negócios são selecionados para participar de 48h intensas de capacitações com experiências empreendedoras e mentorias com profissionais do mercado. Para essa seleção são avaliados o modelo de negócios, a equipe, o potencial de inovação, e a viabilidade financeira do projeto. Na edição de 2016, participaram 10 projetos e, desses, 6 negócios já foram implementados e estão em fase de tração. A ideia melhor avaliada – Be.Cause -  ainda recebeu um aporte de R$14.000,00, 4 meses de mentorias e estrutura física de trabalho e está em fase de lançamento da segunda coleção."
+        descriptionMoreInformation:"O Maratona Ignition é conhecido como o primeiro programa de pré-aceleração de negócios e empresas desenvolvido no Distrito Federal. Na última edição, 10 ideias e projetos de negócios foram selecionados para participar de 48h intensas de capacitações com experiências empreendedoras e mentorias com profissionais do mercado."
     }
 });
