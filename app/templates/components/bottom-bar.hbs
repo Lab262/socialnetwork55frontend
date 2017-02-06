@@ -14,9 +14,9 @@
                             <div class = "container-title-information">
                                   <h1> {{footerContentObjectSecond.title}} </h1>
                                   
-                                  {{#link-to footerContentObjectSecond.links.[0] (query-params spaceType="house") target="_parent"}}<h2>{{footerContentObjectSecond.options.[0]}}</h2>{{/link-to}}
-                                  {{#link-to footerContentObjectSecond.links.[1] (query-params spaceType="store") target="_parent"}}<h2>{{footerContentObjectSecond.options.[1]}}</h2>{{/link-to}}
-                                  {{#link-to footerContentObjectSecond.links.[2] (query-params spaceType="work") target="_parent"}}<h2>{{footerContentObjectSecond.options.[2]}}</h2>{{/link-to}}
+                                  {{#link-to footerContentObjectSecond.link (query-params spaceType=footerContentObjectSecond.links.[0]) target="_parent"}}<h2>{{footerContentObjectSecond.options.[0]}}</h2>{{/link-to}}
+                                  {{#link-to footerContentObjectSecond.link (query-params spaceType=footerContentObjectSecond.links.[1]) target="_parent"}}<h2>{{footerContentObjectSecond.options.[1]}}</h2>{{/link-to}}
+                                  {{#link-to footerContentObjectSecond.link (query-params spaceType=footerContentObjectSecond.links.[2]) target="_parent"}}<h2>{{footerContentObjectSecond.options.[2]}}</h2>{{/link-to}}
                             </div>       
                      
                             <div class = "container-title-information">
@@ -34,7 +34,7 @@
                                   </div>  
                                   
                                    <div class= "social-media-container">
-                                     <a class="facebook-button" href="https://www.facebook.com/4Legal/?fref=ts" target="_blank"> </a>
+                                     <a class="facebook-button" href="https://www.facebook.com/55lab.co/?fref=ts" target="_blank"> </a>
                                      <a class="instagram-button" href="https://www.instagram.com/55lab.co/" target="_blank"> </a>
                                   </div>
                             </div>

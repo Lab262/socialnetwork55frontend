@@ -40,6 +40,25 @@
     }
   }
 
+  .item-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+
+    .button {
+      width: 30%;
+      margin-right: -5%;
+      padding-top: -5vw;
+
+      &:hover{
+        transform:scale(1.1,1.1);
+        transition: transform 0.1s, width 0.1s ease-in;
+      }
+
+    }
+  }
+
   .item-actions {
     font-family: 'BebasNeue-Bold';
     display: flex;
@@ -55,7 +74,7 @@
         color: white;
         font-size:1.5vw;
         position: absolute;
-        bottom: 9%;
+        bottom: 4.2vw;
         width: 15vw;
         height: 4%;
         left: -5%;
@@ -70,12 +89,6 @@
       }
     }
   }
-
-  .image-box {
-      width: 100%;
-      height: auto;
-      overflow: hidden;
-    }
 
     %extended-contact-title {
       font-family: 'BebasNeue-Bold';
