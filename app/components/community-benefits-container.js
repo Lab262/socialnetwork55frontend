@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Component.extend({
     contentMainObject:{
         title:"MOTIVOS DE SOBRA PARA SE CONECTAR",
-        firstButton:"FAÇA PARTE",
+        firstButton:"SEJA MEMBRO",
         secondButton:"CONHEÇA NOSSOS PLANOS"
     },
     
