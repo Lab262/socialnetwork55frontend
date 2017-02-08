@@ -252,15 +252,16 @@
 
   .bottom-opnion-container {       
       // display: block;
-       height: auto;
        display: block;
        
        z-index: 99;
        height: 200vw;
+       background: #f7f7f7;
+       //margin-top:45%; 
 
        .background-footer-left{
-              margin-top: 7vw;
-              margin-left: 3vw;
+              padding-top: 7vw;
+              padding-left: 3vw;
               position: flex;
               width: 50vw;
               height: 21vw;
