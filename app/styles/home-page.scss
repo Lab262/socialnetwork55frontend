@@ -27,6 +27,19 @@ $content-detail-height-mobile: 220vw;
       height: 100%;
     }
 
+    .background-detail {
+      background-image: url(/assets/images/home-page-background-detail.png);
+      position: fixed;
+      right: -8%;
+      bottom: 14%;
+      z-index: 0;
+      background-repeat: no-repeat;
+      background-size: 50%;
+      display: block;
+      width: 20%;
+      height: 20%;
+    }
+
   }
 
   .presentation-container {
@@ -36,8 +49,6 @@ $content-detail-height-mobile: 220vw;
     justify-content: center;
     
     .action-button-membership {
-            width: 18vw;
-            height: 5.6vw;
             margin-top: 5%;
             background:url(/assets/images/button-be-membership.png);
             background-size:100%; 
@@ -50,9 +61,7 @@ $content-detail-height-mobile: 220vw;
            
            a {
             font-family: 'BebasNeue-Bold';
-            font-size: 2.5vw;
             color: white;
-            margin-left: -15%;
             
             &:visited, &:link {
                 color: white;
@@ -60,7 +69,7 @@ $content-detail-height-mobile: 220vw;
             }
           }
           
-        }
+    }
   }
 
   .actions-container {
@@ -110,12 +119,12 @@ $content-detail-height-mobile: 220vw;
           }
         }
       image{
-        width: 1.5vw;
+        /*width: 1.5vw;
         height: 2.25vw;
         position: absolute;
         top: 15%;
         bottom: 0;
-        margin: auto;
+        margin: auto;*/
         
       }
       image.active{
@@ -192,6 +201,17 @@ $content-detail-height-mobile: 220vw;
             color: white;
             margin-top: -0.5em;
           }
+
+          .action-button-membership {
+            width: 18vw;
+            height: 5.6vw;
+
+           a {
+            font-size: 2.5vw;
+            margin-left: -15%;
+          }
+          
+    }
     }
     .actions-container {
       position: absolute;
@@ -202,6 +222,15 @@ $content-detail-height-mobile: 220vw;
           font-size: 2vw;
           // padding-top: 1vw;
         }
+        image{
+        width: 1.5vw;
+        height: 2.25vw;
+        position: absolute;
+        top: 15%;
+        bottom: 0;
+        margin: auto;
+        
+      }
         width: 25%;
         border-right: 1px solid #E3E3E3;
       }
@@ -260,6 +289,7 @@ $content-detail-height-mobile: 220vw;
     background: rgba(0,0,0,0.5);
     z-index: 0;
   }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -283,6 +313,7 @@ $content-detail-height-mobile: 220vw;
       order: 2;
 
     }
+
     .background-image {
       -webkit-box-ordinal-group: 1;
       -moz-box-ordinal-group: 1;
@@ -290,13 +321,22 @@ $content-detail-height-mobile: 220vw;
       -webkit-order: 1;
       order: 1;
 
-      .background-filter {
+      .background-detail {
+        right: -14%;
+        bottom: 7%;
+        width: 40%;
+        height: 40%;
       }
+
     }
+
+    
+
+    
     .presentation-container {
       position: relative;
       width: 85%;
-      height: 100vw;
+      height: 120vw;
       top: 20px;
 
       margin-left: 1.0em;
@@ -311,6 +351,18 @@ $content-detail-height-mobile: 220vw;
             font-size: 3.5vw;
             color: white;
           }
+
+          .action-button-membership {
+            width: 45vw;
+            height: 14.4vw;
+           
+           a {
+            font-size: 6vw;
+            margin-left: -20%;
+            
+          }
+          
+    }
     }
 
 
@@ -319,6 +371,20 @@ $content-detail-height-mobile: 220vw;
       height: -webkit-calc(#{$actions-height} + #{$content-detail-height-mobile});
       height:    -moz-calc(#{$actions-height} + #{$content-detail-height-mobile});
       height:         calc(#{$actions-height} + #{$content-detail-height-mobile});
+      .action-left, .action-center0, .action-center1, .action-right {
+        width: 100%;
+        image{
+          img{
+            max-width: 5%;
+            max-height: 5%;
+            background-size: 10%;
+            position: absolute;
+            margin-top: -$actioncontainer-height/1.8;
+            left: 88%;
+          }
+          
+        }
+      }
     }
 
     .actions-container {
@@ -326,8 +392,29 @@ $content-detail-height-mobile: 220vw;
 
       .action-left, .action-center0, .action-center1, .action-right {
         width: 100%;
+        
         a {
-          font-size: 6vw;
+          font-size: 9vw;
+        }
+        image{
+          img{
+            max-width: 10%;
+            max-height: 10%;
+            background-size: 10%;
+            position: absolute;
+            margin-top: -$actioncontainer-height/1.8;
+            left: 88%;
+          }
+          
+        }
+
+        image.active{
+          max-width: 5%;
+          max-height: 5%;
+          background-size: 10%;
+          position: absolute;
+          margin-top: -$actioncontainer-height/1.8;
+          left: 88%;
         }
       }
 

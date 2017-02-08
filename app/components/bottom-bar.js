@@ -12,7 +12,8 @@ export default Ember.Component.extend({
      footerContentObjectSecond: {
        title: "Espaço de Trabalho",
        options: [".House", ".Store", ".Work"],
-       links: ["work-space", "work-space", "work-space"]
+       links: ["house", "store", "work"],
+       link:"work-space",
      },
 
      footerContentObjectThird: {

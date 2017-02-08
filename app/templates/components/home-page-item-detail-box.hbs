@@ -10,9 +10,17 @@
   <div class="item-subdescription"> {{contentObject.subDescription}} </div>
  </div>
 
-  {{#if (object-have-property 'image' object=contentObject)  }}
-    <img src="{{contentObject.image}}" class="image-box">
-  {{/if}}
+ 
+  <div class="item-buttons">
+    {{#if (object-have-property 'imagesAndLinks' object=contentObject)  }}
+    {{#each contentObject.imagesAndLinks as |object| }}
+       {{#link-to contentObject.link (query-params spaceType=object.[1]) target="_parent"}} 
+          <button class="button" style="background:url({{object.[0]}}) no-repeat; background-size:100%" > </button> 
+       {{/link-to}}
+    {{/each}}
+    {{/if}}
+  </div>
+  
 
   <div class="item-options">
     {{#each contentObject.options as |option| }}
@@ -29,13 +37,12 @@
 
   {{#if (object-have-property 'email' object=contentObject)  }}
     <a class="email-title"> Email </a>
-    <a class="email-content"> {{contentObject.email}} </a>
+    <a href= "mailto:hi@55lab.co" class ="email-content"> {{contentObject.email}}</a>
 
     <a class="phone-title"> Telefone </a>
-    <a class="phone-content"> {{contentObject.phone}} </a>
-
+    <a href="tel:+556132176800" class="phone-content"> {{contentObject.phone}} </a>
       <div class= "social-media-container">
-       <a class="facebook-button" href="https://www.facebook.com/4Legal/?fref=ts" target="_blank">  </a>
+       <a class="facebook-button" href="https://www.facebook.com/55lab.co/?fref=ts" target="_blank">  </a>
         <a class="instagram-button" href="https://www.instagram.com/55lab.co/" target="_blank">  </a>
     </div>
 

@@ -34,7 +34,8 @@ export default Ember.Component.extend({
     subTitle: "Planos",
     subDescription: "Nem todos os negócios são iguais e do mesmo tamanho. Por isso, nossa estrutura é dividida em três segmentos que, com certeza, atendem às suas necessidades. Compare e agende sua visita:",
     options: [],
-    image:"/assets/images/names-spaces.png",
+    imagesAndLinks:[["/assets/images/button-home-workspace-house.png","house"],["/assets/images/button-home-workspace-store.png","store"],["/assets/images/button-home-workspace-work.png","work"]],
+    link:"work-space",
     itemActions: [{url: "/espaco-de-trabalho", title: "Saiba Mais", image: "/assets/images/home_page_button_work_space.png"}]
   },
 

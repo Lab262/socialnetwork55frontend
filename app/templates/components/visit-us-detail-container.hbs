@@ -31,11 +31,11 @@
                 </div>         
 
                 <div class="form-field-medium">
-                    {{paper-input label="Dia" value=date onChange=(action (mut date)) customValidations=clearFieldValidation}}
+                    {{paper-input label="Dia" maxlength="10" value=date onChange=(action maskDate) customValidations=dateValidation}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Horário" value=hour onChange=(action (mut hour)) customValidations=clearFieldValidation}}
+                    {{paper-input label="Horário" maxlength="5" value=hour onChange=(action maskHour) customValidations=hourValidation}}
                 </div>
 
                 <div class="form-field-medium">

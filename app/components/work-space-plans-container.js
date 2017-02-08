@@ -279,7 +279,7 @@ export default Ember.Component.extend({
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
             subInfoContentDescription: "Não está disponível",
-            subInfoContentActionName: "VEJA AQUI"
+            subInfoContentActionName: "VISITE"
         }
     }
 

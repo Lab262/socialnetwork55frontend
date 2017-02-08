@@ -1,5 +1,97 @@
 
 .community-advantages-intro-container {       
+       /*display: flex;
+       height: auto;
+       width: auto;
+       align-content: center;
+       background: #f7f7f7;  
+       display: block;
+       margin-top: 2.4vw;
+       padding-top: 1%;
+       padding-bottom: 5%;*/
+
+     .community-advantages-intro {
+       
+        /*background: #f7f7f7;
+        height: 30vw;
+        width: 100%;
+        margin-top: 5vw;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        overflow: visible;
+        position: relative;
+        z-index: 1;*/
+
+         .membership-main-description {
+           /*height: 42vw;
+           width: 54vw;
+           bottom: -60%;
+           left: 42%;
+           z-index:1;
+           overflow: visible;
+           position: absolute;
+           background-image:url(/assets/images/community_description_container.png);
+           background-size: 100%;
+           background-repeat: no-repeat;*/
+           
+           h1 {
+            font-family: 'aleo-regular-webfont';
+            font-size: 1.2vw;
+            color: black;
+            text-align: justify;
+            margin-top: 15%;
+            margin-left: 15%;
+            margin-right: 15%;
+            line-height: 1.8vw;
+          }
+         }
+
+       .membership-main-picture {
+           /*height: 35vw;
+           width: 35vw;
+           overflow: visible;
+           margin-right: 45%;
+           z-index:2;
+           content:url(/assets/images/community-background-membership.jpg);*/
+       }
+
+       .membership-detail-main-picture {
+           /*height: 10vw;
+           width: 10vw;
+           overflow: visible;
+           z-index:99;
+           margin-right: -20%;
+           margin-top: -3%;
+           content:url(/assets/images/retangleLogo.png);*/
+       }
+       
+         .membership-main-title {
+           /*height: 22vw;
+           width: 22%;
+           right: 39%;
+           top: 13%;
+           overflow: auto;
+           position: absolute;
+           z-index:3;
+           background:url(/assets/images/background_button_membership.png);
+           background-size:100%; 
+           background-repeat: no-repeat;*/
+           
+           h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 3.5vw;
+            color: white;
+            margin-top: 5%;
+            margin-right: 10%;
+          }
+
+         }
+    }
+}
+
+@media screen and (min-width: 600px) {
+  .community-advantages-intro-container {       
        display: flex;
        height: auto;
        width: auto;
@@ -88,4 +180,104 @@
 
          }
     }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .community-advantages-intro-container {       
+       display: flex;
+       height: auto;
+       width: auto;
+       align-content: center;
+       //background: red;
+       background: #f7f7f7;  
+       display: block;
+       //margin-top: 2.4vw;
+       padding-bottom: 5%;
+
+     .community-advantages-intro {
+       
+       //background: yellow;
+        background: #f7f7f7;
+        height: 220vw;
+        width: 100%;
+        margin-top: 5vw;
+        display: flex;
+        flex-direction: column;
+        //flex-flow: row nowrap;
+        //justify-content: space-around;
+        overflow: visible;
+       // position: relative;
+        z-index: 1;
+
+         .membership-main-description {
+           height: 145vw;
+           width: 79vw;
+           background: white;
+           //bottom: -60%;
+           margin-top: 82vw;
+           align-content: center;
+           margin-left: 11vw;
+          // left: 42%;
+           z-index:1;
+          
+           
+           h1 {
+            font-family: 'aleo-regular-webfont';
+            font-size: 4.2vw;
+            color: black;
+            text-align: justify;
+            margin-top: 9vw;
+            margin-left: 5%;
+            margin-right: 5%;
+            line-height: 5.8vw;
+          }
+         }
+
+       .membership-main-picture {
+           height: 72vw;
+           width: 72vw;
+           overflow: visible;
+           align-content: center;
+           align-items: center;
+           margin-left: 8vw;
+           margin-top: -10.9vw;
+           //margin-right: 45%;
+           z-index:2;
+           content:url(/assets/images/community-background-membership.jpg);
+       }
+
+       .membership-detail-main-picture {
+           height: 17vw;
+           width: 17vw;
+           overflow: visible;
+           z-index:99;
+           margin-left: 2vw;
+           margin-top: -225vw;
+           content:url(/assets/images/retangleLogo.png);
+       }
+       
+         .membership-main-title {
+           height: 20.3vw;
+           width: 75vw;
+           right: 18.5vw;
+           top: 83vw;
+           overflow: auto;
+           position: absolute;
+           z-index:3;
+           background:url(/assets/images/background_button_membership.png);
+           background-size:100%; 
+           background-repeat: no-repeat;
+           
+           h1 {
+            font-family: 'BebasNeue-Bold';
+            font-size: 10.5vw;
+            color: white;
+            margin-top: 4vw;
+            margin-left: -3vw;
+          }
+
+         }
+     }
+  }
 }
