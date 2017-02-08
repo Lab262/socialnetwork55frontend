@@ -421,8 +421,8 @@
             }
 
             .our-team-content-first-button {
-                width: 80%;
-                height: 20vw;
+                width: 50vw;
+                height: 24vw;
                 //height: 7vw;
                 margin-top: -65vw;
                 background:url(/assets/images/third-button-make-part.png);
@@ -443,7 +443,8 @@
                     text-align: center;
                     align-content: center;
                     position: absolute;
-                    margin-left: -20%;
+                    margin-left: -25%;
+                    margin-top: -5%;
                     &:visited, &:link {
                         color: white;
                         text-decoration: none;
@@ -452,8 +453,8 @@
             }
 
             .our-team-content-second-button {
-                width: 80%;
-                height: 20vw;
+                width: 50vw;
+                height: 24vw;
                 //height: 7vw;
                 margin-top: -65vw;
                 
@@ -475,7 +476,8 @@
                   text-align: center;
                   align-content: center;
                   position: absolute;
-                  margin-left: -20%;
+                  margin-left: -25%;
+                  margin-top: -5%;
 
                     &:visited, &:link {
                         color: white;
