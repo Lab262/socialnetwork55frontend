@@ -375,8 +375,8 @@ $content-detail-height-mobile: 220vw;
         width: 100%;
         image{
           img{
-            max-width: 5%;
-            max-height: 5%;
+            max-width: 16px;
+            max-height: 24px;
             background-size: 10%;
             position: absolute;
             margin-top: -$actioncontainer-height/1.8;
@@ -398,8 +398,8 @@ $content-detail-height-mobile: 220vw;
         }
         image{
           img{
-            max-width: 10%;
-            max-height: 10%;
+            max-width: 16px;
+            max-height: 24px;
             background-size: 10%;
             position: absolute;
             margin-top: -$actioncontainer-height/1.8;
@@ -409,8 +409,8 @@ $content-detail-height-mobile: 220vw;
         }
 
         image.active{
-          max-width: 5%;
-          max-height: 5%;
+          max-width: 16px;
+          max-height: 24px;
           background-size: 10%;
           position: absolute;
           margin-top: -$actioncontainer-height/1.8;
