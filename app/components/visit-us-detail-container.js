@@ -15,8 +15,9 @@ export default Ember.Component.extend({
         return "NOS VISITE";
     }),
 
-    contentDescription: "Venha conheçer o melhor no mundo, vamos te receber de braços abertos:",
-    contentSecondDescription: "Não perca a oportunidade de expandir seu negócio",
+    contentDescription: "Agende uma visita para conhecer melhor os nossos espaços e descobrir qual é o melhor para você e para o seu negócio:",
+    contentSecondDescription: "+55Lab.co: conexão, compartilhamento e networking como em nenhum outro lugar!",
+    contentTitleButton:"AGENDAR VISITA",
     name: "",
     email: "",
     telephone: "",
