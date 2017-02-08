@@ -26,7 +26,7 @@ export default Ember.Component.extend({
         didSelectPlanCallback: function (selectedPlan) {
             if (selectedPlan === "house") {      
                 // window.scrollTo(0, 1135);
-                this.get('scroller').scrollVertical(this.$("#work-space-container"), {offset: 1135, duration: 2000});
+                this.get('scroller').scrollVertical(this.$("#work-space-container"), {offset: 800, duration: 2000});
                 this.set('planSelected', [true, false, false]);
             } else if (selectedPlan === "store") {
                 //  window.scrollTo(0, 1135);
