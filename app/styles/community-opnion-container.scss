@@ -343,15 +343,13 @@
        align-content: center;
        background: #f7f7f7;  
        display: block;
-       padding-top: 25%;
-       padding-bottom: 8%;
-       margin-bottom: -10%;
+       padding-top: 45%;
+       padding-bottom: 15%;
 
 
      .community-opnion-intro {
-       
-
-        height: 25vw;
+      
+        height: auto;
         width: 100%;
         margin-top: 5vw;
         display: flex;
@@ -362,10 +360,12 @@
         z-index: 0;
 
          .membership-main-description {
-           height: 25vw;
-           width: 30vw;
-           margin-top: 9%;
-           left: 38%;
+           height: 63.5vw;
+           width: 85vw;
+           left: auto;
+           right: auto;
+           bottom: -75%;
+           margin-left:7%; 
            z-index:5;
            overflow: visible;
            position: absolute;
@@ -375,60 +375,63 @@
            
            h1 {
             font-family: 'aleo-regular-webfont';
-            font-size: 0.8vw;
+            font-size: 3.6vw;
             color: black;
             text-align: justify;
-            margin-top: 2%;
-            margin-left: 14%;
-            margin-right: 22%;
+            padding-top: 2%;
+            padding-left: 14%;
+            padding-right: 22%;
+            line-height: 4.5vw;
           }
           h2 {
             font-family: 'BebasNeue-Thin';
-            font-size: 1.2vw;
+            font-size: 5vw;
             color: black;
             text-align: justify;
-            margin-top: -2%;
-            margin-left: 14%;
-            margin-right: 22%;
+            padding-top: -2%;
+            padding-left: 14%;
+            padding-right: 22%;
           }
 
           h3 {
             font-family: 'BebasNeue-Bold';
-            font-size: 1.3vw;
+            font-size: 5.5vw;
             color: black;
             text-align: justify;
-            margin-top: 10%;
-            margin-left: 14%;
-            margin-right: 22%;
+            padding-top: 12%;
+            padding-left: 14%;
+            padding-right: 22%;
           }
          }
 
        .membership-main-picture {
-           height: 26vw;
-           width: 26vw;
+           height: 70vw;
+           width: 70vw;
            overflow: visible;
-           margin-right: 45%;
+           margin-right: auto;
+           margin-left: auto;
            z-index:2;
            content:url(/assets/images/knowledge-picture.png);
        }
 
        .membership-detail-main-picture {
-           height: 8vw;
-           width: 8vw;
+           height: 19vw;
+           width: 20vw;
            overflow: visible;
            z-index:99;
-           margin-right: -29%;
-           margin-top: -3.6%;
            content:url(/assets/images/rectangle-opinion-left.png);
+           position: absolute;
+           left: 5%;
+           top: -13%;
        }
      }
 
        .community-opinion-second-intro {
        
-       background: #f7f7f7;
+        //background: #f7f7f7;
         height: auto;
         width: 100%;
-        margin-top: 10vw;
+        padding-top: 80vw;
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-around;
@@ -437,65 +440,73 @@
         z-index: 1;
 
          .community-opinion-second-main-description {
-           height: 25vw;
-           width: 30vw;
+           
+           height: 63.5vw;
+           width: 85vw;
            top: 22%;
-           left: 34%;
-           z-index:-1;
+           left: auto;
+           right: auto;
+           padding-bottom: -200%;
+           margin-top: 100%;
+           margin-left:-7%; 
+
            overflow: visible;
            position: absolute;
-           background-image:url(/assets/images/community_description_second_opinion_container.png);
+           background-image:url(/assets/images/community_description_second_opinion_container_responsive.png);
            background-size: 100%;
            background-repeat: no-repeat;
 
            h1 {
             font-family: 'aleo-regular-webfont';
-            font-size: 0.8vw;
+            font-size: 3.6vw;
             color: black;
             text-align: justify;
-            margin-top: 2%;
-            margin-left: 24%;
-            margin-right: 18%;
+            padding-top: 2%;
+            padding-left: 24%;
+            padding-right: 18%;
+            line-height: 4.5vw;
           }
           h2 {
             font-family: 'BebasNeue-Thin';
-            font-size: 1.2vw;
+            font-size: 5vw;
             color: black;
             text-align: justify;
-            margin-top: -2%;
-            margin-left: 24%;
-            margin-right: 18%;
+            padding-top: -2%;
+            padding-left: 24%;
+            padding-right: 18%;
           }
 
           h3 {
             font-family: 'BebasNeue-Bold';
-            font-size: 1.3vw;
+            font-size: 5.5vw;
             color: black;
             text-align: justify;
-            margin-top: 10%;
-            margin-left: 24%;
-            margin-right: 18%;
+            padding-top: 10%;
+            padding-left: 24%;
+            padding-right: 18%;
           }
 
          }
 
        .community-opinion-second-main-picture {
-           height: 26vw;
-           width: 26vw;
+           height: 70vw;
+           width: 70vw;
            overflow: visible;
-           margin-left: 50%;
+           margin-right: auto;
+           margin-left: auto;
            z-index:-1;
            margin-top: -8%;
            content:url(/assets/images/knowledge-picture.png);
        }
 
        .community-opinion-second-detail-main-picture {
-           height: 8vw;
-           width: 8vw;
+           height: 21vw;
+           width: 20vw;
            overflow: visible;
            z-index:99;
-           margin-left: -24.9%;
-           margin-top: -11.5%;
+           position: absolute;
+           right: 5%;
+           top: 44%;
            content:url(/assets/images/rectangle-opinion-right.png);
         } 
       }
