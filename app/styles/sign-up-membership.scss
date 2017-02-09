@@ -37,6 +37,15 @@ $background-color: rgba(247,247,247,1);
             padding-left: 7.5%;
             padding-right: 7.55%;
            }
+
+           img{
+             width:7.76vw;
+             height:4vw;
+             margin-left: 12%;
+             margin-top: 2%;
+
+           }
+
          }
 
          .header-description {
@@ -81,6 +90,7 @@ $background-color: rgba(247,247,247,1);
             font-family: 'BebasNeue-Bold';
             font-size: 1.7vw;
             color: black;
+            width: 65%;
            }
 
            .label-icon {
@@ -154,19 +164,24 @@ $background-color: rgba(247,247,247,1);
             height: 4.5vw; 
             background: rgba(28,28,28,1);
             border-radius: 0.4vw;
-            text-align: center;
-            font-family: 'BebasNeue-Bold';
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
             margin-left: 2.2vw;
-            margin-top: 3.3vw;
-            font-size: 2vw;  
-            padding-top: 20px;
-            padding-bottom: 2px;
+            margin-top: 3.3vw;  
+
+            h1{
+                text-align: center;
+                font-family: 'BebasNeue-Bold';
+                font-size: 1.8vw;
+                color: white;
+                width: 100%;
+                margin-top: -6%;
+                line-height: 1.8vw;  
+            }
 
             .subscribe-button-background-borders {
             content: url('/assets/images/background-boarder-do-here.png');
             left: -4vw;
-            bottom: 5vw; 
+            bottom: 6vw; 
             width: 17vw;
             height: 8vw;
             position: relative;
