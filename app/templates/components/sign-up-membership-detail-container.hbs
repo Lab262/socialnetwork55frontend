@@ -1,11 +1,20 @@
  <div class="sign-up-membership-container">
         <div class="page-header">
             <div class="header-name">
-                <h1> {{this.memberType}} </h1>
+                {{#if haveImage}}
+                  <img src="/assets/images/white-logo-55-community.png">
+                {{else}}
+                    <h1> {{this.memberType}} </h1>
+                {{/if}}
+                
             </div>
 
             <div class="header-description">
-                <h1> {{contentDescription}} </h1>
+                {{#if haveImage}}
+                    <h1> {{contentMemberDescription}} </h1>
+                {{else}}
+                    <h1> {{contentDescription}} </h1>
+                {{/if}}
             </div>
             <div class="header-divider"> </div>
         </div>
@@ -58,7 +67,8 @@
                     {{paper-input label="Telefone" value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
                 </div>
 
-                <button class="subscribe-button" {{action 'registerUser'}}> CADASTRAR 
+                <button class="subscribe-button" {{action 'registerUser'}}> 
+                    <h1> {{contentTitleButton}}  {{memberType}}  ! </h1>
                     <div class="subscribe-button-background-borders">
                     </div>
                 </button>

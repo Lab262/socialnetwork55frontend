@@ -77,7 +77,7 @@
            background-size:100%; 
            background-repeat: no-repeat;
            
-           h1 {
+           /*h1 {
             font-family: 'BebasNeue-Bold';
             font-size: 3.5vw;
             color: white;
@@ -85,7 +85,14 @@
             margin-right: 10%;
 
             //  margin-bottom: -10px;
-          }
+          }*/
+
+          img{
+             width:12vw;
+             height:2.5vw;
+             margin-left: -9%;
+             margin-top: 8%;
+           }
 
          }
     }

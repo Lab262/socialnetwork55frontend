@@ -5,21 +5,25 @@
     <div class="item-description"> {{contentObject.description}} </div>
    </div>
 
-<div class="item-sub">
-  <div class="item-subtitle"> {{contentObject.subTitle}} </div>
-  <div class="item-subdescription"> {{contentObject.subDescription}} </div>
- </div>
-
- 
   <div class="item-buttons">
     {{#if (object-have-property 'imagesAndLinks' object=contentObject)  }}
     {{#each contentObject.imagesAndLinks as |object| }}
        {{#link-to contentObject.link (query-params spaceType=object.[1]) target="_parent"}} 
-          <button class="button" style="background:url({{object.[0]}}) no-repeat; background-size:100%" > </button> 
+          <button class="button" style="background:url({{object.[0]}}) no-repeat; background-size: 60%;" > </button> 
        {{/link-to}}
     {{/each}}
     {{/if}}
   </div>
+
+<div class="item-sub">
+  
+  {{#unless (object-have-property 'imagesAndLinks' object=contentObject)}}
+    <div class="item-subtitle"> {{contentObject.subTitle}} </div>
+  {{/unless}}
+
+  <div class="item-subdescription"> {{contentObject.subDescription}} </div>
+
+ </div>
   
 
   <div class="item-options">

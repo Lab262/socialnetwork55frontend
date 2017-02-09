@@ -3,18 +3,24 @@ import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers';
 
 export default Ember.Component.extend({
 
+    haveImage:false,
+    
     memberType: Ember.computed(function () {
         let membershipType = ParseHelpers.urlParamWithName("memberType", window.location.href);
         let isAValidatedType = (membershipType === "PARCEIRO" || membershipType === "MENTOR" || membershipType === "INVESTIDOR" || membershipType === "FRANQUEADO");
         if (membershipType !== undefined && isAValidatedType) {
+            this.set('haveImage',false);
             return membershipType;
         } else {
-            return "MEMBERSHIP";
+            this.set('haveImage',true);
+            return "MEMBRO";
         }
     }),
 
-    contentDescription: "Faça o seu cadastro inicial, com apenas algumas informações:",
-    contentSecondDescription: "Não perca a oportunidade de expandir seu negócio",
+    contentDescription: "Faça seu cadastro para podermos entrar em contato com você:",
+    contentMemberDescription: "Faça seu cadastro inicial para fazer parte da nossa comunidade e aproveitar todos os benefícios e eventos exclusivos:",
+    contentSecondDescription: "+55Lab.co: conexão, compartilhamento e networking como em nenhum outro lugar!",
+    contentTitleButton:"Quero ser ",
     name: "",
     cpf: "",
     rg: "",
