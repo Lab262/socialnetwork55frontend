@@ -18,6 +18,7 @@ export default Ember.Component.extend({
     }),
 
     contentDescription: "Faça seu cadastro para podermos entrar em contato com você:",
+    contentMemberDescription: "Faça seu cadastro inicial para fazer parte da nossa comunidade e aproveitar todos os benefícios e eventos exclusivos:",
     contentSecondDescription: "+55Lab.co: conexão, compartilhamento e networking como em nenhum outro lugar!",
     contentTitleButton:"Quero ser ",
     name: "",

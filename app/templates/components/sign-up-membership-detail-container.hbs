@@ -3,12 +3,18 @@
             <div class="header-name">
                 {{#if haveImage}}
                   <img src="/assets/images/white-logo-55-community.png">
+                {{else}}
+                    <h1> {{this.memberType}} </h1>
                 {{/if}}
-                <!--<h1> {{this.memberType}} </h1>-->
+                
             </div>
 
             <div class="header-description">
-                <h1> {{contentDescription}} </h1>
+                {{#if haveImage}}
+                    <h1> {{contentMemberDescription}} </h1>
+                {{else}}
+                    <h1> {{contentDescription}} </h1>
+                {{/if}}
             </div>
             <div class="header-divider"> </div>
         </div>
