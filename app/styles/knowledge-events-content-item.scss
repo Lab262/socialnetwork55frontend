@@ -30,7 +30,6 @@ $content-width: 28vw;
                                         width: 100%; 
                                         margin-top: 10%;
                                         //background: grey;
-                                        margin-bottom: 5%;
                                         h1 {
                                             font-family: 'BebasNeue-Bold';
                                             font-size: 2.5vw;
@@ -41,6 +40,7 @@ $content-width: 28vw;
                                     .subtitle {
                                         margin-left: 10%;
                                         width: 80%; 
+                                        padding-top: 25%;
                                         h1 {
                                                 font-family: 'BebasNeue-Regular';
                                                 font-size: 1.6vw;
@@ -49,7 +49,7 @@ $content-width: 28vw;
                                     }
                                     
                                     .knowledge-events-content-button{
-                                            margin-top: 2.5%;
+                                            margin-top: 1.5%;
                                             margin-bottom: auto;
                                             margin-left: 10%;
                                             background:#AC0049;
@@ -73,7 +73,7 @@ $content-width: 28vw;
                                     }
 
                                     .knowledge-events-content-second-button{
-                                            margin-top: 2.5%;
+                                            margin-top: 1.5%;
                                             margin-bottom: auto;
                                             background:#2A2A2A;
                                             color:white;
