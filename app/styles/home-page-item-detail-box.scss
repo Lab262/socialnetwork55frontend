@@ -4,13 +4,13 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-around;
-  top: 0%;
+  top: 0;
   margin-left: 7%;
   margin-right: 7%;
   font-size-adjust: 0.5;
 
   .item-title {
-    padding-top: 5%;
+    padding-top: 2%;
     font-family: 'BebasNeue-Bold';
   }
 
@@ -21,6 +21,15 @@
 
   .item-subtitle {
     font-family: 'BebasNeue-Bold';
+  }
+
+  .item-image{
+      width: 14vw;
+      height: 3vw;
+      padding-left: -9%;
+      margin-bottom: 5%;
+      margin-top: -80%;
+      
   }
 
   .item-subdescription{

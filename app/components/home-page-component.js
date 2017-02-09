@@ -45,6 +45,7 @@ export default Ember.Component.extend({
     subTitle: "Acelere.me",
     subDescription: "Conheça os eventos e cursos da nossa parceira em geração de conhecimento para você compartilhar, trocar, ou adquirir novas ideias empreendedoras.",
     options: [],
+    logo:"/assets/images/home-page-logo-acelere-me.png",
     itemActions: [{url:"/conhecimento", title: "Saiba o que está rolando", image: "/assets/images/work_space_button_work.png"}]
   },
 

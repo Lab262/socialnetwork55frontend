@@ -18,7 +18,11 @@
 <div class="item-sub">
   
   {{#unless (object-have-property 'imagesAndLinks' object=contentObject)}}
-    <div class="item-subtitle"> {{contentObject.subTitle}} </div>
+    {{#if (object-have-property 'logo' object=contentObject)  }}
+        <img class="item-image" src={{contentObject.logo}}>
+    {{else}}
+      <div class="item-subtitle"> {{contentObject.subTitle}} </div>
+    {{/if}}
   {{/unless}}
 
   <div class="item-subdescription"> {{contentObject.subDescription}} </div>
