@@ -91,7 +91,7 @@ export default Ember.Component.extend({
         this.loadEventickData();
     },
 
-    loadEventickData: function() {
+    loadEventickData: function () {
         var eventick = new Eventick('jguimaraes@4legal.com.br', 'juliana30');
         var allEvents = eventick.events.list()
         // var futureEvents = allEvents.filter(this.checkIfIsFutureEvent)
@@ -104,11 +104,24 @@ export default Ember.Component.extend({
             var parsedEventObject = {
                 title: currentEventItem.title,
                 image: currentEventItem.thumbnail_url,
-                description: "LOCAL: "+ currentEventItem.venue,
-                url: "https://www.eventick.com.br/" + currentEventItem.slug
+                description: "LOCAL: " + currentEventItem.venue,
+                url: "https://www.eventick.com.br/" + currentEventItem.slug,
+                startDate: currentEventItem.start_at
             }
             parsedEvents.push(parsedEventObject)
         }
+
+        parsedEvents = parsedEvents.sort(function (a, b) {
+
+            if (a.startDate < b.startDate) {
+                return 1;
+            }
+            if (a.startDate > b.startDate) {
+                return -1;
+            }
+            return 0
+        });
+
         this.set('events', parsedEvents)
     },
 
