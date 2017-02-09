@@ -21,7 +21,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
    height:auto;
    background: #f7f7f7;
    width: 100%;
-   margin-top: -2%;
+   padding-top: -2%;
         .image{
             width: 9vw;
             height: 9vw;
@@ -44,7 +44,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
     }
 
     .title {
-        margin-top:-7%;
+        padding-top:-7%;
         width: 100%; 
         height: 15%;
         margin-left: 7.5vw;
@@ -64,10 +64,11 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
     }
 
     .advantage-container {
-        margin-top:5%;
+        padding-top:5%;
         width: 100%; 
         height: 50vw;
         margin-left: 7.5vw;
+        background: #f7f7f7;
         
         .title{
            margin-top:-10%;
@@ -100,6 +101,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         width: 75%; 
         height: 19vw;
         margin-left: 7.5%;
+        background: #f7f7f7;
 
         .advantage-background-image {
         
@@ -144,7 +146,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: 25vw;
         margin-left: 5vw;
         margin-top: -1%;
-        background: white;
+        background: #f7f7f7;
 
 
         .advantage-options-information-title {
@@ -207,6 +209,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
             height: 20%;
             margin-left:-2.2vw;
             display: flex;
+            background: #f7f7f7;
             
             text-align: center;
 
@@ -1134,7 +1137,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: auto;
         margin-left: 7.5vw;
         margin-top: 12vw;  
-        background: red;
+        //background: red;
         margin-bottom: 50%;
 
       .advantage-meeting-room-background-borders {
@@ -1363,11 +1366,11 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
             width: 2.8vw;
             height: 28vw;
             
-            /*content: url('/assets/images/background-workspace-options.png');
+            content: url('/assets/images/background-workspace-options.png');
             margin-top: 10%;
             margin-left: 4%;
             width: 3vw;
-            height: 36vw;*/
+            height: 36vw;
         }
        .advantage-space-showroom-center-line {
             margin-top:1.5vw;

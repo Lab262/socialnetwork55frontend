@@ -124,6 +124,27 @@
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
 
+    position: relative;
+
+    z-index: 1;
+    width: 100%;
+    height: 104.2vw;
+
+    .divider {  
+        width: 100%;
+        height: auto;
+        display: block;     
+       
+        .divider-rect{
+            position:absolute;
+            background:#5A7DBB;
+            height: 4.2vw;
+            width: 100%;
+            bottom:0;
+        }
+    }
+
+
     .navbar {
       -webkit-box-ordinal-group: 2;
       -moz-box-ordinal-group: 2;
@@ -145,12 +166,18 @@
     .presentation-container {
       position: relative;
       width: 85%;
-      top: 15vw;
+      height: 120vw;
+      top: 12%;
 
-      margin-left: 1.0em;
+      margin-left: 8vw;
           h1 {
             font-family: 'BebasNeue-Bold';
-            font-size: 10vw;
+            font-size: 15vw;
+            color: white;
+          }
+          h2 {
+            font-family: 'FjordOne-Regular';
+            font-size: 4.5vw;
             color: white;
           }
     } 
@@ -162,6 +189,12 @@
         margin-top: 5vw;
      }
       }
+
+      .background-over-container {
+        height: auto;
+    
+    }
+
    }
   }
 }
