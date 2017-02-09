@@ -12,6 +12,6 @@ export default Ember.Component.extend({
         name:"Luiz Henrique",
         position:"Sócio A.Propósito",
         opinion:"“Mais do que compartilhar estrutura e reduzir custo, no 55 Lab compartilhamos idéias e oportunidades de negócio.”",
-        image:"/assets/images/community-second-opinion-image.JPG"
+        image:"/assets/images/community-second-opinion-image.jpg"
     }
 });
