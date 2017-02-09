@@ -46,15 +46,17 @@
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: -10%;
-    height: auto;
-    overflow: visible;
+    padding-top: -10%;
 
     .button {
-      width: auto;
-      margin-right: -2%;
-      height: 150%;
-
+      margin-left: -10%;
+      margin-right: auto;
+      width: 20%;
+      height: 20%;
+      position: absolute;
+      margin-top: -10%;
+      margin-bottom: auto;
+      
       &:hover{
         transform:scale(1.1,1.1);
         transition: transform 0.1s, width 0.1s ease-in;
