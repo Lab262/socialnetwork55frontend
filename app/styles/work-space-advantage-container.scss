@@ -699,9 +699,11 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 
 .work-space-advantage-container {
    height:auto;
-   background: #f7f7f7;
+  // background: #f7f7f7;
+ 
    width: 100%;
    margin-top: -2%;
+   margin-bottom: -20vw;
         .image{
             width: 24vw;
             height: 24vw;
@@ -747,8 +749,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         margin-top:5%;
         width: 100%; 
         height: 50vw;
+        //height:auto;
+        
         margin-left: 7.5vw;
-        margin-bottom: 50%;
+        margin-bottom: 270vw;
         
         .title{
            margin-top:-26%;
@@ -794,11 +798,11 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         }
 
        .advantage-options-title {
-         margin-top:-48.7vw;
-         width: 200vw; 
-         height: 40%;
-         margin-left:5vw;
-         background:url(/assets/images/icon-title-options.png);
+         margin-top:-43.7vw;
+         width: 90vw; 
+         height: 36vw;
+         margin-left:-8vw;
+         background:url(/assets/images/work-space-header-title-table-responsive.png);
          background-size:100%; 
          background-repeat: no-repeat;
          vertical-align: middle;
@@ -806,78 +810,81 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         h1 {
           height: 100%;
           font-family: 'BebasNeue-Bold';
-          font-size: 2.2vw;
+          font-size: 6.5vw;
           color: white;
+       
           align-content: center;
-          text-align: center;
+          text-align: left;
           margin-top: 20%;
-          // margin-left: 5%;
-          margin-right: 15%;
-          padding-top: 2.5%;
-
+          margin-right: 20%;
+          padding-top: 5%;
+          margin-left: 2%;
         }
       }
 
       .advantage-options-background {
 
-        width: 100%; 
+        width: 90vw; 
         display: flex;
         flex-direction: column;
-        height: 25vw;
-        margin-left: 5vw;
+        height: auto;
+        margin-left: -8vw;
         margin-top: -1%;
         background: white;
 
 
         .advantage-options-information-title {
            margin-top: 2%;
-           width: 100%; 
+           width: 90%; 
            height: 40%;
            
            display: inline-block;
            min-width: 50%;
            margin-bottom: 5vw;
-           margin-left: 1.5vw;
-           margin-right: -1.5vw;
+           margin-left: 6vw;
+          // margin-right: -1.5vw;
          
          h1 {
            font-family: 'BebasNeue-Bold';
-           font-size: 1.7vw;
+           font-size: 7vw;
            min-width: 50%;
            max-width: 90%;
            color: black;
            width: 100%;           
          }
 
+         
+
           h2 {
     
            min-width: 50%;
            max-width: 100%;
            font-family: 'BebasNeue-Regular';
-           font-size: 1.5vw;
+           font-size: 5.5vw;
            color:#262626;
          }
           h3 {
 
            font-family: 'aleo-regular-webfont';
-           font-size: 1.2vw;
+           font-size: 3.2vw;
            width: 90%;
            color: #262626;
            text-align: justify;           
          }
            h4{
             font-family: 'BebasNeue-Regular';
-            font-size: 1.1vw;
+            font-size: 4vw;
             color:#262626;
         }
 
          .advantage-options-center-line {
-            margin-top:-22vw;
+            margin-top:2vw;
             position: absolute;
-            width: 1px; 
+            width: 70vw; 
             background: #D8D8D8;
-            height: 22vw;
-            margin-left: 36vw;
+            height: 0.2vw;
+            margin-left: 5.2vw;
+
         }
 
 
@@ -885,16 +892,15 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
          .advantage-options-to-here-title {
             margin-top: 3vw;
             //background: pink;
-            width: 50%; 
+            width: 100%; 
             height: 20%;
-            margin-left:-2.2vw;
+            margin-left:-1.2vw;
             display: flex;
-            
-            text-align: center;
+            text-align: left;
 
           h1 {
             font-family: 'BebasNeue-Bold';
-            font-size: 1.6vw;
+            font-size: 6.5vw;
             min-width: 100%;
             color: black;
           }
@@ -902,9 +908,9 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 
         .advantage-access-here-button {
           padding: 0px;
-          margin-top:-2.9vw;
-          width: 12vw;
-          height: 4vw; 
+          margin-top:7vw;
+          width: 40vw;
+          height: 14.7vw; 
           display: flex;
           background: rgba(28,28,28,1);
           border-radius: 0.4vw;
@@ -912,7 +918,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
           margin-left:20vw;
           padding-left: 3vw;
           z-index: 2;
-           
+          
 
           &:hover {
              transform:scale(1.1,1.1);
@@ -923,7 +929,9 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
              
               text-align: center;
               font-family: 'BebasNeue-Bold';
-              font-size: 1.7vw; 
+              font-size: 6vw; 
+              margin-left: 6vw;
+              margin-top: 2vw;
 
               &:visited, &:link {
                 color: white;
@@ -941,10 +949,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
             content: url('/assets/images/background-boarder-do-here.png');
                 // background-repeat: no-repeat;
                 // background-size: cover;
-            margin-top: -6.6vw;
-            margin-left: 18vw;
-            width: 15vw;
-            height: 6.5vw;
+            margin-top: -24.2vw;
+            margin-left: 14vw;
+            width: 52.54vw;
+            height: 25.34vw;
             position: absolute;
           }   
        }
@@ -1126,18 +1134,20 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: auto;
         margin-left: 7.5vw;
         margin-top: 12vw;  
-      //  background: red;
+        background: red;
         margin-bottom: 50%;
 
       .advantage-meeting-room-background-borders {
-            content: url('/assets/images/background-border-meeting-rooms.png');
+            /*content: url('/assets/images/background-boarder-do-here.png');
                 // background-repeat: no-repeat;
                 // background-size: cover;
-            margin-top: -4vw;
-            margin-left: -3vw;
-            width: 3vw;
-            height: 17vw;
-            position: absolute;
+            margin-top: 30%;
+            margin-left: 40%;
+            background: orange;
+            width: 52.54vw;
+            height: 25.34vw;
+            position: absolute;*/
+
       }
 
         .title{
@@ -1225,13 +1235,15 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
       .advantage-do-it-button {
         padding: 0px;
         margin-top:35%;
+       // margin-bottom: 60vw;
         width: 40vw;
-        height: 12vw; 
+        height: 14.7vw; 
         background: rgba(28,28,28,1);
         border-radius: 0.4vw;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
         margin-left:-62vw;
         z-index: 2;
+        
 
         &:hover {
             transform:scale(1.1,1.1);
