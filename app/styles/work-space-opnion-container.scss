@@ -1,5 +1,5 @@
 .work-space-opnion-container {       
-       display: flex;
+       /*display: flex;
        height: auto;
        width: auto;
        align-content: center;
@@ -8,12 +8,12 @@
        margin-top: -5%;
        padding-top: 1%;
        padding-bottom: 8%;
-       margin-bottom: -10%;
+       margin-bottom: -10%;*/
 
      .work-space-opnion-intro {
        
 
-        height: 25vw;
+        /*height: 25vw;
         width: 100%;
         margin-top: 5vw;
         display: flex;
@@ -21,10 +21,10 @@
         justify-content: space-around;
         overflow: visible;
         position: relative;
-        z-index: 0;
+        z-index: 0;*/
 
          .work-space-opinion-main-description {
-           height: 25vw;
+           /*height: 25vw;
            width: 30vw;
            margin-top: 9%;
            left: 38%;
@@ -33,60 +33,60 @@
            position: absolute;
            background-image:url(/assets/images/work-space-opinion-background-left.png);
            background-size: 100%;
-           background-repeat: no-repeat;
+           background-repeat: no-repeat;*/
            
            h1 {
-            font-family: 'aleo-regular-webfont';
+            /*font-family: 'aleo-regular-webfont';
             font-size: 0.8vw;
             color: black;
             text-align: justify;
             margin-top: 2%;
             margin-left: 14%;
-            margin-right: 22%;
+            margin-right: 22%;*/
           }
           h2 {
-            font-family: 'BebasNeue-Regular';
+            /*font-family: 'BebasNeue-Regular';
             font-size: 1.2vw;
             color: black;
             text-align: justify;
             margin-top: -1%;
             margin-left: 14%;
-            margin-right: 22%;
+            margin-right: 22%;*/
           }
 
           h3 {
-            font-family: 'BebasNeue-Bold';
+            /*font-family: 'BebasNeue-Bold';
             font-size: 1.3vw;
             color: black;
             text-align: justify;
             margin-top: 10%;
             margin-left: 14%;
-            margin-right: 22%;
+            margin-right: 22%;*/
           }
          }
 
        .work-space-opinion-main-picture {
-           height: 26vw;
+           /*height: 26vw;
            width: 26vw;
            overflow: visible;
            margin-right: 45%;
-           z-index:2;
+           z-index:2;*/
        }
 
        .work-space-opinion-detail-main-picture {
-           height: 8vw;
+           /*height: 8vw;
            width: 8vw;
            overflow: visible;
            z-index:99;
            margin-right: -29%;
            margin-top: -3.6%;
-           content:url(/assets/images/work-space-opinion-detail-left.png);
+           content:url(/assets/images/work-space-opinion-detail-left.png);*/
        }
      }
 
        .work-space-opinion-second-intro {
        
-       background: #f7f7f7;
+       /*background: #f7f7f7;
         height: auto;
         width: 100%;
         margin-top: 10vw;
@@ -95,10 +95,10 @@
         justify-content: space-around;
         overflow: visible;
         position: relative;
-        z-index: 1;
+        z-index: 1;*/
 
          .work-space-opinion-second-main-description {
-           height: 25vw;
+           /*height: 25vw;
            width: 30vw;
            top: 22%;
            left: 34%;
@@ -107,56 +107,398 @@
            position: absolute;
            background-image:url(/assets/images/work-space-opinion-background-right.png);
            background-size: 100%;
-           background-repeat: no-repeat;
+           background-repeat: no-repeat;*/
 
            h1 {
-            font-family: 'aleo-regular-webfont';
+            /*font-family: 'aleo-regular-webfont';
             font-size: 0.8vw;
             color: black;
             text-align: justify;
             margin-top: 2%;
             margin-left: 24%;
-            margin-right: 18%;
+            margin-right: 18%;*/
           }
           h2 {
-            font-family: 'BebasNeue-Regular';
+            /*font-family: 'BebasNeue-Regular';
             font-size: 1.2vw;
             color: black;
             text-align: justify;
             margin-top: -1%;
             margin-left: 24%;
-            margin-right: 18%;
+            margin-right: 18%;*/
           }
 
           h3 {
-            font-family: 'BebasNeue-Bold';
+            /*font-family: 'BebasNeue-Bold';
             font-size: 1.3vw;
             color: black;
             text-align: justify;
             margin-top: 10%;
             margin-left: 24%;
-            margin-right: 18%;
+            margin-right: 18%;*/
           }
 
          }
 
        .work-space-opinion-second-main-picture {
-           height: 26vw;
+           /*height: 26vw;
            width: 26vw;
            overflow: visible;
            margin-left: 50%;
            z-index:-1;
-           margin-top: -8%;
+           margin-top: -8%;*/
        }
 
        .work-space-opinion-second-detail-main-picture {
-           height: 8vw;
+           /*height: 8vw;
            width: 8vw;
            overflow: visible;
            z-index:99;
            margin-left: -24.9%;
            margin-top: -11.5%;
-           content:url(/assets/images/work-space-opinion-detail-right.png);
+           content:url(/assets/images/work-space-opinion-detail-right.png);*/
         } 
       }
+}
+
+@media screen and (min-width: 600px) {
+
+    .work-space-opnion-container {       
+        display: flex;
+        height: auto;
+        width: auto;
+        align-content: center;
+        background: #f7f7f7;  
+        display: block;
+        margin-top: -5%;
+        padding-top: 1%;
+        padding-bottom: 8%;
+        margin-bottom: -10%;
+
+      .work-space-opnion-intro {
+        
+
+          height: 25vw;
+          width: 100%;
+          margin-top: 5vw;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          overflow: visible;
+          position: relative;
+          z-index: 0;
+
+          .work-space-opinion-main-description {
+            height: 25vw;
+            width: 30vw;
+            margin-top: 9%;
+            left: 38%;
+            z-index:5;
+            overflow: visible;
+            position: absolute;
+            background-image:url(/assets/images/work-space-opinion-background-left.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            
+            h1 {
+              font-family: 'aleo-regular-webfont';
+              font-size: 0.8vw;
+              color: black;
+              text-align: justify;
+              margin-top: 2%;
+              margin-left: 14%;
+              margin-right: 22%;
+            }
+            h2 {
+              font-family: 'BebasNeue-Regular';
+              font-size: 1.2vw;
+              color: black;
+              text-align: justify;
+              margin-top: -1%;
+              margin-left: 14%;
+              margin-right: 22%;
+            }
+
+            h3 {
+              font-family: 'BebasNeue-Bold';
+              font-size: 1.3vw;
+              color: black;
+              text-align: justify;
+              margin-top: 10%;
+              margin-left: 14%;
+              margin-right: 22%;
+            }
+          }
+
+        .work-space-opinion-main-picture {
+            height: 26vw;
+            width: 26vw;
+            overflow: visible;
+            margin-right: 45%;
+            z-index:2;
+        }
+
+        .work-space-opinion-detail-main-picture {
+            height: 8vw;
+            width: 8vw;
+            overflow: visible;
+            z-index:99;
+            margin-right: -29%;
+            margin-top: -3.6%;
+            content:url(/assets/images/work-space-opinion-detail-left.png);
+        }
+      }
+
+        .work-space-opinion-second-intro {
+        
+        background: #f7f7f7;
+          height: auto;
+          width: 100%;
+          margin-top: 10vw;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          overflow: visible;
+          position: relative;
+          z-index: 1;
+
+          .work-space-opinion-second-main-description {
+            height: 25vw;
+            width: 30vw;
+            top: 22%;
+            left: 34%;
+            z-index:-1;
+            overflow: visible;
+            position: absolute;
+            background-image:url(/assets/images/work-space-opinion-background-right.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+            h1 {
+              font-family: 'aleo-regular-webfont';
+              font-size: 0.8vw;
+              color: black;
+              text-align: justify;
+              margin-top: 2%;
+              margin-left: 24%;
+              margin-right: 18%;
+            }
+            h2 {
+              font-family: 'BebasNeue-Regular';
+              font-size: 1.2vw;
+              color: black;
+              text-align: justify;
+              margin-top: -1%;
+              margin-left: 24%;
+              margin-right: 18%;
+            }
+
+            h3 {
+              font-family: 'BebasNeue-Bold';
+              font-size: 1.3vw;
+              color: black;
+              text-align: justify;
+              margin-top: 10%;
+              margin-left: 24%;
+              margin-right: 18%;
+            }
+
+          }
+
+        .work-space-opinion-second-main-picture {
+            height: 26vw;
+            width: 26vw;
+            overflow: visible;
+            margin-left: 50%;
+            z-index:-1;
+            margin-top: -8%;
+        }
+
+        .work-space-opinion-second-detail-main-picture {
+            height: 8vw;
+            width: 8vw;
+            overflow: visible;
+            z-index:99;
+            margin-left: -24.9%;
+            margin-top: -11.5%;
+            content:url(/assets/images/work-space-opinion-detail-right.png);
+          } 
+        }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+    .work-space-opnion-container {       
+        display: flex;
+        height: auto;
+        width: auto;
+        align-content: center;
+        background: #f7f7f7;  
+        display: block;
+        padding-top: 45%;
+        padding-bottom: 40%;
+
+      .work-space-opnion-intro {
+        
+          height: auto;
+          width: 100%;
+          margin-top: 5vw;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          overflow: visible;
+          position: relative;
+          z-index: 0;
+
+          .work-space-opinion-main-description {
+            height: 63.5vw;
+            width: 85vw;
+            left: auto;
+            right: auto;
+            bottom: -75%;
+            margin-left:14%; 
+            z-index:5;
+            overflow: visible;
+            position: absolute;
+            background-image:url(/assets/images/work-space-opinion-background-left-responsive.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            
+            h1 {
+              font-family: 'aleo-regular-webfont';
+              font-size: 2.8vw;
+              color: black;
+              text-align: justify;
+              padding-top: -8%;
+              padding-left: 14%;
+              padding-right: 22%;
+              line-height: 4.5vw;
+            }
+            h2 {
+              font-family: 'BebasNeue-Regular';
+              font-size: 4.2vw;
+              color: black;
+              text-align: justify;
+              padding-top: -8%;
+              padding-left: 14%;
+              padding-right: 22%;
+            }
+
+            h3 {
+              font-family: 'BebasNeue-Bold';
+              font-size: 4.7vw;
+              color: black;
+              text-align: justify;
+              padding-top: 8%;
+              padding-left: 14%;
+              padding-right: 22%;
+            }
+          }
+
+        .work-space-opinion-main-picture {
+            height: 70vw;
+            width: 70vw;
+            overflow: visible;
+            margin-right: auto;
+            margin-left: auto;
+            z-index:2;
+        }
+
+        .work-space-opinion-detail-main-picture {
+            height: 19vw;
+            width: 20vw;
+            overflow: visible;
+            z-index:99;
+            position: absolute;
+            left: 5%;
+            top: -13%;
+            content:url(/assets/images/work-space-opinion-detail-left.png);
+        }
+      }
+
+        .work-space-opinion-second-intro {
+        
+          height: auto;
+          width: 100%;
+          padding-top: 90vw;
+          display: flex;
+          flex-flow: row nowrap;
+          justify-content: space-around;
+          overflow: visible;
+          position: relative;
+          z-index: 1;
+
+          .work-space-opinion-second-main-description {
+             height: 63.5vw;
+            width: 85vw;
+            top: 22%;
+            left: auto;
+            right: auto;
+            padding-bottom: -200%;
+            margin-top: 100%;
+            margin-left:0.5%; 
+
+            overflow: visible;
+            position: absolute;
+            background-image:url(/assets/images/work-space-opinion-background-right-responsive.png);
+            background-size: 100%;
+            background-repeat: no-repeat;
+
+            h1 {
+              font-family: 'aleo-regular-webfont';
+              font-size: 3vw;
+              color: black;
+              text-align: justify;
+              padding-top: 2%;
+              padding-left: 24%;
+              padding-right: 18%;
+              line-height: 4.5vw;
+            }
+            h2 {
+              font-family: 'BebasNeue-Regular';
+              font-size: 4.2vw;
+              color: black;
+              text-align: justify;
+              padding-top: -1%;
+              padding-left: 24%;
+              padding-right: 18%;
+            }
+
+            h3 {
+              font-family: 'BebasNeue-Bold';
+              font-size: 4.7vw;
+              color: black;
+              text-align: justify;
+              padding-top: 10%;
+              padding-left: 24%;
+              padding-right: 18%;
+            }
+
+          }
+
+        .work-space-opinion-second-main-picture {
+            height: 70vw;
+            width: 70vw;
+            overflow: visible;
+            margin-right: auto;
+            margin-left: auto;
+            z-index:-1;
+            margin-top: -8%;
+        }
+
+        .work-space-opinion-second-detail-main-picture {
+            height: 21vw;
+            width: 20vw;
+            overflow: visible;
+            z-index:99;
+            position: absolute;
+            right: 5%;
+            top: 48%;
+            content:url(/assets/images/work-space-opinion-detail-right.png);
+          } 
+        }
+  }
+
 }
