@@ -224,12 +224,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         .advantage-access-here-button {
           padding: 0px;
           margin-top:-2.9vw;
-          width: 12vw;
-          height: 4vw; 
+          width: 15vw;
+          height: 8vw; 
           display: flex;
-          background: rgba(28,28,28,1);
-          border-radius: 0.4vw;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
+               
           margin-left:20vw;
           padding-left: 3vw;
           z-index: 2;
@@ -245,6 +243,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
               text-align: center;
               font-family: 'BebasNeue-Bold';
               font-size: 1.7vw; 
+              margin-left: 1vw;
 
               &:visited, &:link {
                 color: white;
@@ -259,14 +258,14 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
          }
 
         .advantage-access-here-button-background-borders {
-            content: url('/assets/images/background-boarder-do-here.png');
+            /*content: url('/assets/images/background-boarder-do-here.png');
                 // background-repeat: no-repeat;
                 // background-size: cover;
             margin-top: -6.6vw;
             margin-left: 18vw;
             width: 15vw;
             height: 6.5vw;
-            position: absolute;
+            position: absolute;*/
           }   
        }
       }
@@ -324,7 +323,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: 19vw;
         margin-left: 14vw;
         margin-top: 20vw; 
-        background: red;   
+           
 
        .advantage-support-title {
          margin-top: 2%;
@@ -516,12 +515,12 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         position: absolute;
 
           .advantage-do-it-buttom-background-borders {
-            content: url('/assets/images/background-boarder-do-here.png');
+            /*content: url('/assets/images/background-boarder-do-here.png');
             margin-left: 16vw;
             margin-top: 4vw;
             width: 18.63vw;
             height: 9vw;
-            position: absolute;
+            position: absolute;*/
           }
         
         .advantage-meeting-information-title {
@@ -543,11 +542,9 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
       .advantage-do-it-button {
          padding: 0px;
          margin-top:12%;
-         width: 15vw;
-         height: 5vw; 
-         background: rgba(28,28,28,1);
-         border-radius: 0.4vw;
-         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
+         width: 20vw;
+         height: 10vw; 
+             
          margin-left:-29vw;
          z-index: 1;
 
