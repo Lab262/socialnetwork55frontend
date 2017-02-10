@@ -25,7 +25,7 @@ export default Ember.Component.extend({
     subTitle: "SEJA MEMBRO",
     subDescription: "Se você também quiser fazer parte da nossa equipe, temos as possibilidades:",
     options: ["Parceiro", "Franquiado", "Mentor", "INVESTIDOR"],
-    logosAndLink:["/assets/images/logo-55-community.png","/assets/images/button-be-member-home-community.png","/sign-up-membership"],
+    logosAndLink:["/assets/images/logo-55-community.png","/assets/images/button-be-member-home-community.png","sign-up-membership"],
     itemActions: [{url: "/comunidade", title: "Faça Parte", image: "/assets/images/work_space_button_store.png"}]
   },
 
