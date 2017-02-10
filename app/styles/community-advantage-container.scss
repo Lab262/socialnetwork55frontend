@@ -218,15 +218,15 @@
         z-index: 1;
 
          .membership-main-description {
-           height: 145vw;
-           width: 79vw;
-           background: white;
-           //bottom: -60%;
-           margin-top: 82vw;
+           height: 148vw;
+           width: 90vw;
+           margin-top: 84vw;
            align-content: center;
-           margin-left: 11vw;
-          // left: 42%;
+           margin-left: 6vw;
            z-index:1;
+           background-image:url(/assets/images/community_description_container_responsive.png);
+           background-size: 99%;
+           background-repeat: no-repeat;
           
            
            h1 {
@@ -234,9 +234,9 @@
             font-size: 4.2vw;
             color: black;
             text-align: justify;
-            margin-top: 9vw;
-            margin-left: 5%;
-            margin-right: 5%;
+            margin-top: 5vw;
+            margin-left: 10%;
+            margin-right: 15%;
             line-height: 5.8vw;
           }
          }
