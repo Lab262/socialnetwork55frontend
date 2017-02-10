@@ -20,11 +20,12 @@ export default Ember.Component.extend({
   },
 
   leftDetailContentObject: {
-    title: "+55Lab.Community: fazer e compartilhar juntos",
-    description: "Somos uma comunidade virtual e real, construída a partir da força do ecossistema empreendedor brasileiro. A Lab.Community permite + trocas de ideias entre pessoas que juntas formam uma poderosa rede de negócios.",
-    subTitle: "MEMBERSHIP",
-    subDescription: "Encontre parceiros de negócios, clientes, explore todos os benefícios oferecidos, fique por dentro dos assuntos do seu interesse e se conecte a empresas, mentores e entusiastas do empreendedorismo.",
+    title: "Fazer e compartilhar juntos",
+    description: "Somos uma comunidade virtual e real, construída a partir da força do ecossistema empreendedor brasileiro. A Lab.Community permite + trocas de ideias entre as pessoas que juntas formam uma poderosa rede de negócios e podem desfrutar de benefícios e eventos exclusivos.",
+    subTitle: "SEJA MEMBRO",
+    subDescription: "Se você também quiser fazer parte da nossa equipe, temos as possibilidades:",
     options: ["Parceiro", "Franquiado", "Mentor", "INVESTIDOR"],
+    logosAndLink:["/assets/images/logo-55-community.png","/assets/images/button-be-member-home-community.png","/sign-up-membership"],
     itemActions: [{url: "/comunidade", title: "Faça Parte", image: "/assets/images/work_space_button_store.png"}]
   },
 
@@ -45,6 +46,7 @@ export default Ember.Component.extend({
     subTitle: "Acelere.me",
     subDescription: "Conheça os eventos e cursos da nossa parceira em geração de conhecimento para você compartilhar, trocar, ou adquirir novas ideias empreendedoras.",
     options: [],
+    logo:"/assets/images/home-page-logo-acelere-me.png",
     itemActions: [{url:"/conhecimento", title: "Saiba o que está rolando", image: "/assets/images/work_space_button_work.png"}]
   },
 

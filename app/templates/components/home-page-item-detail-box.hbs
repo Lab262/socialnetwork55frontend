@@ -2,7 +2,14 @@
 
   <div class="item-main" >
     <div class="item-title"> {{contentObject.title}} </div>
-    <div class="item-description"> {{contentObject.description}} </div>
+    <div class="item-description"> {{contentObject.description}} 
+      {{#if (object-have-property 'logosAndLink' object=contentObject) }}
+        <img class="item-logo-image" src={{contentObject.logosAndLink.[0]}}>
+        <button class="item-button" style="background:url({{contentObject.logosAndLink.[1]}}) no-repeat; background-size: 80%;" >
+          <h1> {{contentObject.subTitle}}</h1>
+        </button> 
+      {{/if}}
+    </div>
    </div>
 
   <div class="item-buttons">
@@ -18,7 +25,9 @@
 <div class="item-sub">
   
   {{#unless (object-have-property 'imagesAndLinks' object=contentObject)}}
-    <div class="item-subtitle"> {{contentObject.subTitle}} </div>
+    {{#if (object-have-property 'logo' object=contentObject)  }}
+        <img class="item-image" src={{contentObject.logo}}>
+    {{/if}}
   {{/unless}}
 
   <div class="item-subdescription"> {{contentObject.subDescription}} </div>
