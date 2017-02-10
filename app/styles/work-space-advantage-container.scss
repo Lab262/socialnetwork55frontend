@@ -808,6 +808,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
          background-size:100%; 
          background-repeat: no-repeat;
          vertical-align: middle;
+         
         
         h1 {
           height: 100%;
@@ -831,6 +832,8 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         flex-direction: column;
         height: auto;
         margin-left: -8vw;
+        margin-top: -0.5vw;
+        z-index: -2%;
         margin-bottom: 80vw;
         background: white;
 
@@ -916,7 +919,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
           width: 55%;
           height: 55%; 
           display: flex;     
-          margin-left:15%;
+          margin-left:auto;
           margin-right: auto;
           padding-bottom: 10%;
           z-index: 1;
@@ -1006,9 +1009,9 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: auto;
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px;
-        
+        z-index: -2%;
         margin-left: -8vw;
-        margin-top: -1vw;
+        margin-top: -0.5vw;
         margin-bottom: 10vw;
         //margin-left:41vw;
 
@@ -1171,15 +1174,17 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
     
         
         .advantage-meeting-information-title {
-          margin-top: -10vw;
+          margin-top: 15vw;
+          margin-bottom: 50vw;
+          //padding-bottom: 150vw;
          // bottom: 50%;
         //  background: green;
-          width: 200%; 
+          width: 80%; 
           height: auto;
           // min-width: 75%;
-          position: absolute;
+          position: flex;
           //margin-left: -20vw;
-          margin-left: -58vw;
+          margin-left: 3vw;
           text-align: center;
 
          h1 {
@@ -1191,7 +1196,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
       }      
       .advantage-do-it-button {
         
-        margin-top:20%;
+        margin-top:-50vw;
        // margin-bottom: 60vw;
         width: 45%;
         height: 45%; 
@@ -1272,9 +1277,9 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: 85vw;
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px;
-        
+        z-index: -2%;
         margin-left: -8vw;
-        margin-top: -1vw;
+        margin-top: -0.5vw;
         margin-bottom: -2vw;
         //margin-left:41vw;
 
