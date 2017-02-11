@@ -39,6 +39,85 @@
             </div>
         </div>
 
+    {{#if responsiveMode }}
+        <div class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject.subInfoContentDescription}} </h1>
+            </div>
+
+        </div>
+
+        <div class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject2.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject2.subInfoContentDescription}} </h1>
+            </div>
+
+        </div>
+
+        <div class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject3.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject3.subInfoContentDescription}} </h1>
+            </div>
+
+        </div>
+
+        <div class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject4.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject4.subInfoContentDescription}} </h1>
+            </div>
+
+        </div>
+
+        <div class="work-space-plans-description-content-item">
+
+            <div class="title">
+                <h1>
+                    {{contentObject.subInfoContentObject5.subInfoContentTitle}}
+                </h1>
+            </div>
+            <div class="description">
+                <h1>
+                  {{contentObject.subInfoContentObject5.subInfoContentDescription}} 
+                  </h1>
+            </div>
+            
+            <button class="work-space-plans-description-content-button">
+                {{#link-to "visit-us" target="_blank"}}{{contentObject.subInfoContentObject5.subInfoContentActionName}}{{/link-to}}
+                  <div class="image" style="content: url('{{contentObject.headerContent.headerContentBacgroundButtonUrl}}')">
+                  </div>
+              </button>
+
+        </div>
+    {{else}}
+    
         <div style="height:32vw" class="work-space-plans-description-content-item">
 
             <div class="title">
@@ -114,6 +193,8 @@
                   </div>
               </button>
 
-            
         </div>
+
+    {{/if}}
+
     </div>

@@ -38,8 +38,16 @@ export default Ember.Component.extend({
             subInfoContentActionName: "VEJA AQUI"
         }
 
-    }
+    },
 
-    
+    responsiveMode: Ember.computed(function () { 
+
+        if (window.innerWidth < 600) {
+                return true;
+        }else{
+            return false;
+        }
+    })
 
 });
+

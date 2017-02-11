@@ -4,10 +4,12 @@ import ParseHelpers from '55-lab-web-front-end/helpers/parse-helpers';
 export default Ember.Component.extend({
 
     contentObject: {
-
+        
     },
 
     houseContentObject: {
+
+        planSelected:true,
         title: "VEJA OUTROS TIPOS DE LOCAÇÃO E VANTAGENS",
         description: "Para Membros e Não-Membros",
 
@@ -50,6 +52,8 @@ export default Ember.Component.extend({
     },
 
     storeContentObject: {
+        
+        planSelected:true,
         title: "VEJA OUTROS TIPOS DE LOCAÇÃO E VANTAGENS",
         description: "Para Membros e Não-Membros",
 
@@ -107,54 +111,6 @@ export default Ember.Component.extend({
             itensTable: ["TV", "Co-kitchen", "Mesas e cadeiras", "Recepção", "Internet", "Projetor + tela ", "Cabos HDMI/VGA", "Água e café", "Serviços de limpeza"]
         },
 
-        // contentObjectWithoutTable: {
-        //     image: "/assets/images/meeting-icon.png",
-        //     title: "Sala de Reunião",
-
-        //     firstSubtitle: ".WORK",
-        //     firstSubsubtitle: "Sala de reunião para 5 pessoas",
-        //     firstPriceFirstSubsubtitle: " R$25,00 hora",
-        //     secondPriceFirstSubsubtitle: " R$35,00 hora",
-
-        //     secondSubtitle: ".HOUSE (ventilador, mesa e cadeira)",
-        //     secondSubsubtitle: "Sala de reunião para 2 pessoas",
-        //     firstPriceSecondSubsubtitle: " R$15,00 hora",
-        //     secondPriceSecondSubsubtitle: " R$25,00 hora",
-        //     thirdSubsubtitle: "Sala de reunião para 4 pessoas",
-        //     firstPriceThirdSubsubtitle: " R$25,00 hora",
-        //     secondPriceThirdSubsubtitle: " R$35,00 hora",
-
-        //     firstTitlePriceSubsubtitle: "Membros:",
-        //     secondTitlePriceSubsubtitle: "Não-Membros:",
-
-        //     description: "Uma reunião precisa ser produtiva, mesmo. E nossas salas de reuniões, que acomodam até 5 pessoas, são preparadas para isso. Elas são completamente equipadas com tudo o que você precisa em um local de  reunião: água, café, equipamentos audiovisuais e internet dedicada. Temos salas de reunião em dois espaços diferentes: .work e .house, com diferenças nos recursos disponíveis e nos preços.",
-        //     descriptionActionButton: "Se quiser alugar uma de nossas salas",
-        //     titleActionButton: "Faça aqui"
-
-        // },
-
-        // contentSecondObjectWithoutTable: {
-        //     image: "/assets/images/icon-conference.png",
-        //     title: "Sala de Conferência",
-
-        //     firstSubtitle: ".HOUSE (para até 6 pessoas)",
-        //     firstPriceFirstSubtitle: " R$55,00 hora",
-        //     secondPriceFirstSubtitle: " R$65,00 hora",
-
-        //     secondSubtitle: ".WORK (para até 10 pessoas)",
-        //     firstPriceSecondSubtitle: " R$55,00 hora",
-        //     secondPriceSecondSubtitle: " R$65,00 hora",
-
-        //     firstTitlePriceSubtitle: "Membros:",
-        //     secondTitlePriceSubtitle: "Não-Membros:",
-
-        //     description: "Entendemos as dificuldades que podem surgir quando precisamos reunir todo mundo. Por isso, também temos salas preparadas para a realização de videoconferências que acomodam até 10 pessoas disponíveis para locação em nossos espaços.",
-        //     descriptionActionButton: "Se quiser alugar uma de nossas salas",
-        //     titleActionButton: "Faça aqui"
-        // },
-
-        //NAO APAGUE ESSE COMENTARIO ABAIXO
-
         contentSecondObjectOneTable: {
             image: "/assets/images/showroom-icon.png",
             title: "Showroom",
@@ -169,6 +125,8 @@ export default Ember.Component.extend({
     },
 
     workContentObject: {
+
+        planSelected:true,
         title: "VEJA OUTROS TIPOS DE LOCAÇÃO E VANTAGENS",
         description: "Para Membros e Não-Membros",
 
@@ -260,18 +218,15 @@ export default Ember.Component.extend({
 
     actions: {
         selectPlan(currentSelectedPlan) {
-            console.log(currentSelectedPlan)
-            console.log(this.get('contentObject'))
+            // console.log(currentSelectedPlan)
+            // console.log(this.get('contentObject'))
 
             if (currentSelectedPlan === "house") {
                 this.set('contentObject', this.houseContentObject);
             } else if (currentSelectedPlan === "store") {
                 this.set('contentObject', this.storeContentObject);
             } else if (currentSelectedPlan === "work") {
-                console.log("PAAASSSEEEI")
-
                 this.set('contentObject', this.workContentObject);
-                console.log(this.get('contentObject'))
             }
             this.set('displayType', "flex");
         }

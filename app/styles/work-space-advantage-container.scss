@@ -30,12 +30,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 
     .divider {
         width: 100%;
-        height: 20vw;
+        height: 5vw;
         display: block;
         .divider-rect{
             position:relative;
-            top: 40%;
-            // margin-top: -20%;
             background: #5A7DBB;
             height: 5px;
             width: 10vw;
@@ -320,16 +318,15 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
        }*/
 
       .advantage-support-container {
+        margin-top: -10vw;
         width: 75%; 
-        height: 19vw;
-        margin-left: 14vw;
-        margin-top: 20vw; 
-           
+        height: 20vw;
+        margin-left: 14vw;        
 
        .advantage-support-title {
-         margin-top: 2%;
+         padding: 0;
          width: 100%; 
-         height: 40%;
+         height: 34%;
          margin-left:5vw;
          background:url(/assets/images/icon-title-options.png);
          background-size:100%; 
@@ -360,25 +357,23 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
        // height: 90%;
         border-bottom-right-radius: 2px;
         border-bottom-left-radius: 2px;
-        height: 18vw;
+        height: 14vw;
         margin-left: 5vw;
-        margin-top: -1%;
-        //margin-left:41vw;
 
         
 
         .advantage-spaces-information-title {
           //  margin: 1vw;
-          width: 80vw; 
+          width: 100%; 
           //  margin: 4vw;
           margin-top: 2vw;
           margin-bottom: 2vw;
-          margin-left: 4vw;
-          margin-right: 2vw;
+          //margin-left: 4vw;
+          //margin-right: 2vw;
           display: flex;
           flex-wrap: wrap;
-          flex-direction: column;
-          justify-content: space-between;
+          flex-direction: row;
+          justify-content: space-around;
           //  background: blue;
             
            .advantage-spaces-information-title-item {
@@ -422,23 +417,23 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
             height: 36vw;*/
         }
        .advantage-space-center-line {
-            margin-top:1.5vw;
+            margin-top:1vw;
             width: 1px; 
             display: block;
             align-content: center;
             background: #D8D8D8;
-            height: 80%;
-            margin-left: -60.5vw;
+            height: 11vw;
+            margin-left: -52vw;
         }
 
        .advantage-space-center-line-two {
-             margin-top:1.5vw;
+            margin-top:1vw;
             width: 1px; 
             display: block;
             align-content: center;
             background: #D8D8D8;
-            height: 80%;
-            margin-left: -34.5vw;
+            height: 11vw;
+            margin-left: -25vw;
         }
     }
   }
@@ -714,12 +709,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 
     .divider {
         width: 100%;
-        height: 20vw;
+        height: 10vw;
         display: block;
         .divider-rect{
             position:relative;
-            top: 40%;
-            // margin-top: -20%;
             background: #5A7DBB;
             height: 5px;
             width: 10vw;
@@ -735,13 +728,13 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
        h1 {
            height: 100%;
             font-family: 'BebasNeue-Bold';
-            font-size: 4vw;
+            font-size: 8vw;
             color: black;
        }
         h2 {
            height: 100%;
             font-family: 'aleo-regular-webfont';
-            font-size: 2vw;
+            font-size: 4vw;
             color: #4A4A4A;
             
        }

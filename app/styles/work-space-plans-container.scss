@@ -1,5 +1,5 @@
     .work-space-plans-container {
-        padding: 6vw;
+        /*padding: 6vw;
         background: #f7f7f7;
         width: 100%;
         height: auto;
@@ -7,14 +7,14 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        position: relative;
+        position: relative;*/
 
         .border-background {
-            content: url('/assets/images/workspace-table-plans-border-background.png');                                        // background: green;                             
+            /*content: url('/assets/images/workspace-table-plans-border-background.png');                                        // background: green;                             
             position: absolute;
             height: 160vw;
             width: 95vw;
-            right: 3vw;
+            right: 3vw;*/
                                             
         }
 }
@@ -33,4 +33,51 @@
 _:-webkit-full-screen:not(:root:root), .border-background {		
          margin-top: -3vw;    
          margin-left: -3vw;
+}
+
+@media screen and (min-width: 600px){
+
+    .work-space-plans-container {
+        padding: 4vw;
+        background: #f7f7f7;
+        width: 100%;
+        height: auto;
+        display: none;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        .border-background {
+            content: url('/assets/images/workspace-table-plans-border-background.png');                                        // background: green;                             
+            position: absolute;
+            height: 160vw;
+            width: 95vw;
+            right: 3vw;
+                                            
+        }
+    }
+
+}
+
+@media screen and (max-width: 600px){
+
+    .work-space-plans-container {
+        padding: 6vw;
+        background: #f7f7f7;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        position: relative;
+        flex-flow: column;
+
+        .border-background {
+            height: 0;
+            width: 0;                       
+        }
+    }
+
 }

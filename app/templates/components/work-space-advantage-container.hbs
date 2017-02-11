@@ -1,15 +1,77 @@
 <div class="work-space-advantage-container">
+
+{{#if contentObject.planSelected}}
+    
     <div class="divider">
         <div class="divider-rect">
         </div>
     </div>
 
     <div class="title">
-        <h1>{{contentObject.contentObject.title}}</h1>
-        <h2>{{contentObject.contentObject.description}} </h2>
+        <h1>{{contentObject.title}}</h1>
+        <h2>{{contentObject.description}} </h2>
     </div>
 
-    {{#if contentObject.contentObjectDoubleTable}}
+{{/if}}
+
+{{#if contentObject.contentSecondObjectOneTable}}
+        <div class="advantage-container-do-it">
+
+        <img src="{{contentObject.contentSecondObjectOneTable.image}}" class="image">
+
+        <div class="title">
+            <h1>{{contentObject.contentSecondObjectOneTable.title}}</h1>
+               <h3>{{contentObject.contentSecondObjectOneTable.subtitle}}</h3>
+            <h3>{{contentObject.contentSecondObjectOneTable.description}}</h3>
+        </div>
+
+        <div class="advantage-meeting-room-background">
+
+            <div class="advantage-meeting-information-title">
+                <h1>{{contentObject.contentSecondObjectOneTable.descriptionActionButton}}</h1>
+            </div>
+
+            <button class="advantage-do-it-button"  style = "background:url(/assets/images/work-space-button-advantage-responsive.png) no-repeat; background-size:100%;">{{#link-to "visit-us" target="_blank"}}{{contentObject.contentSecondObjectOneTable.titleActionButton}}{{/link-to}}</button>
+              <div class="advantage-do-it-buttom-background-borders">
+         </div>
+        </div>
+    </div>
+
+             <div class="advantage-support-showroom-container ">
+
+            <div class="advantage-support-showroom-title">
+                <h1>{{contentObject.contentSecondObjectOneTable.titleTable}}</h1>
+            </div>
+            <div class="advantage-spaces-showroom-background">
+                <div class="advantage-spaces-showroom-information-title">
+
+                    {{#each contentObject.contentSecondObjectOneTable.itensWithIconTable as |item| }}
+                    <div class="advantage-spaces-showroom-information-title-item">
+                        <div class="image-icon">
+                        </div>
+                        <h1>{{item}}</h1>
+                    </div>
+                    {{/each}}
+
+                    {{#each contentObject.contentSecondObjectOneTable.itensTable as |item| }}
+                    <div class="advantage-spaces-showroom-information-title-item">
+                        <h1>{{item}}</h1>
+                    </div>
+                    {{/each}}
+
+                </div>
+                <div class="advantage-background-showroom-support-image">
+                </div>
+                <div class="advantage-space-showroom-center-line">
+                </div>
+
+                <div class="advantage-space-showroom-center-line-two">
+                </div>
+            </div>
+        </div>
+{{/if}}
+
+{{#if contentObject.contentObjectDoubleTable}}
         
    
     <div class="advantage-container">
@@ -67,10 +129,10 @@
             </div>
         </div>
     </div>
-     {{/if}}
+{{/if}}
 
 
-     {{#if contentObject.contentObjectOneTable}}
+{{#if contentObject.contentObjectOneTable}}
          
     <div class="advantage-container-do-it">
           <div class="advantage-meeting-room-background-borders">
@@ -126,10 +188,10 @@
                 </div>
             </div>
         </div>
-    {{/if}}
+{{/if}}
 
 
-    {{#if contentObject.contentObjectSecondTable}}
+{{#if contentObject.contentObjectSecondTable}}
         
      <div  class="advantage-container-do-it">
 
@@ -161,9 +223,9 @@
         </div>
     </div>
 
-        {{/if}}
+{{/if}}
 
-        {{#if contentObject.contentObjectThirdTable}}
+{{#if contentObject.contentObjectThirdTable}}
             
       <div class="advantage-container-do-it">
 
@@ -197,9 +259,9 @@
         </div>
     </div>
 
-        {{/if}}
+{{/if}}
 
-        {{#if contentObject.contentObjectThirdTable.itensTable}}
+{{#if contentObject.contentObjectThirdTable.itensTable}}
             
       <div class="advantage-support-container">
 
@@ -227,9 +289,9 @@
                 </div>
             </div>
         </div>
-        {{/if}}
+{{/if}}
 
-        {{#if contentObject.contentObjectWithoutTable}}
+{{#if contentObject.contentObjectWithoutTable}}
             
     <div class="advantage-container-do-it">
 
@@ -246,12 +308,12 @@
              <h2><b>{{contentObject.contentObjectWithoutTable.secondTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.secondPriceFirstSubsubtitle}}</h2>
             
             <h3>{{contentObject.contentObjectWithoutTable.secondSubtitle}}</h3>
-             {{#if contentObject.contentObjectWithoutTable.secondSubsubtitle}}
+        {{#if contentObject.contentObjectWithoutTable.secondSubsubtitle}}
             <h4>{{contentObject.contentObjectWithoutTable.secondSubsubtitle}}</h4>
             <h2><b>{{contentObject.contentObjectWithoutTable.firstTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.firstPriceSecondSubsubtitle}}</h2>
              <h2><b>{{contentObject.contentObjectWithoutTable.secondTitlePriceSubsubtitle}}</b>{{contentObject.contentObjectWithoutTable.secondPriceSecondSubsubtitle}}</h2>
              <h4>{{contentObject.contentObjectWithoutTable.thirdSubsubtitle}}</h4>
-             {{/if}}
+        {{/if}}
             <h3>{{contentObject.contentObjectWithoutTable.description}}</h3>
         </div>
 
@@ -267,10 +329,10 @@
         </div>
     </div>
 
-            {{/if}}
+{{/if}}
 
 
-            {{#if contentObject.contentSecondObjectWithoutTable}}
+{{#if contentObject.contentSecondObjectWithoutTable}}
                 
     <div class="advantage-container-do-it">
 
@@ -297,63 +359,6 @@
          </div>
         </div>
     </div>
-            {{/if}}
-
-                    {{#if contentObject.contentSecondObjectOneTable}}
-        <div class="advantage-container-do-it">
-
-        <img src="{{contentObject.contentSecondObjectOneTable.image}}" class="image">
-
-        <div class="title">
-            <h1>{{contentObject.contentSecondObjectOneTable.title}}</h1>
-               <h3>{{contentObject.contentSecondObjectOneTable.subtitle}}</h3>
-            <h3>{{contentObject.contentSecondObjectOneTable.description}}</h3>
-        </div>
-
-        <div class="advantage-meeting-room-background">
-
-            <div class="advantage-meeting-information-title">
-                <h1>{{contentObject.contentSecondObjectOneTable.descriptionActionButton}}</h1>
-            </div>
-
-            <button class="advantage-do-it-button"  style = "background:url(/assets/images/work-space-button-advantage-responsive.png) no-repeat; background-size:100%;">{{#link-to "visit-us" target="_blank"}}{{contentObject.contentSecondObjectOneTable.titleActionButton}}{{/link-to}}</button>
-              <div class="advantage-do-it-buttom-background-borders">
-         </div>
-        </div>
-    </div>
-
-             <div class="advantage-support-showroom-container ">
-
-            <div class="advantage-support-showroom-title">
-                <h1>{{contentObject.contentSecondObjectOneTable.titleTable}}</h1>
-            </div>
-            <div class="advantage-spaces-showroom-background">
-                <div class="advantage-spaces-showroom-information-title">
-
-                    {{#each contentObject.contentSecondObjectOneTable.itensWithIconTable as |item| }}
-                    <div class="advantage-spaces-showroom-information-title-item">
-                        <div class="image-icon">
-                        </div>
-                        <h1>{{item}}</h1>
-                    </div>
-                    {{/each}}
-
-                    {{#each contentObject.contentSecondObjectOneTable.itensTable as |item| }}
-                    <div class="advantage-spaces-showroom-information-title-item">
-                        <h1>{{item}}</h1>
-                    </div>
-                    {{/each}}
-
-                </div>
-                <div class="advantage-background-showroom-support-image">
-                </div>
-                <div class="advantage-space-showroom-center-line">
-                </div>
-
-                <div class="advantage-space-showroom-center-line-two">
-                </div>
-            </div>
-        </div>
-            {{/if}}
+{{/if}}
 
 </div>
