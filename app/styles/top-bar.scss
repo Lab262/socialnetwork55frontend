@@ -8,16 +8,14 @@
 
   width: 100%;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
+    flex-wrap: wrap;
+    align-items: center;
+
   background: white;
-  justify-content: space-between;
   z-index: 2;
 
   .app-logo {
-    height: 37.5px;
-    width: 125px;
+   
     background-image: url("/assets/images/logo.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -47,10 +45,9 @@
       vertical-align: middle;
       position: relative;
       display: block;
-      padding: 1.2em;
-      margin: -1.2em;
+      // padding: 1.2em;
+      // margin: -1.2em;
       font-family: 'FjordOne-Regular';
-      font-size: 16px;
 
       &:visited, &:link {
         color: black;
@@ -76,10 +73,10 @@
       vertical-align: middle;
       position: relative;
       display: block;
-      padding: 1.2em;
-      margin: -1.2em;
+      // padding: 1.2em;
+      // margin: -1.2em;
       font-family: 'FjordOne-Regular';
-      font-size: 15px;
+      font-size: 5vw;
 
       &:visited, &:link {
         color: black;
@@ -96,13 +93,23 @@
 @media screen and (min-width: 680px) {
   
   .navbar {
-
+   
+   justify-content: space-between;
     position: fixed;
     top: 0;
+    flex-direction: row;
+
+    .close-menu {
+      display: none;
+    }
+
   }
+
+
   .app-logo {
     margin-left: 5.0em;
     background-size: 75%;
+    width: 7vw;
   }
 
   .navbar .left-menu {
@@ -110,12 +117,13 @@
     height: var(--nav-bar-height);
     align-items: center;
     padding-right: 2.0em;
-    margin-right: 19.0em;
+    margin-right: 7.0em;
 
      a {
       padding-left: 0;
       margin-left: -25px;
       line-height: calc(var(--nav-bar-height)/2);
+                  font-size: 0.9vw;
     }
 
     .left-nav-button{
@@ -123,6 +131,7 @@
       margin-left: 25px;
       // border-right: var(--items-border-size) solid white;
       height: 50%;
+
     }
   }
   .navbar .app-menu {
@@ -130,6 +139,7 @@
     height: var(--nav-bar-height);
     align-items: center;
     padding-right: 5.0em;
+      font-size: 0.9vw;
 
     .nav-button{
       padding: 0px var(--items-padding-width);
@@ -149,27 +159,62 @@
 @media screen and (max-width: 680px) {
   .navbar {
 
-    justify-content: center;
     flex-direction: column;
-    position: relative;
+    position: fixed;
     margin-bottom: 0;
+    width: 90%;
+    margin-left: 10%; 
+    height: 100vh;
+    justify-content: space-between;
 
-    .app-logo {
-      width: 100%;
-      top: 0px;
-      background-size: 15%;
-      height: 50px;
-      background-color: white;
-      position: fixed;
+     .close-menu {
+       padding-top: 10%;
+       padding-bottom: 5%;
+       margin-right: -50%;
+       display: flex;
+       font-family: 'BebasNeue-Bold';
+       font-size: 9vw;
+        color: black;
+        justify-content: space-between;
+
+
+        .burger-menu {
+           background:url(/assets/images/menu_burger.png);
+           background-size:7vw; 
+           background-repeat: no-repeat;
+           color: red;
+           height: 7vw;
+           width: 7vw;
+           margin-top: 3vw;
+           margin-right: -20%;  
+        }
+
 
     }
+
+    .app-logo {
+      width: 75%;
+      height: 25vw;
+      background-color: white;
+     
+      // position: fixed; //when is closed
+      position: relative; //when is open
+
+                  // background-size: 15%;//when is closed
+            background-size: 50%; //when is open
+
+    }
+
     .app-menu {
       flex-direction: column;
-      padding-top: 10px;
       align-items: center;
       justify-content: center;
       text-align: center;
 
+      a {
+        font-size: 5vw;
+
+      }
 
       .nav-button {
         border-top: calc(var(--items-border-size)/2) solid white;
@@ -179,10 +224,14 @@
 
     .left-menu {
        flex-direction: column;
-       padding-top: 10px;
        align-items: center;
        justify-content: center;
        text-align: center;
+      
+      a {
+        font-size: 5vw;
+
+      }
 
       .left-nav-button {
         border-top: calc(var(--items-border-size)/2) solid white;
