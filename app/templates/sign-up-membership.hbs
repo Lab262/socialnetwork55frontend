@@ -1,5 +1,10 @@
 <div class="sign-up-membership">
-    {{top-bar}}
+    {{#if responsiveMode}} 
+        {{navbar-responsive-mobile}}
+     {{else}}
+        {{top-bar}}  
+    {{/if}}    
+    
     {{sign-up-membership-detail-container}}
     {{bottom-bar backgroundColor="#D8AD09" }} 
 </div>

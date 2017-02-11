@@ -187,6 +187,21 @@
            width: 7vw;
            margin-top: 3vw;
            margin-right: -20%;  
+
+             -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+
+          &:hover {
+      transform: scale(1.2);
+      -moz-transform: scale(1.2);
+    }
+    a {
+      display: block;
+      height: var(--nav-bar-height);
+    }
+
         }
 
 
@@ -195,13 +210,9 @@
     .app-logo {
       width: 75%;
       height: 25vw;
-      background-color: white;
-     
-      // position: fixed; //when is closed
+      background-color: white;     
       position: relative; //when is open
-
-                  // background-size: 15%;//when is closed
-            background-size: 50%; //when is open
+       background-size: 50%; //when is open
 
     }
 

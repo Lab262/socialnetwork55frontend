@@ -1,5 +1,10 @@
 <div class="visit-us">
-    {{top-bar}}
+    {{#if responsiveMode}} 
+        {{navbar-responsive-mobile}}
+     {{else}}
+        {{top-bar}}  
+    {{/if}}    
+    
     {{visit-us-detail-container}}
     {{bottom-bar backgroundColor="#E65B05" }} 
 </div>

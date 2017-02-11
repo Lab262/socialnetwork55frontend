@@ -1,5 +1,12 @@
 
 <div class="home-page-container">
+ 
+      {{#if responsiveMode}} 
+        {{navbar-responsive-mobile}}
+     {{else}}
+        {{top-bar}}  
+    {{/if}}    
+    
   {{top-bar showLeftMenu=false}}
   {{home-page-component}}
 

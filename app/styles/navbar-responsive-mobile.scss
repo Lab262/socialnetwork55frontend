@@ -1,0 +1,82 @@
+.navbar-responsive-mobile {
+  --nav-bar-height: 70px;
+  --items-container-padding-height: 1%;
+  --items-padding-width: 15px;
+  --items-border-size: 1px;
+  --items-padding-height: 3%;
+  --items-border-color: black;
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: white;
+    z-index: 2;
+    flex-direction: column;
+    position: fixed;
+    height: 75px;
+    justify-content: space-between;
+
+
+  .app-logo {
+   
+    background-image: url("/assets/images/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    background-size: 75%;
+    width: 35%;
+    margin-left: 25%;
+    margin-right: 20;
+
+    &:hover {
+      transform: scale(1.2);
+      -moz-transform: scale(1.2);
+    }
+    a {
+      display: block;
+      height: var(--nav-bar-height);
+    }
+    
+  }
+
+   .close-menu {
+       margin-top: 3.5%;
+       margin-right: -50px;
+       display: flex;
+       font-family: 'BebasNeue-Bold';
+       font-size: 9vw;
+        color: black;
+        justify-content: space-between;
+
+
+        .burger-menu {
+           background:url(/assets/images/menu_burger.png);
+           background-size:7vw; 
+           background-repeat: no-repeat;
+           color: red;
+           height: 7vw;
+           width: 7vw;
+           margin-top: 3vw;
+           margin-right: -20%;  
+
+            -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+
+          &:hover {
+      transform: scale(1.2);
+      -moz-transform: scale(1.2);
+    }
+    a {
+      display: block;
+      height: var(--nav-bar-height);
+    }
+        }
+
+   }
+}

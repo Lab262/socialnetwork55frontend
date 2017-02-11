@@ -1,6 +1,10 @@
 
 <div class="community-container">
-    {{top-bar}}
+    {{#if responsiveMode}} 
+        {{navbar-responsive-mobile}}
+     {{else}}
+        {{top-bar}}  
+    {{/if}}
     {{community-fixed-background}}
     {{community-detail-content}}
     

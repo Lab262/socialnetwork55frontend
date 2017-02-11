@@ -1,6 +1,11 @@
 
 <div class="knowledge-container">
-     {{top-bar}}
+    {{#if responsiveMode}} 
+        {{navbar-responsive-mobile}}
+     {{else}}
+        {{top-bar}}  
+    {{/if}}    
+    
      {{knowledge-fixed-background}}
      {{knowledge-detail-content}} 
      {{bottom-bar backgroundColor="#AC0049"}}

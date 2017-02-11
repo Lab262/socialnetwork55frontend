@@ -1,30 +1,14 @@
-{{!--<div class="navbar-responsive-mobile-container">
+<div class="navbar-responsive-mobile">
+  
 
-    <div class="background-container">
+  <div class="app-logo">
+     {{#link-to "home-page"}}{{/link-to}}
+  </div>
 
-        <div class="menu-container">
-
-            <div class="menu-header">
-            </div>
-
-            <div class="app-logo">
-                {{#link-to "home-page"}}{{/link-to}}
-            </div>
-
-            <div class="left-nav-button">
-                {{#link-to "community"}}Comunidade{{/link-to}}
-            </div>
-
-            <div class="left-nav-button">
-                {{#link-to "community"}}Comunidade{{/link-to}}
-            </div>
-            
-            <div class="left-nav-button">
-                {{#link-to "community"}}Comunidade{{/link-to}}
-            </div>
-
-        </div>
-
+  <div class="close-menu">
+    
+    <button class="burger-menu" {{action "onClick"}}> </button>
+     
     </div>
-
-</div>--}}
+  
+</div>
