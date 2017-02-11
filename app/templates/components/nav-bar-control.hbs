@@ -1,0 +1,14 @@
+ {{#if responsiveMode}} 
+       
+        {{#if isMenuOpen}} 
+        {{top-bar closeMenuAction=(action "closeMenuAction")}}  
+
+        {{else}}
+        {{navbar-responsive-mobile openMenuAction=(action "openMenuAction")}}
+
+        {{/if}}
+
+     {{else}}
+        {{top-bar closeMenuAction=(action "closeMenuAction")}}  
+        
+{{/if}}  
