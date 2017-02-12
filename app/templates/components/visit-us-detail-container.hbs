@@ -14,32 +14,32 @@
             <div class="left-content">
 
                 <div class="form-field-big">
-                    {{paper-input label="Nome Completo" value=name onChange=(action (mut name)) customValidations=clearFieldValidation}}
+                    {{paper-input label="Nome Completo*" value=name onChange=(action (mut name)) customValidations=clearFieldValidation}}
                 </div>
 
                 <div class="form-field-big">
-                    {{paper-input label="Email para contato" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
+                    {{paper-input label="Email para contato*" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Telefone para contato" value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
+                    {{paper-input label="Telefone para contato*" value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Quantas pessoas virão?" value=number_people onChange=(action (mut number_people))}}
+                    {{paper-input label="Quantas pessoas virão?*" value=number_people onChange=(action (mut number_people))}}
 
                 </div>         
 
                 <div class="form-field-medium">
-                    {{paper-input label="Dia" maxlength="10" value=date onChange=(action maskDate) customValidations=dateValidation}}
+                    {{paper-input label="Dia*" maxlength="10" value=date onChange=(action maskDate) customValidations=dateValidation}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Horário" maxlength="5" value=hour onChange=(action maskHour) customValidations=hourValidation}}
+                    {{paper-input label="Horário*" maxlength="5" value=hour onChange=(action maskHour) customValidations=hourValidation}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Quer visitar qual espaço?" value=name_space onChange=(action (mut name_space)) customValidations=clearFieldValidation}}
+                    {{paper-input label="Quer visitar qual espaço?*" value=name_space onChange=(action (mut name_space)) customValidations=clearFieldValidation}}
                 </div>
 
 
