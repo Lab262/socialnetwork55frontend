@@ -10,6 +10,7 @@ $content-detail-height-mobile: 220vw;
   display:  flex;
   flex-direction: column;
   overflow: hidden;
+
   .background-image {
     position: fixed;
     left: 0;
@@ -83,6 +84,7 @@ $content-detail-height-mobile: 220vw;
     width: 100%;
     height: $actioncontainer-height;
     z-index: 2;
+    
     .action-left{
       border-top: 15px solid #D8AD09;
     }
