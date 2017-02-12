@@ -8,8 +8,8 @@
 
   width: 100%;
   display: flex;
-    flex-wrap: wrap;
-    align-items: center;
+  flex-wrap: wrap;
+  align-items: center;
 
   background: white;
   z-index: 2;
@@ -173,19 +173,19 @@
        margin-right: -50%;
        display: flex;
        font-family: 'BebasNeue-Bold';
-       font-size: 9vw;
+       font-size: 5vh;
         color: black;
         justify-content: space-between;
 
 
         .burger-menu {
            background:url(/assets/images/menu_burger.png);
-           background-size:7vw; 
+           background-size: 3vh; 
            background-repeat: no-repeat;
            color: red;
-           height: 7vw;
-           width: 7vw;
-           margin-top: 3vw;
+           height: 3vh;
+           width: 3vh;
+           margin-top: 2vh;
            margin-right: -20%;  
 
              -webkit-transition: all 0.2s ease-in-out;
@@ -209,12 +209,12 @@
 
     .app-logo {
       width: 75%;
-      height: 25vw;
+      height: 15vh;
       background-color: white;     
       position: relative; //when is open
       background-size: 50%; //when is open
       right: -5vw;
-
+ 
     }
 
     .app-menu {
@@ -224,7 +224,7 @@
       text-align: center;
 
       a {
-        font-size: 5vw;
+        font-size: 3vh;
 
       }
 
@@ -241,7 +241,7 @@
        text-align: center;
       
       a {
-        font-size: 5vw;
+        font-size: 3vh;
 
       }
 
