@@ -2,6 +2,7 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
     showLeftMenu:true,
+    // style: "",
 
     responsiveMode: Ember.computed(function () { 
 

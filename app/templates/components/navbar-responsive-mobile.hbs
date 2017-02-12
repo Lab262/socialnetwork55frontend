@@ -1,11 +1,11 @@
-<div class="navbar-responsive-mobile">
+<div class="navbar-responsive-mobile" {{action this.openMenuAction}} style={{this.style}}>
   
 
   <div class="app-logo">
      {{#link-to "home-page"}}{{/link-to}}
   </div>
 
-  <div class="close-menu">
+  <div class="close-menu"  >
     
     <button class="burger-menu" {{action this.openMenuAction}}> </button>
      
