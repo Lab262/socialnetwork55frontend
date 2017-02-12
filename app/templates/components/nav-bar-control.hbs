@@ -2,10 +2,7 @@
        
 
         {{top-bar closeMenuAction=(action "closeMenuAction") style=(if isMenuOpen "transform: translateX(0); " "")}}  
-                        {{navbar-responsive-mobile openMenuAction=(action "openMenuAction") style=(unless isMenuOpen "transform: translateY(0);" "" )}}
-
-        {{!--{{#unless isMenuOpen}} 
-        {{/unless}}--}}
+        {{navbar-responsive-mobile openMenuAction=(action "openMenuAction") style=(unless isMenuOpen "transform: translateY(0);" "" )}}
 
 {{else}}
         {{top-bar closeMenuAction=(action "closeMenuAction")}}  

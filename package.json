@@ -49,6 +49,7 @@
     "broccoli-static-compiler": "^0.2.2",
     "ember-browserify": "^1.1.13",
     "ember-cli": "^2.8.0",
+    "ember-cli-pace": "0.1.0",
     "ember-cli-sass": "6.1.1",
     "ember-paper": "1.0.0-alpha.14",
     "ember-scroll-to": "0.5.4",
