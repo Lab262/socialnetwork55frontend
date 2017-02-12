@@ -37,7 +37,7 @@ export default Ember.Component.extend({
     phoneNumberValidation: [{
         message: 'Entre com um telefone válido',
         validate: (inputValue) => {
-            let emailPattern = /^\(?([0-9]{2})\)?[-. ]?([0-9]{5})[-. ]?([0-9]{4})$/;
+            let emailPattern = /^\(?([0-9]{2})\)?[-. ]?([0-9]{4,5})[-. ]?([0-9]{4})$/;
             return emailPattern.test(inputValue);
         }
     }],
@@ -125,17 +125,15 @@ export default Ember.Component.extend({
                     data: data,
                     beforeSend: function (xhr) { xhr.setRequestHeader('main-token', 'ZRCNAamAQ$yTv6&2VQ4eR*f?437w[FkF/gktDTg6#GunNQuE8@#]MC9B3NBTxifH'); },
                     success: function () {
-
-                        this.set('name', '');
-                        this.set('email', '');
-                        this.set('telephone', '');
-                        this.set('number_people', '');
-                        this.set('date', '');
-                        this.set('hour', '');
-                        this.set('name_space', '');
-
                         alert('Formulário enviado com sucesso!');
-                          
+
+                        self.set('name', '');
+                        self.set('email', '');
+                        self.set('telephone', '');
+                        self.set('number_people', '');
+                        self.set('date', '');
+                        self.set('hour', '');
+                        self.set('name_space', '');
                     },
                     error: function (jqXHR, exception) { alert("Erro:" + jqXHR.responseText); console.log(jqXHR); console.log(exception) }
                 });

@@ -44,7 +44,7 @@ export default Ember.Component.extend({
     phoneNumberValidation: [{
         message: 'Entre com um telfone válido',
         validate: (inputValue) => {
-            let emailPattern = /^\(?([0-9]{2})\)?[-. ]?([0-9]{5})[-. ]?([0-9]{4})$/;
+            let emailPattern = /^\(?([0-9]{2})\)?[-. ]?([0-9]{4,5})[-. ]?([0-9]{4})$/;
             return emailPattern.test(inputValue);
         }
     }],

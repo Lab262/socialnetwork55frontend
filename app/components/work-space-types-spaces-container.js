@@ -28,9 +28,9 @@ export default Ember.Component.extend({
            
            //Scroll view
             if (window.innerWidth < 600) {
-                this.get('scroller').scrollVertical(this.$("#work-space-container"), {offset: 2350, duration: 1600});
+                this.get('scroller').scrollVertical(this.$("#work-space-container"), {offset: 7.3*window.innerWidth, duration: 1600});
             }else{
-                this.get('scroller').scrollVertical(this.$("#work-space-container"), {offset: 700, duration: 800});
+                this.get('scroller').scrollVertical(this.$("#work-space-container"), {offset: 0.55*window.innerWidth, duration: 800});
             }
             
             if (selectedPlan === "house") {      

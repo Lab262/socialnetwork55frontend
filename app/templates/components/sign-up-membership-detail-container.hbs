@@ -23,48 +23,48 @@
             <div class="left-content">
 
                 <div class="form-field-big">
-                    {{paper-input label="Nome" value=name onChange=(action (mut name)) customValidations=clearFieldValidation }}
+                    {{paper-input label="Nome*" value=name onChange=(action (mut name)) customValidations=clearFieldValidation }}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="CPF" value=cpf onChange=(action (mut cpf))}} {{!--{{input-mask mask="999.999.999-99" placeholder="CPF"}}--}}
+                    {{paper-input label="CPF*" value=cpf onChange=(action (mut cpf))}} {{!--{{input-mask mask="999.999.999-99" placeholder="CPF"}}--}}
                 </div>
 
                 <div class="form-field-medium">
-                 {{paper-input label="RG" value=rg onChange=(action (mut rg))}}
+                 {{paper-input label="RG*" value=rg onChange=(action (mut rg))}}
 
                 </div>
 
                 <div class="form-field-big">
-                    {{paper-input label="Endereço" value=address onChange=(action (mut address))}}
+                    {{paper-input label="Endereço*" value=address onChange=(action (mut address))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Número" value=number onChange=(action (mut number)) }}
+                    {{paper-input label="Número*" value=number onChange=(action (mut number)) }}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Complemento" value=complement onChange=(action (mut complement))}}
+                    {{paper-input label="Complemento*" value=complement onChange=(action (mut complement))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Bairro" value=neighbor onChange=(action (mut neighbor))}}
+                    {{paper-input label="Bairro*" value=neighbor onChange=(action (mut neighbor))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Estado" value=state onChange=(action (mut state))}}
+                    {{paper-input label="Estado*" value=state onChange=(action (mut state))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="País" value=country onChange=(action (mut country))}}
+                    {{paper-input label="País*" value=country onChange=(action (mut country))}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Email" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
+                    {{paper-input label="Email*" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Telefone" value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
+                    {{paper-input label="Telefone*" value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
                 </div>
 
                 <button class="subscribe-button" {{action 'registerUser'}}> 
