@@ -98,8 +98,6 @@ export default Ember.Component.extend({
 
 
             var formIsValid = this.clearFieldValidation[0].validate(this.name) 
-                && this.clearFieldValidation[0].validate(this.hour)
-                && this.clearFieldValidation[0].validate(this.date)
                 && this.clearFieldValidation[0].validate(this.spaceType)
                 && this.phoneNumberValidation[0].validate(this.telephone)
                 && this.emailValidation[0].validate(this.email)
@@ -150,12 +148,12 @@ export default Ember.Component.extend({
                 if (!this.clearFieldValidation[0].validate(this.telephone)) {
                     error += 'Campo *Telefone* é obrigatório\n';
                 } 
-                if (!this.clearFieldValidation[0].validate(this.date)) {
-                    error += 'Campo *Dia da visita* é obrigatório\n';
-                } 
-                if (!this.clearFieldValidation[0].validate(this.hour)) {
-                    error += 'Campo *Horário* é obrigatório\n';
-                } 
+                // if (!this.clearFieldValidation[0].validate(this.date)) {
+                //     error += 'Campo *Dia da visita* é obrigatório\n';
+                // } 
+                // if (!this.clearFieldValidation[0].validate(this.hour)) {
+                //     error += 'Campo *Horário* é obrigatório\n';
+                // } 
                 if (!this.clearFieldValidation[0].validate(this.spaceType)) {
                         error += 'Campo *Quer visitar qual espaço?* é obrigatório\n';
                 }

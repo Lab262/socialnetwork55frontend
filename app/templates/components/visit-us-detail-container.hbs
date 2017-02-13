@@ -26,16 +26,16 @@
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Quantas pessoas virão?*" value=number_people onChange=(action (mut number_people))}}
+                    {{paper-input label="Quantas pessoas virão?" value=number_people onChange=(action (mut number_people))}}
 
                 </div>         
 
                 <div class="form-field-medium">
-                    {{paper-input label="Dia*" maxlength="10" value=date onChange=(action maskDate) customValidations=dateValidation}}
+                    {{paper-input label="Dia" maxlength="10" value=date onChange=(action maskDate)}}
                 </div>
 
                 <div class="form-field-medium">
-                    {{paper-input label="Horário*" maxlength="5" value=hour onChange=(action maskHour) customValidations=hourValidation}}
+                    {{paper-input label="Horário" maxlength="5" value=hour onChange=(action maskHour)}}
                 </div>
 
                 <div class="form-field-medium">
