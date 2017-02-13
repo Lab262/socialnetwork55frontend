@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import NavBarMixing from './../mixins/nav-bar-mixin'
+import NavBarMixing from './../../mixins/nav-bar-mixin'
 
 export default Ember.Component.extend(NavBarMixing,{
 
