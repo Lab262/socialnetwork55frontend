@@ -1,8 +1,12 @@
 import Ember from 'ember';
-import Eventick from "npm:node-eventick"
+import Eventick from "npm:eventick"
 
 export default Ember.Component.extend({
-
+    eventsImages: [
+        "/assets/images/image-curse-peteleco.png",
+        "/assets/images/background-image.png",
+        "/assets/images/image-curse-tapa-cara.png",
+    ],
     events: [
         {
             title: "Peteleco",
@@ -92,27 +96,51 @@ export default Ember.Component.extend({
     },
 
     loadEventickData: function () {
-        var eventick = new Eventick('jguimaraes@4legal.com.br', 'juliana30');
-        var allEvents = eventick.events.list()
-        // var futureEvents = allEvents.filter(this.checkIfIsFutureEvent)
+        var _eventick = null
 
-        this.set('events', [])
-        var parsedEvents = []
-        for (var i = 0; i < allEvents.length; i++) {
-            var currentEventItem = allEvents[i]
-            currentEventItem = eventick.events.get(currentEventItem.id)
+        Eventick.login('jguimaraes@4legal.com.br', 'juliana30').then((eventick) => {
+            _eventick = eventick
+            return _eventick.events.getList()
+        }).then((events) => {
+
+            var futureEvents = events.filter(this.checkIfIsFutureEvent)
+            this.set('events', [])
+            console.log(events)
+
+            this.loadEventInfo(0, futureEvents, _eventick, [])
+
+        }).catch((error) => {
+            console.log(error)
+        })
+
+    },
+
+    loadEventInfo: function (i, allEvents, _eventick, parsedEvents) {
+
+        var currentEvent = allEvents[i]
+
+        _eventick.events.get(currentEvent.id).then((currentEventItem) => {
             var parsedEventObject = {
                 title: currentEventItem.title,
-                image: currentEventItem.thumbnail_url,
+                image: this.eventsImages[i%3],
                 description: "LOCAL: " + currentEventItem.venue,
                 url: "https://www.eventick.com.br/" + currentEventItem.slug,
                 startDate: currentEventItem.start_at
             }
             parsedEvents.push(parsedEventObject)
-        }
+            parsedEvents = this.sortParsedEvents(parsedEvents)
 
-        parsedEvents = parsedEvents.sort(function (a, b) {
+            var newIndex = i + 1
+            if (newIndex < allEvents.length) {
+                this.loadEventInfo(newIndex, allEvents, _eventick, parsedEvents)
+            } else {
+                this.set('events', parsedEvents)
+            }
+        })
+    },
 
+    sortParsedEvents: function (parsedEvents) {
+        var parsedEventsSorted = parsedEvents.sort(function (a, b) {
             if (a.startDate < b.startDate) {
                 return 1;
             }
@@ -122,7 +150,7 @@ export default Ember.Component.extend({
             return 0
         });
 
-        this.set('events', parsedEvents)
+        return parsedEvents
     },
 
     checkIfIsFutureEvent: function (eventObject) {
