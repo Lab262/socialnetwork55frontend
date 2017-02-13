@@ -212,12 +212,11 @@
 
     .app-logo {
       width: 75%;
-      height: 15vh;
       background-color: white;     
       position: relative; //when is open
       background-size: 50%; //when is open
       right: -5vw;
- 
+      margin-top: -10%;
     }
 
     .app-menu {
@@ -225,10 +224,9 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-
+      margin-bottom: 25%;
       a {
         font-size: 3vh;
-
       }
 
       .nav-button {
@@ -242,7 +240,7 @@
        align-items: center;
        justify-content: center;
        text-align: center;
-      
+       margin-top: -5%;
       a {
         font-size: 3vh;
 
