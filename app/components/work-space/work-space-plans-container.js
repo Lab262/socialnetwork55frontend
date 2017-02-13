@@ -46,7 +46,7 @@ export default Ember.Component.extend({
         headerContent: {
             headerContentTitle: "OPEN DESK",
             headerContentPrice: "A partir de R$ 865,00/MÊS",
-            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
@@ -86,7 +86,7 @@ export default Ember.Component.extend({
         headerContent: {
             headerContentTitle: "FIXED DESK",
             headerContentPrice: "A partir de R$ 985,00/MÊS",
-            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
@@ -126,7 +126,7 @@ export default Ember.Component.extend({
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
             headerContentPrice: "A partir de R$ 5.200,00/MÊS",
-            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
@@ -208,7 +208,47 @@ export default Ember.Component.extend({
         headerContent: {
             headerContentTitle: "OPEN DESK",
             headerContentPrice: "A partir de R$ 320,00/MÊS",
-            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentWorkspacePlanButton: "VISITE",
+            headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
+            headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
+            headerColorBackground: "#D8AD09",
+            headerColorBorderBackground: "#AC0049"
+        },
+
+        descriptionContent: "Acesso a qualquer desk disponível na área comum do +55Lab em três locais diferentes: .work, .house e .store. Esse plano inclui o membership do +55.community e 1 hora de meeting room por mês.",
+
+        subInfoContentObject: {
+            subInfoContentTitle: "Espaço de trabalho",
+            subInfoContentDescription: "É um espaço reservado para você chegar e produzir sem preocupações, e não precisa de agendamento. É só trazer o seu laptop, escolher uma mesa e começar a trabalhar. Você encontra as estações de trabalho nos três espaços - .work, .house e .store - e pode usá-las 24h por dia nos 7 dias na semana."
+        },
+
+        subInfoContentObject2: {
+            subInfoContentTitle: "Bônus",
+            subInfoContentDescription: "Por mês, você ganha 1h de meeting room."
+        },
+
+        subInfoContentObject3: {
+            subInfoContentTitle: "Mais benefícios",
+            subInfoContentDescription: "Não está disponível"
+        },
+
+        subInfoContentObject4: {
+            subInfoContentTitle: "Adicionais disponíveis",
+            subInfoContentDescription: "Sala de eventos: a partir de R$150,00/hora, Endereço fiscal: a partir de R$115,00/mês, Serviços de caixa postal: R$ 50,00/mês."
+        },
+
+        subInfoContentObject5: {
+            subInfoContentTitle: "Anuidade",
+            subInfoContentDescription: "A partir de R$ 320,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 365,00.",
+            subInfoContentActionName: "VISITE"
+        }
+    },
+
+    {
+        headerContent: {
+            headerContentTitle: "SHOWROOM",
+            headerContentPrice: "A partir de R$ 320,00/MÊS",
+            headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
             headerColorBackground: "#D8AD09",
@@ -290,7 +330,7 @@ export default Ember.Component.extend({
         headerContent: {
             headerContentTitle: "OPEN DESK",
             headerContentPrice: "A partir de R$ 575,00/MÊS",
-            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
             headerColorBackground: "#AC0049",
@@ -330,7 +370,7 @@ export default Ember.Component.extend({
         headerContent: {
             headerContentTitle: "FIXED DESK",
             headerContentPrice: "A partir de R$ 820,00/MÊS",
-            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
             headerColorBackground: "#AC0049",
@@ -370,7 +410,7 @@ export default Ember.Component.extend({
         headerContent: {
             headerContentTitle: "PRIVATE ROOM",
             headerContentPrice: "A partir de R$ 1.800,00/MÊS",
-            headerContentWorkspacePlanButton: "FAÇA PARTE",
+            headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
             headerColorBackground: "#AC0049",

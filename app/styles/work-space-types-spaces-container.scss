@@ -118,7 +118,7 @@ $item-width: 25vw;
             // background-repeat: no-repeat;
             width: $item-width;
             display: inline-block;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 40px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 40px 0 rgba(0, 0, 0, 0.1);
             border-radius: 2px;
 
             .work-space-types-spaces-content-background-image {
@@ -153,29 +153,31 @@ $item-width: 25vw;
 
             .description {
                 width: 100%; 
-                height: auto;
+                height: 32vw;
                 background: white;
                 h1 {
-                    padding-left: 7%;
-                    padding-right: 7%;
+                    padding-left: 10%;
+                    padding-right: 10%;
                     padding-top: 5%;
                     height: 100%;
-                 font-family: 'aleo-regular-webfont';
-                    font-size: 1vw;
+                    font-family: 'aleo-regular-webfont';
+                    font-size: 1.2vw;
                     color: black;
-                    text-align: justify;
+                    text-align: left;
+                    line-height: 2vw;
 
                     
                 }
 
                 .work-space-types-spaces-content-button{
                     position: relative;
-                    // margin-top: 5%;
+                    padding-bottom: 10%;
                     background: white;
                     height: auto;
                     width: 100%;
                     align-items: left;
                     background-size: cover;
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.2);
                     h1 {
                         margin-top:-22%;
                         margin-left: -2vw;
@@ -219,7 +221,7 @@ $item-width: 25vw;
             margin-top: 10%;
             width: $item-width;
             display: inline-block;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 40px 0 rgba(0, 0, 0, 0.4);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 40px 0 rgba(0, 0, 0, 0.2);
             border-radius: 2px;
 
             .work-space-types-spaces-content-background-image {

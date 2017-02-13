@@ -98,6 +98,7 @@
     position: fixed;
     top: 0;
     flex-direction: row;
+    z-index: 99;
 
     .close-menu {
       display: none;

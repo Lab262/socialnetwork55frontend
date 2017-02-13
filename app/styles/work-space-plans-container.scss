@@ -39,7 +39,7 @@ _:-webkit-full-screen:not(:root:root), .border-background {
 
     .work-space-plans-container {
         padding: 4vw;
-        background: #f7f7f7;
+        background: #efefef;
         width: 100%;
         height: auto;
         display: none;
@@ -49,11 +49,13 @@ _:-webkit-full-screen:not(:root:root), .border-background {
         position: relative;
 
         .border-background {
-            content: url('/assets/images/workspace-table-plans-border-background.png');                                        // background: green;                             
+            /*content: url('/assets/images/workspace-table-plans-border-background.png');                                        // background: green;                             
             position: absolute;
             height: 160vw;
             width: 95vw;
-            right: 3vw;
+            right: 3vw;*/
+            height: 0;
+            width: 0; 
                                             
         }
     }

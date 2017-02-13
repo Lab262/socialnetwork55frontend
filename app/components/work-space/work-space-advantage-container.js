@@ -17,7 +17,6 @@ export default Ember.Component.extend({
             image: "/assets/images/meeting-icon.png",
             title: "Sala de Reunião",
 
-            firstSubtitle: ".HOUSE (ventilador, mesa e cadeira)",
             firstSubsubtitle: "Sala de reunião para 2 pessoas",
             firstPriceFirstSubsubtitle: " R$15,00 hora",
             secondPriceFirstSubsubtitle: " R$25,00 hora",
@@ -38,7 +37,7 @@ export default Ember.Component.extend({
             image: "/assets/images/icon-conference.png",
             title: "Sala de Conferência",
 
-            firstSubtitle: ".HOUSE (para até 6 pessoas)",
+            firstSubtitle: "Para até 6 pessoas",
             firstPriceFirstSubtitle: " R$55,00 hora",
             secondPriceFirstSubtitle: " R$65,00 hora",
 
@@ -77,7 +76,6 @@ export default Ember.Component.extend({
         contentObjectSecondTable: {
             image: "/assets/images/icon-topspace.png",
             title: "Espaço de Eventos - Andar Superior",
-            firstSubtitle: ".STORE:",
             firstSubsubtitle: "Segunda a Sexta - 19h às 22h",
             firstTitlePriceSubsubtitle: "Membros:",
             firstPriceFirstSubsubtitle: " R$240,00 periodo",
@@ -93,7 +91,6 @@ export default Ember.Component.extend({
         contentObjectThirdTable: {
             image: "/assets/images/icon-kitchen.png",
             title: "Espaço de Eventos - Andar Inferior (Co-Kitchen)",
-            firstSubtitle: ".STORE:",
             firstSubsubtitle: "Segunda a Sexta - 09h às 18h(diária)",
             firstTitlePriceSubsubtitle: "Membros:",
             firstPriceFirstSubsubtitle: " R$390,00 periodo",
@@ -114,7 +111,6 @@ export default Ember.Component.extend({
         contentSecondObjectOneTable: {
             image: "/assets/images/showroom-icon.png",
             title: "Showroom",
-            subtitle: ".STORE:",
             description: "Nesse espaço seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você. Não vamos ficar com qualquer percentual de venda e nem fazer estoque… a ideia aqui é que os clientes comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!",
             descriptionActionButton: "Se quiser alugar uma de nossas acomodações",
             titleActionButton: "Faça aqui",
@@ -150,7 +146,6 @@ export default Ember.Component.extend({
         contentObjectOneTable: {
             image: "/assets/images/icon-space.png",
             title: "Espaço de Eventos",
-            firstSubtitle: ".WORK:",
             firstSubsubtitle: "Segunda a sexta - 09h às 18h",
             firstTitlePriceSubsubtitle: "Membros:",
             firstPriceFirstSubsubtitle: " R$150,00 hora",
@@ -172,8 +167,6 @@ export default Ember.Component.extend({
         contentObjectWithoutTable: {
             image: "/assets/images/meeting-icon.png",
             title: "Sala de Reunião",
-
-            firstSubtitle: ".WORK",
             firstSubsubtitle: "Sala de reunião para 5 pessoas",
             firstPriceFirstSubsubtitle: " R$25,00 hora",
             secondPriceFirstSubsubtitle: " R$35,00 hora",
@@ -190,7 +183,7 @@ export default Ember.Component.extend({
             image: "/assets/images/icon-conference.png",
             title: "Sala de Conferência",
 
-            firstSubtitle: ".WORK (para até 10 pessoas)",
+            firstSubtitle: "Para até 10 pessoas",
             firstPriceFirstSubtitle: " R$55,00 hora",
             secondPriceFirstSubtitle: " R$65,00 hora",
             firstTitlePriceSubtitle: "Membros:",

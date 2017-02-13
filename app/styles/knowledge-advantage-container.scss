@@ -126,11 +126,11 @@
           z-index: 1;
 
           .membership-main-description {
-            height: 35vw;
+            height: 29vw;
             width: 45vw;
-            bottom: -50%;
+            top: 30%;
             left: 40%;
-            z-index:1;
+            z-index:2;
             overflow: visible;
             position: absolute;
             background-image:url(/assets/images/knowledge_description_container.png);
@@ -142,8 +142,8 @@
               font-size: 1.2vw;
               color: black;
               text-align: justify;
-              margin-top: 15%;
-              margin-left: 17%;
+              margin-top: 14%;
+              margin-left: 12%;
               margin-right: 17%;
               line-height: 1.8vw;
             }
@@ -154,7 +154,7 @@
             width: 30vw;
             overflow: visible;
             margin-right: 45%;
-            z-index:2;
+            z-index:1;
             content:url(/assets/images/knowledge-picture.png);
         }
 
@@ -164,7 +164,7 @@
             overflow: visible;
             z-index:99;
             margin-right: -25%;
-            margin-top: -3%;
+            margin-top: -4%;
             content:url(/assets/images/retangleLogo.png);
         }
         
