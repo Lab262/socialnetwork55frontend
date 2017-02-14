@@ -16,7 +16,12 @@
 
                     <button class="work-space-plans-content-button" style="background:{{contentObject.headerContent.headerColorBackground}}">
                     
-                    {{#link-to "visit-us" target="_blank"}}{{contentObject.headerContent.headerContentWorkspacePlanButton}}{{/link-to}}
+                    {{#if contentObject.headerContent.headerDifferentLink}}
+                        {{#link-to contentObject.headerContent.headerDifferentLink target="_blank"}}{{contentObject.headerContent.headerContentWorkspacePlanButton}}{{/link-to}}
+                    {{else}}
+                        {{#link-to "visit-us" target="_blank"}}{{contentObject.headerContent.headerContentWorkspacePlanButton}}{{/link-to}}
+                    {{/if}}
+                    
                     
                     <div class="button-plans-border-image"> </div>
 

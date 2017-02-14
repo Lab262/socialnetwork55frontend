@@ -5,7 +5,7 @@ export default Ember.Component.extend({
 
      footerContentObjectFirst: {
        title: "Comunidade",
-       options: ["Membership"],
+       options: ["+55 LAB COMMUNITY"],
        links: ["community"]
      },
 

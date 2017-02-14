@@ -48,7 +48,7 @@ $content-detail-height-mobile: 220vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    z-index: 3;
+    z-index: 1;
     
     .action-button-membership {
             margin-top: 5%;
@@ -85,6 +85,7 @@ $content-detail-height-mobile: 220vw;
     width: 100%;
     height: $actioncontainer-height;
     z-index: 4;
+    
     
     .action-left{
       border-top: 15px solid #D8AD09;
