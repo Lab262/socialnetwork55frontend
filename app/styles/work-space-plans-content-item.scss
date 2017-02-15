@@ -285,7 +285,7 @@
             width: 100%; 
             height: 20vw;
             border-radius: 2%;
-            text-align: justify;
+            text-align: left;
 
             .left-border {
                 position: absolute;
@@ -313,12 +313,13 @@
            
             background: white;
             height: 14vw;
-            width: 100%;
-            align-items: top;
-            // margin-top: -1%;
+            width: 100%;;
+            align-items: flex-start;
+            display: -ms-flexbox;
             display: flex;
+            flex-direction: column;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: flex-start;
             border-bottom: 0.1vw;
             border-color:rgba(0,0,0,0.2);
             border-bottom-style: solid;
@@ -338,11 +339,11 @@
 
           .description {
             margin-left: 10%;
-            margin-right: 10%;
+            padding-right: 15%;
             margin-bottom: 10%;
             width: 100%; 
             height: auto;
-            text-align: justify;
+            text-align: left;
             h1 {
                 font-family: 'aleo-regular-webfont';
                 font-size: 1.4vw;
@@ -351,22 +352,23 @@
             }
         
         .work-space-plans-description-content-button {
-            
-            position: relative;
-            background: rgba(28,28,28,1);
+
+            position: absolute;
+            background: #1c1c1c;
             border-radius: 5px;
-            margin-left: 2.5%;
-            margin-right: 15%;
+            margin-left: 2vw;
+            margin-right: auto;
             height: 3vw;
-            margin-bottom: 1.5vw;
-            width:62.5%;
-            z-index:1;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);       
+            bottom: 0;
+            z-index: 1;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+            width: 16%;
+            margin-bottom: 7vw;     
 
             .image {
                 width: 2.7vw;
                 height: 2.3vw;
-                margin-left: 120%;
+                margin-left: 115%;
                 margin-top: 6%;
                 position: relative;
                 z-index: -10;
@@ -487,7 +489,7 @@
             width: 100%; 
             height: 40vw;
             border-radius: 2%;
-            text-align: justify;
+            text-align: left;
             margin-top: -3%;
 
             .left-border {
@@ -546,7 +548,7 @@
             margin-bottom: 10%;
             width: 100%; 
             height: auto;
-            text-align: justify;
+            text-align: left;
             h1 {
                 font-family: 'aleo-regular-webfont';
                 font-size: 6vw;

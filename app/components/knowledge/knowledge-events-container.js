@@ -123,7 +123,7 @@ export default Ember.Component.extend({
             var parsedEventObject = {
                 title: currentEventItem.title,
                 image: this.eventsImages[i%3],
-                description: "LOCAL: " + currentEventItem.venue,
+                description: this.parseDateEvent(currentEventItem.start_at),
                 url: "https://www.eventick.com.br/" + currentEventItem.slug,
                 startDate: currentEventItem.start_at
             }
@@ -150,7 +150,7 @@ export default Ember.Component.extend({
             return 0
         });
 
-        return parsedEvents
+        return parsedEvents.reverse();
     },
 
     checkIfIsFutureEvent: function (eventObject) {
@@ -161,6 +161,14 @@ export default Ember.Component.extend({
         var reducedItemStartDay = currentItem.start_at.substring(0, 10)
         return reducedItemStartDay > convertedTodayDate
 
+    },
+
+    parseDateEvent: function (dateStart){
+        var yearDate = dateStart.substring(0,4);
+        var monthDate = dateStart.substring(5,7);
+        var dayDate = dateStart.substring(8,10);
+        var stringDate = "DATA: " + dayDate + "/" + monthDate + "/" + yearDate;
+        return stringDate;
     }
 
 });
