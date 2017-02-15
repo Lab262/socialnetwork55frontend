@@ -9,9 +9,9 @@ export default Ember.Component.extend({
     },
 
     secondOpinionObject:{
-        name:"ALLAN SOUZA",
-        position:"CEO AGÊNCIA A PROPOSITO",
-        opinion:"“Na 55 lab pude conquistar meu espaço como empreendedor e estar no centro do mercado criativo em Brasília. Melhor que isso, não tem.”",
-        image:"assets/images/knowledge-picture.png"
+        name:"LUÍS RESENDE",
+        position:"CEO LAB 262",
+        opinion:"“Nossos projetos agora tem a orientação certa de profissionais capacitados e nesse ambiente de criatividade nossa inspiração nunca acaba.”",
+        image:"assets/images/knowledge-second-opinion-image.jpg"
     }
 });

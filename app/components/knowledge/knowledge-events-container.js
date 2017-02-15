@@ -3,9 +3,13 @@ import Eventick from "npm:eventick"
 
 export default Ember.Component.extend({
     eventsImages: [
-        "/assets/images/image-curse-peteleco.png",
-        "/assets/images/background-image.png",
+        "/assets/images/image-curse1.jpg",
+        "/assets/images/image-curse2.jpg",
+        "/assets/images/image-curse3.jpg",
         "/assets/images/image-curse-tapa-cara.png",
+        "/assets/images/image-curse4.jpg",
+        "/assets/images/image-curse-peteleco.png",
+        
     ],
     events: [
         {
@@ -122,7 +126,7 @@ export default Ember.Component.extend({
         _eventick.events.get(currentEvent.id).then((currentEventItem) => {
             var parsedEventObject = {
                 title: currentEventItem.title,
-                image: this.eventsImages[i%3],
+                image: this.eventsImages[i%6],
                 description: this.parseDateEvent(currentEventItem.start_at),
                 url: "https://www.eventick.com.br/" + currentEventItem.slug,
                 startDate: currentEventItem.start_at
