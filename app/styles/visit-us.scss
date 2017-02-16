@@ -231,7 +231,6 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
           padding-bottom: 2%;
 
       .header-name {
-          margin-top:1%;
           margin-bottom: 1%;
           width: 40%; 
           height: 6vw;
@@ -279,12 +278,13 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
       .page-detail {
 
         width: 100vw;
-        height: 40vw;
+        height: auto;
         display: flex;
         flex-wrap: nowrap;
+        margin-bottom: 5%;
 
     .right-content {
-          width: 50%;
+          width: 48%;
           height: 100%;
           
           .description-title {
@@ -315,9 +315,11 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
           .description-picture {  
             margin-top: 2vw;     
             margin-left: 2vw;   
-            background: url(/assets/images/sign-up-membership-detail-picture.png);
-            width: 89%;
-            height: 67.5%;
+            background: url(/assets/images/sign-up-membership-detail-picture.jpg);
+            height: 35vw;
+            width: auto;
+            background-size: cover;
+            background-repeat:no-repeat; 
           }      
         } 
 
@@ -513,7 +515,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
           .description-picture {  
             margin-top: 10vw;   
             margin-bottom: 0vw;    
-            background: url(/assets/images/sign-up-membership-detail-picture.png);
+            background: url(/assets/images/sign-up-membership-detail-picture.jpg);
             width: 100vw;
             height: 60vw;
             background-repeat:no-repeat; 
