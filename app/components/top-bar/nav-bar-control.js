@@ -4,6 +4,7 @@ import NavBarMixing from './../../mixins/nav-bar-mixin'
 export default Ember.Component.extend(NavBarMixing,{
 
     isMenuOpen: false,
+    showLeftMenu:true,
 
     actions: {
         openMenuAction() {

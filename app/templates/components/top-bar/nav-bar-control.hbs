@@ -5,6 +5,6 @@
         {{top-bar.navbar-responsive-mobile openMenuAction=(action "openMenuAction") style=(unless isMenuOpen "transform: translateY(0);" "" )}}
 
 {{else}}
-        {{top-bar.top-bar closeMenuAction=(action "closeMenuAction")}}  
+        {{top-bar.top-bar closeMenuAction=(action "closeMenuAction") showLeftMenu=this.showLeftMenu}}  
         
 {{/if}}  
