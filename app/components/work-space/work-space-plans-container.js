@@ -251,7 +251,7 @@ export default Ember.Component.extend({
             headerContentTitle: "SHOWROOM",
             headerContentPrice: "A partir de R$ 320,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
-            headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/work-space-showroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
             headerColorBackground: "#D8AD09",
             headerColorBorderBackground: "#AC0049"
