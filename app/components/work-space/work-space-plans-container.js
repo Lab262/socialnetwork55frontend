@@ -108,7 +108,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject3: {
             subInfoContentTitle: "Mais benefícios",
-            subInfoContentDescription: "Serviço de impressão, atendimento telefônico e endereço fiscal."
+            subInfoContentDescription: "Serviço de impressão, atendimento telefônico e endereço comercial."
         },
 
         subInfoContentObject4: {
@@ -148,7 +148,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject3: {
             subInfoContentTitle: "Mais benefícios",
-            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado (você só paga o que consumir de telefonia) e endereço fiscal."
+            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado (você só paga o que consumir de telefonia) e endereço comercial."
         },
 
         subInfoContentObject4: {
@@ -394,7 +394,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject3: {
             subInfoContentTitle: "Mais benefícios",
-            subInfoContentDescription: "Serviço de impressão, atendimento telefônico e endereço fiscal."
+            subInfoContentDescription: "Serviço de impressão, atendimento telefônico e endereço comercial."
         },
 
         subInfoContentObject4: {
@@ -434,7 +434,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject3: {
             subInfoContentTitle: "Mais benefícios",
-            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado (você só paga o que consumir de telefonia) e endereço fiscal."
+            subInfoContentDescription: "Serviço de impressão, atendimento telefônico personalizado (você só paga o que consumir de telefonia) e endereço comercial."
         },
 
         subInfoContentObject4: {
