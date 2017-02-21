@@ -1,5 +1,5 @@
 import Ember from 'ember';
-import NavBarMixing from './../../mixins/nav-bar-mixin'
+import NavBarMixing from './../../mixins/nav-bar-mixin';
 
 export default Ember.Component.extend(NavBarMixing,{
 
@@ -9,12 +9,12 @@ export default Ember.Component.extend(NavBarMixing,{
     actions: {
         openMenuAction() {
            console.log("abri o menu");
-           this.set('isMenuOpen', true)
+           this.set('isMenuOpen', true);
         },
 
         closeMenuAction() {
             console.log("fechei menu  ");
-                       this.set('isMenuOpen', false)
+            this.set('isMenuOpen', false);
 
         }
     }

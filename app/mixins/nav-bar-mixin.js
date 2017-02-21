@@ -17,8 +17,8 @@ export default Ember.Mixin.create({
         var currentResponsiveMode = this.responsiveMode;
         this.handleResize = function () {
            this.notifyPropertyChange('responsiveMode');
-           if (this.responsiveMode != currentResponsiveMode) {
-               window.location.reload()
+           if (this.responsiveMode !== currentResponsiveMode) {
+               window.location.reload();
            }
         };
         Ember.run.next(this, this.handleResize);

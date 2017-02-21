@@ -458,7 +458,7 @@ export default Ember.Component.extend({
     didInsertElement() {
         this._super(...arguments);
         this.get('changeInfoDelegate').send('setWorkspacePlansChild', this);
-        this.selectPlanBasedOnUrl()
+        this.selectPlanBasedOnUrl();
     },
 
     selectPlanBasedOnUrl() {
@@ -466,7 +466,7 @@ export default Ember.Component.extend({
         let spaceType = ParseHelpers.urlParamWithName("spaceType", window.location.href);
         let isAValidatedType = (spaceType === "house" || spaceType === "store" || spaceType === "work");
         if (spaceType !== undefined && isAValidatedType) {
-            this.send('selectPlan', spaceType)
+            this.send('selectPlan', spaceType);
         }
     },
 

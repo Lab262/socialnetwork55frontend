@@ -72,11 +72,11 @@ export default Ember.Component.extend({
         registerUser() {
 
 
-            var formIsValid = this.clearFieldValidation[0].validate(this.name)
-                && this.phoneNumberValidation[0].validate(this.telephone)
-                && this.emailValidation[0].validate(this.email)
+            var formIsValid = (this.clearFieldValidation[0].validate(this.name) 
+            && this.phoneNumberValidation[0].validate(this.telephone) 
+            && this.emailValidation[0].validate(this.email));
 
-            if (formIsValid == true) {
+            if (formIsValid === true) {
 
                 var data = {
                     name: this.name,
@@ -93,7 +93,7 @@ export default Ember.Component.extend({
                     memberType: this.get('memberType')
                 };
 
-                var self = this
+                var self = this;
                 $.ajax({
                     type: "POST",
                     url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
@@ -115,17 +115,17 @@ export default Ember.Component.extend({
                         self.set('email', '');
                         self.set('telephone', '');
                     },
-                    error: function (jqXHR, exception) { alert("Erro:" + jqXHR.responseText); console.log(jqXHR); console.log(exception) }
+                    error: function (jqXHR, exception) { alert("Erro:" + jqXHR.responseText); console.log(jqXHR); console.log(exception); }
                 });
 
 
             } else {
                 if (!this.clearFieldValidation[0].validate(this.name)) {
-                    alert('Campo *Nome* é obrigatório')
+                    alert('Campo *Nome* é obrigatório');
                 } else if (!this.phoneNumberValidation[0].validate(this.telephone)) {
-                    alert('Campo *Telefone* não contém um número de telefone válido')
+                    alert('Campo *Telefone* não contém um número de telefone válido');
                 } else if (!this.emailValidation[0].validate(this.email)) {
-                    alert('Campo *Email* não contém um email válido')
+                    alert('Campo *Email* não contém um email válido');
                 }
 
             }
