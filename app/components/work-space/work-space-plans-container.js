@@ -9,7 +9,7 @@ export default Ember.Component.extend({
             headerContentPrice: "R$ 49,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerDifferentLink:"sign-up-membership",
-            headerContentBackgroundUrl: "/assets/images/work-space-membership-house-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Dayanne-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
             headerColorBorderBackground: "#0A365C"
@@ -48,7 +48,7 @@ export default Ember.Component.extend({
             headerContentTitle: "OPEN DESK",
             headerContentPrice: "A partir de R$ 865,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
-            headerContentBackgroundUrl: "/assets/images/work-space-opendesk-house-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Deborah-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
             headerColorBorderBackground: "#0A365C"
@@ -88,7 +88,7 @@ export default Ember.Component.extend({
             headerContentTitle: "FIXED DESK",
             headerContentPrice: "A partir de R$ 985,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
-            headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Erica-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
             headerColorBorderBackground: "#0A365C"
@@ -128,7 +128,7 @@ export default Ember.Component.extend({
             headerContentTitle: "PRIVATE ROOM",
             headerContentPrice: "A partir de R$ 5.200,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
-            headerContentBackgroundUrl: "/assets/images/work-space-privateroom-house-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Fernando-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
             headerColorBorderBackground: "#0A365C"
@@ -295,7 +295,7 @@ export default Ember.Component.extend({
             headerContentPrice: "R$ 49,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerDifferentLink:"sign-up-membership",
-            headerContentBackgroundUrl: "/assets/images/work-space-membership-work-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Glauber-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
             headerColorBackground: "#AC0049",
             headerColorBorderBackground: "#D8AD09"
@@ -334,7 +334,7 @@ export default Ember.Component.extend({
             headerContentTitle: "OPEN DESK",
             headerContentPrice: "A partir de R$ 575,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
-            headerContentBackgroundUrl: "/assets/images/work-space-opendesk-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Juliana-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
             headerColorBackground: "#AC0049",
             headerColorBorderBackground: "#D8AD09"
@@ -374,7 +374,7 @@ export default Ember.Component.extend({
             headerContentTitle: "FIXED DESK",
             headerContentPrice: "A partir de R$ 820,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
-            headerContentBackgroundUrl: "/assets/images/work-space-fixeddesk-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Mariana-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
             headerColorBackground: "#AC0049",
             headerColorBorderBackground: "#D8AD09"
@@ -414,7 +414,7 @@ export default Ember.Component.extend({
             headerContentTitle: "PRIVATE ROOM",
             headerContentPrice: "A partir de R$ 1.800,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
-            headerContentBackgroundUrl: "/assets/images/work-space-privateroom-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Wesley-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-work.png",
             headerColorBackground: "#AC0049",
             headerColorBorderBackground: "#D8AD09"
