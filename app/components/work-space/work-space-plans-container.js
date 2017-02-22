@@ -9,7 +9,7 @@ export default Ember.Component.extend({
             headerContentPrice: "R$ 49,00/MÊS",
             headerContentWorkspacePlanButton: "FAÇA PARTE",
             headerDifferentLink:"sign-up-membership",
-            headerContentBackgroundUrl: "/assets/images/work-space-membership-house-background.jpg",
+            headerContentBackgroundUrl: "/assets/images/55-email-sig-Dayanne-FundoBranco.png",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-house.png",
             headerColorBackground: "#85BF47",
             headerColorBorderBackground: "#0A365C"
