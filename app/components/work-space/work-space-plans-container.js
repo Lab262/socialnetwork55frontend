@@ -249,7 +249,7 @@ export default Ember.Component.extend({
     {
         headerContent: {
             headerContentTitle: "SHOWROOM",
-            headerContentPrice: "A partir de R$ 320,00/MÊS",
+            headerContentPrice: "A partir de R$ 175,00/MÊS",
             headerContentWorkspacePlanButton: "VISITE",
             headerContentBackgroundUrl: "/assets/images/work-space-showroom-background.jpg",
             headerContentBacgroundButtonUrl: "/assets/images/workspace-anuity-button-image-store.png",
@@ -257,16 +257,16 @@ export default Ember.Component.extend({
             headerColorBorderBackground: "#AC0049"
         },
 
-        descriptionContent: "Acesso a qualquer desk disponível na área comum do +55Lab em três locais diferentes: .work, .house e .store. Esse plano inclui o membership do +55.community e 1 hora de meeting room por mês.",
+        descriptionContent: "Aqui  seu produto fica exposto com a visibilidade que precisa, em um box do tamanho ideal para você!",
 
         subInfoContentObject: {
             subInfoContentTitle: "Espaço de trabalho",
-            subInfoContentDescription: "É um espaço reservado para você chegar e produzir sem preocupações, e não precisa de agendamento. É só trazer o seu laptop, escolher uma mesa e começar a trabalhar. Você encontra as estações de trabalho nos três espaços - .work, .house e .store - e pode usá-las 24h por dia nos 7 dias na semana."
+            subInfoContentDescription: "Ideal para quem vende produtos pelo e-commerce e precisa de um lugar com visibilidade para expor. A ideia aqui é que os clientes tenham contato com o produto e comprem direto com você usando o canal de sua preferência – loja online, whatsapp, facebook, etc. Ah, e nossa equipe estará preparada para fazer a ponte entre os visitantes e você!"
         },
 
         subInfoContentObject2: {
             subInfoContentTitle: "Bônus",
-            subInfoContentDescription: "Por mês, você ganha 1h de meeting room."
+            subInfoContentDescription: "Não está disponível"
         },
 
         subInfoContentObject3: {
@@ -281,7 +281,7 @@ export default Ember.Component.extend({
 
         subInfoContentObject5: {
             subInfoContentTitle: "Anuidade",
-            subInfoContentDescription: "A partir de R$ 320,00/mês. Se quiser experimentar por apenas 1 mês, você paga a partir de R$ 365,00.",
+            subInfoContentDescription: "A partir de R$ 175,00/mês.",
             subInfoContentActionName: "VISITE"
         }
     }

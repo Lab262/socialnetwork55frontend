@@ -116,7 +116,7 @@ export default Ember.Component.extend({
             titleActionButton: "Faça aqui",
             titleTable: "INCLUI E ACOMODAÇÕES PARA O SEU PRODUTO:",
             itensWithIconTable: ["Nichos 0,40m x 0,40m", "Nichos 1,36m x 1,10m", "Nichos 0,60m x 0,60m", "Nichos 1,00m x 0,30m", "Nichos 0,90m x 0,30m", "Carrinho", "Prateleira 1,85m x 0,70m", "Prateleira 2,05m x 0,40m"],
-            itensTable: ["8 unidades", "2 unidades", "2 unidades", "2 unidades", "2 unidades", "1 unidade", "2 unidades", "1 unidade", "R$ 175,00", "R$ 350,00", "R$ 220,00", "R$ 280,00", "R$ 280,00", "R$ 535,00", "R$ 390,00", "R$ 430,00"]
+            itensTable: ["R$ 175,00", "R$ 350,00", "R$ 220,00", "R$ 280,00", "R$ 280,00", "R$ 535,00", "R$ 390,00", "R$ 430,00"]
         }
     },
 
