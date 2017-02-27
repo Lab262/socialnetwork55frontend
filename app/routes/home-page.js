@@ -1,5 +1,5 @@
-import BaseRoute from './scroll-base';
+import Ember from 'ember';
 
-export default BaseRoute.extend({
+export default Ember.Route.extend({
     
 });

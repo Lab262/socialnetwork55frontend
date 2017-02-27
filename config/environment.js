@@ -2,7 +2,7 @@
 
 module.exports = function(environment) {
   var ENV = {
-    modulePrefix: '55-lab-web-front-end',
+    modulePrefix: '55-lab-social-network-web-front-end',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

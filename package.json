@@ -1,7 +1,7 @@
 {
-  "name": "55-lab-web-front-end",
+  "name": "55-lab-social-network-web-front-end",
   "version": "0.0.0",
-  "description": "Small description for 55-lab-web-front-end goes here",
+  "description": "Small description for 55-lab-social-network-web-front-end goes here",
   "private": true,
   "directories": {
     "doc": "doc",
@@ -52,9 +52,6 @@
     "ember-cli-pace": "0.1.0",
     "ember-cli-sass": "6.1.1",
     "ember-paper": "1.0.0-alpha.14",
-    "ember-scroll-to": "0.5.4",
-    "eventick": "^1.1.3",
-    "node-eventick": "0.0.3",
     "parse": "^1.9.2"
   }
 }

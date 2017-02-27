@@ -1,4 +1,4 @@
-# 55-lab-web-front-end
+# 55-lab-social-network-web-front-end
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
@@ -16,7 +16,7 @@ You will need the following things properly installed on your computer.
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd 55-lab-web-front-end`
+* `cd 55-lab-social-network-web-front-end`
 * `npm install`
 * `bower install`
 
@@ -50,4 +50,3 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
