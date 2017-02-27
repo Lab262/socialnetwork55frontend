@@ -10,7 +10,7 @@ production:
   - echo "Y" |apt-get install libssl-dev
   - apt-get install -y rubygems
   - gem install dpl
-  - dpl --provider=heroku --app=a55labwebfrontend-production --api-key=$HEROKU_PRODUCTION_API_KEY
+  - dpl --provider=heroku --app=socialnetwork55frontend-prd  --api-key=$HEROKU_PRODUCTION_API_KEY
 
   only:
   - master
