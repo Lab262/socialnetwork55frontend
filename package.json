@@ -2,7 +2,6 @@
   "name": "55-lab-social-network-web-front-end",
   "version": "0.0.0",
   "description": "Small description for 55-lab-social-network-web-front-end goes here",
-
   "private": true,
   "directories": {
     "doc": "doc",
@@ -22,14 +21,12 @@
   "devDependencies": {
     "broccoli-asset-rev": "^2.4.2",
     "broccoli-static-compiler": "^0.2.2",
-
     "ember-ajax": "^2.0.1",
     "ember-cli": "2.8.0",
     "ember-cli-app-version": "^1.0.0",
     "ember-cli-babel": "^5.1.6",
     "ember-cli-dependency-checker": "^1.2.0",
     "ember-cli-gtm": "^0.1.1",
-
     "ember-cli-htmlbars": "^1.0.3",
     "ember-cli-htmlbars-inline-precompile": "^0.3.1",
     "ember-cli-inject-live-reload": "^1.4.0",
@@ -38,7 +35,6 @@
     "ember-cli-qunit": "^2.1.0",
     "ember-cli-release": "^0.2.9",
     "ember-cli-sass": "^6.1.1",
-
     "ember-cli-sri": "^2.1.0",
     "ember-cli-test-loader": "^1.1.0",
     "ember-cli-uglify": "^1.2.0",
@@ -56,7 +52,7 @@
     "ember-cli-pace": "0.1.0",
     "ember-cli-sass": "6.1.1",
     "ember-paper": "1.0.0-alpha.14",
+    "ember-simple-auth": "1.2.0",
     "parse": "^1.9.2"
-
   }
 }

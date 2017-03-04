@@ -64,6 +64,9 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+    ENV.apiBaseUrl = 'http://localhost:1337/parse'
+    ENV.appId = 'myAppId'
+
   }
 
   if (environment === 'test') {
@@ -78,6 +81,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
+    ENV.apiBaseUrl = 'https://leituradebolso-production.herokuapp.com/api'
+    ENV.appId = '11412;lkl;sakdl;asd'
 
   }
 
