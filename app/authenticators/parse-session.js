@@ -9,28 +9,29 @@ var host = config.apiBaseUrl,
     appId = config.appId;
 
 export default Base.extend({
-    authenticate: function (email, password) {
+    authenticate: function (store, email, password) {
 
-        return new Ember.RSVP.Promise(function (resolve, reject) {
-            Ember.$.ajax({
-                url: loginUrl + "?username=" + email + "&password=" + password,
-                type: 'GET',
-                contentType: "application/json;charset=utf-8",
-                dataType: 'json',
-                beforeSend: function (xhr) { xhr.setRequestHeader('X-Parse-Application-Id', appId); },
-            }).then(function (response/*, statusText, jqXHR*/) {
-                Ember.run(function () {
-                    console.log("success")
-                    console.log(response)
+      var ParseUser  = store.modelFor('parse-user')
+      var data = { username: email, password: password}
 
-                    resolve({ token: response.sessionToken });
-                });
-            }, function (jqXHR, textStatus, errorThrown) {
-                Ember.run(function () {
-                    reject(jqXHR);
-                });
-            });
-        });
+      return new Ember.RSVP.Promise(function (resolve, reject) {
+        ParseUser.login( store , data ).then(
+             function( user ) {
+               console.log(user)
+               Ember.run(function () {
+                   console.log("success")
+                   console.log(user)
+                   resolve({ token: user.sessionToken });
+               });
+             },
+             function( error ) {
+               console.log(error)
+               Ember.run(function () {
+                   reject(error);
+               });
+             }
+           );
+         })
     },
 
     restore: function (data) {
@@ -39,7 +40,6 @@ export default Base.extend({
                 resolve(data);
             } else {
                 reject();
-
             }
         });
 
@@ -54,5 +54,4 @@ export default Base.extend({
             }
         });
     }
-
 });
