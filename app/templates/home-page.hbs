@@ -1,7 +1,13 @@
 
 <div class="home-page-container">
- 
-  {{home.home-page-component}}
-  {{top-bar.nav-bar-control showLeftMenu=false}}
+      <h1> ok foi  {{model.length}} </h1>
+
+   {{#each model as |user|}}
+          <h1> foi </h1>
+      {{/each}}
+      
+        {{top-bar.nav-bar-control showLeftMenu=false}}
+
+
 
 </div>

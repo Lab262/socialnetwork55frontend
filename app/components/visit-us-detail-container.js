@@ -28,68 +28,65 @@ export default Ember.Component.extend({
     }],
 
     authManager: Ember.inject.service('session'),
+    store: Ember.inject.service(),
 
     actions: {
         authenticate() {
-            const { email, password } = this.getProperties('email', 'password');
-            this.get('authManager').authenticate('authenticator:parse-session', email, password).then(() => {
-                console.log("successs")
-            }, (err) => {
-                var error = err.responseJSON.error;
-                console.log(error)
-            });
-        },
+          var ParseUser  = this.get('store').modelFor('parse-user')
 
-        makeAppointmentUser() {
+          // console.log(this.get('store').adapterFor('parse-user'))
 
-            var formIsValid = this.clearFieldValidation[0].validate(this.name) && this.emailValidation[0].validate(this.email)
+          const { username, password } = this.getProperties('email', 'password');
+          var data = { username: "thiago@gmail.com", password: "12345"}
 
-            if (formIsValid == true) {
+          ParseUser.signup( this.get('store'), data ).then(
+                 function( user ) {
+                   console.log(user)
+                 },
+                 function( error ) {
+                  //  controller.set( 'loggedIn', false );
+                   console.log(error)
 
-                var data = {
-                    name: this.name,
-                    email: this.email
-                };
+                  //  controller.set( 'loginMessage', error.message || error.error );
+                 }
+               );
 
-                var self = this
-
-                $.ajax({
-                    type: "POST",
-                    url: "https://s55labinstitutionalwebback-prd.herokuapp.com/api/v0/users",
-                    data: data,
-                    beforeSend: function (xhr) { xhr.setRequestHeader('main-token', 'ZRCNAamAQ$yTv6&2VQ4eR*f?437w[FkF/gktDTg6#GunNQuE8@#]MC9B3NBTxifH'); },
-                    success: function () {
-                        alert('Formulário enviado com sucesso!');
-
-                        self.set('name', '');
-                        self.set('email', '');
-                    },
-                    error: function (jqXHR, exception) { console.log("error"); alert("Erro:" + jqXHR); console.log(jqXHR); console.log(exception) }
-                });
-
-
-            } else {
-                var error = "";
-                if (!this.clearFieldValidation[0].validate(this.name)) {
-                    error += 'Campo *Nome* é obrigatório\n';
-                }
-                if (!this.clearFieldValidation[0].validate(this.email)) {
-                    error += 'Campo *Email* é obrigatório\n';
-                }
-                if (error === "") {
-
-                    if (!this.emailValidation[0].validate(this.email)) {
-                        error += 'Campo *Email* não contém um email válido\n';
-                    }
-                    if (error != "") {
-                        alert(error);
-                    }
-                } else {
-                    alert(error);
-                }
-            }
+            // var formIsValid = this.clearFieldValidation[0].validate(this.password) && this.emailValidation[0].validate(this.email)
+            //
+            // if (formIsValid == true) {
+            //
+            //     this.get('authManager').authenticate('authenticator:parse-session', email, password).then(() => {
+            //         console.log("successs")
+            //     }, (err) => {
+            //         // var error = err.responseJSON.error;
+            //         console.log(err)
+            //         // alert(error)
+            //     });
+            //
+            // } else {
+            //     var error = "";
+            //
+            //     if (!this.clearFieldValidation[0].validate(this.email)) {
+            //         error += 'Campo *Email* é obrigatório\n';
+            //     }
+            //
+            //     if (!this.clearFieldValidation[0].validate(this.password)) {
+            //         error += 'Campo *Password* é obrigatório\n';
+            //     }
+            //
+            //     if (error === "") {
+            //
+            //         if (!this.emailValidation[0].validate(this.email)) {
+            //             error += 'Campo *Email* não contém um email válido\n';
+            //         }
+            //         if (error != "") {
+            //             alert(error);
+            //         }
+            //     } else {
+            //         alert(error);
+            //     }
+            // }
         },
     }
 
 });
-

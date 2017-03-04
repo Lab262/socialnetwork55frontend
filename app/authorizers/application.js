@@ -1,5 +1,6 @@
 import Base from 'ember-simple-auth/authorizers/base';
 import Ember from 'ember';
+import config from '../config/environment';
 
 export default Base.extend({
 
@@ -9,8 +10,9 @@ export default Base.extend({
     const  accessToken  = data.token;
     if (this.get('session.isAuthenticated') && !Ember.isEmpty(accessToken)) {
       block(
-      'x-access-token', accessToken,  'Content-type', 'application/json'
-          );
+      'X-Parse-Session-Token', accessToken,  
+      'Content-type', 'application/json', 
+      "X-Parse-Application-Id", config.appId);
    }
   }
 });

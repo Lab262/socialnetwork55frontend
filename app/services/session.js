@@ -7,7 +7,7 @@ export default ESASession.extend({
   store: Ember.inject.service(),
 
   currentUser: Ember.computed('isAuthenticated', function() {
-
+    console.log("veri gy auth")
     if (this.get('isAuthenticated')) {
 
       const promise = this.get('store').queryRecord('user', {});

@@ -35,7 +35,7 @@ export default Base.extend({
 
     restore: function (data) {
         return new Ember.RSVP.Promise(function (resolve, reject) {
-            if (!Ember.isEmpty(data.token)) {
+            if (!Ember.isEmpty(data.sessionToken)) {
                 resolve(data);
             } else {
                 reject();
@@ -47,7 +47,7 @@ export default Base.extend({
 
     invalidate: function (data) {
         return new Ember.RSVP.Promise(function (resolve, reject) {
-            if (!Ember.isEmpty(data.token)) {
+            if (!Ember.isEmpty(data.sessionToken)) {
                 resolve(data);
             } else {
                 reject();

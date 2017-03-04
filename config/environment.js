@@ -54,10 +54,6 @@ module.exports = function(environment) {
     }
   };
 
-  ENV['ember-cli-gtm'] = {
-  appId: 'GTM-P62ZBH4'
-  };
-
   if (environment === 'development') {
     // ENV.APP.LOG_RESOLVER = true;
     // ENV.APP.LOG_ACTIVE_GENERATION = true;
@@ -85,6 +81,12 @@ module.exports = function(environment) {
     ENV.appId = '11412;lkl;sakdl;asd'
 
   }
+
+  ENV['ember-simple-auth'] = {
+  routeAfterAuthentication: 'home-page',
+  routeIfAlreadyAuthenticated: 'home-page',
+   authenticationRoute: 'visit-us'
+}
 
   return ENV;
 };
