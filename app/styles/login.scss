@@ -1,6 +1,6 @@
 $background-color: rgba(247,247,247,1);
 
-.visit-us {
+.login {
    /*background: $background-color;
    width: 100%;
      width: 100%;
@@ -9,7 +9,7 @@ $background-color: rgba(247,247,247,1);
   position: absolute;*/
 
 
-  .visit-us-container {
+  .login-container {
    /*margin-top: 8vw;
    padding-bottom: 25vw;*/
    
@@ -211,7 +211,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 
 @media screen and (min-width:600px){
 
-    .visit-us {
+    .login {
     background: $background-color;
     width: 100%;
       width: 100%;
@@ -220,7 +220,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
     position: absolute;
 
 
-    .visit-us-container {
+    .login-container {
     margin-top: 8vw;
     padding-bottom: 25vw;
     
@@ -420,7 +420,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 
 @media screen and (max-width:600px){
 
-    .visit-us {
+    .login {
     background: $background-color;
     width: 100%;
     display: inline-block;
@@ -428,7 +428,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
     position: relative;
 
 
-    .visit-us-container {
+    .login-container {
     padding-bottom: 25vw;
                   margin-top: 15vh;
 

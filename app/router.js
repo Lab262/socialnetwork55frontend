@@ -7,8 +7,8 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('dashboard', { path: '/dashboard' });
-  this.route('visit-us', { path: '/nos-visite' });
+  this.route('user-edit', { path: '/user-edit' });
+  this.route('login', { path: '/' });
 
 });
 

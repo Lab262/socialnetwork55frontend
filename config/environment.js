@@ -79,9 +79,9 @@ module.exports = function(environment) {
   }
 
   ENV['ember-simple-auth'] = {
-   routeAfterAuthentication: 'dashboard',
-   routeIfAlreadyAuthenticated: 'dashboard',
-   authenticationRoute: 'visit-us'
+   routeAfterAuthentication: 'user-edit',
+   routeIfAlreadyAuthenticated: 'user-edit',
+   authenticationRoute: 'login'
 }
 ENV['simple-auth'] = {
    // We use cookies to easy single sign on between server
