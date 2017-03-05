@@ -9,7 +9,7 @@ export default ESASession.extend({
   currentUser: Ember.computed('isAuthenticated', function() {
     console.log("veri gy auth")
     if (this.get('isAuthenticated')) {
-      
+
       const promise = this.get('store').queryRecord('parse-user', {});
       return DS.PromiseObject.create({ promise: promise});
     }

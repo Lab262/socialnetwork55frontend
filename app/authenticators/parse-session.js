@@ -15,10 +15,9 @@ export default Base.extend({
                console.log(user)
                Ember.run(function () {
                    console.log("success")
-                   console.log(user)
+                   console.log(user.get('sessionToken'))
 
-                   console.log(user.sessionToken)
-                   resolve({ token: user.sessionToken });
+                   resolve({ token: user.get('sessionToken') });
                });
              },
              function( error ) {
@@ -33,7 +32,7 @@ export default Base.extend({
 
     restore: function (data) {
         return new Ember.RSVP.Promise(function (resolve, reject) {
-            if (!Ember.isEmpty(data.sessionToken)) {
+            if (!Ember.isEmpty(data.token)) {
                 resolve(data);
             } else {
                 reject();
@@ -44,7 +43,7 @@ export default Base.extend({
 
     invalidate: function (data) {
         return new Ember.RSVP.Promise(function (resolve, reject) {
-            if (!Ember.isEmpty(data.sessionToken)) {
+            if (!Ember.isEmpty(data.token)) {
                 resolve(data);
             } else {
                 reject();

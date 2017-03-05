@@ -6,7 +6,6 @@ export default Ember.Route.extend(UnauthenticatedRouteMixin,{
     session: Ember.inject.service(),
 
     beforeModel: function() {
-      console.log("PASSSEI")
     if (this.get('session.isAuthenticated')) {
       return this.transitionTo('/dashboard');
     }
