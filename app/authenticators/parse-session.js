@@ -3,11 +3,6 @@ import Ember from 'ember';
 import Base from 'ember-simple-auth/authenticators/base';
 import config from '../config/environment';
 
-
-var host = config.apiBaseUrl,
-    loginUrl = [host, 'login'].join('/'),
-    appId = config.appId;
-
 export default Base.extend({
     authenticate: function (store, email, password) {
 
@@ -21,6 +16,8 @@ export default Base.extend({
                Ember.run(function () {
                    console.log("success")
                    console.log(user)
+
+                   console.log(user.sessionToken)
                    resolve({ token: user.sessionToken });
                });
              },

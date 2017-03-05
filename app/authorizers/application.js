@@ -7,11 +7,11 @@ export default Base.extend({
   session: Ember.inject.service(),
 
   authorize(data, block) {
-    const  accessToken  = data.token;
+    const  accessToken  = data.sessionToken;
     if (this.get('session.isAuthenticated') && !Ember.isEmpty(accessToken)) {
       block(
-      'X-Parse-Session-Token', accessToken,  
-      'Content-type', 'application/json', 
+      'X-Parse-Session-Token', accessToken,
+      'Content-type', 'application/json',
       "X-Parse-Application-Id", config.appId);
    }
   }

@@ -1,27 +1,27 @@
 <div class="navbar" style={{this.style}}>
-  
+
   <div class="close-menu"  {{action this.closeMenuAction}}>
      MENU
     <button class="burger-menu"> </button>
      
     </div>
-  
+
   <div class="app-logo">
-     {{#link-to "home-page"}}{{/link-to}}
+     {{#link-to "dashboard"}}{{/link-to}}
   </div>
 
   {{#if showLeftMenu}}
   <div class="left-menu">
-  
+
   </div>
   {{/if}}
-   
+
   <div class="app-menu">
     <!--<div class="nav-button">
-       {{#link-to "blog"}}Blog{{/link-to}} 
+       {{#link-to "blog"}}Blog{{/link-to}}
     </div>-->
     <div class="nav-button">
-      <button  {{action 'logout'}}> 
+      <button  {{action 'logout'}}>
               logout
 
                 </button>

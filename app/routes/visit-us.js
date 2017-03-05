@@ -8,8 +8,8 @@ export default Ember.Route.extend(UnauthenticatedRouteMixin,{
     beforeModel: function() {
       console.log("PASSSEI")
     if (this.get('session.isAuthenticated')) {
-      return this.transitionTo('/home-page');
+      return this.transitionTo('/dashboard');
     }
-  } 
+  }
 
 });

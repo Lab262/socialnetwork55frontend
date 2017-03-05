@@ -79,10 +79,14 @@ module.exports = function(environment) {
   }
 
   ENV['ember-simple-auth'] = {
-   routeAfterAuthentication: 'home-page',
-   routeIfAlreadyAuthenticated: 'home-page',
+   routeAfterAuthentication: 'dashboard',
+   routeIfAlreadyAuthenticated: 'dashboard',
    authenticationRoute: 'visit-us'
 }
-
+ENV['simple-auth'] = {
+   // We use cookies to easy single sign on between server
+   store: 'simple-auth-session-store:cookie',
+   crossOriginWhitelist: ['*'],
+ };
   return ENV;
 };
