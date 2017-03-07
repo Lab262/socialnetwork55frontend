@@ -17,15 +17,10 @@
   {{/if}}
 
   <div class="app-menu">
-    <!--<div class="nav-button">
-       {{#link-to "blog"}}Blog{{/link-to}}
-    </div>-->
-    <div class="nav-button">
-      <button  {{action 'logout'}}>
-              logout
-
-                </button>
-      {{!--{{#link-to "login"}}Nos Visite{{/link-to}} --}}
+    <div class="nav-button" {{action 'logout'}}>
+      <a>
+        Logout
+      </a>
     </div>
   </div>
 </div>
