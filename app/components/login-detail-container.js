@@ -4,10 +4,10 @@ import ParseHelpers from '../helpers/parse-helpers';
 export default Ember.Component.extend({
 
     spaceType: Ember.computed(function () {
-        return "NOS VISITE";
+        return "LOGIN";
     }),
 
-    contentTitleButton: "AGENDAR VISITA",
+    contentTitleButton: "ENTRAR",
     email: "",
     password: "",
 

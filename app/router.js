@@ -7,7 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
-  this.route('user-edit', { path: '/user-edit' });
+  this.route('user-edit', { path: '/edicao-usuario' });
   this.route('login', { path: '/' });
 
 });
