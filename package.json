@@ -52,7 +52,7 @@
     "ember-cli-sass": "6.1.1",
     "ember-paper": "1.0.0-alpha.14",
     "ember-simple-auth": "1.2.0",
-    "ember-parse-adapter": "git@github.com:thiagotmb/ember-parse-adapter.git",
+    "ember-parse-adapter": "git://github.com/thiagotmb/ember-parse-adapter.git",
     "parse": "^1.9.2"
   }
 }
