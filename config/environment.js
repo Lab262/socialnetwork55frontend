@@ -54,8 +54,8 @@ module.exports = function(environment) {
   };
 
   if (environment === 'development') {
-    ENV.apiBaseUrl = 'http://localhost:1337/parse'
-    ENV.appId = 'myAppId'
+    ENV.apiBaseUrl = 'https://socialnetwork55lab.herokuapp.com/parse'
+    ENV.appId = 'lab262_55lab_social_network'
   }
 
   if (environment === 'test') {
