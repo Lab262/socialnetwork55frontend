@@ -7,61 +7,74 @@
             <div class="header-description">
                 <h1> {{contentDescription}} </h1>
             </div>
-            <div class="header-divider"> </div>
         </div>
 
         <div class="page-detail">
-            <div class="left-content">
-
-                <div class="form-field-big">
-                    {{paper-input label="Nome Completo*" value=name onChange=(action (mut name)) customValidations=clearFieldValidation}}
+            <div class="form-wrapper">
+                
+                <div class="left-content">
+                    <div class="form-field">
+                        {{!paper-input label="Nome Completo*" value=name onChange=(action (mut name)) customValidations=clearFieldValidation}}
+                        {{paper-input label="Nome*" value=name onChange=(action (mut name))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="RG" value=rg onChange=(action (mut rg))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Gênero" value=gender onChange=(action (mut gender))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Email principal*" value=mainEmail onChange=(action (mut mainEmail))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Telefone principal" value=mainPhoneNumber onChange=(action (mut mainPhoneNumber))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="CEP*" value=zipCode onChange=(action (mut zipCode))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Cidade*" value=city onChange=(action (mut city))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Rua*" value=street onChange=(action (mut street))}}
+                    </div>
                 </div>
 
-                <div class="form-field-big">
-                    {{paper-input label="Email para contato*" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
+                <div class="right-content right-content--no-margin">
+                    <div class="form-field">
+                        {{paper-input label="Sobrenome*" value=surname onChange=(action (mut surname))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="CPF*" value=cpf onChange=(action (mut cpf))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Data de nascimento" value=birthDate onChange=(action (mut birthDate))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Email secundário" value=secondaryEmail onChange=(action (mut secondaryEmail))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Telefone secundário" value=secondPhoneNumber onChange=(action (mut secondPhoneNumber))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Estado*" value=state onChange=(action (mut state))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Bairro*" value=neighborhood onChange=(action (mut neighborhood))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Vinculo com a 55*" value=linkWithCompany onChange=(action (mut linkWithCompany))}}
+                    </div>
                 </div>
 
-                <div class="form-field-medium">
-                    {{paper-input label="Telefone para contato*" value=telephone onChange=(action maskPhoneNumber) customValidations=phoneNumberValidation }}
-                </div>
+            </div>
 
-                <div class="form-field-medium">
-                    {{paper-input label="Quantas pessoas virão?" value=number_people onChange=(action (mut number_people))}}
-
-                </div>         
-
-                <div class="form-field-medium">
-                    {{paper-input label="Dia" maxlength="10" value=date onChange=(action maskDate)}}
-                </div>
-
-                <div class="form-field-medium">
-                    {{paper-input label="Horário" maxlength="5" value=hour onChange=(action maskHour)}}
-                </div>
-
-                <div class="form-field-medium">
-                    {{paper-input label="Quer visitar qual espaço?*" value=name_space onChange=(action (mut name_space)) customValidations=clearFieldValidation}}
-                </div>
-
-
+            <div class="form-actions">
                 <button class="subscribe-button" {{action 'makeAppointmentUser'}}> 
                     <h1> {{contentTitleButton}} </h1>
                     <div class="subscribe-button-background-borders">
                     </div>
                 </button>
-           
-
-            </div>
-
-            <div class="right-content">
-                <div class="description-title">
-                    <h1>
-                        {{contentSecondDescription}}
-                    </h1>
-
-                    <div class="label-icon"> </div>
-                </div>
-                <div class="description-picture"> </div>
-
             </div>
         </div>
 

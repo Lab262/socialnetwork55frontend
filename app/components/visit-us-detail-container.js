@@ -1,5 +1,4 @@
 import Ember from 'ember';
-import ParseHelpers from '../helpers/parse-helpers';
 
 export default Ember.Component.extend({
  
@@ -12,20 +11,29 @@ export default Ember.Component.extend({
         //     return "NOS VISITE";
         // }
 
-        return "NOS VISITE";
+        return "PRÉ-CADASTRO";
     }),
 
     contentDescription: "Agende uma visita para conhecer melhor os nossos espaços e descobrir qual é o melhor para você e para o seu negócio:",
-    contentSecondDescription: "+55Lab.co: conexão, compartilhamento e networking como em nenhum outro lugar!",
-    contentTitleButton:"AGENDAR VISITA",
+    contentTitleButton:"CONFIRMAR",
     name: "",
-    email: "",
-    telephone: "",
-    number_people:"",
-    date:"",
-    hour:"",
-    name_space:"",
+    surname: "",
+    rg: "",
+    cpf: "",
+    gender: "",
+    birthDate: "",
+    mainEmail: "", 
+    secondaryEmail: "", 
+    mainPhoneNumber: "",
+    secondPhoneNumber: "",
+    zipCode: "",
+    state: "", 
+    city: "", 
+    neighborhood: "", 
+    street: "",
+    linkWithCompany: "", 
 
+//Tem que fazer novas validacoes para todos os campos.
     emailValidation: [{
         message: 'Entre com um email válido',
         validate: (inputValue) => {
@@ -67,6 +75,8 @@ export default Ember.Component.extend({
         }
     }],
 
+    //Tem que fazer novas mascaras.
+
     maskPhoneNumber(number) {
         var v = number;
         v = v.replace(/\D/g, "");             //Remove tudo o que não é dígito
@@ -94,6 +104,7 @@ export default Ember.Component.extend({
 
     actions: {
 
+//Tem que mexer na logica para atualizar os dados.
         makeAppointmentUser() {
 
 

@@ -212,205 +212,157 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 @media screen and (min-width:600px){
 
     .visit-us {
-    background: $background-color;
-    width: 100%;
+      background: $background-color;
       width: 100%;
-    display: inline-block;
-    height: auto;
-    position: absolute;
+      display: inline-block;
+      height: auto;
+      position: absolute;
 
 
-    .visit-us-container {
-    margin-top: 8vw;
-    padding-bottom: 25vw;
+      .visit-us-container {
+          margin-top: 8vw;
+          padding-bottom: 25vw;
     
-      .page-header {
-          width: 100%;
-          height: auto;
-          display: block;
-          padding-bottom: 2%;
+          .page-header {
+            width: 100%;
+            height: auto;
+            display: block;
+            padding-bottom: 2%;
 
-      .header-name {
-          margin-bottom: 1%;
-          width: 40%; 
-          height: 6vw;
-          margin-left: 7.5vw;
-          background:url(/assets/images/background_button_visit_us.png);
-          background-size:20.5vw; 
-          background-repeat: no-repeat;
+            .header-name {
+                margin-bottom: 1%;
+                width: 40%; 
+                height: 6vw;
+                margin-left: 7.5vw;
+                background:url(/assets/images/background_button_confirm_register.png);
+                background-size:20.5vw; 
+                background-repeat: no-repeat;
 
-            h1 {
-            height: 100%;
-              font-family: 'BebasNeue-Bold';
-              font-size: 3vw;
-              color: white;
-              padding-top: 3%;
-              padding-bottom: 3%;
-              padding-left: 7.5%;
-              padding-right: 7.55%;
-            }
-          }
+                h1 {
+                    height: 100%;
+                    font-family: 'BebasNeue-Bold';
+                    font-size: 3vw;
+                    color: white;
+                    padding-top: 2.5%;
+                    padding-bottom: 3%;
+                    padding-left: 5.5%;
+                    padding-right: 7.55%;
+                  }
+                }
 
           .header-description {
-          padding-left: 7.5vw;
-          
+            
+            padding-left: 7.5vw;
             
             h1 {
-            height: 100%;
+              height: 100%;
               font-family: 'BebasNeue-Bold';
-              font-size: 1.7vw;
+              font-size: 2.2vw;
               color: black;
-              width: 45%;
+              width: 60%;
               padding-bottom: 1%;
             }
-          }
-
-          .header-divider{
-              position:relative;
-              background: #E65B05;
-              height: 5px;
-              width: 10vw;
-              margin-top: -5%;
-              left: 52vw;
           }
       }
 
       .page-detail {
-
-        width: 100vw;
+        width: 100%;
         height: auto;
         display: flex;
         flex-wrap: nowrap;
         margin-bottom: 5%;
+        flex-direction: column;
 
-    .right-content {
-          width: 48%;
-          height: 100%;
-          
-          .description-title {
-            margin-left: 2vw;
+        .form-wrapper {
+          display: flex;
+          width: 100%;
+          height: auto;
+          flex-wrap: nowrap;
+
+           .left-content, .right-content {
+            width: 50%;
+            height: 80%;
+            margin-left: 7vw;
             display: flex;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            margin-top: 1vw;
 
-              h1 {
-              height: 100%;
-              font-family: 'BebasNeue-Bold';
-              font-size: 1.7vw;
-              color: black;
-              padding-top: -2%;
-              width: 65%;
-              
+            md-input-container.md-default-theme.md-input-invalid .md-input, md-input-container.md-input-invalid .md-input{
+                  border-color: red;
+                  border-bottom-width: 1px;
+                  margin-bottom: -3px;
             }
 
-            .label-icon {
-              margin-left: 1vw;
-              background: url(/assets/images/visit_us_page_detail_picture.png);
-              height: 2vw;
-              width: 3vw;
-              background-size: 100%;
+            .form-field {
+              margin: 0.5vw;
+              width: 50%;
+              height: 52.5px;
 
+              input {
+                    width: 300%;
+                    border: 0px solid $background-color;
+                    -webkit-text-fill-color: clear;;
+                    -webkit-box-shadow: 0 0 0px 0px $background-color inset;
+                    transition: background-color 5000s ease-in-out 0s;
+                    border-bottom: 0.5px solid #979797;
+              }
             }
           }
 
-          .description-picture {  
-            margin-top: 2vw;     
-            margin-left: 2vw;   
-            background: url(/assets/images/sign-up-membership-detail-picture.jpg);
-            height: 35vw;
-            width: auto;
-            background-size: cover;
-            background-repeat:no-repeat; 
-          }      
-        } 
+          .right-content--no-margin {
+            margin-left: 0;
+            margin-right: 7vw;
+          }
+        }
 
-        .left-content {
-          width: 43vw;
-          height: 80%;
-          margin-left: 7vw;
+        .form-actions {
+          width: 100%;
+          height: 8vw;
           display: flex;
-          flex-wrap: wrap;
-          align-items: flex-start;
-          margin-top: 1vw;
+          justify-content: left;
+          align-items: center;
+          padding: 0 7vw;
 
-          md-input-container.md-default-theme.md-input-invalid .md-input, md-input-container.md-input-invalid .md-input{
-                border-color: red;
-                border-bottom-width: 1px;
-                margin-bottom: -3px;
+          .subscribe-button {
+                width: 14vw;
+                height: 4.5vw; 
+                background: rgba(28,28,28,1);
+                border-radius: 0.4vw;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
+                padding-top: 0.5vw;
+                padding-bottom: 1vw;
+                margin-top: 7vw;
+
+                h1{
+                  text-align: center;
+                  font-family: 'BebasNeue-Bold';
+                  font-size: 2vw; 
+                  width: 120%;
+                  margin-left: -12%;
+                  margin-top: 7%;
+                  color: white;
+                  //background: red;
+
                 }
 
-          .form-field-big {
-            margin: 0.5vw;
-            width: 90%;
-            height: 52.5px;
 
-            input {
-              width: 285%;
-                  border: 0px solid $background-color;
-                -webkit-text-fill-color: clear;;
-                  -webkit-box-shadow: 0 0 0px 0px $background-color inset;
-                transition: background-color 5000s ease-in-out 0s;
-              border-bottom: 0.5px solid #979797;
-            }
-          }
-
-          .form-field-medium {
-            margin: 0.5vw;
-            width: 44%;
-            height: 52.5px;
-
-                    input {
-                      width: 125%;
-                        border: 0px solid $background-color;
-                    -webkit-text-fill-color: clear;
-                        -webkit-box-shadow: 0 0 0px 0px $background-color inset;
-                      transition: background-color 5000s ease-in-out 0s;
-                    border-bottom: 0.5px solid #979797;
-            }
-          }
-
-            .subscribe-button {
-              width: 14vw;
-              height: 4.5vw; 
-              background: rgba(28,28,28,1);
-              border-radius: 0.4vw;
-              
-              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
-              margin-left: 2.2vw;
-              margin-top: 3.3vw;
-              
-              padding-top: 5px;
-              padding-bottom: 2px;
-
-              h1{
-                text-align: center;
-                font-family: 'BebasNeue-Bold';
-                font-size: 2vw; 
-                width: 120%;
-                margin-left: -12%;
-                margin-top: 7%;
-                color: white;
-                //background: red;
-
+                .subscribe-button-background-borders {
+                content: url('/assets/images/background-boarder-do-here.png');
+                left: -4vw;
+                bottom: 5.5vw; 
+                width: 17vw;
+                height: 8vw;
+                position: relative;
               }
-              
 
 
-              .subscribe-button-background-borders {
-              content: url('/assets/images/background-boarder-do-here.png');
-              left: -4vw;
-              bottom: 5.5vw; 
-              width: 17vw;
-              height: 8vw;
-              position: relative;
+              &:hover, &:active, &:focus {
+                transform:scale(1.1,1.1);
+                transition: transform 0.1s, width 0.1s ease-in;
+                outline: none;
+              }
             }
-
-
-            &:hover {
-              transform:scale(1.1,1.1);
-              transition: transform 0.1s, width 0.1s ease-in;
-            }
-          }
-
         }
       }
     }
@@ -469,10 +421,6 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
             }
           }
 
-          .header-divider{
-              height: 0;
-              width: 0;
-          }
       }
 
       .page-detail {
@@ -481,47 +429,6 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: auto;
         display: flex;
         flex-wrap: wrap;
-
-    .right-content {
-          width: 100%;
-          height: auto;
-          
-          .description-title {
-            margin-left: 5vw;
-            display: flex;
-            flex-wrap: nowrap;
-
-              h1 {
-              height: 100%;
-              font-family: 'BebasNeue-Bold';
-              font-size: 7vw;
-              color: black;
-              width: 80%;
-              
-            }
-
-            .label-icon {
-              margin-top: 20%;
-              margin-left: -1vw;
-              background: url(/assets/images/visit_us_page_detail_picture.png);
-              height: 6vw;
-              width: 9vw;
-              background-size: 100%;
-              background-repeat: no-repeat;
-
-            }
-          }
-
-          .description-picture {  
-            margin-top: 10vw;   
-            margin-bottom: 0vw;    
-            background: url(/assets/images/sign-up-membership-detail-picture.jpg);
-            width: 100vw;
-            height: 60vw;
-            background-repeat:no-repeat; 
-            background-size: cover;
-          }      
-        } 
 
         .left-content {
           width: 100%;
