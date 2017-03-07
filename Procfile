@@ -1,1 +1,1 @@
-web: ember server --port $port
+web: npm run start
