@@ -1,1 +1,1 @@
-web: node app.js
+web: ember server --port $port
