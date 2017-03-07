@@ -1,7 +1,6 @@
 
 import Ember from 'ember';
 import Base from 'ember-simple-auth/authenticators/base';
-import config from '../config/environment';
 
 export default Base.extend({
     authenticate: function (store, email, password) {

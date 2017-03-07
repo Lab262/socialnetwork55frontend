@@ -39,11 +39,11 @@ export default Ember.Component.extend({
             var formIsValid = this.clearFieldValidation[0].validate(this.password) && this.emailValidation[0].validate(this.email)
 
             if (formIsValid == true) {
-
                 this.get('authManager').authenticate('authenticator:parse-session', this.get('store'),  this.email, this.password).then(() => {
-                    console.log("successs")
+                    // console.log("successs")
                 }, (err) => {
-                    console.log(err)
+                    // console.log(err)
+                    alert("Usuário ou senha invalido!")
                 });
 
             } else {

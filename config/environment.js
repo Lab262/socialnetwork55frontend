@@ -49,19 +49,13 @@ module.exports = function(environment) {
   },
 
     APP: {
-      // Here you can pass flags/options to your application instance
-      // when it is created
-      "applicationId": "myAppId",
-      "restApiId": "",
-      "host": "http://localhost:1337/parse",
-      "namespace": ""
+      
     }
   };
 
   if (environment === 'development') {
     ENV.apiBaseUrl = 'http://localhost:1337/parse'
     ENV.appId = 'myAppId'
-
   }
 
   if (environment === 'test') {
@@ -74,8 +68,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.apiBaseUrl = 'https://leituradebolso-production.herokuapp.com/api'
-    ENV.appId = '11412;lkl;sakdl;asd'
+    ENV.apiBaseUrl = 'https://socialnetwork55lab.herokuapp.com/parse'
+    ENV.appId = 'lab262_55lab_social_network'
   }
 
   ENV['ember-simple-auth'] = {
