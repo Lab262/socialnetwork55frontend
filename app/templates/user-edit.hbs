@@ -1,12 +1,85 @@
+ {{top-bar.nav-bar-control}}
 
-<div class="home-page-container">
-      
-  <h1> ok foi  {{model.count}} </h1>
+<div class="visit-us">
+    <div class="visit-us-container">
+        <div class="page-header">
+            <div class="header-name">
+                <h1> {{this.spaceType}} </h1>
+            </div>
 
-   {{#each model as |user|}}
-          <h1> foi </h1>
-    {{/each}}
+            <div class="header-description">
+                <h1> {{contentDescription}} </h1>
+            </div>
+        </div>
 
-    {{top-bar.nav-bar-control showLeftMenu=false}}
+        <div class="page-detail">
+            <div class="form-wrapper">
 
+                <div class="left-content">
+                    <div class="form-field">
+                        {{!paper-input label="Nome Completo*" value=name onChange=(action (mut name)) customValidations=clearFieldValidation}} {{paper-input
+                        label="Nome*" value=name onChange=(action (mut name))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="RG" value=rg onChange=(action (mut rg))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Gênero" value=gender onChange=(action (mut gender))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Email principal*" value=mainEmail onChange=(action (mut mainEmail))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Telefone principal" value=mainPhoneNumber onChange=(action (mut mainPhoneNumber))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="CEP*" value=zipCode onChange=(action (mut zipCode))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Cidade*" value=city onChange=(action (mut city))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Rua*" value=street onChange=(action (mut street))}}
+                    </div>
+                </div>
+
+                <div class="right-content right-content--no-margin">
+                    <div class="form-field">
+                        {{paper-input label="Sobrenome*" value=surname onChange=(action (mut surname))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="CPF*" value=cpf onChange=(action (mut cpf))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Data de nascimento" value=birthDate onChange=(action (mut birthDate))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Email secundário" value=secondaryEmail onChange=(action (mut secondaryEmail))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Telefone secundário" value=secondPhoneNumber onChange=(action (mut secondPhoneNumber))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Estado*" value=state onChange=(action (mut state))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Bairro*" value=neighborhood onChange=(action (mut neighborhood))}}
+                    </div>
+                    <div class="form-field">
+                        {{paper-input label="Vinculo com a 55*" value=linkWithCompany onChange=(action (mut linkWithCompany))}}
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="form-actions">
+                <button class="subscribe-button" {{action 'makeAppointmentUser'}}> 
+                    <h1> {{contentTitleButton}} </h1>
+                    <div class="subscribe-button-background-borders">
+                    </div>
+                </button>
+            </div>
+        </div>
+
+    </div>
 </div>
