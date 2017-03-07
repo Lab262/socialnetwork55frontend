@@ -54,7 +54,7 @@
     "ember-parse-adapter": "git://github.com/thiagotmb/ember-parse-adapter.git",
     "parse": "^1.9.2"
   },
-  "devDependencies": {
-  "ember-cli": "0.2.3",
-}
+    "devDependencies": {
+    "ember-cli": "2.8.0"
+  }
 }
