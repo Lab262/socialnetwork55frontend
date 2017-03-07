@@ -5,8 +5,7 @@
             </div>
         </div>
         <div class="page-detail">
-            <div class="left-content">
-
+            <div class="content">
 
                 <div class="form-field-big">
                     {{paper-input label="Email" value=email onChange=(action (mut email)) type="email" customValidations=emailValidation }}
@@ -15,7 +14,6 @@
                 <div class="form-field-big">
                     {{paper-input label="Password" value=password onChange=(action (mut password)) customValidations=clearFieldValidation}}
                 </div>
-
 
                 <button class="subscribe-button" {{action 'authenticate'}}> 
                     <h1> {{contentTitleButton}} </h1>

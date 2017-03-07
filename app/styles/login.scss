@@ -212,30 +212,30 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
 @media screen and (min-width:600px){
 
     .login {
-    background: $background-color;
-    width: 100%;
+      background: $background-color;
       width: 100%;
-    display: inline-block;
-    height: auto;
-    position: absolute;
+      display: inline-block;
+      height: 100%;
+      position: absolute;
 
 
     .login-container {
-    margin-top: 8vw;
-    padding-bottom: 25vw;
+      margin-top: 8vw;
+      height: auto;
     
       .page-header {
           width: 100%;
           height: auto;
           display: block;
           padding-bottom: 2%;
+          
 
       .header-name {
           margin-bottom: 1%;
           width: 40%; 
           height: 6vw;
           margin-left: 7.5vw;
-          // background:url(/assets/images/background_button_visit_us.png);
+          background:url(/assets/images/background_button_confirm_register.png);
           background-size:20.5vw; 
           background-repeat: no-repeat;
 
@@ -244,10 +244,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
               font-family: 'BebasNeue-Bold';
               font-size: 3vw;
               color: white;
-              padding-top: 3%;
+              padding-top: 2.5%;
               padding-bottom: 3%;
-              padding-left: 7.5%;
-              padding-right: 7.55%;
+              padding-left: 12%;
+              padding-right: 12%;
             }
           }
 
@@ -265,14 +265,6 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
             }
           }
 
-          .header-divider{
-              position:relative;
-              background: #E65B05;
-              height: 5px;
-              width: 10vw;
-              margin-top: -5%;
-              left: 52vw;
-          }
       }
 
       .page-detail {
@@ -281,51 +273,11 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
         height: auto;
         display: flex;
         flex-wrap: nowrap;
-        margin-bottom: 5%;
+        margin-bottom: 5%; 
 
-    .right-content {
-          width: 48%;
-          height: 100%;
-          
-          .description-title {
-            margin-left: 2vw;
-            display: flex;
-            flex-wrap: nowrap;
-
-              h1 {
-              height: 100%;
-              font-family: 'BebasNeue-Bold';
-              font-size: 1.7vw;
-              color: black;
-              padding-top: -2%;
-              width: 65%;
-              
-            }
-
-            .label-icon {
-              margin-left: 1vw;
-              // background: url(/assets/images/visit_us_page_detail_picture.png);
-              height: 2vw;
-              width: 3vw;
-              background-size: 100%;
-
-            }
-          }
-
-          .description-picture {  
-            margin-top: 2vw;     
-            margin-left: 2vw;   
-            // background: url(/assets/images/sign-up-membership-detail-picture.jpg);
-            height: 35vw;
-            width: auto;
-            background-size: cover;
-            background-repeat:no-repeat; 
-          }      
-        } 
-
-        .left-content {
+        .content {
           width: 43vw;
-          height: 80%;
+          height: auto;
           margin-left: 7vw;
           display: flex;
           flex-wrap: wrap;
@@ -374,9 +326,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
               background: rgba(28,28,28,1);
               border-radius: 0.4vw;
               
+              
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.4);      
               margin-left: 2.2vw;
-              margin-top: 3.3vw;
+              margin-top: 6vw;
               
               padding-top: 5px;
               padding-bottom: 2px;
@@ -395,7 +348,7 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
               
 
 
-              .subscribe-button-background-borders {
+            .subscribe-button-background-borders {
               content: url('/assets/images/background-boarder-do-here.png');
               left: -4vw;
               bottom: 5.5vw; 
@@ -405,9 +358,10 @@ _:-webkit-full-screen:not(:root:root), .advantage-do-it-buttom-background-border
             }
 
 
-            &:hover {
+            &:hover,&:active,&:focus {
               transform:scale(1.1,1.1);
               transition: transform 0.1s, width 0.1s ease-in;
+              outline: none;
             }
           }
 
