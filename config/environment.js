@@ -49,7 +49,7 @@ module.exports = function(environment) {
   },
 
     APP: {
-      
+
     }
   };
 
@@ -73,8 +73,8 @@ module.exports = function(environment) {
   }
 
   ENV['ember-simple-auth'] = {
-   routeAfterAuthentication: 'user-edit',
-   routeIfAlreadyAuthenticated: 'user-edit',
+   routeAfterAuthentication: 'edicao-usuario',
+   routeIfAlreadyAuthenticated: 'edicao-usuario',
    authenticationRoute: 'login'
 }
 ENV['simple-auth'] = {

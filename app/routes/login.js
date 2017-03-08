@@ -7,7 +7,7 @@ export default Ember.Route.extend(UnauthenticatedRouteMixin,{
 
     beforeModel: function() {
     if (this.get('session.isAuthenticated')) {
-      return this.transitionTo('/user-edit');
+      return this.transitionTo('/edicao-usuario');
     }
   }
 

@@ -11,16 +11,11 @@ export default Base.extend({
       return new Ember.RSVP.Promise(function (resolve, reject) {
         ParseUser.login( store , data ).then(
              function( user ) {
-               console.log(user)
                Ember.run(function () {
-                   console.log("success")
-                   console.log(user.get('sessionToken'))
-
                    resolve({ token: user.get('sessionToken') });
                });
              },
              function( error ) {
-               console.log(error)
                Ember.run(function () {
                    reject(error);
                });
